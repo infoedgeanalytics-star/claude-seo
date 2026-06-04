@@ -408,6 +408,11 @@ img { max-width:100%; display:block; }
     <button class="nav-btn" data-panel="images">
       <span class="icon">🖼️</span> Images
     </button>
+
+    <div class="nav-section-label">Export</div>
+    <button class="nav-btn" data-panel="download">
+      <span class="icon">⬇️</span> Download Pages
+    </button>
   </nav>
 
   <div class="cms-sidebar-foot">
@@ -786,6 +791,110 @@ img { max-width:100%; display:block; }
       </div>
     </div>
   </div>
+
+  <!-- ══════════ PANEL: Download Pages ══════════ -->
+  <div class="cms-panel" id="panel-download">
+
+    <!-- Info banner -->
+    <div style="background:linear-gradient(135deg,#4A3AFF,#275df5);
+                border-radius:12px;padding:22px 24px;margin-bottom:22px;color:#fff;">
+      <div style="font-size:16px;font-weight:800;margin-bottom:6px;">⬇️ Export Author Pages</div>
+      <div style="font-size:13.5px;opacity:.88;line-height:1.7;">
+        Downloads a <strong>100% self-contained HTML file</strong> for each author — CSS inlined,
+        all content baked in, zero external dependencies. Drop it straight onto your server,
+        WordPress, or any CMS that accepts raw HTML files.
+      </div>
+    </div>
+
+    <!-- What's included -->
+    <div class="cms-card" style="margin-bottom:22px;">
+      <div class="cms-card-head"><div class="cms-card-title">What's included in each download</div></div>
+      <div class="cms-card-body">
+        <div style="display:grid;grid-template-columns:repeat(3,1fr);gap:14px;">
+          <div style="padding:14px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+            <div style="font-size:20px;margin-bottom:6px;">✅</div>
+            <div style="font-size:13px;font-weight:700;margin-bottom:4px;">Full design &amp; CSS</div>
+            <div style="font-size:12px;color:var(--muted);">All styles embedded in &lt;style&gt; — no external CSS files needed</div>
+          </div>
+          <div style="padding:14px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+            <div style="font-size:20px;margin-bottom:6px;">✅</div>
+            <div style="font-size:13px;font-weight:700;margin-bottom:4px;">All content baked in</div>
+            <div style="font-size:12px;color:var(--muted);">Profile, articles, publications, testimonials — all static HTML</div>
+          </div>
+          <div style="padding:14px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+            <div style="font-size:20px;margin-bottom:6px;">✅</div>
+            <div style="font-size:13px;font-weight:700;margin-bottom:4px;">Zero dependencies</div>
+            <div style="font-size:12px;color:var(--muted);">No localStorage, no JS files, no build step — works offline</div>
+          </div>
+          <div style="padding:14px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+            <div style="font-size:20px;margin-bottom:6px;">✅</div>
+            <div style="font-size:13px;font-weight:700;margin-bottom:4px;">Header/footer slots</div>
+            <div style="font-size:12px;color:var(--muted);">HTML comments mark exactly where to paste your site's header &amp; footer</div>
+          </div>
+          <div style="padding:14px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+            <div style="font-size:20px;margin-bottom:6px;">✅</div>
+            <div style="font-size:13px;font-weight:700;margin-bottom:4px;">Interactive filters</div>
+            <div style="font-size:12px;color:var(--muted);">Article category tabs and expertise tag toggle work without any framework</div>
+          </div>
+          <div style="padding:14px;background:var(--bg);border-radius:8px;border:1px solid var(--border);">
+            <div style="font-size:20px;margin-bottom:6px;">✅</div>
+            <div style="font-size:13px;font-weight:700;margin-bottom:4px;">SEO meta tags</div>
+            <div style="font-size:12px;color:var(--muted);">Title, description, Open Graph, Twitter Card — auto-generated per author</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Author download cards -->
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Select Author to Download</div>
+        <button class="btn btn-outline" onclick="renderDownloadPanel()">↺ Refresh</button>
+      </div>
+      <div class="cms-card-body">
+        <div id="download-author-list"
+             style="display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px;">
+        </div>
+      </div>
+    </div>
+
+    <!-- Download all -->
+    <div class="cms-card">
+      <div class="cms-card-head"><div class="cms-card-title">Bulk Export</div></div>
+      <div class="cms-card-body" style="display:flex;align-items:center;gap:16px;flex-wrap:wrap;">
+        <div style="flex:1;font-size:13.5px;color:var(--muted);line-height:1.6;">
+          Download every author page as individual HTML files in one click.
+          Each file is named <code>author-[firstname-lastname].html</code>.
+        </div>
+        <button class="btn btn-save" style="flex-shrink:0;font-size:14px;padding:11px 26px;"
+                onclick="downloadAllAuthors()">
+          ⬇️ Download All Author Pages
+        </button>
+      </div>
+    </div>
+
+    <!-- Integration guide -->
+    <div class="cms-card">
+      <div class="cms-card-head"><div class="cms-card-title">Integration Guide</div></div>
+      <div class="cms-card-body" style="font-size:13.5px;color:var(--mid);line-height:1.8;">
+        <p style="margin-bottom:10px;"><strong>1. Download</strong> the author's HTML file using the button above.</p>
+        <p style="margin-bottom:10px;"><strong>2. Add your header/footer</strong> — the file contains two clearly marked
+           HTML comment blocks:<br>
+           <code style="background:var(--bg);padding:2px 8px;border-radius:4px;display:inline-block;margin-top:4px;">
+             &lt;!-- PASTE YOUR SITE HEADER HERE --&gt;
+           </code><br>
+           <code style="background:var(--bg);padding:2px 8px;border-radius:4px;display:inline-block;margin-top:4px;">
+             &lt;!-- PASTE YOUR SITE FOOTER HERE --&gt;
+           </code>
+        </p>
+        <p style="margin-bottom:10px;"><strong>3. Upload</strong> the file to your server, or paste the HTML into
+           your CMS page editor (WordPress → Custom HTML block, Webflow → Embed, etc.).</p>
+        <p><strong>4. Re-download</strong> any time you update content in the CMS — the file always reflects
+           the latest saved data.</p>
+      </div>
+    </div>
+
+  </div><!-- /panel-download -->
 
 </div><!-- /.cms-main -->
 
@@ -1220,7 +1329,7 @@ function toast(msg, ok=true){
 
 /* ══════════════ NAV ══════════════ */
 const PANEL_LABELS = {
-  authors:'Manage Authors',
+  authors:'Manage Authors', download:'Download Pages',
   profile:'Author Profile', social:'Social Links', expertise:'Expertise Tags',
   articles:'Articles', credentials:'Credentials', sidebar:'Sidebar Stats & CTA',
   topics:'Popular Topics', publications:'Publications', testimonials:'Testimonials',
@@ -1240,7 +1349,7 @@ document.querySelectorAll('.nav-btn').forEach(btn=>{
 });
 
 function refreshPanel(id){
-  const fn = { authors:renderAuthorsPanel,
+  const fn = { authors:renderAuthorsPanel, download:renderDownloadPanel,
     profile:renderProfile, social:renderSocial, expertise:renderExpertise,
     articles:renderArticles, credentials:renderCredentials,
     sidebar:renderSidebarPanel, topics:renderTopics,
@@ -1780,6 +1889,454 @@ function confirmReset(){
   persist();
   renderProfile();
   toast('Content reset to defaults');
+}
+
+/* ══════════════════════════════════════════════════════
+   DOWNLOAD PANEL — static HTML generator
+   ══════════════════════════════════════════════════════ */
+
+function renderDownloadPanel(){
+  ensureAuthorsList();
+  const list = document.getElementById('download-author-list');
+  if(!DATA.authorsList.length){
+    list.innerHTML=`<div class="empty-state">No authors yet. Go to Manage Authors to add one.</div>`;
+    return;
+  }
+  list.innerHTML = DATA.authorsList.map(a=>{
+    const isActive = a.id === DATA.activeAuthorId;
+    const avatarHtml = a.avatarImage
+      ? `<img src="${esc(a.avatarImage)}"
+              style="width:56px;height:56px;border-radius:50%;object-fit:cover;
+                     border:3px solid rgba(74,58,255,.2);">`
+      : `<div style="width:56px;height:56px;border-radius:50%;
+                     background:linear-gradient(135deg,#3a2fa0,#275df5);
+                     display:flex;align-items:center;justify-content:center;
+                     font-size:18px;font-weight:800;color:#fff;
+                     border:3px solid rgba(74,58,255,.2);">
+           ${esc(a.avatarInitials||'?')}
+         </div>`;
+    return `
+      <div style="border:1.5px solid var(--border);border-radius:12px;padding:20px;
+                  background:var(--white);transition:box-shadow .2s;"
+           onmouseenter="this.style.boxShadow='0 4px 18px rgba(74,58,255,.12)'"
+           onmouseleave="this.style.boxShadow=''">
+        <div style="display:flex;align-items:center;gap:12px;margin-bottom:14px;">
+          ${avatarHtml}
+          <div style="flex:1;min-width:0;">
+            <div style="font-size:14px;font-weight:700;color:var(--dark);
+                        white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+              ${esc(a.name)}
+            </div>
+            <div style="font-size:12px;color:var(--muted);margin-top:2px;
+                        white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">
+              ${esc(a.title||'')}
+            </div>
+            ${isActive?`<span style="font-size:10.5px;background:#fef3c7;color:#b45309;
+                                    padding:1px 8px;border-radius:4px;font-weight:700;
+                                    display:inline-block;margin-top:3px;">⭐ Active</span>`:''}
+          </div>
+        </div>
+        <button onclick="downloadAuthorPage(${a.id})"
+                style="width:100%;padding:10px;background:var(--p);color:#fff;
+                       border:none;border-radius:8px;font-size:13.5px;font-weight:700;
+                       cursor:pointer;transition:background .15s,box-shadow .15s;"
+                onmouseenter="this.style.background='#5B4DFF';this.style.boxShadow='0 4px 14px rgba(74,58,255,.35)'"
+                onmouseleave="this.style.background='var(--p)';this.style.boxShadow=''">
+          ⬇️ Download HTML
+        </button>
+      </div>`;
+  }).join('');
+}
+
+/* ── Fetch CSS then trigger download ── */
+async function downloadAuthorPage(authorId){
+  const author = DATA.authorsList.find(a=>a.id===authorId);
+  if(!author){ toast('Author not found', false); return; }
+
+  toast('Generating file…');
+
+  let css = '';
+  try {
+    const r = await fetch('../css/style.css');
+    if(r.ok) css = await r.text();
+  } catch(e){ /* file:// may block fetch; css will be minimal fallback */ }
+
+  const html = buildStaticHTML(author, css, DATA);
+  triggerDownload(html, `author-${author.name.toLowerCase().replace(/\s+/g,'-')}.html`);
+  toast(`"${author.name}" downloaded!`);
+}
+
+async function downloadAllAuthors(){
+  ensureAuthorsList();
+  if(!DATA.authorsList.length){ toast('No authors to download', false); return; }
+
+  let css = '';
+  try { const r=await fetch('../css/style.css'); if(r.ok) css=await r.text(); } catch(e){}
+
+  for(const author of DATA.authorsList){
+    const html = buildStaticHTML(author, css, DATA);
+    triggerDownload(html, `author-${author.name.toLowerCase().replace(/\s+/g,'-')}.html`);
+    await new Promise(r=>setTimeout(r,300)); // stagger downloads
+  }
+  toast(`${DATA.authorsList.length} pages downloaded!`);
+}
+
+function triggerDownload(content, filename){
+  const blob = new Blob([content],{type:'text/html;charset=utf-8'});
+  const url  = URL.createObjectURL(blob);
+  const a    = document.createElement('a');
+  a.href = url; a.download = filename; a.click();
+  setTimeout(()=>URL.revokeObjectURL(url), 2000);
+}
+
+/* ══════════════════════════════════════════════════════
+   Static HTML builder — produces a fully self-contained page
+   ══════════════════════════════════════════════════════ */
+
+function buildStaticHTML(author, css, data){
+  const h = s => String(s??'')
+    .replace(/&/g,'&amp;').replace(/</g,'&lt;')
+    .replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+
+  /* ── ICONS ── */
+  const ICONS = {
+    linkedin:`<svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>`,
+    twitter:`<svg viewBox="0 0 24 24" fill="currentColor" width="15" height="15"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>`,
+    email:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"/></svg>`,
+    rss:`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="15" height="15"><path d="M4 11a9 9 0 0 1 9 9"/><path d="M4 4a16 16 0 0 1 16 16"/><circle cx="5" cy="19" r="1"/></svg>`
+  };
+
+  /* ── avatar ── */
+  const avatarInner = author.avatarImage
+    ? `<img src="${h(author.avatarImage)}" alt="${h(author.name)}" style="width:100%;height:100%;object-fit:cover;">`
+    : `<span class="avatar-initials" aria-hidden="true">${h(author.avatarInitials||'?')}</span>`;
+
+  /* ── social links ── */
+  const socialHTML = (author.social||[]).map(s=>
+    `<a href="${h(s.url)}" class="social-link" aria-label="${h(s.label)}">
+       ${ICONS[s.icon]||''}${h(s.label)}
+     </a>`
+  ).join('\n      ');
+
+  /* ── hero stats ── */
+  const statsHTML = (author.stats||[]).map(s=>
+    `<div class="stat-pill" role="listitem">
+         <span class="stat-pill-value">${h(s.value)}</span>
+         <span class="stat-pill-label">${h(s.label)}</span>
+       </div>`
+  ).join('');
+
+  /* ── expertise tags ── */
+  const tagsHTML = (author.expertise||[]).map((t,i)=>
+    `<span class="tag${i===0?' is-active':''}" role="button" tabindex="0" data-tag="${h(t)}">${h(t)}</span>`
+  ).join('\n      ');
+
+  /* ── articles ── */
+  const articles   = data.articles||[];
+  const featured   = articles.find(a=>a.featured);
+  const rest       = articles.filter(a=>!a.featured);
+  const orderedArt = featured ? [featured,...rest] : rest;
+  const categories = ['All',...new Set(articles.map(a=>a.category))];
+
+  const articleCardsHTML = orderedArt.map(a=>{
+    const badge = a.badge ? `<span class="card-badge ${h(a.badgeStyle)}">${h(a.badge)}</span>` : '';
+    return `
+        <article class="article-card${a.featured?' is-featured':''}" data-category="${h(a.category)}">
+          <div class="card-thumb" style="background:${h(a.thumbBg)}">
+            <span class="card-thumb-emoji" aria-hidden="true">${a.emoji||'📄'}</span>
+            ${badge}
+          </div>
+          <div class="card-body">
+            <div class="card-meta">
+              <span>${h(a.category)}</span><span class="sep" aria-hidden="true"></span>
+              <time datetime="${h(a.date)}">${h(a.dateLabel)}</time>
+            </div>
+            <h3 class="card-title">${h(a.title)}</h3>
+            <p class="card-excerpt">${h(a.excerpt)}</p>
+            <div class="card-footer">
+              <span class="read-time">⏱ ${h(a.readTime)}</span>
+              <a href="${h(a.url)}" class="read-btn">Read article</a>
+            </div>
+          </div>
+        </article>`;
+  }).join('');
+
+  const filterBtnsHTML = categories.map((cat,i)=>
+    `<button class="filter-btn${i===0?' is-active':''}" role="tab"
+             aria-selected="${i===0}" data-cat="${h(cat)}">${h(cat)}</button>`
+  ).join('\n        ');
+
+  /* ── credentials ── */
+  const credsHTML = (data.credentials||[]).map(c=>
+    `<li class="credential">
+         <div class="credential-icon" aria-hidden="true">${c.icon}</div>
+         <div>
+           <div class="credential-name">${h(c.name)}</div>
+           <div class="credential-detail">${h(c.detail)}</div>
+         </div>
+       </li>`
+  ).join('');
+
+  /* ── sidebar stats ── */
+  const sbStatsHTML = (data.sidebarStats||[]).map(s=>
+    `<div class="stat-box">
+         <div class="stat-value">${h(s.value)}</div>
+         <div class="stat-label">${h(s.label)}</div>
+       </div>`
+  ).join('');
+
+  /* ── topics ── */
+  const topicsHTML = (data.topics||[]).map(t=>
+    `<li><div class="topic-row" role="link" tabindex="0">
+         <span class="topic-name">${h(t.name)}</span>
+         <span class="topic-count">${h(t.count)}</span>
+       </div></li>`
+  ).join('');
+
+  /* ── cta ── */
+  const cta = data.cta||{};
+  const ctaHTML = `
+    <div class="cta-icon" aria-hidden="true">${cta.icon||'✨'}</div>
+    <h3 class="cta-title">${h(cta.title)}</h3>
+    <p class="cta-desc">${h(cta.desc)}</p>
+    <a href="${h(cta.url||'#')}" class="cta-btn">${h(cta.label||'Try Free Now')}</a>`;
+
+  /* ── publications ── */
+  const pubsHTML = (data.publications||[]).map(p=>
+    `<article class="pub-card">
+         <div class="pub-icon ${h(p.iconClass)}" aria-hidden="true">${p.emoji}</div>
+         <h3 class="pub-title">${h(p.title)}</h3>
+         <p class="pub-desc">${h(p.desc)}</p>
+         <div class="pub-meta">
+           <time datetime="${h(p.date)}">${h(p.dateLabel)}</time>
+           <span class="sep" aria-hidden="true"></span>
+           <span>${h(p.meta)}</span>
+         </div>
+       </article>`
+  ).join('');
+
+  /* ── testimonials ── */
+  const testisHTML = (data.testimonials||[]).map(t=>
+    `<blockquote class="testi-card">
+         <div class="quote-symbol" aria-hidden="true">"</div>
+         <p class="testi-text">${h(t.quote)}</p>
+         <footer class="testi-author">
+           <div class="testi-avatar ${h(t.avatarColor)}" aria-hidden="true">${h(t.avatarInitial)}</div>
+           <div>
+             <div class="testi-name">${h(t.name)}</div>
+             <div class="testi-role">${h(t.role)}</div>
+           </div>
+         </footer>
+       </blockquote>`
+  ).join('');
+
+  /* ── related authors ── */
+  const relatedHTML = (data.relatedAuthors||[]).map(a=>
+    `<article class="related-card">
+         <div class="rel-avatar ${h(a.color)}" aria-hidden="true">${h(a.initial)}</div>
+         <div class="rel-name">${h(a.name)}</div>
+         <div class="rel-title">${h(a.title)}</div>
+         <div class="rel-articles">${h(a.articles)}</div>
+       </article>`
+  ).join('');
+
+  /* ── Minimal page JS (no dependencies) ── */
+  const pageJS = `
+    document.addEventListener('DOMContentLoaded', function() {
+      /* Filter tabs */
+      var filterRow = document.getElementById('filter-row');
+      var allCards  = Array.from(document.querySelectorAll('.article-card'));
+      if(filterRow){
+        filterRow.addEventListener('click', function(e){
+          var btn = e.target.closest('.filter-btn');
+          if(!btn) return;
+          filterRow.querySelectorAll('.filter-btn').forEach(function(b){
+            b.classList.remove('is-active'); b.setAttribute('aria-selected','false');
+          });
+          btn.classList.add('is-active'); btn.setAttribute('aria-selected','true');
+          var cat = btn.dataset.cat;
+          allCards.forEach(function(card){
+            card.style.display = (cat==='All' || card.dataset.category===cat) ? '' : 'none';
+          });
+          /* Re-handle featured visibility */
+          var featured = allCards.find(function(c){ return c.classList.contains('is-featured'); });
+          if(featured && cat!=='All' && featured.dataset.category!==cat) featured.style.display='none';
+        });
+      }
+
+      /* Expertise tag toggle */
+      document.querySelectorAll('.tag').forEach(function(tag){
+        tag.addEventListener('click', function(){
+          document.querySelectorAll('.tag').forEach(function(t){ t.classList.remove('is-active'); });
+          tag.classList.add('is-active');
+        });
+      });
+
+      /* Scroll-in card animations */
+      if('IntersectionObserver' in window){
+        var io = new IntersectionObserver(function(entries){
+          entries.forEach(function(e){
+            if(e.isIntersecting){
+              e.target.style.opacity='1'; e.target.style.transform='translateY(0)';
+              io.unobserve(e.target);
+            }
+          });
+        },{threshold:0.08});
+        document.querySelectorAll('.article-card,.pub-card,.related-card,.testi-card').forEach(function(el){
+          el.style.opacity='0'; el.style.transform='translateY(16px)';
+          el.style.transition='opacity .4s ease,transform .4s ease';
+          io.observe(el);
+        });
+      }
+
+      /* Load more stub */
+      var lb = document.querySelector('.btn-load-more');
+      if(lb) lb.addEventListener('click',function(){ lb.textContent='No more articles'; lb.disabled=true; lb.style.opacity='.45'; });
+    });`;
+
+  /* ── Compose full page ── */
+  const slug = author.name.toLowerCase().replace(/\s+/g,'-');
+  return `<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>${h(author.name)} – ${h(author.title||'Author')} | ${h(author.company||'')}</title>
+<meta name="description" content="${h(author.bio.slice(0,160))}">
+<meta name="author" content="${h(author.name)}">
+<meta name="theme-color" content="#4A3AFF">
+<meta property="og:type" content="profile">
+<meta property="og:title" content="${h(author.name)} – ${h(author.title||'Author')}">
+<meta property="og:description" content="${h(author.bio.slice(0,200))}">
+${author.avatarImage?`<meta property="og:image" content="${h(author.avatarImage)}">`:``}
+<link rel="canonical" href="./${slug}.html">
+<style>
+${css || `/* Add your CSS here or link style.css */`}
+</style>
+</head>
+<body>
+
+<!-- ═══════════════════════════════════════════════════
+     PASTE YOUR SITE HEADER HERE
+     ═══════════════════════════════════════════════════ -->
+
+
+<!-- HERO -->
+<section class="hero" aria-labelledby="author-name">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="author-avatar-wrap">
+        <div class="author-avatar" role="img" aria-label="Photo of ${h(author.name)}">
+          ${avatarInner}
+        </div>
+        <div class="verified-badge" aria-label="Verified expert">
+          <svg viewBox="0 0 18 18" fill="none"><path d="M3.5 9l4 4 7-7" stroke="#fff" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+      </div>
+      <div class="author-content">
+        <div class="author-eyebrow"><span class="dot" aria-hidden="true"></span>${h(author.eyebrow||'Expert')}</div>
+        <h1 class="author-name" id="author-name">${h(author.name)}</h1>
+        <p class="author-title">${h(author.title)} at <strong>${h(author.company)}</strong></p>
+        <p class="author-bio">${h(author.bio)}</p>
+        <div class="social-row">
+          ${socialHTML}
+        </div>
+        <div class="hero-stats" role="list" aria-label="Author statistics">
+          ${statsHTML}
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EXPERTISE STRIP -->
+<div class="expertise-strip" aria-label="Areas of expertise">
+  <div class="container">
+    <div class="expertise-inner">
+      <span class="expertise-label">Expertise:</span>
+      ${tagsHTML}
+    </div>
+  </div>
+</div>
+
+<!-- ARTICLES + SIDEBAR -->
+<div class="container">
+  <div class="page-body">
+
+    <main class="content-main" id="articles">
+      <div class="section-head">
+        <h2 class="section-title">Latest by <em>${h(author.name)}</em></h2>
+        <a href="#" class="view-all">View all articles</a>
+      </div>
+
+      <div id="filter-row" class="filter-row" role="tablist" aria-label="Article category filter">
+        ${filterBtnsHTML}
+      </div>
+
+      <div id="article-grid" class="article-grid">
+        ${articleCardsHTML}
+      </div>
+
+      <div class="load-more-wrap">
+        <button class="btn-load-more">Load more articles</button>
+      </div>
+    </main>
+
+    <aside class="content-sidebar" aria-label="Author details">
+      <div class="sidebar-card">
+        <h2 class="sidebar-title">Credentials</h2>
+        <ul class="credential-list">${credsHTML}</ul>
+      </div>
+      <div class="sidebar-card">
+        <h2 class="sidebar-title">Author Stats</h2>
+        <div class="stats-grid">${sbStatsHTML}</div>
+      </div>
+      <div class="sidebar-card">
+        <h2 class="sidebar-title">Popular Topics</h2>
+        <ul class="topic-list">${topicsHTML}</ul>
+      </div>
+      <div class="sidebar-cta">${ctaHTML}</div>
+    </aside>
+
+  </div>
+</div>
+
+<!-- PUBLICATIONS -->
+<section class="sec-publications" aria-labelledby="pub-heading">
+  <div class="container">
+    <div class="section-head">
+      <h2 class="section-title" id="pub-heading">Featured <em>Research &amp; Guides</em></h2>
+      <a href="#" class="view-all">View all guides</a>
+    </div>
+    <div class="pub-grid">${pubsHTML}</div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec-testimonials" aria-labelledby="testi-heading">
+  <div class="container">
+    <h2 class="section-title" id="testi-heading">What Readers Say</h2>
+    <div class="testimonial-grid">${testisHTML}</div>
+  </div>
+</section>
+
+<!-- RELATED AUTHORS -->
+<section class="sec-related" aria-labelledby="related-heading">
+  <div class="container">
+    <h2 class="section-title" id="related-heading">More <em>Career Experts</em></h2>
+    <div class="related-grid">${relatedHTML}</div>
+  </div>
+</section>
+
+
+<!-- ═══════════════════════════════════════════════════
+     PASTE YOUR SITE FOOTER HERE
+     ═══════════════════════════════════════════════════ -->
+
+
+<script>${pageJS}</script>
+</body>
+</html>`;
 }
 
 /* ══════════════ AUTHORS PANEL ══════════════ */
