@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="refresh" content="0; url=cms/index.html">
+<title>Opening CMS…</title>
+<style>
+  *{margin:0;padding:0;box-sizing:border-box;}
+  body{
+    font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+    background:#121224; color:#fff;
+    display:flex; align-items:center; justify-content:center;
+    min-height:100vh;
+  }
+  .card{text-align:center;}
+  .logo{font-size:22px;font-weight:800;margin-bottom:6px;}
+  .logo span{color:#E8A413;}
+  .sub{font-size:13px;color:rgba(255,255,255,.45);margin-bottom:28px;}
+  .spinner{
+    width:40px;height:40px;border-radius:50%;
+    border:3px solid rgba(255,255,255,.1);
+    border-top-color:#4A3AFF;
+    animation:spin .7s linear infinite;
+    margin:0 auto 20px;
+  }
+  @keyframes spin{to{transform:rotate(360deg)}}
+  .msg{font-size:15px;color:rgba(255,255,255,.7);margin-bottom:20px;}
+  a{
+    display:inline-block;
+    background:#4A3AFF; color:#fff;
+    padding:11px 28px; border-radius:100px;
+    font-size:14px; font-weight:700;
+    text-decoration:none;
+    transition:background .15s;
+  }
+  a:hover{background:#5B4DFF;}
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="logo">Naukri<span>360</span></div>
+  <div class="sub">Author Profile CMS</div>
+  <div class="spinner"></div>
+  <div class="msg">Opening CMS…</div>
+  <a href="cms/index.html">Click here if not redirected</a>
+</div>
+</body>
+</html>
