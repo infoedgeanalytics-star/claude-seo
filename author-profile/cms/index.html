@@ -584,6 +584,49 @@ img { max-width:100%; display:block; }
       </div>
     </div>
 
+    <!-- Credentials (per-author) -->
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Credentials &amp; Qualifications</div>
+        <button class="btn btn-green btn-sm" onclick="addCredential()">+ Add credential</button>
+      </div>
+      <div class="cms-card-body">
+        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;">
+          These credentials belong to this author only. Changes apply immediately on save.
+        </p>
+        <table class="data-table" style="width:100%;">
+          <thead><tr><th>Icon</th><th>Name / Degree</th><th>Detail / Institution</th><th></th></tr></thead>
+          <tbody id="credential-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- Articles (per-author) -->
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Articles</div>
+        <button class="btn btn-green btn-sm" onclick="openArticleModal(null)">+ Add article</button>
+      </div>
+      <div class="cms-card-body">
+        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;">
+          Articles listed here are exclusive to this author's profile page.
+        </p>
+        <table class="data-table" style="width:100%;overflow-x:auto;">
+          <thead>
+            <tr>
+              <th style="min-width:200px;">Title</th>
+              <th>Category</th>
+              <th>Date</th>
+              <th>Read Time</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="article-tbody-profile"></tbody>
+        </table>
+      </div>
+    </div>
+
   </div><!-- /panel-profile -->
 
 
@@ -1478,6 +1521,35 @@ function renderProfile(){
       `<option value="${a.id}" ${a.id===DATA.activeAuthorId?'selected':''}>${esc(a.name)} — ${esc(a.title||a.company||'')}</option>`
     ).join('');
   }
+  /* Render per-author inline sections */
+  renderCredentials();
+  renderProfileArticles();
+}
+
+function renderProfileArticles(){
+  const tb = document.getElementById('article-tbody-profile');
+  if(!tb) return;
+  if(!DATA.articles.length){
+    tb.innerHTML=`<tr><td colspan="6" class="empty-state">No articles yet. Click + Add article.</td></tr>`;
+    return;
+  }
+  tb.innerHTML = DATA.articles.map((a,i)=>`
+    <tr>
+      <td style="max-width:260px;font-weight:600;">${esc(a.title)}</td>
+      <td>${esc(a.category)}</td>
+      <td>${esc(a.dateLabel)}</td>
+      <td>${esc(a.readTime)}</td>
+      <td>
+        <span class="badge-tag ${a.featured?'badge-featured':'badge-normal'}">
+          ${a.featured?'⭐ Featured':'Regular'}
+        </span>
+      </td>
+      <td style="white-space:nowrap;">
+        <button class="btn btn-outline btn-sm" onclick="openArticleModal(${i})">Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="removeArticle(${i})" style="margin-left:6px;">Delete</button>
+      </td>
+    </tr>`
+  ).join('');
 }
 
 function applyProfileAuthorSwitch(){
@@ -1625,7 +1697,9 @@ function renderArticles(){
 
 function removeArticle(i){
   if(!confirm('Delete this article?')) return;
-  DATA.articles.splice(i,1); persist(); renderArticles(); toast('Article deleted');
+  DATA.articles.splice(i,1);
+  syncArticlesCredentialsToAuthor();
+  persist(); renderArticles(); renderProfileArticles(); toast('Article deleted');
 }
 
 let articleEditIndex = null;
@@ -1698,7 +1772,8 @@ function saveArticle(){
 
   if(articleEditIndex!==null) DATA.articles[articleEditIndex]=a;
   else DATA.articles.push(a);
-  persist(); closeModal('article-modal'); renderArticles(); toast('Article saved!');
+  syncArticlesCredentialsToAuthor();
+  persist(); closeModal('article-modal'); renderArticles(); renderProfileArticles(); toast('Article saved!');
 }
 
 /* ══════════════ CREDENTIALS ══════════════ */
@@ -1717,9 +1792,14 @@ function renderCredentials(){
   ).join('');
 }
 
-function removeCredential(i){ DATA.credentials.splice(i,1); persist(); renderCredentials(); }
+function removeCredential(i){
+  DATA.credentials.splice(i,1);
+  syncArticlesCredentialsToAuthor();
+  persist(); renderCredentials();
+}
 function addCredential(){
   DATA.credentials.push({id:uid(),icon:'🏅',name:'',detail:''});
+  syncArticlesCredentialsToAuthor();
   persist(); renderCredentials();
 }
 
@@ -2197,8 +2277,8 @@ function buildStaticHTML(author, css, data){
     `<span class="tag${i===0?' is-active':''}" role="button" tabindex="0" data-tag="${h(t)}">${h(t)}</span>`
   ).join('\n      ');
 
-  /* ── articles ── */
-  const articles   = data.articles||[];
+  /* ── articles (per-author, falls back to global) ── */
+  const articles   = (author.articles && author.articles.length ? author.articles : data.articles)||[];
   const featured   = articles.find(a=>a.featured);
   const rest       = articles.filter(a=>!a.featured);
   const orderedArt = featured ? [featured,...rest] : rest;
@@ -2235,8 +2315,9 @@ function buildStaticHTML(author, css, data){
              aria-selected="${i===0}" data-cat="${h(cat)}">${h(cat)}</button>`
   ).join('\n        ');
 
-  /* ── credentials ── */
-  const credsHTML = (data.credentials||[]).map(c=>
+  /* ── credentials (per-author, falls back to global) ── */
+  const authorCreds = (author.credentials && author.credentials.length ? author.credentials : data.credentials)||[];
+  const credsHTML = authorCreds.map(c=>
     `<li class="credential">
          <div class="credential-icon" aria-hidden="true">${c.icon}</div>
          <div>
@@ -2436,8 +2517,7 @@ ${css || `/* Add your CSS here or link style.css */`}
 
     <main class="content-main" id="articles">
       <div class="section-head">
-        <h2 class="section-title">Latest by <em>${h(author.name)}</em></h2>
-        <a href="#" class="view-all">View all articles</a>
+        <h2 class="section-title">Articles by <em>${h(author.name)}</em></h2>
       </div>
 
       <div id="filter-row" class="filter-row" role="tablist" aria-label="Article category filter">
@@ -2446,10 +2526,6 @@ ${css || `/* Add your CSS here or link style.css */`}
 
       <div id="article-grid" class="article-grid">
         ${articleCardsHTML}
-      </div>
-
-      <div class="load-more-wrap">
-        <button class="btn-load-more">Load more articles</button>
       </div>
     </main>
 
@@ -2526,10 +2602,18 @@ function ensureAuthorsList(){
       avatarImage:    DATA.profile.avatarImage     || '',
       social:         JSON.parse(JSON.stringify(DATA.social||[])),
       expertise:      JSON.parse(JSON.stringify(DATA.expertise||[])),
-      stats:          JSON.parse(JSON.stringify(DATA.profile.stats||[]))
+      stats:          JSON.parse(JSON.stringify(DATA.profile.stats||[])),
+      /* Seed per-author data from global on first migration */
+      articles:       JSON.parse(JSON.stringify(DATA.articles||[])),
+      credentials:    JSON.parse(JSON.stringify(DATA.credentials||[]))
     }];
     DATA.activeAuthorId = 1;
   }
+  /* Back-fill articles/credentials for authors added before this version */
+  DATA.authorsList.forEach(a=>{
+    if(a.articles    === undefined) a.articles    = [];
+    if(a.credentials === undefined) a.credentials = [];
+  });
 }
 
 function renderAuthorsPanel(){
@@ -2596,9 +2680,20 @@ function setActiveAuthor(id){
   DATA.profile.stats          = JSON.parse(JSON.stringify(author.stats||[]));
   DATA.social                 = JSON.parse(JSON.stringify(author.social||[]));
   DATA.expertise              = JSON.parse(JSON.stringify(author.expertise||[]));
+  /* Per-author articles and credentials */
+  if(author.articles    !== undefined) DATA.articles     = JSON.parse(JSON.stringify(author.articles));
+  if(author.credentials !== undefined) DATA.credentials  = JSON.parse(JSON.stringify(author.credentials));
   persist();
   renderAuthorsPanel();
   toast(`"${author.name}" is now the active author!`);
+}
+
+/* Write DATA.articles + DATA.credentials back into the active author object */
+function syncArticlesCredentialsToAuthor(){
+  const idx = DATA.authorsList.findIndex(a=>a.id===DATA.activeAuthorId);
+  if(idx === -1) return;
+  DATA.authorsList[idx].articles    = JSON.parse(JSON.stringify(DATA.articles||[]));
+  DATA.authorsList[idx].credentials = JSON.parse(JSON.stringify(DATA.credentials||[]));
 }
 
 function editAuthorProfile(id){
@@ -2741,8 +2836,9 @@ function saveAuthor(){
 
   const avatarFinal = amAvatarData || document.getElementById('am-avatar-url').value.trim();
 
+  const existing = authorEditIndex!==null ? DATA.authorsList[authorEditIndex] : {};
   const author = {
-    id:             authorEditIndex!==null ? DATA.authorsList[authorEditIndex].id : uid(),
+    id:             existing.id || uid(),
     name,
     eyebrow:        document.getElementById('am-eyebrow').value.trim(),
     title:          document.getElementById('am-title').value.trim(),
@@ -2752,7 +2848,10 @@ function saveAuthor(){
     avatarImage:    avatarFinal,
     social:         JSON.parse(JSON.stringify(amSocial)),
     expertise:      JSON.parse(JSON.stringify(amTags)),
-    stats:          amStats.filter(s=>s.value||s.label)
+    stats:          amStats.filter(s=>s.value||s.label),
+    /* Preserve per-author articles/credentials across modal edits */
+    articles:       existing.articles    !== undefined ? existing.articles    : [],
+    credentials:    existing.credentials !== undefined ? existing.credentials : []
   };
 
   author.seo = {
