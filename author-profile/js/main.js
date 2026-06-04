@@ -135,22 +135,6 @@ function renderSidebar(data) {
      <a href="${esc(c.url)}" class="cta-btn">${esc(c.label)}</a>`;
 }
 
-/* ── Render publications ─────────────────────────────────────── */
-function renderPublications(pubs) {
-  document.getElementById('pub-grid').innerHTML = pubs.map(p =>
-    `<article class="pub-card">
-       <div class="pub-icon ${esc(p.iconClass)}" aria-hidden="true">${p.emoji}</div>
-       <h3 class="pub-title">${esc(p.title)}</h3>
-       <p class="pub-desc">${esc(p.desc)}</p>
-       <div class="pub-meta">
-         <time datetime="${esc(p.date)}">${esc(p.dateLabel)}</time>
-         <span class="sep" aria-hidden="true"></span>
-         <span>${esc(p.meta)}</span>
-       </div>
-     </article>`
-  ).join('');
-}
-
 /* ── Render testimonials ─────────────────────────────────────── */
 function renderTestimonials(list) {
   document.getElementById('testi-grid').innerHTML = list.map(t =>
@@ -242,15 +226,6 @@ function initScrollAnimations() {
   });
 }
 
-/* ── Load-more stub ──────────────────────────────────────────── */
-function initLoadMore() {
-  document.querySelector('.btn-load-more')?.addEventListener('click', function() {
-    this.textContent = 'No more articles';
-    this.disabled    = true;
-    this.style.opacity = '.45';
-  });
-}
-
 /* ── CMS link badge ──────────────────────────────────────────── */
 function initCMSBadge() {
   const badge = document.createElement('a');
@@ -291,13 +266,11 @@ document.addEventListener('DOMContentLoaded', () => {
   renderExpertise(data.expertise);
   renderArticles(data.articles);
   renderSidebar(data);
-  renderPublications(data.publications);
   renderTestimonials(data.testimonials);
   renderRelated(data.relatedAuthors);
 
   initFilters(data.articles);
   initTags();
   initScrollAnimations();
-  initLoadMore();
   initCMSBadge();
 });
