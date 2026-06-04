@@ -355,10 +355,22 @@ img { max-width:100%; display:block; }
   <div class="cms-brand">
     <div class="cms-brand-logo">Naukri<span>360</span></div>
     <div class="cms-brand-sub">Author Profile CMS</div>
+    <div style="margin-top:10px;padding:8px 10px;background:rgba(255,255,255,.06);
+                border-radius:8px;border:1px solid rgba(255,255,255,.1);">
+      <div style="font-size:10px;color:rgba(255,255,255,.4);text-transform:uppercase;
+                  letter-spacing:.6px;margin-bottom:3px;">Active Author</div>
+      <div id="active-author-name" style="font-size:13px;font-weight:700;color:#fff;
+           white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">—</div>
+    </div>
   </div>
 
   <nav class="cms-nav" aria-label="CMS sections">
-    <div class="nav-section-label">Profile</div>
+    <div class="nav-section-label">Authors</div>
+    <button class="nav-btn" data-panel="authors">
+      <span class="icon">👥</span> Manage Authors
+    </button>
+
+    <div class="nav-section-label">Active Author</div>
     <button class="nav-btn active" data-panel="profile">
       <span class="icon">👤</span> Author Profile
     </button>
@@ -420,6 +432,48 @@ img { max-width:100%; display:block; }
       <button class="btn btn-save" onclick="saveAll()">💾 Save Changes</button>
     </div>
   </div>
+
+  <!-- ══════════ PANEL: Authors ══════════ -->
+  <div class="cms-panel" id="panel-authors">
+
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">All Authors</div>
+        <button class="btn btn-green" onclick="openAuthorModal(null)">+ Add New Author</button>
+      </div>
+      <div class="cms-card-body" style="padding:0;">
+        <table class="list-table" id="authors-table">
+          <thead>
+            <tr>
+              <th>Avatar</th>
+              <th>Name</th>
+              <th>Title</th>
+              <th>Company</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="authors-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+
+    <div class="cms-card">
+      <div class="cms-card-head"><div class="cms-card-title">How Authors Work</div></div>
+      <div class="cms-card-body" style="font-size:13.5px;color:var(--mid);line-height:1.75;">
+        <p>Each author has their own <strong>name, bio, title, avatar, social links, expertise tags,
+        and hero stats</strong>. The author marked <span style="background:#fef3c7;color:#b45309;
+        padding:1px 8px;border-radius:4px;font-weight:600;">Active</span> is the one displayed
+        on the profile page.</p>
+        <p style="margin-top:10px;">Use <strong>Set Active</strong> to switch which author the page shows,
+        then click <strong>Save Changes</strong> in the top bar to persist. Open
+        <strong>Author Profile</strong> in the sidebar to fine-edit the active author's
+        full details, stats, and more.</p>
+      </div>
+    </div>
+
+  </div><!-- /panel-authors -->
+
 
   <!-- ══════════ PANEL: Profile ══════════ -->
   <div class="cms-panel active" id="panel-profile">
@@ -962,6 +1016,109 @@ img { max-width:100%; display:block; }
 </div>
 
 
+<!-- ══════════════════ AUTHOR MODAL ══════════════════ -->
+<div class="modal-backdrop" id="author-modal">
+  <div class="modal" style="max-width:720px;">
+    <div class="modal-head">
+      <div class="modal-title" id="author-modal-title">Add New Author</div>
+      <button class="modal-close" onclick="closeModal('author-modal')">×</button>
+    </div>
+
+    <!-- Avatar -->
+    <div style="display:flex;gap:20px;align-items:flex-start;margin-bottom:20px;padding-bottom:20px;border-bottom:1px solid var(--border);">
+      <div style="text-align:center;flex-shrink:0;">
+        <div id="am-avatar-preview"
+             style="width:72px;height:72px;border-radius:50%;
+                    background:linear-gradient(135deg,#3a2fa0,#275df5);
+                    display:flex;align-items:center;justify-content:center;
+                    font-size:22px;font-weight:800;color:rgba(255,255,255,.85);
+                    margin:0 auto 8px;overflow:hidden;"></div>
+        <div style="font-size:11px;color:var(--muted);">Preview</div>
+      </div>
+      <div style="flex:1;display:grid;grid-template-columns:1fr 1fr;gap:12px;">
+        <div class="field">
+          <label>Avatar Initials</label>
+          <input type="text" id="am-initials" maxlength="3" placeholder="PS"
+                 oninput="updateAMPreview()">
+        </div>
+        <div class="field">
+          <label>Photo URL (optional)</label>
+          <input type="url" id="am-avatar-url" placeholder="https://... or upload via Images tab">
+        </div>
+        <div class="field" style="grid-column:1/-1;">
+          <label>Upload Photo</label>
+          <div class="upload-zone" style="padding:14px;text-align:center;position:relative;">
+            <input type="file" id="am-avatar-file" accept="image/*"
+                   style="position:absolute;inset:0;opacity:0;cursor:pointer;">
+            <div style="font-size:12.5px;color:var(--muted);">
+              <strong style="color:var(--p);">Click</strong> to upload · JPG/PNG/WebP
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Core fields -->
+    <div class="form-grid">
+      <div class="field">
+        <label>Full Name *</label>
+        <input type="text" id="am-name" placeholder="e.g. Rajesh Iyer">
+      </div>
+      <div class="field">
+        <label>Eyebrow Label</label>
+        <input type="text" id="am-eyebrow" placeholder="Career Expert">
+      </div>
+      <div class="field">
+        <label>Job Title</label>
+        <input type="text" id="am-title" placeholder="Senior HR Practitioner">
+      </div>
+      <div class="field">
+        <label>Company / Organisation</label>
+        <input type="text" id="am-company" placeholder="Naukri360">
+      </div>
+      <div class="field form-full">
+        <label>Bio / About</label>
+        <textarea id="am-bio" rows="4" placeholder="Short bio..."></textarea>
+      </div>
+    </div>
+
+    <!-- Social links -->
+    <div style="margin-top:18px;">
+      <div style="font-size:13px;font-weight:700;color:var(--dark);margin-bottom:10px;">
+        Social Links
+        <button class="btn btn-outline btn-sm" style="margin-left:10px;"
+                onclick="addAMSocial()">+ Add</button>
+      </div>
+      <div id="am-social-rows" style="display:flex;flex-direction:column;gap:8px;"></div>
+    </div>
+
+    <!-- Expertise tags -->
+    <div style="margin-top:18px;">
+      <div style="font-size:13px;font-weight:700;color:var(--dark);margin-bottom:10px;">Expertise Tags</div>
+      <div id="am-tag-chips" class="tag-chips"></div>
+      <div class="add-tag-row">
+        <input type="text" id="am-tag-input" placeholder="Add tag…" maxlength="50">
+        <button class="btn btn-green btn-sm" onclick="addAMTag()">+ Add</button>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div style="margin-top:18px;">
+      <div style="font-size:13px;font-weight:700;color:var(--dark);margin-bottom:10px;">
+        Hero Stats
+        <button class="btn btn-outline btn-sm" style="margin-left:10px;"
+                onclick="addAMStat()">+ Add stat</button>
+      </div>
+      <div id="am-stat-rows" class="stat-rows"></div>
+    </div>
+
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('author-modal')">Cancel</button>
+      <button class="btn btn-save" onclick="saveAuthor()">Save Author</button>
+    </div>
+  </div>
+</div>
+
 <!-- Toast -->
 <div class="toast" id="toast"></div>
 
@@ -1063,6 +1220,7 @@ function toast(msg, ok=true){
 
 /* ══════════════ NAV ══════════════ */
 const PANEL_LABELS = {
+  authors:'Manage Authors',
   profile:'Author Profile', social:'Social Links', expertise:'Expertise Tags',
   articles:'Articles', credentials:'Credentials', sidebar:'Sidebar Stats & CTA',
   topics:'Popular Topics', publications:'Publications', testimonials:'Testimonials',
@@ -1082,7 +1240,8 @@ document.querySelectorAll('.nav-btn').forEach(btn=>{
 });
 
 function refreshPanel(id){
-  const fn = { profile:renderProfile, social:renderSocial, expertise:renderExpertise,
+  const fn = { authors:renderAuthorsPanel,
+    profile:renderProfile, social:renderSocial, expertise:renderExpertise,
     articles:renderArticles, credentials:renderCredentials,
     sidebar:renderSidebarPanel, topics:renderTopics,
     publications:renderPubs, testimonials:renderTestis,
@@ -1623,9 +1782,255 @@ function confirmReset(){
   toast('Content reset to defaults');
 }
 
+/* ══════════════ AUTHORS PANEL ══════════════ */
+
+/* Ensure authorsList exists in legacy data */
+function ensureAuthorsList(){
+  if(!DATA.authorsList || !DATA.authorsList.length){
+    DATA.authorsList = [{
+      id: 1,
+      name:           DATA.profile.name           || 'Author',
+      eyebrow:        DATA.profile.eyebrow         || 'Expert',
+      title:          DATA.profile.title           || '',
+      company:        DATA.profile.company         || '',
+      bio:            DATA.profile.bio             || '',
+      avatarInitials: DATA.profile.avatarInitials  || '?',
+      avatarImage:    DATA.profile.avatarImage     || '',
+      social:         JSON.parse(JSON.stringify(DATA.social||[])),
+      expertise:      JSON.parse(JSON.stringify(DATA.expertise||[])),
+      stats:          JSON.parse(JSON.stringify(DATA.profile.stats||[]))
+    }];
+    DATA.activeAuthorId = 1;
+  }
+}
+
+function renderAuthorsPanel(){
+  ensureAuthorsList();
+  const tb = document.getElementById('authors-tbody');
+  if(!DATA.authorsList.length){
+    tb.innerHTML=`<tr><td colspan="6" class="empty-state">No authors yet. Click + Add New Author.</td></tr>`;
+    return;
+  }
+  tb.innerHTML = DATA.authorsList.map((a,i)=>{
+    const isActive = a.id === DATA.activeAuthorId;
+    const avatarHtml = a.avatarImage
+      ? `<img src="${esc(a.avatarImage)}" style="width:36px;height:36px;border-radius:50%;object-fit:cover;">`
+      : `<div style="width:36px;height:36px;border-radius:50%;
+                     background:linear-gradient(135deg,#3a2fa0,#275df5);
+                     display:flex;align-items:center;justify-content:center;
+                     font-size:13px;font-weight:800;color:rgba(255,255,255,.85);">
+           ${esc(a.avatarInitials||'?')}
+         </div>`;
+    return `
+      <tr style="${isActive?'background:rgba(74,58,255,.04);':''}">
+        <td>${avatarHtml}</td>
+        <td style="font-weight:700;">${esc(a.name)}</td>
+        <td style="color:var(--muted);max-width:180px;">${esc(a.title)}</td>
+        <td>${esc(a.company)}</td>
+        <td>
+          ${isActive
+            ? `<span class="badge-tag badge-featured">⭐ Active</span>`
+            : `<button class="btn btn-outline btn-sm" onclick="setActiveAuthor(${a.id})">Set Active</button>`
+          }
+        </td>
+        <td style="white-space:nowrap;">
+          <button class="btn btn-outline btn-sm" onclick="openAuthorModal(${i})">Edit</button>
+          ${!isActive
+            ? `<button class="btn btn-danger btn-sm" onclick="deleteAuthor(${i})" style="margin-left:6px;">Delete</button>`
+            : `<span style="display:inline-block;width:62px;"></span>`
+          }
+        </td>
+      </tr>`;
+  }).join('');
+
+  /* Update sidebar active-author indicator */
+  const indicator = document.getElementById('active-author-name');
+  if(indicator){
+    const active = DATA.authorsList.find(a=>a.id===DATA.activeAuthorId);
+    indicator.textContent = active ? active.name : '—';
+  }
+}
+
+function setActiveAuthor(id){
+  ensureAuthorsList();
+  const author = DATA.authorsList.find(a=>a.id===id);
+  if(!author) return;
+  DATA.activeAuthorId = id;
+  /* Push author data into the main profile so existing panels work */
+  DATA.profile.name           = author.name;
+  DATA.profile.eyebrow        = author.eyebrow;
+  DATA.profile.title          = author.title;
+  DATA.profile.company        = author.company;
+  DATA.profile.bio            = author.bio;
+  DATA.profile.avatarInitials = author.avatarInitials;
+  DATA.profile.avatarImage    = author.avatarImage;
+  DATA.profile.stats          = JSON.parse(JSON.stringify(author.stats||[]));
+  DATA.social                 = JSON.parse(JSON.stringify(author.social||[]));
+  DATA.expertise              = JSON.parse(JSON.stringify(author.expertise||[]));
+  persist();
+  renderAuthorsPanel();
+  toast(`"${author.name}" is now the active author!`);
+}
+
+function deleteAuthor(i){
+  ensureAuthorsList();
+  const a = DATA.authorsList[i];
+  if(a.id===DATA.activeAuthorId){ toast('Cannot delete the active author. Set another author as active first.', false); return; }
+  if(!confirm(`Delete author "${a.name}"? This cannot be undone.`)) return;
+  DATA.authorsList.splice(i,1);
+  persist(); renderAuthorsPanel();
+  toast('Author deleted');
+}
+
+/* ── Author modal state ── */
+let authorEditIndex = null;
+let amSocial  = [];
+let amTags    = [];
+let amStats   = [];
+let amAvatarData = '';
+
+function openAuthorModal(idx){
+  ensureAuthorsList();
+  authorEditIndex = idx;
+  const a = idx !== null ? DATA.authorsList[idx] : {};
+  document.getElementById('author-modal-title').textContent = idx!==null ? 'Edit Author' : 'Add New Author';
+
+  document.getElementById('am-name').value      = a.name||'';
+  document.getElementById('am-eyebrow').value   = a.eyebrow||'';
+  document.getElementById('am-title').value     = a.title||'';
+  document.getElementById('am-company').value   = a.company||'';
+  document.getElementById('am-bio').value       = a.bio||'';
+  document.getElementById('am-initials').value  = a.avatarInitials||'';
+  document.getElementById('am-avatar-url').value= a.avatarImage||'';
+  amAvatarData = a.avatarImage||'';
+
+  amSocial   = JSON.parse(JSON.stringify(a.social   || [{id:1,label:'LinkedIn',url:'#',icon:'linkedin'}]));
+  amTags     = JSON.parse(JSON.stringify(a.expertise || []));
+  amStats    = JSON.parse(JSON.stringify(a.stats    || [{value:'',label:''}]));
+
+  updateAMPreview();
+  renderAMSocial();
+  renderAMTags();
+  renderAMStats();
+  openModal('author-modal');
+}
+
+function updateAMPreview(){
+  const ini = document.getElementById('am-initials').value||'?';
+  const url = amAvatarData || document.getElementById('am-avatar-url')?.value;
+  const prev = document.getElementById('am-avatar-preview');
+  if(url){ prev.innerHTML=`<img src="${esc(url)}" style="width:100%;height:100%;object-fit:cover;">`; }
+  else   { prev.textContent = ini; }
+}
+
+/* Avatar file upload inside modal */
+document.getElementById('am-avatar-file')?.addEventListener('change', function(){
+  const file=this.files[0]; if(!file) return;
+  const reader=new FileReader();
+  reader.onload=e=>{ amAvatarData=e.target.result; updateAMPreview(); };
+  reader.readAsDataURL(file);
+  this.value='';
+});
+
+/* Social rows in author modal */
+function renderAMSocial(){
+  const c=document.getElementById('am-social-rows');
+  c.innerHTML=amSocial.map((s,i)=>`
+    <div style="display:grid;grid-template-columns:110px 1fr 110px auto;gap:8px;align-items:center;">
+      <input value="${esc(s.label)}" placeholder="Label"
+             style="padding:7px 10px;border:1.5px solid var(--border);border-radius:7px;font-size:13px;"
+             onchange="amSocial[${i}].label=this.value">
+      <input value="${esc(s.url)}" placeholder="URL"
+             style="padding:7px 10px;border:1.5px solid var(--border);border-radius:7px;font-size:13px;"
+             onchange="amSocial[${i}].url=this.value">
+      <select style="padding:7px 10px;border:1.5px solid var(--border);border-radius:7px;font-size:13px;"
+              onchange="amSocial[${i}].icon=this.value">
+        ${['linkedin','twitter','email','rss'].map(ic=>`<option value="${ic}" ${s.icon===ic?'selected':''}>${ic}</option>`).join('')}
+      </select>
+      <button class="btn btn-danger btn-sm" onclick="amSocial.splice(${i},1);renderAMSocial()">✕</button>
+    </div>`).join('');
+}
+function addAMSocial(){
+  amSocial.push({id:uid(),label:'',url:'#',icon:'linkedin'});
+  renderAMSocial();
+}
+
+/* Tags in author modal */
+function renderAMTags(){
+  const c=document.getElementById('am-tag-chips');
+  c.innerHTML=amTags.map((t,i)=>
+    `<span class="tag-chip">${esc(t)}
+       <button onclick="amTags.splice(${i},1);renderAMTags()">×</button>
+     </span>`
+  ).join('');
+}
+function addAMTag(){
+  const inp=document.getElementById('am-tag-input');
+  const v=inp.value.trim(); if(!v) return;
+  amTags.push(v); inp.value=''; renderAMTags();
+}
+document.getElementById('am-tag-input')?.addEventListener('keydown',e=>{
+  if(e.key==='Enter'){e.preventDefault();addAMTag();}
+});
+
+/* Stats in author modal */
+function renderAMStats(){
+  const c=document.getElementById('am-stat-rows');
+  c.innerHTML=amStats.map((s,i)=>
+    `<div class="stat-row">
+       <input class="stat-val" value="${esc(s.value)}" placeholder="200+"
+              onchange="amStats[${i}].value=this.value">
+       <input class="stat-lbl" value="${esc(s.label)}" placeholder="Articles"
+              onchange="amStats[${i}].label=this.value">
+       <button class="btn btn-danger btn-sm"
+               onclick="amStats.splice(${i},1);renderAMStats()">✕</button>
+     </div>`
+  ).join('');
+}
+function addAMStat(){
+  amStats.push({value:'',label:''}); renderAMStats();
+}
+
+function saveAuthor(){
+  const name = document.getElementById('am-name').value.trim();
+  if(!name){ alert('Name is required.'); return; }
+
+  const avatarFinal = amAvatarData || document.getElementById('am-avatar-url').value.trim();
+
+  const author = {
+    id:             authorEditIndex!==null ? DATA.authorsList[authorEditIndex].id : uid(),
+    name,
+    eyebrow:        document.getElementById('am-eyebrow').value.trim(),
+    title:          document.getElementById('am-title').value.trim(),
+    company:        document.getElementById('am-company').value.trim(),
+    bio:            document.getElementById('am-bio').value.trim(),
+    avatarInitials: document.getElementById('am-initials').value.trim()||name.split(' ').map(w=>w[0]).join('').toUpperCase().slice(0,2),
+    avatarImage:    avatarFinal,
+    social:         JSON.parse(JSON.stringify(amSocial)),
+    expertise:      JSON.parse(JSON.stringify(amTags)),
+    stats:          amStats.filter(s=>s.value||s.label)
+  };
+
+  if(authorEditIndex !== null){
+    DATA.authorsList[authorEditIndex] = author;
+    /* If editing the active author, sync main profile too */
+    if(author.id === DATA.activeAuthorId) setActiveAuthor(author.id);
+  } else {
+    DATA.authorsList.push(author);
+  }
+
+  persist();
+  closeModal('author-modal');
+  renderAuthorsPanel();
+  toast(authorEditIndex!==null ? 'Author updated!' : 'New author added!');
+}
+
+
 /* ══════════════ BOOT ══════════════ */
 document.addEventListener('DOMContentLoaded',()=>{
+  ensureAuthorsList();
   renderProfile();
+  renderAuthorsPanel(); // seeds active-author-name indicator
   // Pre-render article count badge in nav
   const articleBtn = document.querySelector('[data-panel="articles"]');
   if(articleBtn){

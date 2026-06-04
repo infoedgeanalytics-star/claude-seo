@@ -4,7 +4,36 @@
 
 const STORAGE_KEY = 'authorProfileData';
 
+/* Default authors list — seeded from the main profile below */
+const DEFAULT_AUTHORS_LIST = [
+  {
+    id: 1,
+    name:           'Priya Sharma',
+    eyebrow:        'Career Expert',
+    title:          'Senior Career Advisor & Resume Expert',
+    company:        'Naukri360',
+    bio:            'With 12+ years in HR, talent acquisition, and career coaching, Priya has helped over 50,000 professionals across India craft winning resumes and land jobs at top companies including TCS, Infosys, Accenture, and HDFC Bank.',
+    avatarInitials: 'PS',
+    avatarImage:    '',
+    social: [
+      { id: 1, label: 'LinkedIn', url: '#', icon: 'linkedin' },
+      { id: 2, label: 'Twitter',  url: '#', icon: 'twitter'  },
+      { id: 3, label: 'Contact',  url: 'mailto:priya@naukri360.com', icon: 'email' }
+    ],
+    expertise: ['Resume Writing','ATS Optimisation','Interview Prep','Job Search Strategy'],
+    stats: [
+      { value: '200+',  label: 'Articles'    },
+      { value: '12 yrs',label: 'Experience'  },
+      { value: '50K+',  label: 'Helped'      },
+      { value: '4.9 ★', label: 'Rating'      }
+    ]
+  }
+];
+
 const DEFAULT_DATA = {
+  activeAuthorId: 1,
+  authorsList: DEFAULT_AUTHORS_LIST,
+
   profile: {
     name:           'Priya Sharma',
     eyebrow:        'Career Expert',
