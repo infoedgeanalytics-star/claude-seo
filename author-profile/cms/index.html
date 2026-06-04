@@ -483,6 +483,22 @@ img { max-width:100%; display:block; }
   <!-- ══════════ PANEL: Profile ══════════ -->
   <div class="cms-panel active" id="panel-profile">
 
+    <!-- Author Selector -->
+    <div class="cms-card" id="profile-author-selector-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Editing Author</div>
+        <span style="font-size:12px;color:var(--muted);">Select a profile to edit below</span>
+      </div>
+      <div class="cms-card-body">
+        <div style="display:flex;align-items:center;gap:12px;flex-wrap:wrap;">
+          <select id="profile-author-select" class="form-input" style="flex:1;min-width:200px;font-weight:600;">
+          </select>
+          <button class="btn btn-primary btn-sm" onclick="applyProfileAuthorSwitch()">Load &amp; Edit</button>
+          <a href="#" class="btn btn-outline btn-sm" onclick="switchPanel('authors');return false;">Manage Authors</a>
+        </div>
+      </div>
+    </div>
+
     <!-- Avatar -->
     <div class="cms-card">
       <div class="cms-card-head">
@@ -1358,6 +1374,17 @@ function refreshPanel(id){
   fn?.();
 }
 
+function switchPanel(id){
+  document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+  document.querySelectorAll('.cms-panel').forEach(p=>p.classList.remove('active'));
+  const btn = document.querySelector(`[data-panel="${id}"]`);
+  if(btn) btn.classList.add('active');
+  const panel = document.getElementById('panel-'+id);
+  if(panel) panel.classList.add('active');
+  document.getElementById('panel-label').textContent = PANEL_LABELS[id]||id;
+  refreshPanel(id);
+}
+
 /* ══════════════ SAVE ALL ══════════════ */
 function saveAll(){
   collectProfile();
@@ -1378,6 +1405,24 @@ function renderProfile(){
   document.getElementById('avatar-url').value = p.avatarImage||'';
   updateAvatarPreview(p.avatarImage, p.avatarInitials);
   renderStatRows(p.stats, 'stat-rows', removeHeroStat);
+  /* Populate author selector dropdown */
+  ensureAuthorsList();
+  const sel = document.getElementById('profile-author-select');
+  if(sel){
+    sel.innerHTML = DATA.authorsList.map(a=>
+      `<option value="${a.id}" ${a.id===DATA.activeAuthorId?'selected':''}>${esc(a.name)} — ${esc(a.title||a.company||'')}</option>`
+    ).join('');
+  }
+}
+
+function applyProfileAuthorSwitch(){
+  const sel = document.getElementById('profile-author-select');
+  if(!sel) return;
+  const id = parseInt(sel.value,10);
+  if(id === DATA.activeAuthorId){ toast('Already editing this author.'); return; }
+  setActiveAuthor(id);
+  renderProfile();
+  toast('Switched to ' + (DATA.authorsList.find(a=>a.id===id)||{}).name);
 }
 
 function collectProfile(){
@@ -2391,9 +2436,10 @@ function renderAuthorsPanel(){
           }
         </td>
         <td style="white-space:nowrap;">
-          <button class="btn btn-outline btn-sm" onclick="openAuthorModal(${i})">Edit</button>
+          <button class="btn btn-primary btn-sm" onclick="editAuthorProfile(${a.id})" title="Switch to this author and edit their profile">✏️ Edit Profile</button>
+          <button class="btn btn-outline btn-sm" onclick="openAuthorModal(${i})" style="margin-left:4px;" title="Edit author meta (name, title, company)">Details</button>
           ${!isActive
-            ? `<button class="btn btn-danger btn-sm" onclick="deleteAuthor(${i})" style="margin-left:6px;">Delete</button>`
+            ? `<button class="btn btn-danger btn-sm" onclick="deleteAuthor(${i})" style="margin-left:4px;">Delete</button>`
             : `<span style="display:inline-block;width:62px;"></span>`
           }
         </td>
@@ -2427,6 +2473,11 @@ function setActiveAuthor(id){
   persist();
   renderAuthorsPanel();
   toast(`"${author.name}" is now the active author!`);
+}
+
+function editAuthorProfile(id){
+  if(id !== DATA.activeAuthorId) setActiveAuthor(id);
+  switchPanel('profile');
 }
 
 function deleteAuthor(i){
