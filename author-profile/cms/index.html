@@ -1,0 +1,1644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CMS — Author Profile Editor</title>
+<style>
+/* ═══════════════════ TOKENS ═══════════════════ */
+:root {
+  --p:      #4A3AFF;
+  --p-dim:  rgba(74,58,255,.09);
+  --p-mid:  #5B4DFF;
+  --blue:   #275df5;
+  --navy:   #121224;
+  --dark:   #1a1a2e;
+  --mid:    #3d3d5c;
+  --muted:  #717b9e;
+  --bg:     #f4f4fb;
+  --white:  #ffffff;
+  --border: #e2e2f0;
+  --gold:   #E8A413;
+  --green:  #059669;
+  --red:    #e53e3e;
+  --shadow: 0 2px 12px rgba(30,10,58,.08);
+  --r:      10px;
+  --rp:     100px;
+}
+*,*::before,*::after { box-sizing:border-box; margin:0; padding:0; }
+html { font-size:15px; }
+body {
+  font-family: 'Inter',-apple-system,BlinkMacSystemFont,'Segoe UI',Arial,sans-serif;
+  background: var(--bg); color: var(--dark);
+  display: flex; min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+}
+a { text-decoration:none; color:inherit; }
+ul { list-style:none; }
+input,textarea,select,button { font-family:inherit; font-size:inherit; }
+input:focus,textarea:focus,select:focus { outline:2px solid var(--p); outline-offset:2px; }
+img { max-width:100%; display:block; }
+
+/* ═══════════════════ SIDEBAR ═══════════════════ */
+.cms-sidebar {
+  width: 230px; flex-shrink:0;
+  background: var(--navy);
+  display: flex; flex-direction:column;
+  position: sticky; top:0; height:100vh;
+  overflow-y: auto;
+}
+
+.cms-brand {
+  padding: 20px 20px 16px;
+  border-bottom: 1px solid rgba(255,255,255,.08);
+}
+.cms-brand-logo {
+  font-size: 17px; font-weight:800; color:#fff; letter-spacing:-.3px;
+}
+.cms-brand-logo span { color: var(--gold); }
+.cms-brand-sub { font-size:11px; color:rgba(255,255,255,.4); margin-top:3px; }
+
+.cms-nav { flex:1; padding:12px 10px; display:flex; flex-direction:column; gap:2px; }
+
+.nav-section-label {
+  font-size: 10px; font-weight:700; color:rgba(255,255,255,.3);
+  text-transform:uppercase; letter-spacing:.8px;
+  padding: 12px 10px 4px;
+}
+
+.nav-btn {
+  display:flex; align-items:center; gap:9px;
+  padding: 9px 12px; border-radius:8px;
+  font-size:13.5px; font-weight:500;
+  color: rgba(255,255,255,.65);
+  cursor:pointer; border:none; background:none;
+  width:100%; text-align:left;
+  transition: background .15s, color .15s;
+}
+.nav-btn:hover  { background:rgba(255,255,255,.08); color:#fff; }
+.nav-btn.active { background: var(--p); color:#fff; font-weight:600; }
+.nav-btn .icon  { font-size:16px; flex-shrink:0; }
+
+.cms-sidebar-foot {
+  padding: 12px 10px 16px;
+  border-top: 1px solid rgba(255,255,255,.08);
+  display:flex; flex-direction:column; gap:6px;
+}
+
+.sidebar-action-btn {
+  display:flex; align-items:center; justify-content:center; gap:7px;
+  padding:9px 14px; border-radius:8px;
+  font-size:12.5px; font-weight:600; cursor:pointer; border:none;
+  transition: all .15s;
+}
+.btn-preview {
+  background: rgba(255,255,255,.1); color:#fff;
+}
+.btn-preview:hover { background:rgba(255,255,255,.18); }
+.btn-reset {
+  background: rgba(229,62,62,.15); color:#fca5a5;
+}
+.btn-reset:hover { background:rgba(229,62,62,.28); }
+
+/* ═══════════════════ MAIN ═══════════════════ */
+.cms-main {
+  flex:1; display:flex; flex-direction:column; overflow:hidden;
+}
+
+/* Top bar */
+.cms-topbar {
+  background: var(--white);
+  border-bottom: 1px solid var(--border);
+  padding: 14px 28px;
+  display:flex; align-items:center; justify-content:space-between;
+  position:sticky; top:0; z-index:50;
+  box-shadow: var(--shadow);
+}
+.topbar-title { font-size:16px; font-weight:700; color:var(--dark); }
+.topbar-title span { color:var(--p); }
+
+.topbar-actions { display:flex; gap:10px; align-items:center; }
+
+.btn { display:inline-flex; align-items:center; gap:6px;
+       padding:8px 18px; border-radius:var(--rp);
+       font-size:13px; font-weight:600; cursor:pointer; border:none;
+       transition: all .15s; }
+.btn-save   { background:var(--p); color:#fff; }
+.btn-save:hover { background:var(--p-mid); box-shadow:0 4px 14px rgba(74,58,255,.35); }
+.btn-outline { background:transparent; color:var(--p); border:1.5px solid var(--p); }
+.btn-outline:hover { background:var(--p-dim); }
+.btn-danger { background:transparent; color:var(--red); border:1.5px solid var(--red); }
+.btn-danger:hover { background:rgba(229,62,62,.08); }
+.btn-green  { background:var(--green); color:#fff; }
+.btn-green:hover { opacity:.9; }
+.btn-sm { padding:6px 14px; font-size:12.5px; }
+
+/* Toast */
+.toast {
+  position:fixed; bottom:28px; right:28px;
+  background:var(--dark); color:#fff;
+  padding:12px 20px; border-radius:10px;
+  font-size:13.5px; font-weight:600;
+  box-shadow: 0 8px 28px rgba(0,0,0,.25);
+  z-index:9999; display:none;
+  align-items:center; gap:8px;
+}
+.toast.show { display:flex; animation:slideUp .25s ease; }
+@keyframes slideUp { from { opacity:0; transform:translateY(12px); } to { opacity:1; transform:translateY(0); } }
+
+/* ═══════════════════ PANELS ═══════════════════ */
+.cms-panel { display:none; flex:1; overflow-y:auto; padding:28px; }
+.cms-panel.active { display:block; }
+
+/* Card */
+.cms-card {
+  background:var(--white); border-radius:var(--r);
+  border:1px solid var(--border);
+  box-shadow: var(--shadow);
+  margin-bottom:22px;
+}
+.cms-card-head {
+  padding:16px 22px;
+  border-bottom:1px solid var(--border);
+  display:flex; align-items:center; justify-content:space-between;
+}
+.cms-card-title { font-size:14px; font-weight:700; color:var(--dark); }
+.cms-card-body  { padding:22px; }
+
+/* Form */
+.form-grid { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.form-full  { grid-column:1/-1; }
+
+.field { display:flex; flex-direction:column; gap:5px; }
+.field label { font-size:12.5px; font-weight:600; color:var(--mid); }
+
+.field input,
+.field textarea,
+.field select {
+  padding:9px 13px; border:1.5px solid var(--border);
+  border-radius:8px; font-size:13.5px; color:var(--dark);
+  background:var(--white);
+  transition: border-color .15s;
+}
+.field input:hover,
+.field textarea:hover { border-color:rgba(74,58,255,.3); }
+.field textarea { resize:vertical; min-height:90px; }
+
+.field-hint { font-size:11.5px; color:var(--muted); margin-top:2px; }
+
+/* Divider */
+.divider { height:1px; background:var(--border); margin:20px 0; }
+
+/* ─── Stats row editor ─── */
+.stat-rows { display:flex; flex-direction:column; gap:10px; }
+.stat-row {
+  display:grid; grid-template-columns:1fr 1fr auto;
+  gap:10px; align-items:center;
+}
+.stat-row input { padding:8px 11px; border:1.5px solid var(--border);
+                  border-radius:8px; font-size:13px; }
+
+/* ─── Social links editor ─── */
+.social-rows { display:flex; flex-direction:column; gap:10px; }
+.social-row-item {
+  display:grid; grid-template-columns:110px 1fr 110px auto;
+  gap:10px; align-items:center;
+}
+.social-row-item input,
+.social-row-item select {
+  padding:8px 11px; border:1.5px solid var(--border);
+  border-radius:8px; font-size:13px;
+}
+
+/* ─── Tag chip editor ─── */
+.tag-chips { display:flex; flex-wrap:wrap; gap:8px; margin-bottom:12px; }
+.tag-chip {
+  display:inline-flex; align-items:center; gap:5px;
+  padding:5px 12px; border-radius:var(--rp);
+  background:var(--p-dim); border:1.5px solid rgba(74,58,255,.2);
+  font-size:13px; font-weight:500; color:var(--p);
+}
+.tag-chip button {
+  background:none; border:none; cursor:pointer;
+  color:var(--p); line-height:1; font-size:15px; padding:0 0 0 2px;
+  transition:color .12s;
+}
+.tag-chip button:hover { color:var(--red); }
+
+.add-tag-row { display:flex; gap:8px; }
+.add-tag-row input {
+  flex:1; padding:8px 12px; border:1.5px solid var(--border);
+  border-radius:8px; font-size:13px;
+}
+
+/* ─── List table (credentials, topics, etc.) ─── */
+.list-table { width:100%; border-collapse:collapse; }
+.list-table th {
+  text-align:left; font-size:11.5px; font-weight:700;
+  color:var(--muted); text-transform:uppercase; letter-spacing:.5px;
+  padding:8px 12px; border-bottom:1px solid var(--border);
+}
+.list-table td {
+  padding:11px 12px; border-bottom:1px solid var(--border);
+  font-size:13.5px; vertical-align:middle;
+}
+.list-table tr:last-child td { border-bottom:none; }
+.list-table tr:hover td { background:var(--p-dim); }
+
+.badge-tag {
+  display:inline-block; padding:2px 10px; border-radius:var(--rp);
+  font-size:11.5px; font-weight:600;
+}
+.badge-featured { background:#fef3c7; color:#b45309; }
+.badge-normal   { background:#f0f0f8; color:var(--muted); }
+
+/* ─── Article form modal ─── */
+.modal-backdrop {
+  position:fixed; inset:0; background:rgba(18,18,36,.55);
+  z-index:200; display:none; align-items:center; justify-content:center;
+}
+.modal-backdrop.open { display:flex; }
+.modal {
+  background:var(--white); border-radius:14px;
+  width:min(680px,95vw); max-height:90vh;
+  overflow-y:auto; padding:28px;
+  box-shadow:0 20px 60px rgba(0,0,0,.25);
+  animation: popIn .2s ease;
+}
+@keyframes popIn { from{opacity:0;transform:scale(.96)} to{opacity:1;transform:scale(1)} }
+.modal-head {
+  display:flex; align-items:center; justify-content:space-between;
+  margin-bottom:22px;
+}
+.modal-title { font-size:16px; font-weight:700; }
+.modal-close {
+  background:none; border:none; cursor:pointer;
+  font-size:22px; color:var(--muted); line-height:1;
+  transition:color .12s;
+}
+.modal-close:hover { color:var(--dark); }
+.modal-footer { display:flex; justify-content:flex-end; gap:10px; margin-top:22px; }
+
+/* ─── Image upload zone ─── */
+.upload-zone {
+  border:2px dashed var(--border); border-radius:10px;
+  padding:28px; text-align:center; cursor:pointer;
+  transition:border-color .15s, background .15s;
+  position:relative;
+}
+.upload-zone:hover,
+.upload-zone.drag-over {
+  border-color:var(--p); background:var(--p-dim);
+}
+.upload-zone input[type=file] {
+  position:absolute; inset:0; opacity:0; cursor:pointer;
+}
+.upload-zone-icon { font-size:36px; margin-bottom:8px; }
+.upload-zone-text { font-size:13.5px; color:var(--muted); }
+.upload-zone-text strong { color:var(--p); }
+
+.avatar-preview {
+  width:90px; height:90px; border-radius:50%;
+  object-fit:cover; border:3px solid var(--border);
+  margin:0 auto 12px;
+}
+
+/* ─── Color dot picker ─── */
+.color-options { display:flex; gap:8px; flex-wrap:wrap; }
+.color-opt {
+  width:28px; height:28px; border-radius:50%; cursor:pointer;
+  border:2.5px solid transparent; transition:border-color .12s;
+}
+.color-opt.selected { border-color:var(--dark); }
+.c1 { background:linear-gradient(135deg,#7c3aed,#4A3AFF); }
+.c2 { background:linear-gradient(135deg,#0284c7,#275df5); }
+.c3 { background:linear-gradient(135deg,#059669,#0d9488); }
+.c4 { background:linear-gradient(135deg,#d97706,#f59e0b); }
+
+/* ─── Emoji picker strip ─── */
+.emoji-options { display:flex; gap:8px; flex-wrap:wrap; }
+.emoji-opt {
+  width:36px; height:36px; border-radius:8px; font-size:20px;
+  cursor:pointer; border:1.5px solid var(--border);
+  display:flex; align-items:center; justify-content:center;
+  transition: border-color .12s, background .12s;
+}
+.emoji-opt.selected,
+.emoji-opt:hover { border-color:var(--p); background:var(--p-dim); }
+
+/* ─── Section head with add btn ─── */
+.section-head { display:flex; align-items:center; justify-content:space-between; margin-bottom:16px; }
+.section-head-title { font-size:14px; font-weight:700; color:var(--dark); }
+
+/* Empty state */
+.empty-state { text-align:center; padding:32px; color:var(--muted); font-size:13.5px; }
+
+/* ─── Drag handle ─── */
+.drag-handle { cursor:grab; color:var(--muted); font-size:18px; user-select:none; }
+.drag-handle:active { cursor:grabbing; }
+
+/* Responsive */
+@media(max-width:700px){
+  body { flex-direction:column; }
+  .cms-sidebar { width:100%; height:auto; position:static; flex-direction:row; flex-wrap:wrap; }
+  .cms-nav { flex-direction:row; flex-wrap:wrap; padding:8px; }
+  .nav-section-label { display:none; }
+  .form-grid { grid-template-columns:1fr; }
+  .social-row-item { grid-template-columns:1fr 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ════════════════════════ SIDEBAR ════════════════════════ -->
+<aside class="cms-sidebar">
+  <div class="cms-brand">
+    <div class="cms-brand-logo">Naukri<span>360</span></div>
+    <div class="cms-brand-sub">Author Profile CMS</div>
+  </div>
+
+  <nav class="cms-nav" aria-label="CMS sections">
+    <div class="nav-section-label">Profile</div>
+    <button class="nav-btn active" data-panel="profile">
+      <span class="icon">👤</span> Author Profile
+    </button>
+    <button class="nav-btn" data-panel="social">
+      <span class="icon">🔗</span> Social Links
+    </button>
+    <button class="nav-btn" data-panel="expertise">
+      <span class="icon">🏷️</span> Expertise Tags
+    </button>
+
+    <div class="nav-section-label">Content</div>
+    <button class="nav-btn" data-panel="articles">
+      <span class="icon">📝</span> Articles
+    </button>
+    <button class="nav-btn" data-panel="credentials">
+      <span class="icon">🏅</span> Credentials
+    </button>
+    <button class="nav-btn" data-panel="sidebar">
+      <span class="icon">📊</span> Sidebar Stats &amp; CTA
+    </button>
+    <button class="nav-btn" data-panel="topics">
+      <span class="icon">📂</span> Popular Topics
+    </button>
+
+    <div class="nav-section-label">Sections</div>
+    <button class="nav-btn" data-panel="publications">
+      <span class="icon">📚</span> Publications
+    </button>
+    <button class="nav-btn" data-panel="testimonials">
+      <span class="icon">💬</span> Testimonials
+    </button>
+    <button class="nav-btn" data-panel="related">
+      <span class="icon">👥</span> Related Authors
+    </button>
+    <button class="nav-btn" data-panel="images">
+      <span class="icon">🖼️</span> Images
+    </button>
+  </nav>
+
+  <div class="cms-sidebar-foot">
+    <button class="sidebar-action-btn btn-preview" onclick="openPreview()">
+      👁 Preview page
+    </button>
+    <button class="sidebar-action-btn btn-reset" onclick="confirmReset()">
+      ↺ Reset to defaults
+    </button>
+  </div>
+</aside>
+
+
+<!-- ════════════════════════ MAIN ════════════════════════ -->
+<div class="cms-main">
+
+  <!-- Top bar -->
+  <div class="cms-topbar">
+    <div class="topbar-title">Editing: <span id="panel-label">Author Profile</span></div>
+    <div class="topbar-actions">
+      <button class="btn btn-outline" onclick="openPreview()">👁 Preview</button>
+      <button class="btn btn-save" onclick="saveAll()">💾 Save Changes</button>
+    </div>
+  </div>
+
+  <!-- ══════════ PANEL: Profile ══════════ -->
+  <div class="cms-panel active" id="panel-profile">
+
+    <!-- Avatar -->
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Profile Photo</div>
+      </div>
+      <div class="cms-card-body">
+        <div style="display:flex;gap:24px;align-items:flex-start;flex-wrap:wrap;">
+          <div style="text-align:center;">
+            <img id="avatar-preview-img" class="avatar-preview"
+                 src="" alt="Avatar preview"
+                 style="display:none">
+            <div id="avatar-initials-preview"
+                 style="width:90px;height:90px;border-radius:50%;
+                        background:linear-gradient(135deg,#3a2fa0,#275df5);
+                        display:flex;align-items:center;justify-content:center;
+                        font-size:28px;font-weight:800;color:rgba(255,255,255,.85);
+                        margin:0 auto 10px;"></div>
+            <div style="font-size:12px;color:var(--muted);">Current avatar</div>
+          </div>
+          <div style="flex:1;">
+            <div class="upload-zone" id="avatar-drop-zone">
+              <input type="file" id="avatar-file" accept="image/*">
+              <div class="upload-zone-icon">📸</div>
+              <div class="upload-zone-text">
+                <strong>Click or drag</strong> to upload photo<br>
+                JPG, PNG, WebP — recommended 400×400 px
+              </div>
+            </div>
+            <div class="field" style="margin-top:12px;">
+              <label>Or paste image URL</label>
+              <input type="url" id="avatar-url" placeholder="https://example.com/photo.jpg">
+            </div>
+            <button class="btn btn-outline btn-sm" style="margin-top:10px"
+                    onclick="clearAvatar()">Remove photo (use initials)</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Basic info -->
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Basic Information</div>
+      </div>
+      <div class="cms-card-body">
+        <div class="form-grid">
+          <div class="field">
+            <label>Full Name</label>
+            <input type="text" id="p-name" placeholder="Priya Sharma">
+          </div>
+          <div class="field">
+            <label>Avatar Initials (if no photo)</label>
+            <input type="text" id="p-initials" maxlength="3" placeholder="PS">
+          </div>
+          <div class="field">
+            <label>Eyebrow Label</label>
+            <input type="text" id="p-eyebrow" placeholder="Career Expert">
+          </div>
+          <div class="field">
+            <label>Job Title</label>
+            <input type="text" id="p-title" placeholder="Senior Career Advisor">
+          </div>
+          <div class="field">
+            <label>Company / Organisation</label>
+            <input type="text" id="p-company" placeholder="Naukri360">
+          </div>
+          <div class="field form-full">
+            <label>Bio / About</label>
+            <textarea id="p-bio" rows="5" placeholder="Author bio..."></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Stats -->
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Hero Stats</div>
+        <button class="btn btn-outline btn-sm" onclick="addStat()">+ Add stat</button>
+      </div>
+      <div class="cms-card-body">
+        <div class="stat-rows" id="stat-rows"></div>
+      </div>
+    </div>
+
+  </div><!-- /panel-profile -->
+
+
+  <!-- ══════════ PANEL: Social Links ══════════ -->
+  <div class="cms-panel" id="panel-social">
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Social Media &amp; Contact Links</div>
+        <button class="btn btn-outline btn-sm" onclick="addSocialLink()">+ Add link</button>
+      </div>
+      <div class="cms-card-body">
+        <div style="font-size:12.5px;color:var(--muted);margin-bottom:14px;">
+          Icon options: <code>linkedin</code>, <code>twitter</code>,
+          <code>email</code>, <code>rss</code>
+        </div>
+        <div class="social-rows" id="social-rows"></div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════ PANEL: Expertise Tags ══════════ -->
+  <div class="cms-panel" id="panel-expertise">
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Expertise Tags</div>
+      </div>
+      <div class="cms-card-body">
+        <div class="tag-chips" id="expertise-chips"></div>
+        <div class="add-tag-row">
+          <input type="text" id="new-tag-input" placeholder="Add a new expertise tag…" maxlength="50">
+          <button class="btn btn-green" onclick="addTag()">+ Add</button>
+        </div>
+        <div class="field-hint" style="margin-top:8px;">
+          Click × on a tag to remove it. The first tag is shown as active by default.
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════ PANEL: Articles ══════════ -->
+  <div class="cms-panel" id="panel-articles">
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Articles</div>
+        <button class="btn btn-green" onclick="openArticleModal(null)">+ Add article</button>
+      </div>
+      <div class="cms-card-body" style="padding:0;">
+        <table class="list-table" id="article-table">
+          <thead>
+            <tr>
+              <th>Title</th>
+              <th>Category</th>
+              <th>Date</th>
+              <th>Read time</th>
+              <th>Status</th>
+              <th>Actions</th>
+            </tr>
+          </thead>
+          <tbody id="article-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════ PANEL: Credentials ══════════ -->
+  <div class="cms-panel" id="panel-credentials">
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Credentials &amp; Experience</div>
+        <button class="btn btn-green" onclick="addCredential()">+ Add</button>
+      </div>
+      <div class="cms-card-body" style="padding:0;">
+        <table class="list-table">
+          <thead><tr><th>Icon</th><th>Name</th><th>Detail</th><th>Actions</th></tr></thead>
+          <tbody id="credential-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════ PANEL: Sidebar Stats & CTA ══════════ -->
+  <div class="cms-panel" id="panel-sidebar">
+
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Sidebar Stats (2×2 grid)</div>
+        <button class="btn btn-outline btn-sm" onclick="addSidebarStat()">+ Add</button>
+      </div>
+      <div class="cms-card-body">
+        <div class="stat-rows" id="sidebar-stat-rows"></div>
+      </div>
+    </div>
+
+    <div class="cms-card">
+      <div class="cms-card-head"><div class="cms-card-title">CTA Card</div></div>
+      <div class="cms-card-body">
+        <div class="form-grid">
+          <div class="field">
+            <label>Icon (emoji)</label>
+            <input type="text" id="cta-icon" placeholder="✨" maxlength="4">
+          </div>
+          <div class="field">
+            <label>Button Label</label>
+            <input type="text" id="cta-label" placeholder="Try Free Now">
+          </div>
+          <div class="field">
+            <label>Button URL</label>
+            <input type="url" id="cta-url" placeholder="https://...">
+          </div>
+          <div class="field">
+            <label>Heading</label>
+            <input type="text" id="cta-title" placeholder="Build Your Resume with AI">
+          </div>
+          <div class="field form-full">
+            <label>Description</label>
+            <textarea id="cta-desc" rows="3"></textarea>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+
+  <!-- ══════════ PANEL: Popular Topics ══════════ -->
+  <div class="cms-panel" id="panel-topics">
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Popular Topics (sidebar)</div>
+        <button class="btn btn-green" onclick="addTopic()">+ Add topic</button>
+      </div>
+      <div class="cms-card-body" style="padding:0;">
+        <table class="list-table">
+          <thead><tr><th>Topic Name</th><th>Count Label</th><th>Actions</th></tr></thead>
+          <tbody id="topic-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════ PANEL: Publications ══════════ -->
+  <div class="cms-panel" id="panel-publications">
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Featured Publications / Guides</div>
+        <button class="btn btn-green" onclick="openPubModal(null)">+ Add</button>
+      </div>
+      <div class="cms-card-body" style="padding:0;">
+        <table class="list-table">
+          <thead><tr><th>Title</th><th>Date</th><th>Meta</th><th>Actions</th></tr></thead>
+          <tbody id="pub-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════ PANEL: Testimonials ══════════ -->
+  <div class="cms-panel" id="panel-testimonials">
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Reader Testimonials</div>
+        <button class="btn btn-green" onclick="openTestiModal(null)">+ Add</button>
+      </div>
+      <div class="cms-card-body" style="padding:0;">
+        <table class="list-table">
+          <thead><tr><th>Quote (preview)</th><th>Name</th><th>Role</th><th>Actions</th></tr></thead>
+          <tbody id="testi-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════ PANEL: Related Authors ══════════ -->
+  <div class="cms-panel" id="panel-related">
+    <div class="cms-card">
+      <div class="cms-card-head">
+        <div class="cms-card-title">Related / Other Authors</div>
+        <button class="btn btn-green" onclick="openRelatedModal(null)">+ Add</button>
+      </div>
+      <div class="cms-card-body" style="padding:0;">
+        <table class="list-table">
+          <thead><tr><th>Avatar</th><th>Name</th><th>Title</th><th>Articles</th><th>Actions</th></tr></thead>
+          <tbody id="related-tbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ══════════ PANEL: Images ══════════ -->
+  <div class="cms-panel" id="panel-images">
+    <div class="cms-card">
+      <div class="cms-card-head"><div class="cms-card-title">Image Manager</div></div>
+      <div class="cms-card-body">
+        <div class="upload-zone" id="img-drop-zone" style="margin-bottom:20px;">
+          <input type="file" id="img-file-input" accept="image/*" multiple>
+          <div class="upload-zone-icon">🖼️</div>
+          <div class="upload-zone-text">
+            <strong>Click or drag images</strong> to add them to the library<br>
+            They are stored as base64 in localStorage.
+          </div>
+        </div>
+        <div id="img-library" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:12px;"></div>
+      </div>
+    </div>
+    <div class="cms-card">
+      <div class="cms-card-head"><div class="cms-card-title">Usage Guide</div></div>
+      <div class="cms-card-body" style="font-size:13.5px;color:var(--mid);line-height:1.7;">
+        <p>After uploading, click <strong>Copy URL</strong> on any image to get its data URL,
+        then paste it into the <em>Author Profile → Or paste image URL</em> field to use it as
+        your avatar, or into article/publication thumbnail URLs.</p>
+        <p style="margin-top:10px;">Images are stored in <code>localStorage</code>
+        so they persist between page reloads — no server required.</p>
+      </div>
+    </div>
+  </div>
+
+</div><!-- /.cms-main -->
+
+
+<!-- ══════════════════ ARTICLE MODAL ══════════════════ -->
+<div class="modal-backdrop" id="article-modal">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title" id="article-modal-title">Add Article</div>
+      <button class="modal-close" onclick="closeModal('article-modal')">×</button>
+    </div>
+    <div class="form-grid">
+      <div class="field form-full">
+        <label>Title *</label>
+        <input type="text" id="a-title" placeholder="Article title">
+      </div>
+      <div class="field">
+        <label>Category</label>
+        <input type="text" id="a-category" placeholder="Resume Tips">
+      </div>
+      <div class="field">
+        <label>Date (YYYY-MM-DD)</label>
+        <input type="date" id="a-date">
+      </div>
+      <div class="field">
+        <label>Date Label (display)</label>
+        <input type="text" id="a-dateLabel" placeholder="May 28, 2026">
+      </div>
+      <div class="field">
+        <label>Read Time</label>
+        <input type="text" id="a-readTime" placeholder="8 min read">
+      </div>
+      <div class="field">
+        <label>Article URL</label>
+        <input type="url" id="a-url" placeholder="https://...">
+      </div>
+      <div class="field form-full">
+        <label>Excerpt / Summary</label>
+        <textarea id="a-excerpt" rows="3" placeholder="Short description..."></textarea>
+      </div>
+      <div class="field">
+        <label>Thumbnail Emoji</label>
+        <div class="emoji-options" id="emoji-opts">
+          <span class="emoji-opt" data-e="📄">📄</span>
+          <span class="emoji-opt" data-e="🎯">🎯</span>
+          <span class="emoji-opt" data-e="💼">💼</span>
+          <span class="emoji-opt" data-e="💰">💰</span>
+          <span class="emoji-opt" data-e="🔗">🔗</span>
+          <span class="emoji-opt" data-e="✍️">✍️</span>
+          <span class="emoji-opt" data-e="📊">📊</span>
+          <span class="emoji-opt" data-e="🚀">🚀</span>
+          <span class="emoji-opt" data-e="💡">💡</span>
+          <span class="emoji-opt" data-e="🏆">🏆</span>
+        </div>
+        <input type="text" id="a-emoji" placeholder="or type custom emoji" maxlength="4" style="margin-top:8px;">
+      </div>
+      <div class="field">
+        <label>Thumbnail Background (CSS gradient or color)</label>
+        <input type="text" id="a-thumbBg" placeholder="linear-gradient(135deg,#eef0ff,#dde0ff)">
+      </div>
+      <div class="field">
+        <label>Badge Text (optional)</label>
+        <input type="text" id="a-badge" placeholder="Featured">
+      </div>
+      <div class="field">
+        <label>Badge Style</label>
+        <select id="a-badgeStyle">
+          <option value="">None / default (purple)</option>
+          <option value="gold">Gold</option>
+          <option value="green">Green</option>
+        </select>
+      </div>
+      <div class="field form-full" style="flex-direction:row;align-items:center;gap:10px;">
+        <input type="checkbox" id="a-featured" style="width:18px;height:18px;cursor:pointer;">
+        <label for="a-featured" style="font-size:13.5px;font-weight:600;cursor:pointer;">
+          Mark as Featured Article (shown full-width at top)
+        </label>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('article-modal')">Cancel</button>
+      <button class="btn btn-save" onclick="saveArticle()">Save Article</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════ PUBLICATION MODAL ══════════════════ -->
+<div class="modal-backdrop" id="pub-modal">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title" id="pub-modal-title">Add Publication</div>
+      <button class="modal-close" onclick="closeModal('pub-modal')">×</button>
+    </div>
+    <div class="form-grid">
+      <div class="field form-full">
+        <label>Title *</label>
+        <input type="text" id="pub-title" placeholder="Publication title">
+      </div>
+      <div class="field form-full">
+        <label>Description</label>
+        <textarea id="pub-desc" rows="3"></textarea>
+      </div>
+      <div class="field">
+        <label>Date (YYYY-MM-DD)</label>
+        <input type="date" id="pub-date">
+      </div>
+      <div class="field">
+        <label>Date Label</label>
+        <input type="text" id="pub-dateLabel" placeholder="March 2026">
+      </div>
+      <div class="field">
+        <label>Meta (e.g. "25 min read")</label>
+        <input type="text" id="pub-meta" placeholder="Deep Dive · 25 min read">
+      </div>
+      <div class="field">
+        <label>URL</label>
+        <input type="url" id="pub-url" placeholder="https://...">
+      </div>
+      <div class="field">
+        <label>Icon Emoji</label>
+        <input type="text" id="pub-emoji" placeholder="📊" maxlength="4">
+      </div>
+      <div class="field">
+        <label>Icon Color Class</label>
+        <select id="pub-iconClass">
+          <option value="purple">Purple</option>
+          <option value="blue">Blue</option>
+          <option value="green">Green</option>
+        </select>
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('pub-modal')">Cancel</button>
+      <button class="btn btn-save" onclick="savePub()">Save Publication</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════ TESTIMONIAL MODAL ══════════════════ -->
+<div class="modal-backdrop" id="testi-modal">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title" id="testi-modal-title">Add Testimonial</div>
+      <button class="modal-close" onclick="closeModal('testi-modal')">×</button>
+    </div>
+    <div class="form-grid">
+      <div class="field form-full">
+        <label>Quote *</label>
+        <textarea id="t-quote" rows="4" placeholder="Reader's testimonial..."></textarea>
+      </div>
+      <div class="field">
+        <label>Name</label>
+        <input type="text" id="t-name" placeholder="Rahul Verma">
+      </div>
+      <div class="field">
+        <label>Role / Company</label>
+        <input type="text" id="t-role" placeholder="Software Engineer at Infosys">
+      </div>
+      <div class="field">
+        <label>Avatar Initial</label>
+        <input type="text" id="t-initial" maxlength="2" placeholder="R">
+      </div>
+      <div class="field">
+        <label>Avatar Color</label>
+        <div class="color-options" id="testi-color-opts">
+          <div class="color-opt c1" data-c="c1" title="Purple"></div>
+          <div class="color-opt c2" data-c="c2" title="Blue"></div>
+          <div class="color-opt c3" data-c="c3" title="Green"></div>
+          <div class="color-opt c4" data-c="c4" title="Gold"></div>
+        </div>
+        <input type="hidden" id="t-color" value="c1">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('testi-modal')">Cancel</button>
+      <button class="btn btn-save" onclick="saveTestimonial()">Save Testimonial</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- ══════════════════ RELATED AUTHOR MODAL ══════════════════ -->
+<div class="modal-backdrop" id="related-modal">
+  <div class="modal">
+    <div class="modal-head">
+      <div class="modal-title" id="related-modal-title">Add Related Author</div>
+      <button class="modal-close" onclick="closeModal('related-modal')">×</button>
+    </div>
+    <div class="form-grid">
+      <div class="field">
+        <label>Name *</label>
+        <input type="text" id="rel-name" placeholder="Rajesh Iyer">
+      </div>
+      <div class="field">
+        <label>Avatar Initial</label>
+        <input type="text" id="rel-initial" maxlength="2" placeholder="R">
+      </div>
+      <div class="field form-full">
+        <label>Title / Specialisation</label>
+        <input type="text" id="rel-title" placeholder="Senior HR Practitioner">
+      </div>
+      <div class="field">
+        <label>Articles Count Label</label>
+        <input type="text" id="rel-articles" placeholder="68 articles">
+      </div>
+      <div class="field">
+        <label>Profile URL</label>
+        <input type="url" id="rel-url" placeholder="https://...">
+      </div>
+      <div class="field form-full">
+        <label>Avatar Color</label>
+        <div class="color-options" id="related-color-opts">
+          <div class="color-opt c1" data-c="c1"></div>
+          <div class="color-opt c2" data-c="c2"></div>
+          <div class="color-opt c3" data-c="c3"></div>
+          <div class="color-opt c4" data-c="c4"></div>
+        </div>
+        <input type="hidden" id="rel-color" value="c1">
+      </div>
+    </div>
+    <div class="modal-footer">
+      <button class="btn btn-outline" onclick="closeModal('related-modal')">Cancel</button>
+      <button class="btn btn-save" onclick="saveRelated()">Save Author</button>
+    </div>
+  </div>
+</div>
+
+
+<!-- Toast -->
+<div class="toast" id="toast"></div>
+
+
+<!-- ════════════════════════ SCRIPTS ════════════════════════ -->
+<script>
+/* Load data layer from parent folder */
+const STORAGE_KEY = 'authorProfileData';
+const IMG_KEY     = 'authorProfileImages';
+
+const DEFAULT_DATA = {
+  profile:{ name:'Priya Sharma', eyebrow:'Career Expert',
+    title:'Senior Career Advisor & Resume Expert', company:'Naukri360',
+    bio:'With 12+ years in HR, talent acquisition, and career coaching, Priya has helped over 50,000 professionals across India craft winning resumes and land jobs at top companies including TCS, Infosys, Accenture, and HDFC Bank. She specialises in ATS-optimised resume writing, interview preparation, and navigating India\'s competitive job market.',
+    avatarInitials:'PS', avatarImage:'',
+    stats:[
+      {value:'200+',label:'Articles'},{value:'12 yrs',label:'Experience'},
+      {value:'50K+',label:'Helped'},{value:'2.4M',label:'Total Reads'},
+      {value:'4.9 ★',label:'Rating'}
+    ]
+  },
+  social:[
+    {id:1,label:'LinkedIn',url:'#',icon:'linkedin'},
+    {id:2,label:'Twitter', url:'#',icon:'twitter'},
+    {id:3,label:'Contact', url:'mailto:priya@naukri360.com',icon:'email'},
+    {id:4,label:'RSS Feed',url:'#',icon:'rss'}
+  ],
+  expertise:['Resume Writing','ATS Optimisation','Interview Prep','Job Search Strategy','LinkedIn Optimisation','Career Switching','Salary Negotiation'],
+  articles:[
+    {id:1,featured:true,title:'The Complete ATS Resume Guide for Indian Job Seekers in 2026',category:'Resume Tips',date:'2026-05-28',dateLabel:'May 28, 2026',excerpt:'87% of large Indian companies now use Applicant Tracking Systems before a human ever sees your resume.',readTime:'12 min read',emoji:'📄',thumbBg:'linear-gradient(135deg,#eef0ff 0%,#dde0ff 100%)',badge:'Featured',badgeStyle:'gold',url:'#'},
+    {id:2,featured:false,title:'30 Most Common HR Interview Questions (With Winning Answers)',category:'Interview Prep',date:'2026-05-20',dateLabel:'May 20, 2026',excerpt:'Master the questions every Indian recruiter asks in the first round.',readTime:'9 min read',emoji:'🎯',thumbBg:'linear-gradient(135deg,#fff0f0 0%,#ffe4e4 100%)',badge:'',badgeStyle:'',url:'#'},
+    {id:3,featured:false,title:'How to Switch Careers at 30 in India Without Starting Over',category:'Career Growth',date:'2026-05-14',dateLabel:'May 14, 2026',excerpt:'A practical playbook for mid-career professionals.',readTime:'8 min read',emoji:'💼',thumbBg:'linear-gradient(135deg,#f0fff4 0%,#dcfce7 100%)',badge:'',badgeStyle:'',url:'#'},
+    {id:4,featured:false,title:'Salary Negotiation Scripts That Earned Indians ₹2–5L More',category:'Salary',date:'2026-05-08',dateLabel:'May 8, 2026',excerpt:'Word-for-word scripts for negotiating your offer.',readTime:'7 min read',emoji:'💰',thumbBg:'linear-gradient(135deg,#fffbeb 0%,#fef3c7 100%)',badge:'',badgeStyle:'',url:'#'},
+    {id:5,featured:false,title:'LinkedIn Profile Optimisation: The 2026 Checklist',category:'Job Search',date:'2026-04-30',dateLabel:'Apr 30, 2026',excerpt:'Recruiters spend 11 seconds on your LinkedIn.',readTime:'10 min read',emoji:'🔗',thumbBg:'linear-gradient(135deg,#f0f4ff 0%,#e0e7ff 100%)',badge:'',badgeStyle:'',url:'#'},
+    {id:6,featured:false,title:'Resume Summary vs Objective: Which One Should You Use in 2026?',category:'Resume Tips',date:'2026-04-22',dateLabel:'Apr 22, 2026',excerpt:'The objective isn\'t dead — but only one type of candidate should use it.',readTime:'5 min read',emoji:'✍️',thumbBg:'linear-gradient(135deg,#fdf2f8 0%,#fce7f3 100%)',badge:'',badgeStyle:'',url:'#'}
+  ],
+  credentials:[
+    {id:1,icon:'🎓',name:'MBA – HR & OB',detail:'IIM Calcutta · 2013'},
+    {id:2,icon:'🏅',name:'SHRM-CP Certified',detail:'Society for Human Resource Mgmt'},
+    {id:3,icon:'💼',name:'Ex-Senior HR Manager',detail:'Infosys · 6 years'},
+    {id:4,icon:'🏢',name:'Ex-Talent Partner',detail:'Deloitte India · 4 years'}
+  ],
+  sidebarStats:[
+    {value:'200+',label:'Articles Published'},{value:'2.4M',label:'Total Reads'},
+    {value:'50K',label:'Professionals Helped'},{value:'4.9★',label:'Average Rating'}
+  ],
+  topics:[
+    {id:1,name:'ATS Resume Writing',count:'48 articles'},{id:2,name:'Interview Questions',count:'35 articles'},
+    {id:3,name:'Career Switching',count:'27 articles'},{id:4,name:'LinkedIn Tips',count:'22 articles'},
+    {id:5,name:'Salary Negotiation',count:'18 articles'},{id:6,name:'Fresher Job Tips',count:'15 articles'}
+  ],
+  cta:{icon:'✨',title:'Build Your Resume with AI',desc:'Get a job-winning resume in 10 minutes using Naukri360\'s AI-powered builder — trusted by 70M+ professionals.',label:'Try Free Now',url:'#'},
+  publications:[
+    {id:1,iconClass:'purple',emoji:'📊',title:'India Resume Benchmarks 2026: What Recruiters Actually Want',desc:'Analysis of 500,000+ Naukri profiles.',date:'2026-03-15',dateLabel:'March 2026',meta:'Deep Dive · 25 min read',url:'#'},
+    {id:2,iconClass:'blue',emoji:'🎯',title:'The Complete Job Interview Handbook for Indian Professionals',desc:'200-page guide covering every interview type.',date:'2026-01-20',dateLabel:'January 2026',meta:'Free Download',url:'#'},
+    {id:3,iconClass:'green',emoji:'💡',title:'Career Pivot Playbook: 1,000 Indians Who Changed Industries',desc:'Case studies, failure patterns, and transition frameworks.',date:'2025-11-10',dateLabel:'November 2025',meta:'Research · 18 min read',url:'#'}
+  ],
+  testimonials:[
+    {id:1,avatarInitial:'R',avatarColor:'c1',quote:'Priya\'s ATS guide was the single most useful thing I read during my job search.',name:'Rahul Verma',role:'Software Engineer at Infosys'},
+    {id:2,avatarInitial:'A',avatarColor:'c2',quote:'After following Priya\'s career switching framework, I moved from operations to product management.',name:'Ananya Iyer',role:'Product Manager at Zomato'},
+    {id:3,avatarInitial:'K',avatarColor:'c3',quote:'The salary negotiation script helped me get ₹3.2L more than the initial offer.',name:'Karan Malhotra',role:'Finance Analyst at HDFC Bank'}
+  ],
+  relatedAuthors:[
+    {id:1,initial:'R',color:'c1',name:'Rajesh Iyer',title:'Senior HR Practitioner & BFSI Hiring Specialist',articles:'68 articles',url:'#'},
+    {id:2,initial:'M',color:'c2',name:'Meera Kapoor',title:'Tech Recruiter & LinkedIn Optimisation Expert',articles:'54 articles',url:'#'},
+    {id:3,initial:'V',color:'c3',name:'Vivek Rathore',title:'Career Coach, IIT & MBA Campus Placements',articles:'91 articles',url:'#'},
+    {id:4,initial:'S',color:'c4',name:'Sunita Gupta',title:'Government Jobs & PSU Exam Strategist',articles:'47 articles',url:'#'}
+  ]
+};
+
+/* ── State ── */
+let DATA = loadData();
+let IMAGES = loadImages();
+let editingArticleId  = null;
+let editingPubId      = null;
+let editingTestiId    = null;
+let editingRelatedId  = null;
+let nextId = Date.now();
+
+function uid() { return ++nextId; }
+
+function loadData(){
+  try{ const s=localStorage.getItem(STORAGE_KEY); if(s) return JSON.parse(s); }catch(e){}
+  return JSON.parse(JSON.stringify(DEFAULT_DATA));
+}
+function persist(){ localStorage.setItem(STORAGE_KEY, JSON.stringify(DATA)); }
+function loadImages(){ try{ return JSON.parse(localStorage.getItem(IMG_KEY)||'[]'); }catch(e){ return []; } }
+function persistImages(){ localStorage.setItem(IMG_KEY, JSON.stringify(IMAGES)); }
+
+function esc(s){ return String(s??'').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+
+/* ══════════════ TOAST ══════════════ */
+function toast(msg, ok=true){
+  const el = document.getElementById('toast');
+  el.innerHTML = (ok?'✅ ':'❌ ') + esc(msg);
+  el.classList.add('show');
+  setTimeout(()=>el.classList.remove('show'), 2800);
+}
+
+/* ══════════════ NAV ══════════════ */
+const PANEL_LABELS = {
+  profile:'Author Profile', social:'Social Links', expertise:'Expertise Tags',
+  articles:'Articles', credentials:'Credentials', sidebar:'Sidebar Stats & CTA',
+  topics:'Popular Topics', publications:'Publications', testimonials:'Testimonials',
+  related:'Related Authors', images:'Image Manager'
+};
+
+document.querySelectorAll('.nav-btn').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    document.querySelectorAll('.nav-btn').forEach(b=>b.classList.remove('active'));
+    document.querySelectorAll('.cms-panel').forEach(p=>p.classList.remove('active'));
+    btn.classList.add('active');
+    const id = btn.dataset.panel;
+    document.getElementById('panel-'+id)?.classList.add('active');
+    document.getElementById('panel-label').textContent = PANEL_LABELS[id]||id;
+    refreshPanel(id);
+  });
+});
+
+function refreshPanel(id){
+  const fn = { profile:renderProfile, social:renderSocial, expertise:renderExpertise,
+    articles:renderArticles, credentials:renderCredentials,
+    sidebar:renderSidebarPanel, topics:renderTopics,
+    publications:renderPubs, testimonials:renderTestis,
+    related:renderRelated, images:renderImages }[id];
+  fn?.();
+}
+
+/* ══════════════ SAVE ALL ══════════════ */
+function saveAll(){
+  collectProfile();
+  collectCTA();
+  persist();
+  toast('Changes saved!');
+}
+
+/* ══════════════ PROFILE ══════════════ */
+function renderProfile(){
+  const p = DATA.profile;
+  document.getElementById('p-name').value     = p.name;
+  document.getElementById('p-initials').value = p.avatarInitials;
+  document.getElementById('p-eyebrow').value  = p.eyebrow;
+  document.getElementById('p-title').value    = p.title;
+  document.getElementById('p-company').value  = p.company;
+  document.getElementById('p-bio').value      = p.bio;
+  document.getElementById('avatar-url').value = p.avatarImage||'';
+  updateAvatarPreview(p.avatarImage, p.avatarInitials);
+  renderStatRows(p.stats, 'stat-rows', removeHeroStat);
+}
+
+function collectProfile(){
+  DATA.profile.name           = document.getElementById('p-name').value.trim();
+  DATA.profile.avatarInitials = document.getElementById('p-initials').value.trim();
+  DATA.profile.eyebrow        = document.getElementById('p-eyebrow').value.trim();
+  DATA.profile.title          = document.getElementById('p-title').value.trim();
+  DATA.profile.company        = document.getElementById('p-company').value.trim();
+  DATA.profile.bio            = document.getElementById('p-bio').value.trim();
+  const urlField = document.getElementById('avatar-url').value.trim();
+  if(urlField) DATA.profile.avatarImage = urlField;
+  // collect stats
+  DATA.profile.stats = [];
+  document.querySelectorAll('#stat-rows .stat-row').forEach(row=>{
+    const v = row.querySelector('.stat-val')?.value.trim();
+    const l = row.querySelector('.stat-lbl')?.value.trim();
+    if(v||l) DATA.profile.stats.push({value:v,label:l});
+  });
+}
+
+function updateAvatarPreview(url, initials){
+  const img = document.getElementById('avatar-preview-img');
+  const ini = document.getElementById('avatar-initials-preview');
+  ini.textContent = initials||'';
+  if(url){ img.src=url; img.style.display='block'; ini.style.display='none'; }
+  else   { img.style.display='none'; ini.style.display='flex'; }
+}
+
+function clearAvatar(){
+  DATA.profile.avatarImage = '';
+  document.getElementById('avatar-url').value = '';
+  updateAvatarPreview('', DATA.profile.avatarInitials);
+}
+
+/* Avatar file upload */
+document.getElementById('avatar-file').addEventListener('change', function(){
+  const file = this.files[0]; if(!file) return;
+  const reader = new FileReader();
+  reader.onload = e=>{
+    DATA.profile.avatarImage = e.target.result;
+    document.getElementById('avatar-url').value = '';
+    updateAvatarPreview(e.target.result, DATA.profile.avatarInitials);
+    persist(); toast('Avatar updated!');
+  };
+  reader.readAsDataURL(file);
+});
+
+document.getElementById('p-initials').addEventListener('input', function(){
+  document.getElementById('avatar-initials-preview').textContent = this.value;
+});
+
+/* Stat rows (shared by hero stats + sidebar stats) */
+function renderStatRows(arr, containerId, removeFn){
+  const c = document.getElementById(containerId);
+  c.innerHTML = arr.map((s,i)=>
+    `<div class="stat-row">
+       <input class="stat-val" value="${esc(s.value)}" placeholder="200+">
+       <input class="stat-lbl" value="${esc(s.label)}" placeholder="Articles">
+       <button class="btn btn-danger btn-sm" onclick="${removeFn.name}(${i})" title="Remove">✕</button>
+     </div>`
+  ).join('');
+}
+
+function removeHeroStat(i){ DATA.profile.stats.splice(i,1); renderStatRows(DATA.profile.stats,'stat-rows',removeHeroStat); }
+function addStat(){
+  DATA.profile.stats.push({value:'',label:''});
+  renderStatRows(DATA.profile.stats,'stat-rows',removeHeroStat);
+}
+
+/* ══════════════ SOCIAL ══════════════ */
+function renderSocial(){
+  const c = document.getElementById('social-rows');
+  c.innerHTML = DATA.social.map((s,i)=>
+    `<div class="social-row-item">
+       <input value="${esc(s.label)}" placeholder="Label" onchange="DATA.social[${i}].label=this.value">
+       <input value="${esc(s.url)}" placeholder="URL" onchange="DATA.social[${i}].url=this.value">
+       <select onchange="DATA.social[${i}].icon=this.value">
+         ${['linkedin','twitter','email','rss'].map(ic=>
+           `<option value="${ic}" ${s.icon===ic?'selected':''}>${ic}</option>`).join('')}
+       </select>
+       <button class="btn btn-danger btn-sm" onclick="removeSocial(${i})">✕</button>
+     </div>`
+  ).join('');
+}
+
+function removeSocial(i){ DATA.social.splice(i,1); renderSocial(); }
+function addSocialLink(){
+  DATA.social.push({id:uid(),label:'',url:'#',icon:'linkedin'}); renderSocial();
+}
+
+/* ══════════════ EXPERTISE ══════════════ */
+function renderExpertise(){
+  const c = document.getElementById('expertise-chips');
+  c.innerHTML = DATA.expertise.map((t,i)=>
+    `<span class="tag-chip">${esc(t)}
+       <button onclick="removeTag(${i})" title="Remove tag">×</button>
+     </span>`
+  ).join('');
+}
+function removeTag(i){ DATA.expertise.splice(i,1); renderExpertise(); }
+function addTag(){
+  const inp = document.getElementById('new-tag-input');
+  const v = inp.value.trim(); if(!v) return;
+  DATA.expertise.push(v); inp.value=''; renderExpertise();
+}
+document.getElementById('new-tag-input').addEventListener('keydown',e=>{
+  if(e.key==='Enter'){ e.preventDefault(); addTag(); }
+});
+
+/* ══════════════ ARTICLES ══════════════ */
+function renderArticles(){
+  const tb = document.getElementById('article-tbody');
+  if(!DATA.articles.length){
+    tb.innerHTML=`<tr><td colspan="6" class="empty-state">No articles yet. Click + Add article.</td></tr>`;
+    return;
+  }
+  tb.innerHTML = DATA.articles.map((a,i)=>`
+    <tr>
+      <td style="max-width:260px;font-weight:600;">${esc(a.title)}</td>
+      <td>${esc(a.category)}</td>
+      <td>${esc(a.dateLabel)}</td>
+      <td>${esc(a.readTime)}</td>
+      <td>
+        <span class="badge-tag ${a.featured?'badge-featured':'badge-normal'}">
+          ${a.featured?'⭐ Featured':'Regular'}
+        </span>
+      </td>
+      <td style="white-space:nowrap;">
+        <button class="btn btn-outline btn-sm" onclick="openArticleModal(${i})">Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="removeArticle(${i})" style="margin-left:6px;">Delete</button>
+      </td>
+    </tr>`
+  ).join('');
+}
+
+function removeArticle(i){
+  if(!confirm('Delete this article?')) return;
+  DATA.articles.splice(i,1); persist(); renderArticles(); toast('Article deleted');
+}
+
+let articleEditIndex = null;
+
+function openArticleModal(idx){
+  articleEditIndex = idx;
+  const a = idx!==null ? DATA.articles[idx] : {};
+  document.getElementById('article-modal-title').textContent = idx!==null?'Edit Article':'Add Article';
+  document.getElementById('a-title').value    = a.title||'';
+  document.getElementById('a-category').value = a.category||'';
+  document.getElementById('a-date').value     = a.date||'';
+  document.getElementById('a-dateLabel').value= a.dateLabel||'';
+  document.getElementById('a-readTime').value = a.readTime||'';
+  document.getElementById('a-url').value      = a.url||'#';
+  document.getElementById('a-excerpt').value  = a.excerpt||'';
+  document.getElementById('a-emoji').value    = a.emoji||'';
+  document.getElementById('a-thumbBg').value  = a.thumbBg||'linear-gradient(135deg,#eef0ff,#dde0ff)';
+  document.getElementById('a-badge').value    = a.badge||'';
+  document.getElementById('a-badgeStyle').value = a.badgeStyle||'';
+  document.getElementById('a-featured').checked = !!a.featured;
+
+  // emoji selector
+  document.querySelectorAll('#emoji-opts .emoji-opt').forEach(el=>{
+    el.classList.toggle('selected', el.dataset.e === a.emoji);
+    el.onclick = ()=>{
+      document.querySelectorAll('#emoji-opts .emoji-opt').forEach(x=>x.classList.remove('selected'));
+      el.classList.add('selected');
+      document.getElementById('a-emoji').value = el.dataset.e;
+    };
+  });
+
+  openModal('article-modal');
+}
+
+function saveArticle(){
+  const title = document.getElementById('a-title').value.trim();
+  if(!title){ alert('Title is required.'); return; }
+  const a = {
+    id:          articleEditIndex!==null ? DATA.articles[articleEditIndex].id : uid(),
+    title,
+    category:    document.getElementById('a-category').value.trim(),
+    date:        document.getElementById('a-date').value,
+    dateLabel:   document.getElementById('a-dateLabel').value.trim(),
+    readTime:    document.getElementById('a-readTime').value.trim(),
+    url:         document.getElementById('a-url').value.trim()||'#',
+    excerpt:     document.getElementById('a-excerpt').value.trim(),
+    emoji:       document.getElementById('a-emoji').value.trim()||'📄',
+    thumbBg:     document.getElementById('a-thumbBg').value.trim(),
+    badge:       document.getElementById('a-badge').value.trim(),
+    badgeStyle:  document.getElementById('a-badgeStyle').value,
+    featured:    document.getElementById('a-featured').checked
+  };
+  // only one featured allowed
+  if(a.featured) DATA.articles.forEach(x=>x.featured=false);
+
+  if(articleEditIndex!==null) DATA.articles[articleEditIndex]=a;
+  else DATA.articles.push(a);
+  persist(); closeModal('article-modal'); renderArticles(); toast('Article saved!');
+}
+
+/* ══════════════ CREDENTIALS ══════════════ */
+function renderCredentials(){
+  const tb = document.getElementById('credential-tbody');
+  tb.innerHTML = DATA.credentials.map((c,i)=>`
+    <tr>
+      <td><input value="${esc(c.icon)}" maxlength="4" style="width:50px;padding:5px;border:1.5px solid var(--border);border-radius:6px;"
+                 onchange="DATA.credentials[${i}].icon=this.value"></td>
+      <td><input value="${esc(c.name)}" style="width:100%;padding:6px 8px;border:1.5px solid var(--border);border-radius:6px;"
+                 onchange="DATA.credentials[${i}].name=this.value"></td>
+      <td><input value="${esc(c.detail)}" style="width:100%;padding:6px 8px;border:1.5px solid var(--border);border-radius:6px;"
+                 onchange="DATA.credentials[${i}].detail=this.value"></td>
+      <td><button class="btn btn-danger btn-sm" onclick="removeCredential(${i})">✕</button></td>
+    </tr>`
+  ).join('');
+}
+
+function removeCredential(i){ DATA.credentials.splice(i,1); persist(); renderCredentials(); }
+function addCredential(){
+  DATA.credentials.push({id:uid(),icon:'🏅',name:'',detail:''});
+  persist(); renderCredentials();
+}
+
+/* ══════════════ SIDEBAR PANEL ══════════════ */
+function renderSidebarPanel(){
+  renderStatRows(DATA.sidebarStats,'sidebar-stat-rows',removeSidebarStat);
+  const c = DATA.cta;
+  document.getElementById('cta-icon').value  = c.icon;
+  document.getElementById('cta-title').value = c.title;
+  document.getElementById('cta-desc').value  = c.desc;
+  document.getElementById('cta-label').value = c.label;
+  document.getElementById('cta-url').value   = c.url;
+}
+
+function removeSidebarStat(i){ DATA.sidebarStats.splice(i,1); renderStatRows(DATA.sidebarStats,'sidebar-stat-rows',removeSidebarStat); }
+function addSidebarStat(){
+  DATA.sidebarStats.push({value:'',label:''});
+  renderStatRows(DATA.sidebarStats,'sidebar-stat-rows',removeSidebarStat);
+}
+
+function collectCTA(){
+  // collect sidebar stats
+  DATA.sidebarStats=[];
+  document.querySelectorAll('#sidebar-stat-rows .stat-row').forEach(row=>{
+    const v=row.querySelector('.stat-val')?.value.trim();
+    const l=row.querySelector('.stat-lbl')?.value.trim();
+    if(v||l) DATA.sidebarStats.push({value:v,label:l});
+  });
+  DATA.cta.icon  = document.getElementById('cta-icon')?.value.trim()||DATA.cta.icon;
+  DATA.cta.title = document.getElementById('cta-title')?.value.trim()||DATA.cta.title;
+  DATA.cta.desc  = document.getElementById('cta-desc')?.value.trim()||DATA.cta.desc;
+  DATA.cta.label = document.getElementById('cta-label')?.value.trim()||DATA.cta.label;
+  DATA.cta.url   = document.getElementById('cta-url')?.value.trim()||DATA.cta.url;
+}
+
+/* ══════════════ TOPICS ══════════════ */
+function renderTopics(){
+  const tb = document.getElementById('topic-tbody');
+  tb.innerHTML = DATA.topics.map((t,i)=>`
+    <tr>
+      <td><input value="${esc(t.name)}" style="width:100%;padding:6px 8px;border:1.5px solid var(--border);border-radius:6px;"
+                 onchange="DATA.topics[${i}].name=this.value"></td>
+      <td><input value="${esc(t.count)}" style="width:100px;padding:6px 8px;border:1.5px solid var(--border);border-radius:6px;"
+                 onchange="DATA.topics[${i}].count=this.value"></td>
+      <td><button class="btn btn-danger btn-sm" onclick="removeTopic(${i})">✕</button></td>
+    </tr>`
+  ).join('');
+}
+
+function removeTopic(i){ DATA.topics.splice(i,1); persist(); renderTopics(); }
+function addTopic(){
+  DATA.topics.push({id:uid(),name:'',count:'0 articles'}); persist(); renderTopics();
+}
+
+/* ══════════════ PUBLICATIONS ══════════════ */
+function renderPubs(){
+  const tb = document.getElementById('pub-tbody');
+  if(!DATA.publications.length){
+    tb.innerHTML=`<tr><td colspan="4" class="empty-state">No publications yet.</td></tr>`; return;
+  }
+  tb.innerHTML = DATA.publications.map((p,i)=>`
+    <tr>
+      <td style="font-weight:600;max-width:220px;">${p.emoji} ${esc(p.title)}</td>
+      <td>${esc(p.dateLabel)}</td>
+      <td>${esc(p.meta)}</td>
+      <td style="white-space:nowrap;">
+        <button class="btn btn-outline btn-sm" onclick="openPubModal(${i})">Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="removePub(${i})" style="margin-left:6px;">Delete</button>
+      </td>
+    </tr>`).join('');
+}
+
+function removePub(i){ if(!confirm('Delete?'))return; DATA.publications.splice(i,1); persist(); renderPubs(); toast('Publication deleted'); }
+
+let pubEditIndex = null;
+function openPubModal(idx){
+  pubEditIndex = idx;
+  const p = idx!==null ? DATA.publications[idx] : {};
+  document.getElementById('pub-modal-title').textContent = idx!==null?'Edit Publication':'Add Publication';
+  document.getElementById('pub-title').value     = p.title||'';
+  document.getElementById('pub-desc').value      = p.desc||'';
+  document.getElementById('pub-date').value      = p.date||'';
+  document.getElementById('pub-dateLabel').value = p.dateLabel||'';
+  document.getElementById('pub-meta').value      = p.meta||'';
+  document.getElementById('pub-url').value       = p.url||'#';
+  document.getElementById('pub-emoji').value     = p.emoji||'📚';
+  document.getElementById('pub-iconClass').value = p.iconClass||'purple';
+  openModal('pub-modal');
+}
+
+function savePub(){
+  const title = document.getElementById('pub-title').value.trim();
+  if(!title){ alert('Title required'); return; }
+  const p = {
+    id:        pubEditIndex!==null ? DATA.publications[pubEditIndex].id : uid(),
+    title, desc:document.getElementById('pub-desc').value.trim(),
+    date:      document.getElementById('pub-date').value,
+    dateLabel: document.getElementById('pub-dateLabel').value.trim(),
+    meta:      document.getElementById('pub-meta').value.trim(),
+    url:       document.getElementById('pub-url').value.trim()||'#',
+    emoji:     document.getElementById('pub-emoji').value.trim()||'📚',
+    iconClass: document.getElementById('pub-iconClass').value
+  };
+  if(pubEditIndex!==null) DATA.publications[pubEditIndex]=p;
+  else DATA.publications.push(p);
+  persist(); closeModal('pub-modal'); renderPubs(); toast('Publication saved!');
+}
+
+/* ══════════════ TESTIMONIALS ══════════════ */
+function renderTestis(){
+  const tb = document.getElementById('testi-tbody');
+  if(!DATA.testimonials.length){
+    tb.innerHTML=`<tr><td colspan="4" class="empty-state">No testimonials yet.</td></tr>`; return;
+  }
+  tb.innerHTML = DATA.testimonials.map((t,i)=>`
+    <tr>
+      <td style="max-width:240px;color:var(--mid);font-style:italic;">"${esc(t.quote.slice(0,80))}…"</td>
+      <td style="font-weight:600;">${esc(t.name)}</td>
+      <td>${esc(t.role)}</td>
+      <td style="white-space:nowrap;">
+        <button class="btn btn-outline btn-sm" onclick="openTestiModal(${i})">Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="removeTesti(${i})" style="margin-left:6px;">Delete</button>
+      </td>
+    </tr>`).join('');
+}
+
+function removeTesti(i){ if(!confirm('Delete?'))return; DATA.testimonials.splice(i,1); persist(); renderTestis(); toast('Testimonial deleted'); }
+
+let testiEditIndex = null;
+function openTestiModal(idx){
+  testiEditIndex = idx;
+  const t = idx!==null ? DATA.testimonials[idx] : {};
+  document.getElementById('testi-modal-title').textContent = idx!==null?'Edit Testimonial':'Add Testimonial';
+  document.getElementById('t-quote').value   = t.quote||'';
+  document.getElementById('t-name').value    = t.name||'';
+  document.getElementById('t-role').value    = t.role||'';
+  document.getElementById('t-initial').value = t.avatarInitial||'';
+  document.getElementById('t-color').value   = t.avatarColor||'c1';
+  initColorPicker('testi-color-opts','t-color', t.avatarColor||'c1');
+  openModal('testi-modal');
+}
+
+function saveTestimonial(){
+  const quote = document.getElementById('t-quote').value.trim();
+  if(!quote){ alert('Quote required'); return; }
+  const t = {
+    id:            testiEditIndex!==null ? DATA.testimonials[testiEditIndex].id : uid(),
+    quote, name:   document.getElementById('t-name').value.trim(),
+    role:          document.getElementById('t-role').value.trim(),
+    avatarInitial: document.getElementById('t-initial').value.trim(),
+    avatarColor:   document.getElementById('t-color').value
+  };
+  if(testiEditIndex!==null) DATA.testimonials[testiEditIndex]=t;
+  else DATA.testimonials.push(t);
+  persist(); closeModal('testi-modal'); renderTestis(); toast('Testimonial saved!');
+}
+
+/* ══════════════ RELATED AUTHORS ══════════════ */
+function renderRelated(){
+  const tb = document.getElementById('related-tbody');
+  if(!DATA.relatedAuthors.length){
+    tb.innerHTML=`<tr><td colspan="5" class="empty-state">No related authors yet.</td></tr>`; return;
+  }
+  tb.innerHTML = DATA.relatedAuthors.map((a,i)=>`
+    <tr>
+      <td><div style="width:32px;height:32px;border-radius:50%;
+                      display:flex;align-items:center;justify-content:center;
+                      font-weight:700;color:#fff;font-size:13px;
+                      background:var(--p);">${esc(a.initial)}</div></td>
+      <td style="font-weight:600;">${esc(a.name)}</td>
+      <td style="color:var(--muted);max-width:200px;">${esc(a.title)}</td>
+      <td>${esc(a.articles)}</td>
+      <td style="white-space:nowrap;">
+        <button class="btn btn-outline btn-sm" onclick="openRelatedModal(${i})">Edit</button>
+        <button class="btn btn-danger btn-sm" onclick="removeRelated(${i})" style="margin-left:6px;">Delete</button>
+      </td>
+    </tr>`).join('');
+}
+
+function removeRelated(i){ if(!confirm('Delete?'))return; DATA.relatedAuthors.splice(i,1); persist(); renderRelated(); toast('Author removed'); }
+
+let relatedEditIndex = null;
+function openRelatedModal(idx){
+  relatedEditIndex = idx;
+  const a = idx!==null ? DATA.relatedAuthors[idx] : {};
+  document.getElementById('related-modal-title').textContent = idx!==null?'Edit Author':'Add Related Author';
+  document.getElementById('rel-name').value     = a.name||'';
+  document.getElementById('rel-initial').value  = a.initial||'';
+  document.getElementById('rel-title').value    = a.title||'';
+  document.getElementById('rel-articles').value = a.articles||'';
+  document.getElementById('rel-url').value      = a.url||'#';
+  document.getElementById('rel-color').value    = a.color||'c1';
+  initColorPicker('related-color-opts','rel-color', a.color||'c1');
+  openModal('related-modal');
+}
+
+function saveRelated(){
+  const name = document.getElementById('rel-name').value.trim();
+  if(!name){ alert('Name required'); return; }
+  const a = {
+    id:       relatedEditIndex!==null ? DATA.relatedAuthors[relatedEditIndex].id : uid(),
+    name,     initial:  document.getElementById('rel-initial').value.trim(),
+    title:    document.getElementById('rel-title').value.trim(),
+    articles: document.getElementById('rel-articles').value.trim(),
+    url:      document.getElementById('rel-url').value.trim()||'#',
+    color:    document.getElementById('rel-color').value
+  };
+  if(relatedEditIndex!==null) DATA.relatedAuthors[relatedEditIndex]=a;
+  else DATA.relatedAuthors.push(a);
+  persist(); closeModal('related-modal'); renderRelated(); toast('Author saved!');
+}
+
+/* ══════════════ COLOR PICKER ══════════════ */
+function initColorPicker(containerId, hiddenId, selected){
+  const c = document.getElementById(containerId);
+  c.querySelectorAll('.color-opt').forEach(opt=>{
+    opt.classList.toggle('selected', opt.dataset.c===selected);
+    opt.onclick = ()=>{
+      c.querySelectorAll('.color-opt').forEach(x=>x.classList.remove('selected'));
+      opt.classList.add('selected');
+      document.getElementById(hiddenId).value = opt.dataset.c;
+    };
+  });
+}
+
+/* ══════════════ IMAGE MANAGER ══════════════ */
+function renderImages(){
+  const lib = document.getElementById('img-library');
+  if(!IMAGES.length){
+    lib.innerHTML=`<div class="empty-state" style="grid-column:1/-1;">No images yet. Upload some above.</div>`;
+    return;
+  }
+  lib.innerHTML = IMAGES.map((img,i)=>`
+    <div style="border:1.5px solid var(--border);border-radius:10px;overflow:hidden;text-align:center;">
+      <img src="${img.data}" alt="${esc(img.name)}"
+           style="width:100%;height:90px;object-fit:cover;">
+      <div style="padding:8px;display:flex;flex-direction:column;gap:5px;">
+        <div style="font-size:11px;color:var(--muted);overflow:hidden;text-overflow:ellipsis;white-space:nowrap;">${esc(img.name)}</div>
+        <button class="btn btn-outline btn-sm" onclick="copyImgUrl(${i})">Copy URL</button>
+        <button class="btn btn-danger btn-sm" onclick="deleteImg(${i})">Delete</button>
+      </div>
+    </div>`).join('');
+}
+
+document.getElementById('img-file-input').addEventListener('change', function(){
+  Array.from(this.files).forEach(file=>{
+    const reader = new FileReader();
+    reader.onload = e=>{
+      IMAGES.push({id:uid(), name:file.name, data:e.target.result});
+      persistImages(); renderImages();
+    };
+    reader.readAsDataURL(file);
+  });
+  this.value='';
+  toast('Image(s) uploaded!');
+});
+
+function copyImgUrl(i){
+  navigator.clipboard.writeText(IMAGES[i].data).then(()=>toast('URL copied to clipboard!'));
+}
+function deleteImg(i){
+  if(!confirm('Delete image?')) return;
+  IMAGES.splice(i,1); persistImages(); renderImages(); toast('Image deleted');
+}
+
+/* Drag-over on upload zone */
+['avatar-drop-zone','img-drop-zone'].forEach(id=>{
+  const z = document.getElementById(id);
+  if(!z) return;
+  z.addEventListener('dragover',e=>{ e.preventDefault(); z.classList.add('drag-over'); });
+  z.addEventListener('dragleave',()=>z.classList.remove('drag-over'));
+  z.addEventListener('drop',e=>{ e.preventDefault(); z.classList.remove('drag-over'); });
+});
+
+/* ══════════════ MODALS ══════════════ */
+function openModal(id){ document.getElementById(id).classList.add('open'); }
+function closeModal(id){ document.getElementById(id).classList.remove('open'); }
+// Close on backdrop click
+document.querySelectorAll('.modal-backdrop').forEach(bd=>{
+  bd.addEventListener('click',e=>{ if(e.target===bd) bd.classList.remove('open'); });
+});
+// Close on Escape
+document.addEventListener('keydown',e=>{ if(e.key==='Escape') document.querySelectorAll('.modal-backdrop.open').forEach(bd=>bd.classList.remove('open')); });
+
+/* ══════════════ UTILITIES ══════════════ */
+function openPreview(){ window.open('../index.html','_blank'); }
+
+function confirmReset(){
+  if(!confirm('Reset ALL content to defaults? This cannot be undone.')) return;
+  localStorage.removeItem(STORAGE_KEY);
+  DATA = JSON.parse(JSON.stringify(DEFAULT_DATA));
+  persist();
+  renderProfile();
+  toast('Content reset to defaults');
+}
+
+/* ══════════════ BOOT ══════════════ */
+document.addEventListener('DOMContentLoaded',()=>{
+  renderProfile();
+  // Pre-render article count badge in nav
+  const articleBtn = document.querySelector('[data-panel="articles"]');
+  if(articleBtn){
+    const badge = document.createElement('span');
+    badge.textContent = DATA.articles.length;
+    Object.assign(badge.style,{
+      marginLeft:'auto', background:'rgba(255,255,255,.15)',
+      borderRadius:'100px', padding:'1px 7px', fontSize:'11px'
+    });
+    articleBtn.appendChild(badge);
+  }
+});
+</script>
+
+</body>
+</html>
