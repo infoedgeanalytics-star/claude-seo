@@ -1266,6 +1266,42 @@ img { max-width:100%; display:block; }
       <div id="am-stat-rows" class="stat-rows"></div>
     </div>
 
+      <div class="field form-full" style="margin-top:4px;">
+        <details style="background:var(--bg);border-radius:8px;border:1px solid var(--border);padding:0;">
+          <summary style="padding:12px 16px;font-size:13px;font-weight:700;cursor:pointer;
+                          list-style:none;display:flex;align-items:center;gap:8px;">
+            🔍 SEO &amp; Meta Tags <span style="font-size:11px;color:var(--muted);font-weight:400;">(optional — for exported pages)</span>
+          </summary>
+          <div style="padding:0 16px 16px;display:grid;gap:10px;">
+            <div class="field">
+              <label style="font-size:12px;">Meta Title (overrides default)</label>
+              <input type="text" id="am-metaTitle" placeholder="Priya Sharma – Career Expert | Naukri360" maxlength="70">
+              <div style="font-size:11px;color:var(--muted);margin-top:3px;">Recommended: 50–70 characters</div>
+            </div>
+            <div class="field">
+              <label style="font-size:12px;">Meta Description</label>
+              <textarea id="am-metaDesc" rows="2" maxlength="160" placeholder="Career expert with 12+ years in HR…"></textarea>
+              <div style="font-size:11px;color:var(--muted);margin-top:3px;">Recommended: 120–160 characters</div>
+            </div>
+            <div class="field">
+              <label style="font-size:12px;">Keywords (comma-separated)</label>
+              <input type="text" id="am-metaKeywords" placeholder="resume writing, ATS, career coaching">
+            </div>
+            <div class="field">
+              <label style="font-size:12px;">Canonical URL</label>
+              <input type="url" id="am-canonical" placeholder="https://yoursite.com/authors/priya-sharma">
+            </div>
+            <div class="field">
+              <label style="font-size:12px;">OG Image URL (for social sharing)</label>
+              <input type="url" id="am-ogImage" placeholder="https://yoursite.com/images/priya-og.jpg">
+            </div>
+            <div class="field">
+              <label style="font-size:12px;">Twitter/X Handle</label>
+              <input type="text" id="am-twitter" placeholder="@priyasharma">
+            </div>
+          </div>
+        </details>
+      </div>
     <div class="modal-footer">
       <button class="btn btn-outline" onclick="closeModal('author-modal')">Cancel</button>
       <button class="btn btn-save" onclick="saveAuthor()">Save Author</button>
@@ -2334,15 +2370,17 @@ function buildStaticHTML(author, css, data){
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>${h(author.name)} – ${h(author.title||'Author')} | ${h(author.company||'')}</title>
-<meta name="description" content="${h(author.bio.slice(0,160))}">
+<title>${h((author.seo&&author.seo.metaTitle)||(author.name+' – '+(author.title||'Author')+(author.company?' | '+author.company:'')))}</title>
+<meta name="description" content="${h((author.seo&&author.seo.metaDesc)||author.bio.slice(0,160))}">
 <meta name="author" content="${h(author.name)}">
+${(author.seo&&author.seo.metaKeywords)?`<meta name="keywords" content="${h(author.seo.metaKeywords)}">`:``}
 <meta name="theme-color" content="#4A3AFF">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="${h(author.name)} – ${h(author.title||'Author')}">
-<meta property="og:description" content="${h(author.bio.slice(0,200))}">
-${author.avatarImage?`<meta property="og:image" content="${h(author.avatarImage)}">`:``}
-<link rel="canonical" href="./${slug}.html">
+<meta property="og:title" content="${h((author.seo&&author.seo.metaTitle)||(author.name+' – '+(author.title||'Author')))}">
+<meta property="og:description" content="${h((author.seo&&author.seo.metaDesc)||author.bio.slice(0,200))}">
+${(author.seo&&author.seo.ogImage)?`<meta property="og:image" content="${h(author.seo.ogImage)}">`:(author.avatarImage?`<meta property="og:image" content="${h(author.avatarImage)}">`:``)}
+${(author.seo&&author.seo.twitter)?`<meta name="twitter:card" content="summary_large_image"><meta name="twitter:creator" content="${h(author.seo.twitter)}">`:``}
+<link rel="canonical" href="${h((author.seo&&author.seo.canonical)||('./'+slug+'.html'))}">
 <style>
 ${css || `/* Add your CSS here or link style.css */`}
 </style>
@@ -2608,6 +2646,16 @@ function openAuthorModal(idx){
   renderAMSocial();
   renderAMTags();
   renderAMStats();
+
+  /* SEO fields */
+  const seo = a.seo||{};
+  document.getElementById('am-metaTitle').value    = seo.metaTitle||'';
+  document.getElementById('am-metaDesc').value     = seo.metaDesc||'';
+  document.getElementById('am-metaKeywords').value = seo.metaKeywords||'';
+  document.getElementById('am-canonical').value    = seo.canonical||'';
+  document.getElementById('am-ogImage').value      = seo.ogImage||'';
+  document.getElementById('am-twitter').value      = seo.twitter||'';
+
   openModal('author-modal');
 }
 
@@ -2705,6 +2753,15 @@ function saveAuthor(){
     social:         JSON.parse(JSON.stringify(amSocial)),
     expertise:      JSON.parse(JSON.stringify(amTags)),
     stats:          amStats.filter(s=>s.value||s.label)
+  };
+
+  author.seo = {
+    metaTitle:    document.getElementById('am-metaTitle').value.trim(),
+    metaDesc:     document.getElementById('am-metaDesc').value.trim(),
+    metaKeywords: document.getElementById('am-metaKeywords').value.trim(),
+    canonical:    document.getElementById('am-canonical').value.trim(),
+    ogImage:      document.getElementById('am-ogImage').value.trim(),
+    twitter:      document.getElementById('am-twitter').value.trim(),
   };
 
   if(authorEditIndex !== null){
