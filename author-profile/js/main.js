@@ -76,8 +76,11 @@ function renderArticles(articles) {
       ? `<span class="card-badge ${esc(a.badgeStyle)}">${esc(a.badge)}</span>` : '';
     return `
       <article class="article-card${isFeat?' is-featured':''}">
-        <div class="card-thumb" style="background:${esc(a.thumbBg)}">
-          <span class="card-thumb-emoji" aria-hidden="true">${a.emoji}</span>
+        <div class="card-thumb" style="background:${esc(a.thumbBg||'linear-gradient(135deg,#eef0ff,#dde0ff)')}${a.thumbImage?';padding:0;overflow:hidden':''}">
+          ${a.thumbImage
+            ? `<img src="${esc(a.thumbImage)}" alt="${esc(a.title)}" style="width:100%;height:100%;object-fit:cover;display:block;">`
+            : `<span class="card-thumb-emoji" aria-hidden="true">${a.emoji}</span>`
+          }
           ${badge}
         </div>
         <div class="card-body">

@@ -914,6 +914,26 @@ img { max-width:100%; display:block; }
 
 </div><!-- /.cms-main -->
 
+<!-- ══════════════════ CODE PREVIEW MODAL ══════════════════ -->
+<div class="modal-backdrop" id="code-preview-modal" style="align-items:flex-start;padding:32px 16px;">
+  <div class="modal" style="max-width:900px;width:100%;max-height:85vh;display:flex;flex-direction:column;">
+    <div class="modal-head" style="flex-shrink:0;">
+      <div class="modal-title" id="code-preview-title">Page Source</div>
+      <div style="display:flex;align-items:center;gap:8px;">
+        <button id="copy-code-btn" class="btn btn-primary btn-sm" onclick="copyPageCode()">📋 Copy All</button>
+        <button class="modal-close" onclick="closeModal('code-preview-modal')">×</button>
+      </div>
+    </div>
+    <div style="flex:1;overflow:auto;padding:0;">
+      <textarea id="code-preview-textarea"
+                style="width:100%;height:100%;min-height:420px;border:none;outline:none;resize:none;
+                       font-family:'Courier New',Courier,monospace;font-size:12px;line-height:1.5;
+                       padding:16px;background:#1a1a2e;color:#e2e8f0;tab-size:2;"
+                readonly spellcheck="false"></textarea>
+    </div>
+  </div>
+</div>
+
 
 <!-- ══════════════════ ARTICLE MODAL ══════════════════ -->
 <div class="modal-backdrop" id="article-modal">
@@ -970,6 +990,15 @@ img { max-width:100%; display:block; }
       <div class="field">
         <label>Thumbnail Background (CSS gradient or color)</label>
         <input type="text" id="a-thumbBg" placeholder="linear-gradient(135deg,#eef0ff,#dde0ff)">
+      </div>
+      <div class="field form-full">
+        <label>Thumbnail Image URL (overrides gradient if set)</label>
+        <input type="text" id="a-thumbImage" placeholder="https://example.com/image.jpg or leave blank">
+      </div>
+      <div class="field form-full" style="display:flex;align-items:center;gap:10px;">
+        <input type="file" id="a-thumb-file" accept="image/*" style="display:none">
+        <button type="button" class="btn btn-outline btn-sm" onclick="document.getElementById('a-thumb-file').click()">Upload image</button>
+        <span id="a-thumb-status" style="font-size:12px;color:var(--muted);"></span>
       </div>
       <div class="field">
         <label>Badge Text (optional)</label>
@@ -1578,6 +1607,8 @@ function openArticleModal(idx){
   document.getElementById('a-excerpt').value  = a.excerpt||'';
   document.getElementById('a-emoji').value    = a.emoji||'';
   document.getElementById('a-thumbBg').value  = a.thumbBg||'linear-gradient(135deg,#eef0ff,#dde0ff)';
+  document.getElementById('a-thumbImage').value = a.thumbImage||'';
+  document.getElementById('a-thumb-status').textContent = a.thumbImage ? '✓ Image set' : '';
   document.getElementById('a-badge').value    = a.badge||'';
   document.getElementById('a-badgeStyle').value = a.badgeStyle||'';
   document.getElementById('a-featured').checked = !!a.featured;
@@ -1595,6 +1626,18 @@ function openArticleModal(idx){
   openModal('article-modal');
 }
 
+/* Article thumbnail file upload */
+document.getElementById('a-thumb-file').addEventListener('change', function(){
+  const file = this.files[0]; if(!file) return;
+  const reader = new FileReader();
+  reader.onload = e => {
+    document.getElementById('a-thumbImage').value = e.target.result;
+    document.getElementById('a-thumb-status').textContent = '✓ ' + file.name;
+  };
+  reader.readAsDataURL(file);
+  this.value = '';
+});
+
 function saveArticle(){
   const title = document.getElementById('a-title').value.trim();
   if(!title){ alert('Title is required.'); return; }
@@ -1609,6 +1652,7 @@ function saveArticle(){
     excerpt:     document.getElementById('a-excerpt').value.trim(),
     emoji:       document.getElementById('a-emoji').value.trim()||'📄',
     thumbBg:     document.getElementById('a-thumbBg').value.trim(),
+    thumbImage:  document.getElementById('a-thumbImage').value.trim(),
     badge:       document.getElementById('a-badge').value.trim(),
     badgeStyle:  document.getElementById('a-badgeStyle').value,
     featured:    document.getElementById('a-featured').checked
@@ -1981,14 +2025,25 @@ function renderDownloadPanel(){
                                     display:inline-block;margin-top:3px;">⭐ Active</span>`:''}
           </div>
         </div>
-        <button onclick="downloadAuthorPage(${a.id})"
-                style="width:100%;padding:10px;background:var(--p);color:#fff;
-                       border:none;border-radius:8px;font-size:13.5px;font-weight:700;
-                       cursor:pointer;transition:background .15s,box-shadow .15s;"
-                onmouseenter="this.style.background='#5B4DFF';this.style.boxShadow='0 4px 14px rgba(74,58,255,.35)'"
-                onmouseleave="this.style.background='var(--p)';this.style.boxShadow=''">
-          ⬇️ Download HTML
-        </button>
+        <div style="display:flex;gap:8px;margin-bottom:10px;">
+          <button onclick="downloadAuthorPage(${a.id})"
+                  style="flex:1;padding:10px;background:var(--p);color:#fff;
+                         border:none;border-radius:8px;font-size:13px;font-weight:700;
+                         cursor:pointer;transition:background .15s,box-shadow .15s;"
+                  onmouseenter="this.style.background='#5B4DFF';this.style.boxShadow='0 4px 14px rgba(74,58,255,.35)'"
+                  onmouseleave="this.style.background='var(--p)';this.style.boxShadow=''">
+            ⬇️ Download HTML
+          </button>
+          <button onclick="previewAuthorCode(${a.id})"
+                  style="padding:10px 14px;background:var(--bg);color:var(--dark);
+                         border:1.5px solid var(--border);border-radius:8px;font-size:13px;font-weight:700;
+                         cursor:pointer;transition:background .15s;"
+                  title="View &amp; copy page source"
+                  onmouseenter="this.style.background='#e8e8f8'"
+                  onmouseleave="this.style.background='var(--bg)'">
+            &lt;/&gt; View Code
+          </button>
+        </div>
       </div>`;
   }).join('');
 }
@@ -2032,6 +2087,36 @@ function triggerDownload(content, filename){
   const a    = document.createElement('a');
   a.href = url; a.download = filename; a.click();
   setTimeout(()=>URL.revokeObjectURL(url), 2000);
+}
+
+async function previewAuthorCode(authorId){
+  const author = DATA.authorsList.find(a=>a.id===authorId);
+  if(!author){ toast('Author not found', false); return; }
+  toast('Generating preview…');
+  let css = '';
+  try { const r=await fetch('../css/style.css'); if(r.ok) css=await r.text(); } catch(e){}
+  const html = buildStaticHTML(author, css, DATA);
+  document.getElementById('code-preview-title').textContent = `Source — ${author.name}`;
+  document.getElementById('code-preview-textarea').value = html;
+  document.getElementById('code-preview-modal').style.display = 'flex';
+  toast('Code ready — copy or download!');
+}
+
+function copyPageCode(){
+  const ta = document.getElementById('code-preview-textarea');
+  ta.select();
+  try {
+    navigator.clipboard.writeText(ta.value).then(()=> {
+      const btn = document.getElementById('copy-code-btn');
+      btn.textContent = '✅ Copied!';
+      setTimeout(()=>{ btn.textContent='📋 Copy All'; }, 2000);
+    });
+  } catch(e){
+    document.execCommand('copy');
+    const btn = document.getElementById('copy-code-btn');
+    btn.textContent = '✅ Copied!';
+    setTimeout(()=>{ btn.textContent='📋 Copy All'; }, 2000);
+  }
 }
 
 /* ══════════════════════════════════════════════════════
@@ -2087,8 +2172,11 @@ function buildStaticHTML(author, css, data){
     const badge = a.badge ? `<span class="card-badge ${h(a.badgeStyle)}">${h(a.badge)}</span>` : '';
     return `
         <article class="article-card${a.featured?' is-featured':''}" data-category="${h(a.category)}">
-          <div class="card-thumb" style="background:${h(a.thumbBg)}">
-            <span class="card-thumb-emoji" aria-hidden="true">${a.emoji||'📄'}</span>
+          <div class="card-thumb" style="background:${h(a.thumbBg||'linear-gradient(135deg,#eef0ff,#dde0ff)')}${a.thumbImage?';padding:0;overflow:hidden':''}">
+            ${a.thumbImage
+              ? `<img src="${h(a.thumbImage)}" alt="${h(a.title)}" style="width:100%;height:100%;object-fit:cover;display:block;">`
+              : `<span class="card-thumb-emoji" aria-hidden="true">${a.emoji||'📄'}</span>`
+            }
             ${badge}
           </div>
           <div class="card-body">
