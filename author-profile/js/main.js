@@ -22,13 +22,6 @@ function renderHero(p, social) {
     ? `<img src="${esc(p.avatarImage)}" alt="${esc(p.name)}">`
     : `<span class="avatar-initials" aria-hidden="true">${esc(p.avatarInitials)}</span>`;
 
-  const statsHtml = p.stats.map(s =>
-    `<div class="stat-pill" role="listitem">
-       <span class="stat-pill-value">${esc(s.value)}</span>
-       <span class="stat-pill-label">${esc(s.label)}</span>
-     </div>`
-  ).join('');
-
   const socialHtml = social.map(s =>
     `<a href="${esc(s.url)}" class="social-link" aria-label="${esc(s.label)}">
        ${ICONS[s.icon] || ''}${esc(s.label)}
@@ -51,7 +44,6 @@ function renderHero(p, social) {
         <p class="author-title">${esc(p.title)} at <strong>${esc(p.company)}</strong></p>
         <p class="author-bio">${esc(p.bio)}</p>
         <div class="social-row">${socialHtml}</div>
-        <div class="hero-stats" role="list" aria-label="Author statistics">${statsHtml}</div>
       </div>
     </div>`;
 }
@@ -102,25 +94,6 @@ function renderArticles(articles) {
 
 /* ── Render sidebar ──────────────────────────────────────────── */
 function renderSidebar(data) {
-  // Credentials
-  document.getElementById('credential-list').innerHTML = data.credentials.map(c =>
-    `<li class="credential">
-       <div class="credential-icon" aria-hidden="true">${c.icon}</div>
-       <div>
-         <div class="credential-name">${esc(c.name)}</div>
-         <div class="credential-detail">${esc(c.detail)}</div>
-       </div>
-     </li>`
-  ).join('');
-
-  // Stats
-  document.getElementById('sidebar-stats').innerHTML = data.sidebarStats.map(s =>
-    `<div class="stat-box">
-       <div class="stat-value">${esc(s.value)}</div>
-       <div class="stat-label">${esc(s.label)}</div>
-     </div>`
-  ).join('');
-
   // Topics
   document.getElementById('topic-list').innerHTML = data.topics.map(t =>
     `<li><div class="topic-row" role="link" tabindex="0">
@@ -136,23 +109,6 @@ function renderSidebar(data) {
      <h3 class="cta-title">${esc(c.title)}</h3>
      <p class="cta-desc">${esc(c.desc)}</p>
      <a href="${esc(c.url)}" class="cta-btn">${esc(c.label)}</a>`;
-}
-
-/* ── Render testimonials ─────────────────────────────────────── */
-function renderTestimonials(list) {
-  document.getElementById('testi-grid').innerHTML = list.map(t =>
-    `<blockquote class="testi-card">
-       <div class="quote-symbol" aria-hidden="true">"</div>
-       <p class="testi-text">${esc(t.quote)}</p>
-       <footer class="testi-author">
-         <div class="testi-avatar ${esc(t.avatarColor)}" aria-hidden="true">${esc(t.avatarInitial)}</div>
-         <div>
-           <div class="testi-name">${esc(t.name)}</div>
-           <div class="testi-role">${esc(t.role)}</div>
-         </div>
-       </footer>
-     </blockquote>`
-  ).join('');
 }
 
 /* ── Render related authors ──────────────────────────────────── */
@@ -209,7 +165,7 @@ function initTags() {
 function initScrollAnimations() {
   if (!('IntersectionObserver' in window)) return;
   const cards = document.querySelectorAll(
-    '.article-card, .pub-card, .related-card, .testi-card'
+    '.article-card, .pub-card, .related-card'
   );
   const io = new IntersectionObserver(entries => {
     entries.forEach(entry => {
@@ -269,7 +225,6 @@ document.addEventListener('DOMContentLoaded', () => {
   renderExpertise(data.expertise);
   renderArticles(data.articles);
   renderSidebar(data);
-  renderTestimonials(data.testimonials);
   renderRelated(data.relatedAuthors);
 
   initFilters(data.articles);

@@ -385,11 +385,8 @@ img { max-width:100%; display:block; }
     <button class="nav-btn" data-panel="articles">
       <span class="icon">📝</span> Articles
     </button>
-    <button class="nav-btn" data-panel="credentials">
-      <span class="icon">🏅</span> Credentials
-    </button>
     <button class="nav-btn" data-panel="sidebar">
-      <span class="icon">📊</span> Sidebar Stats &amp; CTA
+      <span class="icon">📊</span> Sidebar &amp; CTA
     </button>
     <button class="nav-btn" data-panel="topics">
       <span class="icon">📂</span> Popular Topics
@@ -398,9 +395,6 @@ img { max-width:100%; display:block; }
     <div class="nav-section-label">Sections</div>
     <button class="nav-btn" data-panel="publications">
       <span class="icon">📚</span> Publications
-    </button>
-    <button class="nav-btn" data-panel="testimonials">
-      <span class="icon">💬</span> Testimonials
     </button>
     <button class="nav-btn" data-panel="related">
       <span class="icon">👥</span> Related Authors
@@ -573,33 +567,6 @@ img { max-width:100%; display:block; }
       </div>
     </div>
 
-    <!-- Stats -->
-    <div class="cms-card">
-      <div class="cms-card-head">
-        <div class="cms-card-title">Hero Stats</div>
-        <button class="btn btn-outline btn-sm" onclick="addStat()">+ Add stat</button>
-      </div>
-      <div class="cms-card-body">
-        <div class="stat-rows" id="stat-rows"></div>
-      </div>
-    </div>
-
-    <!-- Credentials (per-author) -->
-    <div class="cms-card">
-      <div class="cms-card-head">
-        <div class="cms-card-title">Credentials &amp; Qualifications</div>
-        <button class="btn btn-green btn-sm" onclick="addCredential()">+ Add credential</button>
-      </div>
-      <div class="cms-card-body">
-        <p style="font-size:12px;color:var(--muted);margin-bottom:12px;">
-          These credentials belong to this author only. Changes apply immediately on save.
-        </p>
-        <table class="data-table" style="width:100%;">
-          <thead><tr><th>Icon</th><th>Name / Degree</th><th>Detail / Institution</th><th></th></tr></thead>
-          <tbody id="credential-tbody"></tbody>
-        </table>
-      </div>
-    </div>
 
     <!-- Articles (per-author) -->
     <div class="cms-card">
@@ -694,35 +661,8 @@ img { max-width:100%; display:block; }
   </div>
 
 
-  <!-- ══════════ PANEL: Credentials ══════════ -->
-  <div class="cms-panel" id="panel-credentials">
-    <div class="cms-card">
-      <div class="cms-card-head">
-        <div class="cms-card-title">Credentials &amp; Experience</div>
-        <button class="btn btn-green" onclick="addCredential()">+ Add</button>
-      </div>
-      <div class="cms-card-body" style="padding:0;">
-        <table class="list-table">
-          <thead><tr><th>Icon</th><th>Name</th><th>Detail</th><th>Actions</th></tr></thead>
-          <tbody id="credential-tbody"></tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- ══════════ PANEL: Sidebar Stats & CTA ══════════ -->
+  <!-- ══════════ PANEL: Sidebar & CTA ══════════ -->
   <div class="cms-panel" id="panel-sidebar">
-
-    <div class="cms-card">
-      <div class="cms-card-head">
-        <div class="cms-card-title">Sidebar Stats (2×2 grid)</div>
-        <button class="btn btn-outline btn-sm" onclick="addSidebarStat()">+ Add</button>
-      </div>
-      <div class="cms-card-body">
-        <div class="stat-rows" id="sidebar-stat-rows"></div>
-      </div>
-    </div>
 
     <div class="cms-card">
       <div class="cms-card-head"><div class="cms-card-title">CTA Card</div></div>
@@ -783,23 +723,6 @@ img { max-width:100%; display:block; }
         <table class="list-table">
           <thead><tr><th>Title</th><th>Date</th><th>Meta</th><th>Actions</th></tr></thead>
           <tbody id="pub-tbody"></tbody>
-        </table>
-      </div>
-    </div>
-  </div>
-
-
-  <!-- ══════════ PANEL: Testimonials ══════════ -->
-  <div class="cms-panel" id="panel-testimonials">
-    <div class="cms-card">
-      <div class="cms-card-head">
-        <div class="cms-card-title">Reader Testimonials</div>
-        <button class="btn btn-green" onclick="openTestiModal(null)">+ Add</button>
-      </div>
-      <div class="cms-card-body" style="padding:0;">
-        <table class="list-table">
-          <thead><tr><th>Quote (preview)</th><th>Name</th><th>Role</th><th>Actions</th></tr></thead>
-          <tbody id="testi-tbody"></tbody>
         </table>
       </div>
     </div>
@@ -1123,49 +1046,6 @@ img { max-width:100%; display:block; }
 </div>
 
 
-<!-- ══════════════════ TESTIMONIAL MODAL ══════════════════ -->
-<div class="modal-backdrop" id="testi-modal">
-  <div class="modal">
-    <div class="modal-head">
-      <div class="modal-title" id="testi-modal-title">Add Testimonial</div>
-      <button class="modal-close" onclick="closeModal('testi-modal')">×</button>
-    </div>
-    <div class="form-grid">
-      <div class="field form-full">
-        <label>Quote *</label>
-        <textarea id="t-quote" rows="4" placeholder="Reader's testimonial..."></textarea>
-      </div>
-      <div class="field">
-        <label>Name</label>
-        <input type="text" id="t-name" placeholder="Rahul Verma">
-      </div>
-      <div class="field">
-        <label>Role / Company</label>
-        <input type="text" id="t-role" placeholder="Software Engineer at Infosys">
-      </div>
-      <div class="field">
-        <label>Avatar Initial</label>
-        <input type="text" id="t-initial" maxlength="2" placeholder="R">
-      </div>
-      <div class="field">
-        <label>Avatar Color</label>
-        <div class="color-options" id="testi-color-opts">
-          <div class="color-opt c1" data-c="c1" title="Purple"></div>
-          <div class="color-opt c2" data-c="c2" title="Blue"></div>
-          <div class="color-opt c3" data-c="c3" title="Green"></div>
-          <div class="color-opt c4" data-c="c4" title="Gold"></div>
-        </div>
-        <input type="hidden" id="t-color" value="c1">
-      </div>
-    </div>
-    <div class="modal-footer">
-      <button class="btn btn-outline" onclick="closeModal('testi-modal')">Cancel</button>
-      <button class="btn btn-save" onclick="saveTestimonial()">Save Testimonial</button>
-    </div>
-  </div>
-</div>
-
-
 <!-- ══════════════════ RELATED AUTHOR MODAL ══════════════════ -->
 <div class="modal-backdrop" id="related-modal">
   <div class="modal">
@@ -1297,16 +1177,6 @@ img { max-width:100%; display:block; }
         <input type="text" id="am-tag-input" placeholder="Add tag…" maxlength="50">
         <button class="btn btn-green btn-sm" onclick="addAMTag()">+ Add</button>
       </div>
-    </div>
-
-    <!-- Stats -->
-    <div style="margin-top:18px;">
-      <div style="font-size:13px;font-weight:700;color:var(--dark);margin-bottom:10px;">
-        Hero Stats
-        <button class="btn btn-outline btn-sm" style="margin-left:10px;"
-                onclick="addAMStat()">+ Add stat</button>
-      </div>
-      <div id="am-stat-rows" class="stat-rows"></div>
     </div>
 
       <div class="field form-full" style="margin-top:4px;">
@@ -1455,8 +1325,8 @@ function toast(msg, ok=true){
 const PANEL_LABELS = {
   authors:'Manage Authors', download:'Download Pages',
   profile:'Author Profile', social:'Social Links', expertise:'Expertise Tags',
-  articles:'Articles', credentials:'Credentials', sidebar:'Sidebar Stats & CTA',
-  topics:'Popular Topics', publications:'Publications', testimonials:'Testimonials',
+  articles:'Articles', sidebar:'Sidebar & CTA',
+  topics:'Popular Topics', publications:'Publications',
   related:'Related Authors', images:'Image Manager'
 };
 
@@ -1475,9 +1345,9 @@ document.querySelectorAll('.nav-btn').forEach(btn=>{
 function refreshPanel(id){
   const fn = { authors:renderAuthorsPanel, download:renderDownloadPanel,
     profile:renderProfile, social:renderSocial, expertise:renderExpertise,
-    articles:renderArticles, credentials:renderCredentials,
+    articles:renderArticles,
     sidebar:renderSidebarPanel, topics:renderTopics,
-    publications:renderPubs, testimonials:renderTestis,
+    publications:renderPubs,
     related:renderRelated, images:renderImages }[id];
   fn?.();
 }
@@ -1512,7 +1382,6 @@ function renderProfile(){
   document.getElementById('p-bio').value      = p.bio;
   document.getElementById('avatar-url').value = p.avatarImage||'';
   updateAvatarPreview(p.avatarImage, p.avatarInitials);
-  renderStatRows(p.stats, 'stat-rows', removeHeroStat);
   /* Populate author selector dropdown */
   ensureAuthorsList();
   const sel = document.getElementById('profile-author-select');
@@ -1571,13 +1440,6 @@ function collectProfile(){
   DATA.profile.bio            = document.getElementById('p-bio').value.trim();
   const urlField = document.getElementById('avatar-url').value.trim();
   if(urlField) DATA.profile.avatarImage = urlField;
-  // collect stats
-  DATA.profile.stats = [];
-  document.querySelectorAll('#stat-rows .stat-row').forEach(row=>{
-    const v = row.querySelector('.stat-val')?.value.trim();
-    const l = row.querySelector('.stat-lbl')?.value.trim();
-    if(v||l) DATA.profile.stats.push({value:v,label:l});
-  });
 }
 
 function updateAvatarPreview(url, initials){
@@ -1610,24 +1472,6 @@ document.getElementById('avatar-file').addEventListener('change', function(){
 document.getElementById('p-initials').addEventListener('input', function(){
   document.getElementById('avatar-initials-preview').textContent = this.value;
 });
-
-/* Stat rows (shared by hero stats + sidebar stats) */
-function renderStatRows(arr, containerId, removeFn){
-  const c = document.getElementById(containerId);
-  c.innerHTML = arr.map((s,i)=>
-    `<div class="stat-row">
-       <input class="stat-val" value="${esc(s.value)}" placeholder="200+">
-       <input class="stat-lbl" value="${esc(s.label)}" placeholder="Articles">
-       <button class="btn btn-danger btn-sm" onclick="${removeFn.name}(${i})" title="Remove">✕</button>
-     </div>`
-  ).join('');
-}
-
-function removeHeroStat(i){ DATA.profile.stats.splice(i,1); renderStatRows(DATA.profile.stats,'stat-rows',removeHeroStat); }
-function addStat(){
-  DATA.profile.stats.push({value:'',label:''});
-  renderStatRows(DATA.profile.stats,'stat-rows',removeHeroStat);
-}
 
 /* ══════════════ SOCIAL ══════════════ */
 function renderSocial(){
@@ -1805,7 +1649,6 @@ function addCredential(){
 
 /* ══════════════ SIDEBAR PANEL ══════════════ */
 function renderSidebarPanel(){
-  renderStatRows(DATA.sidebarStats,'sidebar-stat-rows',removeSidebarStat);
   const c = DATA.cta;
   document.getElementById('cta-icon').value  = c.icon;
   document.getElementById('cta-title').value = c.title;
@@ -1814,20 +1657,7 @@ function renderSidebarPanel(){
   document.getElementById('cta-url').value   = c.url;
 }
 
-function removeSidebarStat(i){ DATA.sidebarStats.splice(i,1); renderStatRows(DATA.sidebarStats,'sidebar-stat-rows',removeSidebarStat); }
-function addSidebarStat(){
-  DATA.sidebarStats.push({value:'',label:''});
-  renderStatRows(DATA.sidebarStats,'sidebar-stat-rows',removeSidebarStat);
-}
-
 function collectCTA(){
-  // collect sidebar stats
-  DATA.sidebarStats=[];
-  document.querySelectorAll('#sidebar-stat-rows .stat-row').forEach(row=>{
-    const v=row.querySelector('.stat-val')?.value.trim();
-    const l=row.querySelector('.stat-lbl')?.value.trim();
-    if(v||l) DATA.sidebarStats.push({value:v,label:l});
-  });
   DATA.cta.icon  = document.getElementById('cta-icon')?.value.trim()||DATA.cta.icon;
   DATA.cta.title = document.getElementById('cta-title')?.value.trim()||DATA.cta.title;
   DATA.cta.desc  = document.getElementById('cta-desc')?.value.trim()||DATA.cta.desc;
@@ -1909,54 +1739,6 @@ function savePub(){
 }
 
 /* ══════════════ TESTIMONIALS ══════════════ */
-function renderTestis(){
-  const tb = document.getElementById('testi-tbody');
-  if(!DATA.testimonials.length){
-    tb.innerHTML=`<tr><td colspan="4" class="empty-state">No testimonials yet.</td></tr>`; return;
-  }
-  tb.innerHTML = DATA.testimonials.map((t,i)=>`
-    <tr>
-      <td style="max-width:240px;color:var(--mid);font-style:italic;">"${esc(t.quote.slice(0,80))}…"</td>
-      <td style="font-weight:600;">${esc(t.name)}</td>
-      <td>${esc(t.role)}</td>
-      <td style="white-space:nowrap;">
-        <button class="btn btn-outline btn-sm" onclick="openTestiModal(${i})">Edit</button>
-        <button class="btn btn-danger btn-sm" onclick="removeTesti(${i})" style="margin-left:6px;">Delete</button>
-      </td>
-    </tr>`).join('');
-}
-
-function removeTesti(i){ if(!confirm('Delete?'))return; DATA.testimonials.splice(i,1); persist(); renderTestis(); toast('Testimonial deleted'); }
-
-let testiEditIndex = null;
-function openTestiModal(idx){
-  testiEditIndex = idx;
-  const t = idx!==null ? DATA.testimonials[idx] : {};
-  document.getElementById('testi-modal-title').textContent = idx!==null?'Edit Testimonial':'Add Testimonial';
-  document.getElementById('t-quote').value   = t.quote||'';
-  document.getElementById('t-name').value    = t.name||'';
-  document.getElementById('t-role').value    = t.role||'';
-  document.getElementById('t-initial').value = t.avatarInitial||'';
-  document.getElementById('t-color').value   = t.avatarColor||'c1';
-  initColorPicker('testi-color-opts','t-color', t.avatarColor||'c1');
-  openModal('testi-modal');
-}
-
-function saveTestimonial(){
-  const quote = document.getElementById('t-quote').value.trim();
-  if(!quote){ alert('Quote required'); return; }
-  const t = {
-    id:            testiEditIndex!==null ? DATA.testimonials[testiEditIndex].id : uid(),
-    quote, name:   document.getElementById('t-name').value.trim(),
-    role:          document.getElementById('t-role').value.trim(),
-    avatarInitial: document.getElementById('t-initial').value.trim(),
-    avatarColor:   document.getElementById('t-color').value
-  };
-  if(testiEditIndex!==null) DATA.testimonials[testiEditIndex]=t;
-  else DATA.testimonials.push(t);
-  persist(); closeModal('testi-modal'); renderTestis(); toast('Testimonial saved!');
-}
-
 /* ══════════════ RELATED AUTHORS ══════════════ */
 function renderRelated(){
   const tb = document.getElementById('related-tbody');
@@ -2264,14 +2046,6 @@ function buildStaticHTML(author, css, data){
      </a>`
   ).join('\n      ');
 
-  /* ── hero stats ── */
-  const statsHTML = (author.stats||[]).map(s=>
-    `<div class="stat-pill" role="listitem">
-         <span class="stat-pill-value">${h(s.value)}</span>
-         <span class="stat-pill-label">${h(s.label)}</span>
-       </div>`
-  ).join('');
-
   /* ── expertise tags ── */
   const tagsHTML = (author.expertise||[]).map((t,i)=>
     `<span class="tag${i===0?' is-active':''}" role="button" tabindex="0" data-tag="${h(t)}">${h(t)}</span>`
@@ -2315,26 +2089,6 @@ function buildStaticHTML(author, css, data){
              aria-selected="${i===0}" data-cat="${h(cat)}">${h(cat)}</button>`
   ).join('\n        ');
 
-  /* ── credentials (per-author, falls back to global) ── */
-  const authorCreds = (author.credentials && author.credentials.length ? author.credentials : data.credentials)||[];
-  const credsHTML = authorCreds.map(c=>
-    `<li class="credential">
-         <div class="credential-icon" aria-hidden="true">${c.icon}</div>
-         <div>
-           <div class="credential-name">${h(c.name)}</div>
-           <div class="credential-detail">${h(c.detail)}</div>
-         </div>
-       </li>`
-  ).join('');
-
-  /* ── sidebar stats ── */
-  const sbStatsHTML = (data.sidebarStats||[]).map(s=>
-    `<div class="stat-box">
-         <div class="stat-value">${h(s.value)}</div>
-         <div class="stat-label">${h(s.label)}</div>
-       </div>`
-  ).join('');
-
   /* ── topics ── */
   const topicsHTML = (data.topics||[]).map(t=>
     `<li><div class="topic-row" role="link" tabindex="0">
@@ -2363,21 +2117,6 @@ function buildStaticHTML(author, css, data){
            <span>${h(p.meta)}</span>
          </div>
        </article>`
-  ).join('');
-
-  /* ── testimonials ── */
-  const testisHTML = (data.testimonials||[]).map(t=>
-    `<blockquote class="testi-card">
-         <div class="quote-symbol" aria-hidden="true">"</div>
-         <p class="testi-text">${h(t.quote)}</p>
-         <footer class="testi-author">
-           <div class="testi-avatar ${h(t.avatarColor)}" aria-hidden="true">${h(t.avatarInitial)}</div>
-           <div>
-             <div class="testi-name">${h(t.name)}</div>
-             <div class="testi-role">${h(t.role)}</div>
-           </div>
-         </footer>
-       </blockquote>`
   ).join('');
 
   /* ── related authors ── */
@@ -2493,9 +2232,6 @@ ${css || `/* Add your CSS here or link style.css */`}
         <div class="social-row">
           ${socialHTML}
         </div>
-        <div class="hero-stats" role="list" aria-label="Author statistics">
-          ${statsHTML}
-        </div>
       </div>
     </div>
   </div>
@@ -2531,14 +2267,6 @@ ${css || `/* Add your CSS here or link style.css */`}
 
     <aside class="content-sidebar" aria-label="Author details">
       <div class="sidebar-card">
-        <h2 class="sidebar-title">Credentials</h2>
-        <ul class="credential-list">${credsHTML}</ul>
-      </div>
-      <div class="sidebar-card">
-        <h2 class="sidebar-title">Author Stats</h2>
-        <div class="stats-grid">${sbStatsHTML}</div>
-      </div>
-      <div class="sidebar-card">
         <h2 class="sidebar-title">Popular Topics</h2>
         <ul class="topic-list">${topicsHTML}</ul>
       </div>
@@ -2556,14 +2284,6 @@ ${css || `/* Add your CSS here or link style.css */`}
       <a href="#" class="view-all">View all guides</a>
     </div>
     <div class="pub-grid">${pubsHTML}</div>
-  </div>
-</section>
-
-<!-- TESTIMONIALS -->
-<section class="sec-testimonials" aria-labelledby="testi-heading">
-  <div class="container">
-    <h2 class="section-title" id="testi-heading">What Readers Say</h2>
-    <div class="testimonial-grid">${testisHTML}</div>
   </div>
 </section>
 
@@ -2688,12 +2408,11 @@ function setActiveAuthor(id){
   toast(`"${author.name}" is now the active author!`);
 }
 
-/* Write DATA.articles + DATA.credentials back into the active author object */
+/* Write DATA.articles back into the active author object */
 function syncArticlesCredentialsToAuthor(){
   const idx = DATA.authorsList.findIndex(a=>a.id===DATA.activeAuthorId);
   if(idx === -1) return;
-  DATA.authorsList[idx].articles    = JSON.parse(JSON.stringify(DATA.articles||[]));
-  DATA.authorsList[idx].credentials = JSON.parse(JSON.stringify(DATA.credentials||[]));
+  DATA.authorsList[idx].articles = JSON.parse(JSON.stringify(DATA.articles||[]));
 }
 
 function editAuthorProfile(id){
@@ -2715,7 +2434,6 @@ function deleteAuthor(i){
 let authorEditIndex = null;
 let amSocial  = [];
 let amTags    = [];
-let amStats   = [];
 let amAvatarData = '';
 
 function openAuthorModal(idx){
@@ -2735,12 +2453,10 @@ function openAuthorModal(idx){
 
   amSocial   = JSON.parse(JSON.stringify(a.social   || [{id:1,label:'LinkedIn',url:'#',icon:'linkedin'}]));
   amTags     = JSON.parse(JSON.stringify(a.expertise || []));
-  amStats    = JSON.parse(JSON.stringify(a.stats    || [{value:'',label:''}]));
 
   updateAMPreview();
   renderAMSocial();
   renderAMTags();
-  renderAMStats();
 
   /* SEO fields */
   const seo = a.seo||{};
@@ -2812,24 +2528,6 @@ document.getElementById('am-tag-input')?.addEventListener('keydown',e=>{
   if(e.key==='Enter'){e.preventDefault();addAMTag();}
 });
 
-/* Stats in author modal */
-function renderAMStats(){
-  const c=document.getElementById('am-stat-rows');
-  c.innerHTML=amStats.map((s,i)=>
-    `<div class="stat-row">
-       <input class="stat-val" value="${esc(s.value)}" placeholder="200+"
-              onchange="amStats[${i}].value=this.value">
-       <input class="stat-lbl" value="${esc(s.label)}" placeholder="Articles"
-              onchange="amStats[${i}].label=this.value">
-       <button class="btn btn-danger btn-sm"
-               onclick="amStats.splice(${i},1);renderAMStats()">✕</button>
-     </div>`
-  ).join('');
-}
-function addAMStat(){
-  amStats.push({value:'',label:''}); renderAMStats();
-}
-
 function saveAuthor(){
   const name = document.getElementById('am-name').value.trim();
   if(!name){ alert('Name is required.'); return; }
@@ -2848,7 +2546,6 @@ function saveAuthor(){
     avatarImage:    avatarFinal,
     social:         JSON.parse(JSON.stringify(amSocial)),
     expertise:      JSON.parse(JSON.stringify(amTags)),
-    stats:          amStats.filter(s=>s.value||s.label),
     /* Preserve per-author articles/credentials across modal edits */
     articles:       existing.articles    !== undefined ? existing.articles    : [],
     credentials:    existing.credentials !== undefined ? existing.credentials : []
