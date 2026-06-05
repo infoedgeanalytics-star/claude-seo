@@ -704,7 +704,7 @@ img { max-width:100%; display:block; }
       </div>
       <div class="cms-card-body" style="padding:0;">
         <table class="list-table">
-          <thead><tr><th>Topic Name</th><th>Count Label</th><th>Actions</th></tr></thead>
+          <thead><tr><th>Topic Name</th><th>Count / Number</th><th>Link URL</th><th>Actions</th></tr></thead>
           <tbody id="topic-tbody"></tbody>
         </table>
       </div>
@@ -1670,10 +1670,15 @@ function renderTopics(){
   const tb = document.getElementById('topic-tbody');
   tb.innerHTML = DATA.topics.map((t,i)=>`
     <tr>
-      <td><input value="${esc(t.name)}" style="width:100%;padding:6px 8px;border:1.5px solid var(--border);border-radius:6px;"
-                 onchange="DATA.topics[${i}].name=this.value"></td>
-      <td><input value="${esc(t.count)}" style="width:100px;padding:6px 8px;border:1.5px solid var(--border);border-radius:6px;"
-                 onchange="DATA.topics[${i}].count=this.value"></td>
+      <td><input value="${esc(t.name)}" placeholder="e.g. ATS Resume Writing"
+                 style="width:100%;padding:6px 8px;border:1.5px solid var(--border);border-radius:6px;"
+                 onchange="DATA.topics[${i}].name=this.value;persist()"></td>
+      <td><input value="${esc(t.count)}" placeholder="e.g. 48 articles"
+                 style="width:120px;padding:6px 8px;border:1.5px solid var(--border);border-radius:6px;"
+                 onchange="DATA.topics[${i}].count=this.value;persist()"></td>
+      <td><input value="${esc(t.url||'')}" placeholder="https://… (leave blank for no link)"
+                 style="width:100%;padding:6px 8px;border:1.5px solid var(--border);border-radius:6px;"
+                 onchange="DATA.topics[${i}].url=this.value;persist()"></td>
       <td><button class="btn btn-danger btn-sm" onclick="removeTopic(${i})">✕</button></td>
     </tr>`
   ).join('');
@@ -1681,7 +1686,7 @@ function renderTopics(){
 
 function removeTopic(i){ DATA.topics.splice(i,1); persist(); renderTopics(); }
 function addTopic(){
-  DATA.topics.push({id:uid(),name:'',count:'0 articles'}); persist(); renderTopics();
+  DATA.topics.push({id:uid(),name:'',count:'0 articles',url:''}); persist(); renderTopics();
 }
 
 /* ══════════════ PUBLICATIONS ══════════════ */
@@ -2046,10 +2051,10 @@ function buildStaticHTML(author, css, data){
      </a>`
   ).join('\n      ');
 
-  /* ── expertise tags ── */
-  const tagsHTML = (author.expertise||[]).map((t,i)=>
-    `<span class="tag${i===0?' is-active':''}" role="button" tabindex="0" data-tag="${h(t)}">${h(t)}</span>`
-  ).join('\n      ');
+  /* ── expertise tags (inline hero) ── */
+  const tagsHTML = (author.expertise||[]).map(t=>
+    `<span class="hero-tag">${h(t)}</span>`
+  ).join('');
 
   /* ── articles (per-author, falls back to global) ── */
   const articles   = (author.articles && author.articles.length ? author.articles : data.articles)||[];
@@ -2091,10 +2096,10 @@ function buildStaticHTML(author, css, data){
 
   /* ── topics ── */
   const topicsHTML = (data.topics||[]).map(t=>
-    `<li><div class="topic-row" role="link" tabindex="0">
-         <span class="topic-name">${h(t.name)}</span>
-         <span class="topic-count">${h(t.count)}</span>
-       </div></li>`
+    `<li>${t.url && t.url !== '#'
+      ? `<a href="${h(t.url)}" class="topic-row topic-link"><span class="topic-name">${h(t.name)}</span><span class="topic-count">${h(t.count)}</span></a>`
+      : `<div class="topic-row"><span class="topic-name">${h(t.name)}</span><span class="topic-count">${h(t.count)}</span></div>`
+    }</li>`
   ).join('');
 
   /* ── cta ── */
@@ -2232,20 +2237,14 @@ ${css || `/* Add your CSS here or link style.css */`}
         <div class="social-row">
           ${socialHTML}
         </div>
+        ${tagsHTML ? `<div class="hero-expertise">
+          <span class="hero-expertise-label">Expertise:</span>
+          <span class="hero-expertise-tags">${tagsHTML}</span>
+        </div>` : ''}
       </div>
     </div>
   </div>
 </section>
-
-<!-- EXPERTISE STRIP -->
-<div class="expertise-strip" aria-label="Areas of expertise">
-  <div class="container">
-    <div class="expertise-inner">
-      <span class="expertise-label">Expertise:</span>
-      ${tagsHTML}
-    </div>
-  </div>
-</div>
 
 <!-- ARTICLES + SIDEBAR -->
 <div class="container">

@@ -44,15 +44,21 @@ function renderHero(p, social) {
         <p class="author-title">${esc(p.title)} at <strong>${esc(p.company)}</strong></p>
         <p class="author-bio">${esc(p.bio)}</p>
         <div class="social-row">${socialHtml}</div>
+        <div class="hero-expertise" aria-label="Areas of expertise">
+          <span class="hero-expertise-label">Expertise:</span>
+          <span id="expertise-tags" class="hero-expertise-tags"></span>
+        </div>
       </div>
     </div>`;
+  renderExpertise(p._expertise || []);
 }
 
-/* ── Render expertise strip ──────────────────────────────────── */
+/* ── Render expertise (inline in hero) ──────────────────────── */
 function renderExpertise(tags) {
   const el = document.getElementById('expertise-tags');
-  el.innerHTML = tags.map((t, i) =>
-    `<span class="tag${i===0?' is-active':''}" role="button" tabindex="0">${esc(t)}</span>`
+  if (!el) return;
+  el.innerHTML = tags.map(t =>
+    `<span class="hero-tag">${esc(t)}</span>`
   ).join('');
 }
 
@@ -96,10 +102,18 @@ function renderArticles(articles) {
 function renderSidebar(data) {
   // Topics
   document.getElementById('topic-list').innerHTML = data.topics.map(t =>
-    `<li><div class="topic-row" role="link" tabindex="0">
-       <span class="topic-name">${esc(t.name)}</span>
-       <span class="topic-count">${esc(t.count)}</span>
-     </div></li>`
+    `<li>
+       ${t.url && t.url !== '#'
+         ? `<a href="${esc(t.url)}" class="topic-row topic-link">
+              <span class="topic-name">${esc(t.name)}</span>
+              <span class="topic-count">${esc(t.count)}</span>
+            </a>`
+         : `<div class="topic-row">
+              <span class="topic-name">${esc(t.name)}</span>
+              <span class="topic-count">${esc(t.count)}</span>
+            </div>`
+       }
+     </li>`
   ).join('');
 
   // CTA
@@ -147,17 +161,6 @@ function initFilters(articles) {
     const filtered = cat === 'All' ? articles : articles.filter(a => a.category === cat);
     renderArticles(filtered);
     initScrollAnimations();
-  });
-}
-
-/* ── Expertise tag toggle ────────────────────────────────────── */
-function initTags() {
-  document.getElementById('expertise-tags').addEventListener('click', e => {
-    const tag = e.target.closest('.tag');
-    if (!tag) return;
-    document.querySelectorAll('#expertise-tags .tag')
-            .forEach(t => t.classList.remove('is-active'));
-    tag.classList.add('is-active');
   });
 }
 
@@ -221,14 +224,13 @@ function initCMSBadge() {
 document.addEventListener('DOMContentLoaded', () => {
   const data = loadData();
 
+  data.profile._expertise = data.expertise;
   renderHero(data.profile, data.social);
-  renderExpertise(data.expertise);
   renderArticles(data.articles);
   renderSidebar(data);
   renderRelated(data.relatedAuthors);
 
   initFilters(data.articles);
-  initTags();
   initScrollAnimations();
   initCMSBadge();
 });
