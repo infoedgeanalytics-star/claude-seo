@@ -1953,33 +1953,24 @@ function renderDownloadPanel(){
 
 /* ── Fetch CSS then trigger download ── */
 async function downloadAuthorPage(authorId){
+  commitAllPendingEdits();
   const author = DATA.authorsList.find(a=>a.id===authorId);
   if(!author){ toast('Author not found', false); return; }
-
   toast('Generating file…');
-
-  let css = '';
-  try {
-    const r = await fetch('../css/style.css');
-    if(r.ok) css = await r.text();
-  } catch(e){ /* file:// may block fetch; css will be minimal fallback */ }
-
+  const css = await loadProfileCSS();
   const html = buildStaticHTML(author, css, DATA);
   triggerDownload(html, `author-${author.name.toLowerCase().replace(/\s+/g,'-')}.html`);
   toast(`"${author.name}" downloaded!`);
 }
 
 async function downloadAllAuthors(){
-  ensureAuthorsList();
+  commitAllPendingEdits();
   if(!DATA.authorsList.length){ toast('No authors to download', false); return; }
-
-  let css = '';
-  try { const r=await fetch('../css/style.css'); if(r.ok) css=await r.text(); } catch(e){}
-
+  const css = await loadProfileCSS();
   for(const author of DATA.authorsList){
     const html = buildStaticHTML(author, css, DATA);
     triggerDownload(html, `author-${author.name.toLowerCase().replace(/\s+/g,'-')}.html`);
-    await new Promise(r=>setTimeout(r,300)); // stagger downloads
+    await new Promise(r=>setTimeout(r,300));
   }
   toast(`${DATA.authorsList.length} pages downloaded!`);
 }
@@ -1992,16 +1983,67 @@ function triggerDownload(content, filename){
   setTimeout(()=>URL.revokeObjectURL(url), 2000);
 }
 
+/* Flush any unsaved CMS edits into DATA, then push DATA back into the
+   currently active author object so exports always contain the latest. */
+function commitAllPendingEdits(){
+  /* Pull values out of any inputs in the Profile / Sidebar panels */
+  try { if(document.getElementById('p-name'))     collectProfile(); } catch(e){}
+  try { if(document.getElementById('cta-title'))  collectCTA();     } catch(e){}
+  /* Sync DATA (profile / social / expertise / articles) into authorsList */
+  ensureAuthorsList();
+  const idx = DATA.authorsList.findIndex(a=>a.id===DATA.activeAuthorId);
+  if(idx !== -1){
+    const a = DATA.authorsList[idx];
+    a.name           = DATA.profile.name;
+    a.eyebrow        = DATA.profile.eyebrow;
+    a.title          = DATA.profile.title;
+    a.company        = DATA.profile.company;
+    a.bio            = DATA.profile.bio;
+    a.avatarInitials = DATA.profile.avatarInitials;
+    a.avatarImage    = DATA.profile.avatarImage;
+    a.social         = JSON.parse(JSON.stringify(DATA.social||[]));
+    a.expertise      = JSON.parse(JSON.stringify(DATA.expertise||[]));
+    a.articles       = JSON.parse(JSON.stringify(DATA.articles||[]));
+  }
+  persist();
+}
+
+/* Robust CSS loader — tries common paths; falls back to current document's
+   linked stylesheets if fetch fails (file:// or strict CORS). */
+async function loadProfileCSS(){
+  const paths = ['../css/style.css','css/style.css','/css/style.css','style.css'];
+  for(const p of paths){
+    try {
+      const r = await fetch(p);
+      if(r.ok){
+        const t = await r.text();
+        if(t && t.length > 50) return t;
+      }
+    } catch(e){}
+  }
+  /* Last-resort fallback: serialise stylesheets reachable from this document */
+  try {
+    let dump = '';
+    for(const sheet of document.styleSheets){
+      try {
+        for(const rule of sheet.cssRules) dump += rule.cssText + '\n';
+      } catch(e){ /* cross-origin sheet — skip */ }
+    }
+    if(dump) return dump;
+  } catch(e){}
+  return '';
+}
+
 async function previewAuthorCode(authorId){
+  commitAllPendingEdits();
   const author = DATA.authorsList.find(a=>a.id===authorId);
   if(!author){ toast('Author not found', false); return; }
   toast('Generating preview…');
-  let css = '';
-  try { const r=await fetch('../css/style.css'); if(r.ok) css=await r.text(); } catch(e){}
+  const css = await loadProfileCSS();
   const html = buildStaticHTML(author, css, DATA);
   document.getElementById('code-preview-title').textContent = `Source — ${author.name}`;
   document.getElementById('code-preview-textarea').value = html;
-  document.getElementById('code-preview-modal').style.display = 'flex';
+  openModal('code-preview-modal');
   toast('Code ready — copy or download!');
 }
 
