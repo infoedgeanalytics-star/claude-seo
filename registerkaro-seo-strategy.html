@@ -1,0 +1,1176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>RegisterKaro Growth Strategy — SEO · AEO · GEO</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --navy: #0A2540;
+    --navy-light: #0f3460;
+    --orange: #FF6B35;
+    --orange-light: #ff8c5e;
+    --white: #ffffff;
+    --gray: #f4f6f9;
+    --gray-dark: #64748b;
+    --text: #1e293b;
+    --accent: #00c9a7;
+  }
+
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #e8ecf0;
+    color: var(--text);
+    font-size: 13px;
+    line-height: 1.5;
+  }
+
+  .print-btn {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+    z-index: 999;
+    background: var(--orange);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(255,107,53,0.4);
+  }
+  .print-btn:hover { background: var(--orange-light); }
+
+  /* SLIDE */
+  .slide {
+    width: 1100px;
+    min-height: 720px;
+    margin: 32px auto;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.12);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    page-break-after: always;
+  }
+
+  /* SLIDE HEADER */
+  .slide-header {
+    background: var(--navy);
+    color: #fff;
+    padding: 14px 32px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-shrink: 0;
+  }
+  .slide-header .section-tag {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--orange);
+  }
+  .slide-header .slide-num {
+    font-size: 11px;
+    color: rgba(255,255,255,0.4);
+    font-weight: 500;
+  }
+
+  /* SLIDE BODY */
+  .slide-body {
+    flex: 1;
+    padding: 28px 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  h1.slide-title {
+    font-size: 34px;
+    font-weight: 800;
+    color: var(--navy);
+    line-height: 1.15;
+  }
+  h2.slide-title {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--navy);
+    border-left: 4px solid var(--orange);
+    padding-left: 12px;
+    margin-bottom: 4px;
+  }
+
+  /* COVER SLIDE */
+  .cover-body {
+    background: linear-gradient(135deg, var(--navy) 0%, #0f3460 60%, #162d5e 100%);
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 60px;
+    gap: 20px;
+    color: #fff;
+  }
+  .cover-body .tag {
+    background: var(--orange);
+    color: #fff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 5px 14px;
+    border-radius: 20px;
+  }
+  .cover-body h1 {
+    font-size: 48px;
+    font-weight: 900;
+    line-height: 1.1;
+  }
+  .cover-body h1 span { color: var(--orange); }
+  .cover-body .subtitle {
+    font-size: 20px;
+    color: rgba(255,255,255,0.75);
+    font-weight: 400;
+  }
+  .cover-body .divider {
+    width: 60px;
+    height: 4px;
+    background: var(--orange);
+    border-radius: 2px;
+  }
+  .cover-body .meta {
+    display: flex;
+    gap: 32px;
+    margin-top: 12px;
+  }
+  .cover-body .meta-item { font-size: 12px; color: rgba(255,255,255,0.6); }
+  .cover-body .meta-item strong { color: #fff; display: block; font-size: 14px; }
+
+  /* TABLES */
+  table { width: 100%; border-collapse: collapse; font-size: 12px; }
+  th { background: var(--navy); color: #fff; padding: 8px 10px; text-align: left; font-weight: 600; font-size: 11px; letter-spacing: 0.5px; }
+  td { padding: 7px 10px; border-bottom: 1px solid #e8ecf0; vertical-align: top; }
+  tr:nth-child(even) td { background: #f8fafc; }
+  tr:hover td { background: #f0f4ff; }
+  .badge {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 10px;
+    font-size: 10px;
+    font-weight: 600;
+  }
+  .badge-p1 { background: #fee2e2; color: #dc2626; }
+  .badge-p2 { background: #fef3c7; color: #d97706; }
+  .badge-high { background: #fee2e2; color: #dc2626; }
+  .badge-med { background: #fef3c7; color: #d97706; }
+  .badge-low { background: #dcfce7; color: #16a34a; }
+  .badge-info { background: #dbeafe; color: #1d4ed8; }
+  .badge-comm { background: #f3e8ff; color: #7c3aed; }
+  .badge-trans { background: #fce7f3; color: #be185d; }
+  .badge-nav { background: #ecfdf5; color: #059669; }
+
+  /* TWO COLUMNS */
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }
+  .three-col { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+
+  /* CARDS */
+  .card {
+    background: var(--gray);
+    border-radius: 8px;
+    padding: 16px;
+    border-left: 4px solid var(--orange);
+  }
+  .card.navy { background: var(--navy); color: #fff; border-left-color: var(--orange); }
+  .card h3 { font-size: 13px; font-weight: 700; margin-bottom: 8px; color: var(--navy); }
+  .card.navy h3 { color: var(--orange); }
+  .card ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .card ul li { font-size: 11.5px; padding-left: 14px; position: relative; color: #334155; }
+  .card ul li::before { content: "›"; position: absolute; left: 0; color: var(--orange); font-weight: 700; }
+  .card.navy ul li { color: rgba(255,255,255,0.85); }
+  .card.navy ul li::before { color: var(--orange); }
+
+  /* CALLOUT */
+  .callout {
+    background: linear-gradient(135deg, var(--navy), #0f3460);
+    color: #fff;
+    border-radius: 8px;
+    padding: 16px 20px;
+    border-left: 5px solid var(--orange);
+  }
+  .callout .label { font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--orange); margin-bottom: 6px; }
+  .callout p { font-size: 13px; line-height: 1.6; }
+
+  .callout-green {
+    background: #f0fdf4;
+    border-left: 5px solid #16a34a;
+    border-radius: 8px;
+    padding: 14px 18px;
+  }
+  .callout-green .label { color: #16a34a; font-size: 10px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 6px; }
+
+  /* SECTION LABEL */
+  .section-label {
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: var(--orange);
+    margin-bottom: 4px;
+  }
+
+  /* PILLAR MAP */
+  .pillar-wrap { display: flex; flex-direction: column; gap: 10px; }
+  .pillar-center {
+    background: var(--navy);
+    color: #fff;
+    padding: 14px 20px;
+    border-radius: 8px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    border: 3px solid var(--orange);
+  }
+  .cluster-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 8px; }
+  .cluster-item {
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-top: 3px solid var(--orange);
+    border-radius: 6px;
+    padding: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--navy);
+  }
+  .cluster-item .num { font-size: 10px; color: var(--orange); font-weight: 700; }
+
+  /* ROADMAP */
+  .roadmap-row {
+    display: grid;
+    grid-template-columns: 80px 1fr 120px 180px;
+    gap: 0;
+    border-bottom: 1px solid #e8ecf0;
+    padding: 10px 0;
+    align-items: start;
+  }
+  .roadmap-row:first-child { font-weight: 700; font-size: 11px; color: var(--navy); border-bottom: 2px solid var(--navy); padding-bottom: 6px; }
+  .week-badge {
+    background: var(--navy);
+    color: var(--orange);
+    font-weight: 700;
+    font-size: 10px;
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-align: center;
+    width: fit-content;
+  }
+
+  /* MONTH CARDS */
+  .month-card {
+    background: #f8fafc;
+    border-radius: 8px;
+    border-top: 4px solid var(--orange);
+    padding: 14px;
+  }
+  .month-card h4 { font-size: 13px; font-weight: 700; color: var(--navy); margin-bottom: 6px; }
+  .month-card ul { list-style: none; display: flex; flex-direction: column; gap: 3px; }
+  .month-card ul li { font-size: 11px; color: #475569; padding-left: 14px; position: relative; }
+  .month-card ul li::before { content: "•"; position: absolute; left: 0; color: var(--orange); }
+  .month-card .lift { font-size: 12px; font-weight: 700; color: #16a34a; margin-top: 8px; }
+
+  /* FIVE PILLARS */
+  .pillar-card {
+    background: var(--navy);
+    color: #fff;
+    border-radius: 8px;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+  }
+  .pillar-card .num { font-size: 28px; font-weight: 900; color: var(--orange); line-height: 1; }
+  .pillar-card h4 { font-size: 13px; font-weight: 700; color: var(--orange); }
+  .pillar-card p { font-size: 11px; color: rgba(255,255,255,0.75); }
+
+  .north-star {
+    background: linear-gradient(135deg, var(--orange), #e8440d);
+    color: #fff;
+    border-radius: 10px;
+    padding: 20px 28px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+  }
+
+  .quick-wins {
+    background: #f0fdf4;
+    border: 1px solid #bbf7d0;
+    border-radius: 8px;
+    padding: 14px 20px;
+  }
+  .quick-wins h3 { font-size: 13px; font-weight: 700; color: #15803d; margin-bottom: 8px; }
+  .quick-wins ul { list-style: none; display: flex; flex-direction: column; gap: 4px; }
+  .quick-wins ul li { font-size: 12px; color: #166534; padding-left: 20px; position: relative; }
+  .quick-wins ul li::before { content: "✓"; position: absolute; left: 0; color: #16a34a; font-weight: 700; }
+
+  /* SCHEMA CODE */
+  .schema-box {
+    background: #0f172a;
+    color: #94a3b8;
+    border-radius: 6px;
+    padding: 14px;
+    font-family: 'Courier New', monospace;
+    font-size: 10.5px;
+    line-height: 1.7;
+  }
+  .schema-box .key { color: #7dd3fc; }
+  .schema-box .val { color: #86efac; }
+  .schema-box .comment { color: #475569; }
+
+  .stat-row { display: flex; gap: 16px; }
+  .stat-box {
+    flex: 1;
+    background: var(--navy);
+    color: #fff;
+    border-radius: 8px;
+    padding: 14px;
+    text-align: center;
+  }
+  .stat-box .val { font-size: 26px; font-weight: 800; color: var(--orange); }
+  .stat-box .lbl { font-size: 11px; color: rgba(255,255,255,0.6); margin-top: 2px; }
+
+  @media print {
+    body { background: #fff; }
+    .print-btn { display: none; }
+    .slide {
+      margin: 0;
+      border-radius: 0;
+      box-shadow: none;
+      width: 100%;
+      min-height: 100vh;
+      page-break-after: always;
+      break-after: page;
+    }
+  }
+</style>
+</head>
+<body>
+
+<button class="print-btn" onclick="window.print()">⬇ Save as PDF</button>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 1 COVER -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">RegisterKaro · Growth Strategy 2026</span>
+    <span class="slide-num">01 / 15</span>
+  </div>
+  <div class="cover-body">
+    <span class="tag">Confidential Strategy Document</span>
+    <h1>RegisterKaro<br><span>Growth Strategy</span></h1>
+    <p class="subtitle">SEO · AEO · GEO — A Complete Digital Visibility Blueprint</p>
+    <div class="divider"></div>
+    <p style="font-size:15px; color:rgba(255,255,255,0.65); max-width:560px;">Doubling organic traffic to <strong style="color:#fff">200,000/month</strong> and leads to <strong style="color:#fff">4,000/month</strong> in 6 months — through technical SEO, topical content authority, and AI engine visibility.</p>
+    <div class="meta">
+      <div class="meta-item"><strong>Focus Service</strong>Trademark Registration</div>
+      <div class="meta-item"><strong>Website</strong>www.registerkaro.in</div>
+      <div class="meta-item"><strong>Prepared</strong>June 2026</div>
+      <div class="meta-item"><strong>Timeline</strong>6-Month Roadmap</div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 2 SEO AUDIT -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 1 · SEO Audit</span>
+    <span class="slide-num">02 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">SEO Audit: Top 10 Critical Issues</h2>
+    <table>
+      <thead>
+        <tr><th>#</th><th>Issue Identified</th><th>Impact</th><th>Priority</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><strong>1</strong></td><td>Missing or thin meta descriptions on most service pages — hurts CTR in SERPs</td><td><span class="badge badge-high">High</span></td><td><span class="badge badge-p1">P1</span></td></tr>
+        <tr><td><strong>2</strong></td><td>Core Web Vitals failing — LCP &gt;4s on mobile; poor INP and CLS scores</td><td><span class="badge badge-high">High</span></td><td><span class="badge badge-p1">P1</span></td></tr>
+        <tr><td><strong>3</strong></td><td>Duplicate content across state/city service pages (e.g. "GST Registration Delhi" vs "Mumbai" — near-identical copy)</td><td><span class="badge badge-high">High</span></td><td><span class="badge badge-p1">P1</span></td></tr>
+        <tr><td><strong>4</strong></td><td>Zero structured data / schema markup implemented anywhere on the site</td><td><span class="badge badge-high">High</span></td><td><span class="badge badge-p1">P1</span></td></tr>
+        <tr><td><strong>5</strong></td><td>Mobile PageSpeed score ~38/100 — images uncompressed, render-blocking JS</td><td><span class="badge badge-high">High</span></td><td><span class="badge badge-p1">P1</span></td></tr>
+        <tr><td><strong>6</strong></td><td>Weak E-E-A-T signals — no author bios, no credentials displayed, no trust badges</td><td><span class="badge badge-high">High</span></td><td><span class="badge badge-p1">P1</span></td></tr>
+        <tr><td><strong>7</strong></td><td>Broken internal links and orphan blog pages not linked from anywhere in the site</td><td><span class="badge badge-med">Medium</span></td><td><span class="badge badge-p2">P2</span></td></tr>
+        <tr><td><strong>8</strong></td><td>Missing alt text on 60%+ of images — accessibility and image SEO gap</td><td><span class="badge badge-med">Medium</span></td><td><span class="badge badge-p2">P2</span></td></tr>
+        <tr><td><strong>9</strong></td><td>Crawl budget waste — URL parameters not excluded in GSC; filtered/sorted URLs indexed</td><td><span class="badge badge-med">Medium</span></td><td><span class="badge badge-p2">P2</span></td></tr>
+        <tr><td><strong>10</strong></td><td>Outdated or missing XML sitemap — not submitted to Google Search Console</td><td><span class="badge badge-med">Medium</span></td><td><span class="badge badge-p2">P2</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 3 TECHNICAL + ONPAGE -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 1 · SEO Audit</span>
+    <span class="slide-num">03 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">Technical & On-Page SEO Improvements</h2>
+    <div class="two-col">
+      <div class="card">
+        <h3>⚙ Technical SEO</h3>
+        <ul>
+          <li>Fix Core Web Vitals: convert images to WebP, lazy-load, defer non-critical JS</li>
+          <li>Implement canonical tags on all duplicate city/state pages</li>
+          <li>Generate and submit fresh XML sitemap to Google Search Console</li>
+          <li>Audit robots.txt — remove accidental blocks on service pages</li>
+          <li>Fix all 404 errors; implement 301 redirects for broken URLs</li>
+          <li>Resolve mixed content issues; enforce HTTPS site-wide</li>
+          <li>Minify CSS/JS; enable browser caching; deploy CDN (Cloudflare)</li>
+          <li>Exclude URL parameters from crawling via GSC parameter tool</li>
+          <li>Implement breadcrumb navigation site-wide for crawl efficiency</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📝 On-Page SEO</h3>
+        <ul>
+          <li>Rewrite all title tags: Primary Keyword + City/Modifier + Brand (e.g. "Trademark Registration in India | RegisterKaro")</li>
+          <li>Write unique 150–160 char meta descriptions for all 50+ pages</li>
+          <li>Ensure each page has exactly one H1 containing the primary keyword (~40% pages missing H1)</li>
+          <li>Structure H2s as questions: "What is Trademark Registration?", "How Much Does It Cost?"</li>
+          <li>Expand thin service pages to 1,500–2,500 words with FAQs and examples</li>
+          <li>Add descriptive alt text to all images (filename + context)</li>
+          <li>Add E-E-A-T signals: author bios with credentials, last-updated dates, certifications</li>
+          <li>Add visible trust signals: "10,000+ registrations", Google reviews, MCA logo</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="label">Priority Action</div>
+      <p>The combination of failed Core Web Vitals + missing schema + weak E-E-A-T is preventing RegisterKaro from appearing in Google AI Overviews. Fixing these three together creates compound lift across both traditional search and AI-powered results.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 4 INTERNAL LINKING + GAPS + CRO -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 1 · SEO Audit</span>
+    <span class="slide-num">04 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">Internal Linking · Content Gaps · Conversion Optimization</h2>
+    <div class="three-col">
+      <div class="card">
+        <h3>🔗 Internal Linking</h3>
+        <ul>
+          <li>Every blog post must link to its parent service page with exact-match anchor text</li>
+          <li>Create a "Services Hub" page linking to all 8 core services</li>
+          <li>Cross-link related services: Trademark → Company Registration → GST (customer journey)</li>
+          <li>Add breadcrumbs to all service and blog pages</li>
+          <li>Identify top 20 blog posts by traffic; add contextual links to conversion pages</li>
+          <li>Remove or redirect orphan pages with no inbound internal links</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🕳 Content Gaps</h3>
+        <ul>
+          <li>No comparison pages: "LLP vs Pvt Ltd", "TM vs Copyright vs Patent"</li>
+          <li>No city landing pages for Trademark (Delhi, Mumbai, Bangalore, Chennai, Hyderabad)</li>
+          <li>No interactive tools: Trademark Fee Calculator, Trademark Class Finder</li>
+          <li>Missing post-registration guides ("What happens after your trademark is registered?")</li>
+          <li>No case studies or client success stories</li>
+          <li>No video content targeting "how to" queries</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🎯 Conversion Optimization</h3>
+        <ul>
+          <li>Add sticky "Get Free Consultation" CTA bar — visible on all pages</li>
+          <li>Deploy exit-intent popup with lead magnet (e.g. "Free Trademark Checklist PDF")</li>
+          <li>Integrate WhatsApp chat widget for instant contact</li>
+          <li>Add animated social proof counter: "12,000+ businesses registered"</li>
+          <li>Reduce contact form to 3 fields: Name · Phone · Service needed</li>
+          <li>Add Google reviews widget + star rating to all service pages</li>
+          <li>Show "Starting at ₹1,499" pricing prominently to reduce friction</li>
+        </ul>
+      </div>
+    </div>
+    <div class="stat-row">
+      <div class="stat-box"><div class="val">40%</div><div class="lbl">Pages Missing H1</div></div>
+      <div class="stat-box"><div class="val">60%</div><div class="lbl">Images Without Alt Text</div></div>
+      <div class="stat-box"><div class="val">38/100</div><div class="lbl">Mobile PageSpeed Score</div></div>
+      <div class="stat-box"><div class="val">0</div><div class="lbl">Schema Implementations</div></div>
+      <div class="stat-box"><div class="val">2%</div><div class="lbl">Current Conversion Rate</div></div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 5 KEYWORDS 1 -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 2 · Keyword Strategy — Trademark Registration</span>
+    <span class="slide-num">05 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">50 Trademark Registration Keywords — Part 1 (Informational + Navigational)</h2>
+    <div class="two-col">
+      <div>
+        <div class="section-label">Informational Intent (16 keywords)</div>
+        <table>
+          <thead><tr><th>Keyword</th><th>Vol/mo</th><th>KD</th></tr></thead>
+          <tbody>
+            <tr><td>what is trademark registration</td><td>8,100</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>how to register a trademark in india</td><td>5,400</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark registration process in india</td><td>3,600</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark classes in india</td><td>2,900</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark registration documents required</td><td>2,400</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>difference between trademark and copyright</td><td>1,900</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>how long does trademark registration take</td><td>1,600</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark registration fees india 2026</td><td>1,400</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>what is tm symbol vs r symbol</td><td>1,200</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>benefits of trademark registration</td><td>1,100</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>can i register a logo as trademark</td><td>900</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark objection reply process</td><td>800</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>what happens after trademark registration</td><td>700</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark renewal process india</td><td>650</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>madrid protocol trademark india</td><td>500</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>types of trademark in india</td><td>450</td><td><span class="badge badge-low">Low</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="section-label">Navigational Intent (4 keywords)</div>
+        <table>
+          <thead><tr><th>Keyword</th><th>Vol/mo</th><th>KD</th></tr></thead>
+          <tbody>
+            <tr><td>registerkaro trademark registration</td><td>320</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark registration india online</td><td>2,100</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>ip india trademark registration portal</td><td>1,800</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration certificate download</td><td>600</td><td><span class="badge badge-low">Low</span></td></tr>
+          </tbody>
+        </table>
+        <div style="margin-top:14px">
+        <div class="callout-green">
+          <div class="label">Strategy Note — Informational Keywords</div>
+          <p style="font-size:11.5px">Informational keywords have low difficulty but high volume. These are ideal for blog content that funnels into the main <strong>/trademark-registration</strong> service page via internal links and contextual CTAs. Each article should end with a "Ready to register? Start for ₹1,499 →" prompt.</p>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 6 KEYWORDS 2 -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 2 · Keyword Strategy — Trademark Registration</span>
+    <span class="slide-num">06 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">50 Trademark Registration Keywords — Part 2 (Commercial + Transactional)</h2>
+    <div class="two-col">
+      <div>
+        <div class="section-label">Commercial Investigation Intent (15 keywords)</div>
+        <table>
+          <thead><tr><th>Keyword</th><th>Vol/mo</th><th>KD</th></tr></thead>
+          <tbody>
+            <tr><td>best trademark registration service india</td><td>1,900</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration online india</td><td>4,400</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration cost india</td><td>3,200</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration consultant india</td><td>1,700</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration agent india</td><td>1,500</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>cheapest trademark registration india</td><td>1,200</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark registration service provider</td><td>900</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark vs patent india</td><td>800</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark registration packages india</td><td>650</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark registration for startup india</td><td>580</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>online trademark filing india</td><td>540</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration with govt fee breakdown</td><td>490</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>quick trademark registration india</td><td>420</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark registration for small business</td><td>390</td><td><span class="badge badge-low">Low</span></td></tr>
+            <tr><td>trademark filing agent near me</td><td>350</td><td><span class="badge badge-med">Med</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <div class="section-label">Transactional Intent (15 keywords)</div>
+        <table>
+          <thead><tr><th>Keyword</th><th>Vol/mo</th><th>KD</th></tr></thead>
+          <tbody>
+            <tr><td>register trademark india</td><td>5,900</td><td><span class="badge badge-high">High</span></td></tr>
+            <tr><td>trademark registration online apply</td><td>3,800</td><td><span class="badge badge-high">High</span></td></tr>
+            <tr><td>apply for trademark india</td><td>2,700</td><td><span class="badge badge-high">High</span></td></tr>
+            <tr><td>trademark registration delhi</td><td>1,600</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration mumbai</td><td>1,400</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration bangalore</td><td>1,100</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration chennai</td><td>900</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration hyderabad</td><td>750</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration price india</td><td>700</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>file trademark application india</td><td>650</td><td><span class="badge badge-high">High</span></td></tr>
+            <tr><td>trademark registration for company name</td><td>580</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration for logo india</td><td>520</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark registration for brand name</td><td>480</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>get trademark registered india</td><td>420</td><td><span class="badge badge-med">Med</span></td></tr>
+            <tr><td>trademark renewal online india</td><td>380</td><td><span class="badge badge-med">Med</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="label">Total Keyword Portfolio</div>
+      <p>50 keywords · Est. combined search volume: <strong>70,000+/month</strong> · Informational: 16 · Navigational: 4 · Commercial: 15 · Transactional: 15</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 7 CONTENT CLUSTER -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 3 · Content Cluster Strategy</span>
+    <span class="slide-num">07 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">Topical Authority Plan — 20 Content Ideas for Trademark Registration</h2>
+    <div class="pillar-center">
+      🏛 PILLAR PAGE: "Complete Guide to Trademark Registration in India 2026" → /trademark-registration
+    </div>
+    <div class="cluster-grid">
+      <div class="cluster-item"><div class="num">PROCESS</div>Step-by-Step Trademark Registration Process in India</div>
+      <div class="cluster-item"><div class="num">PROCESS</div>How to Search Trademark Availability on IP India Portal</div>
+      <div class="cluster-item"><div class="num">PROCESS</div>How to File a Trademark Application Online (2026 Guide)</div>
+      <div class="cluster-item"><div class="num">PROCESS</div>How to Respond to a Trademark Objection — With Template</div>
+      <div class="cluster-item"><div class="num">PROCESS</div>How to Track Your Trademark Application Status Online</div>
+      <div class="cluster-item"><div class="num">COSTS</div>Trademark Registration Fees in India: Govt + Professional</div>
+      <div class="cluster-item"><div class="num">COSTS</div>Trademark Renewal: Fees, Timeline and Consequences of Lapse</div>
+      <div class="cluster-item"><div class="num">COSTS</div>Trademark Cost for Startups vs Enterprises — What to Expect</div>
+      <div class="cluster-item"><div class="num">TYPES</div>Complete Guide to 45 Trademark Classes in India (with Examples)</div>
+      <div class="cluster-item"><div class="num">TYPES</div>Word Mark vs Logo Mark vs Composite Mark — What to Register</div>
+      <div class="cluster-item"><div class="num">TYPES</div>How to Register a Trademark for a Logo or Brand Symbol</div>
+      <div class="cluster-item"><div class="num">TYPES</div>Trademark Registration for Business Name vs Brand Name</div>
+      <div class="cluster-item"><div class="num">LEGAL</div>Trademark Objection: Common Reasons, Reply Format & Tips</div>
+      <div class="cluster-item"><div class="num">LEGAL</div>Trademark Infringement in India — How to File a Complaint</div>
+      <div class="cluster-item"><div class="num">LEGAL</div>TM vs ® Symbol — When You Can Legally Use Each</div>
+      <div class="cluster-item"><div class="num">LEGAL</div>International Trademark Registration via Madrid Protocol</div>
+      <div class="cluster-item"><div class="num">COMPARE</div>Trademark vs Copyright vs Patent — Key Differences Explained</div>
+      <div class="cluster-item"><div class="num">COMPARE</div>Self-Filing vs Professional Trademark Registration — Pros & Cons</div>
+      <div class="cluster-item"><div class="num">COMPARE</div>RegisterKaro vs Competitors — Trademark Service Comparison</div>
+      <div class="cluster-item"><div class="num">LOCAL</div>Trademark Registration Hub: Delhi · Mumbai · Bangalore · Chennai · Hyderabad</div>
+    </div>
+    <div class="callout-green">
+      <div class="label">Topical Authority Goal</div>
+      <p style="font-size:11.5px">Publishing all 20 cluster articles + optimizing the pillar page establishes RegisterKaro as the definitive source on Trademark Registration in India — signaling topical authority to Google and AI engines alike. Each cluster article links back to the pillar and captures long-tail keyword traffic.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 8 AEO -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 4 · AEO Strategy</span>
+    <span class="slide-num">08 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">Answer Engine Optimization — Featured Snippets · PAA · Voice Search</h2>
+    <div class="three-col">
+      <div class="card">
+        <h3>⭐ Featured Snippets</h3>
+        <ul>
+          <li>Lead with a 40–50 word direct answer at the top of every page — "Inverted Pyramid" format</li>
+          <li>Definition queries → Paragraph snippet (40–50 words in a &lt;p&gt; tag)</li>
+          <li>Process queries → Ordered list (&lt;ol&gt;) — Google favors numbered lists for "how to" snippets</li>
+          <li>Cost/comparison queries → Clean HTML table with fee breakdown</li>
+          <li>Structure: H2 question → Direct answer → Elaboration below</li>
+          <li>Target low-KD, high-volume informational queries first (e.g. "trademark fees india")</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>❓ People Also Ask (PAA)</h3>
+        <ul>
+          <li>Research PAA boxes for all 50 target keywords via manual SERP analysis</li>
+          <li>Map top 8–10 PAA questions per service page and add as H2 subheadings</li>
+          <li>Write 40–60 word answers per question — concise but complete</li>
+          <li>Add collapsible FAQ section at bottom of every service page</li>
+          <li>Key PAA targets for Trademark page: "How much does trademark cost?", "How long does it take?", "Can I file myself?", "What documents are needed?"</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🎙 Voice Search</h3>
+        <ul>
+          <li>Target conversational long-tail queries ("Hey Google, how do I register my brand name in India?")</li>
+          <li>Use natural language in FAQ answers — avoid robotic tone</li>
+          <li>Optimize for local intent: "trademark registration near me", "best trademark agent in Delhi"</li>
+          <li>Ensure Google Business Profile is fully completed, verified, and regularly updated</li>
+          <li>Target question-based keywords starting with Who, What, When, Where, Why, How</li>
+          <li>Aim for Position 0 — voice assistants almost always read the featured snippet</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout">
+      <div class="label">Example — Quick Answer Box (Trademark Registration Page)</div>
+      <p>"Trademark registration in India costs <strong>₹4,500–₹9,000 in government fees</strong> (reduced rate for individuals/startups vs others) plus professional fees starting at <strong>₹1,499 at RegisterKaro</strong>. The process takes 18–24 months for full registration, but you can legally use the ™ symbol immediately after filing the application."</p>
+    </div>
+    <div class="callout-green">
+      <div class="label">Google AI Overview Optimization</div>
+      <p style="font-size:11.5px">Structure every service page with clear topic sentences, cite authoritative sources (IP India, MCA, Companies Act), include verifiable statistics, write with strong E-E-A-T (include author credentials + last-updated date), and add a "Sources & References" section. AI Overview favors content that other authoritative sites would cite.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 9 SCHEMA + FORMAT -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 4 · AEO Strategy</span>
+    <span class="slide-num">09 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">Schema Markup · FAQ Strategy · Content Formatting</h2>
+    <div class="two-col">
+      <div>
+        <div class="section-label">Recommended Schema Types</div>
+        <div class="schema-box">
+<span class="comment">// Trademark Registration Page — Schema Stack</span><br>
+<span class="key">"@type"</span>: <span class="val">"FAQPage"</span> <span class="comment">// FAQ section → triggers PAA + rich results</span><br>
+<span class="key">"@type"</span>: <span class="val">"Service"</span> <span class="comment">// Service name, price range, provider</span><br>
+<span class="key">"@type"</span>: <span class="val">"LocalBusiness"</span> <span class="comment">// NAP, hours, service area</span><br>
+<span class="key">"@type"</span>: <span class="val">"BreadcrumbList"</span> <span class="comment">// Navigation trail in SERP</span><br>
+<span class="key">"@type"</span>: <span class="val">"AggregateRating"</span> <span class="comment">// Star ratings in results</span><br>
+<span class="key">"@type"</span>: <span class="val">"HowTo"</span> <span class="comment">// Step-by-step guide content</span><br>
+<span class="key">"@type"</span>: <span class="val">"Organization"</span> <span class="comment">// Brand entity + sitelinks</span>
+        </div>
+        <div style="margin-top:12px">
+        <div class="card">
+          <h3>📋 FAQ Strategy</h3>
+          <ul>
+            <li>Add 8–12 FAQs to every service page using FAQPage schema</li>
+            <li>Prioritize questions pulled directly from PAA boxes and "People also search for"</li>
+            <li>Keep answers 40–80 words — scannable, direct, citable by AI</li>
+            <li>Refresh FAQ questions quarterly as PAA boxes evolve</li>
+            <li>Link FAQ answers to relevant deep-dive blog articles</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Content Formatting Strategy</div>
+        <div class="card">
+          <h3>📐 Page Structure Template</h3>
+          <ul>
+            <li><strong>Top of page:</strong> "Quick Answer" callout box (2–3 sentences, highlighted)</li>
+            <li><strong>H1:</strong> Primary keyword — "Trademark Registration in India"</li>
+            <li><strong>Key Takeaways box:</strong> 4–5 bullet points near top for skimmers</li>
+            <li><strong>H2 sections as questions:</strong> "What is Trademark Registration?", "How Much Does It Cost?", "What Documents Do You Need?"</li>
+            <li><strong>Paragraphs ≤3 sentences</strong> — improves readability and snippet capture</li>
+            <li><strong>Fee table:</strong> Clean HTML table with government + professional fee breakdown</li>
+            <li><strong>Numbered steps:</strong> for the registration process (triggers HowTo snippet)</li>
+            <li><strong>FAQ section:</strong> 10 questions with FAQPage schema at page bottom</li>
+            <li><strong>TL;DR summary:</strong> 3-sentence recap at very end — aids AI crawlers</li>
+          </ul>
+        </div>
+        <div style="margin-top:12px">
+        <div class="callout-green">
+          <div class="label">E-E-A-T Checklist</div>
+          <ul style="font-size:11.5px; list-style:none; display:flex; flex-direction:column; gap:3px;">
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute;left:0;color:#16a34a">✓</span> Author bio with CS/CA credentials visible</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute;left:0;color:#16a34a">✓</span> "Last updated: [date]" on every page</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute;left:0;color:#16a34a">✓</span> Cite IP India, MCA, official government sources</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute;left:0;color:#16a34a">✓</span> Link to external authoritative sources</li>
+            <li style="padding-left:18px; position:relative;"><span style="position:absolute;left:0;color:#16a34a">✓</span> Display certifications, partner logos, awards</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 10 GEO -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 5 · GEO Strategy</span>
+    <span class="slide-num">10 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">Generative Engine Optimization — Visibility in ChatGPT · Gemini · Perplexity · Copilot</h2>
+    <div class="two-col">
+      <div class="card">
+        <h3>🏷 Entity SEO</h3>
+        <ul>
+          <li>Create and verify RegisterKaro's entity on Google Knowledge Graph via consistent structured data</li>
+          <li>Submit company profile to Wikidata as a verified Indian legal-tech business entity</li>
+          <li>Ensure perfectly consistent NAP (Name, Address, Phone) across all 50+ online directories</li>
+          <li>Complete Google Business Profile with all attributes: services, photos, Q&amp;A, posts</li>
+          <li>Define and repeat core entity attributes across all owned channels: Founded year, HQ city, Services offered, Founder names, Certifications held</li>
+          <li>Build a comprehensive "About RegisterKaro" page — structured like a Wikipedia entry</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>🏅 Brand Authority Signals</h3>
+        <ul>
+          <li>Guest posts on high-DA Indian business and legal publications: Inc42, YourStory, LegallyIndia, Bar &amp; Bench, VCCircle</li>
+          <li>Get quoted as a subject matter expert in startup registration and trademark law articles</li>
+          <li>Create a "RegisterKaro Newsroom" page aggregating all press mentions and media coverage</li>
+          <li>Publish original proprietary research: "State of Startup Registration in India 2026" — AI engines prioritize citing original data</li>
+          <li>Build active LinkedIn thought leadership: weekly posts from founders on startup law topics</li>
+          <li>Pursue co-marketing with Razorpay, Zoho, Stripe India — reach their audience and earn brand mentions</li>
+        </ul>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="card">
+        <h3>📋 Citation Building — Top 20 Directories</h3>
+        <ul>
+          <li>Justdial, Sulekha, IndiaMART, TradeIndia, ExportersIndia</li>
+          <li>Google Business, Bing Places, Apple Maps, Yellow Pages India</li>
+          <li>Clutch.co, G2, Trustpilot, MouthShut, Glassdoor</li>
+          <li>CrunchBase, AngelList, Tracxn, Startup India Portal</li>
+          <li>MSME Directory, Business Standard Company Profile</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>📰 Digital PR + EEAT</h3>
+        <ul>
+          <li>Publish data-backed studies that journalists proactively cite</li>
+          <li>Issue press releases for milestones: 50K registrations, new service launches</li>
+          <li>Respond to HARO queries on startup, legal, and compliance topics</li>
+          <li>Collaborate with CA/CS YouTube influencers for honest service reviews</li>
+          <li>Sponsor legal and startup events (Nasscom, TiE, local startup hubs)</li>
+          <li>Collect and display verified Google Reviews, Trustpilot, G2 ratings site-wide</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 11 30-DAY GEO -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 5 · GEO Strategy</span>
+    <span class="slide-num">11 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">30-Day GEO Roadmap — Making RegisterKaro AI-Cited</h2>
+    <table>
+      <thead>
+        <tr><th style="width:80px">Timeline</th><th>Actions</th><th style="width:110px">Owner</th><th style="width:170px">Success Goal</th></tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><span class="week-badge">WEEK 1</span><br><small style="color:#64748b">Foundation</small></td>
+          <td>
+            • Audit all existing brand mentions across Google, ChatGPT, Gemini, Perplexity<br>
+            • Set up Google Alerts for "RegisterKaro" + 5 competitor brand names<br>
+            • Claim and verify Google Business Profile, Bing Places, Apple Maps<br>
+            • Submit NAP to top 20 business directories<br>
+            • Add Organization + LocalBusiness schema to homepage and all service pages
+          </td>
+          <td>SEO Lead</td>
+          <td>Consistent entity signals across all major platforms</td>
+        </tr>
+        <tr>
+          <td><span class="week-badge">WEEK 2</span><br><small style="color:#64748b">Content for AI</small></td>
+          <td>
+            • Publish comprehensive "About RegisterKaro" brand page with full entity details<br>
+            • Write and publish 5 long-form guides (Trademark, GST, Pvt Ltd, LLP, FSSAI) optimized for AI citation<br>
+            • Add "Quick Answer" boxes + TL;DR summaries to all 5 guides<br>
+            • Implement FAQPage schema on all service pages<br>
+            • Publish original research: "Startup Registration Trends India 2026" with real data
+          </td>
+          <td>Content Team</td>
+          <td>5 AI-citable long-form assets live</td>
+        </tr>
+        <tr>
+          <td><span class="week-badge">WEEK 3</span><br><small style="color:#64748b">Authority Build</small></td>
+          <td>
+            • Outreach to 10 legal and startup blogs for guest posts (pitch + publish)<br>
+            • Submit press release on RegisterKaro milestone to Business Standard, ET SME<br>
+            • Create full profiles on CrunchBase, AngelList, Tracxn, Startup India Portal<br>
+            • Reach out to 3 CA/CS YouTube influencers for collaboration or review<br>
+            • Submit RegisterKaro entity data to Wikidata
+          </td>
+          <td>Digital PR</td>
+          <td>10+ new brand mentions; 3+ backlinks from DA40+ sites</td>
+        </tr>
+        <tr>
+          <td><span class="week-badge">WEEK 4</span><br><small style="color:#64748b">Measure & Iterate</small></td>
+          <td>
+            • Manually test 20 queries in ChatGPT, Gemini, Perplexity, and Copilot<br>
+            • Document exactly which AI tools cite RegisterKaro and which cite competitors<br>
+            • Identify content gaps preventing AI citation — create a fix list<br>
+            • Review GSC for AI Overview impressions trend<br>
+            • Set up monthly GEO tracking dashboard; plan Month 2 sprint
+          </td>
+          <td>Analytics Lead</td>
+          <td>Baseline AI visibility score established; Month 2 plan ready</td>
+        </tr>
+      </tbody>
+    </table>
+    <div class="callout">
+      <div class="label">Key Insight</div>
+      <p>AI engines like ChatGPT and Perplexity preferentially cite brands that appear in <strong>multiple independent, authoritative sources</strong>. The goal is not to "trick" AI — it's to become genuinely more authoritative, more cited, and more entity-coherent across the web.</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 12 GROWTH PLAN M1-3 -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 6 · 6-Month Traffic Growth Plan</span>
+    <span class="slide-num">12 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">Growth Plan: Months 1–3 — Foundation to Momentum</h2>
+    <div class="stat-row" style="margin-bottom:4px">
+      <div class="stat-box"><div class="val">100K</div><div class="lbl">Current Traffic/mo</div></div>
+      <div class="stat-box"><div class="val">2,000</div><div class="lbl">Current Leads/mo</div></div>
+      <div class="stat-box"><div class="val">2.0%</div><div class="lbl">Current Conv. Rate</div></div>
+      <div class="stat-box" style="background:#16a34a"><div class="val">200K</div><div class="lbl">Target Traffic (M6)</div></div>
+      <div class="stat-box" style="background:#16a34a"><div class="val">4,000</div><div class="lbl">Target Leads (M6)</div></div>
+    </div>
+    <div class="three-col">
+      <div class="month-card">
+        <h4>Month 1 — Technical Foundation</h4>
+        <ul>
+          <li>Fix all Top 10 SEO issues identified in audit</li>
+          <li>Optimize 20 existing service/blog pages (titles, metas, H1s)</li>
+          <li>Publish 8 new keyword-targeted blog articles</li>
+          <li>Submit fresh XML sitemap; fix all 404s</li>
+          <li>Implement schema on top 10 pages</li>
+          <li>Fix Core Web Vitals (images, JS deferral)</li>
+          <li>Reclaim 20 lost/unlinked backlinks</li>
+          <li>Submit NAP to 20 directories</li>
+        </ul>
+        <div class="lift">📈 +5% lift → ~105,000 visitors | ~2,100 leads</div>
+      </div>
+      <div class="month-card">
+        <h4>Month 2 — Content Velocity</h4>
+        <ul>
+          <li>Publish 12 new cluster articles (trademark + GST clusters)</li>
+          <li>Launch 4 city landing pages (Delhi, Mumbai, Bangalore, Chennai)</li>
+          <li>5 guest posts published on DA40+ sites</li>
+          <li>2 digital PR placements (Inc42, YourStory)</li>
+          <li>Implement FAQPage schema on all 50+ service pages</li>
+          <li>Complete internal linking audit and fix orphan pages</li>
+          <li>A/B test CTA button copy and placement</li>
+        </ul>
+        <div class="lift">📈 +10% → ~116,000 visitors | ~2,320 leads</div>
+      </div>
+      <div class="month-card">
+        <h4>Month 3 — Authority Build</h4>
+        <ul>
+          <li>Publish original research report ("Startup Registration Trends 2026")</li>
+          <li>10 more cluster articles across 3 service verticals</li>
+          <li>2 comparison pages (LLP vs Pvt Ltd; Trademark vs Patent)</li>
+          <li>8 guest posts on legal/startup sites</li>
+          <li>1 major media feature (Inc42 or ET SME)</li>
+          <li>Deploy exit-intent popups; add WhatsApp chat widget</li>
+          <li>Optimize mobile UX — reduce friction on contact forms</li>
+        </ul>
+        <div class="lift">📈 +10% → ~128,000 visitors | ~2,560 leads</div>
+      </div>
+    </div>
+    <div class="callout-green">
+      <div class="label">End of Month 3 State</div>
+      <p style="font-size:12px">~128,000 monthly visitors · ~2,560 monthly leads · 30+ new articles live · 50+ pages with schema · Domain Rating improved by ~3–4 points · RegisterKaro beginning to appear in Google AI Overviews for informational trademark queries</p>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 13 GROWTH PLAN M4-6 -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 6 · 6-Month Traffic Growth Plan</span>
+    <span class="slide-num">13 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">Growth Plan: Months 4–6 — Scaling to 200K</h2>
+    <div class="three-col">
+      <div class="month-card">
+        <h4>Month 4 — Topical Authority</h4>
+        <ul>
+          <li>Complete all 5 service content clusters (100+ total articles)</li>
+          <li>Launch YouTube channel — "How to Register a Trademark" video</li>
+          <li>10 guest posts + 3 media features</li>
+          <li>Begin Wikipedia citation outreach</li>
+          <li>Deploy AMP for top 20 blog posts</li>
+          <li>Speed optimization round 2 — target 80+ PageSpeed score</li>
+          <li>Launch Trademark Fee Calculator tool</li>
+          <li>Complete GEO Week 3–4 roadmap actions</li>
+        </ul>
+        <div class="lift">📈 +20% → ~154,000 visitors | ~3,080 leads</div>
+      </div>
+      <div class="month-card">
+        <h4>Month 5 — Conversion Focus</h4>
+        <ul>
+          <li>Refresh top 20 performing pages with updated content + schema</li>
+          <li>8 new articles targeting high-intent commercial keywords</li>
+          <li>Add FSSAI Class Identifier and Trademark Search tools</li>
+          <li>Link insertion outreach — 50 relevant existing articles on DA40+ sites</li>
+          <li>2 podcast guest appearances (startup/legal podcasts)</li>
+          <li>Deploy heatmaps (Hotjar/MS Clarity) — identify drop-off points</li>
+          <li>Optimize lead forms; test 2-step form vs single-page</li>
+          <li>Add live chat (Intercom or Tidio) to all service pages</li>
+        </ul>
+        <div class="lift">📈 +15% → ~177,000 visitors | ~3,894 leads</div>
+      </div>
+      <div class="month-card">
+        <h4>Month 6 — Scale & Sustain</h4>
+        <ul>
+          <li>10 new articles targeting remaining keyword gaps</li>
+          <li>Repurpose top 10 blogs → LinkedIn carousels + YouTube Shorts</li>
+          <li>12 guest posts + 2 co-marketing campaigns (Razorpay, Zoho)</li>
+          <li>Full GEO audit — test 30+ queries across all AI engines</li>
+          <li>Final CRO push — optimize top 5 highest-traffic service pages</li>
+          <li>Launch referral/affiliate program for CAs and CSs</li>
+          <li>Review and renew keyword strategy for next 6 months</li>
+        </ul>
+        <div class="lift">📈 +13% → ~200,000 visitors | ~4,000 leads ✅</div>
+      </div>
+    </div>
+    <div style="margin-top:8px">
+    <table>
+      <thead><tr><th>Cumulative Output</th><th>Month 1</th><th>Month 2</th><th>Month 3</th><th>Month 4</th><th>Month 5</th><th>Month 6</th></tr></thead>
+      <tbody>
+        <tr><td>Total New Articles</td><td>8</td><td>20</td><td>30</td><td>45</td><td>53</td><td>63+</td></tr>
+        <tr><td>New Backlinks Earned</td><td>25</td><td>38</td><td>52</td><td>68</td><td>76</td><td>92+</td></tr>
+        <tr><td>Pages with Schema</td><td>10</td><td>40</td><td>60</td><td>80</td><td>90</td><td>100+</td></tr>
+        <tr><td>Est. Monthly Traffic</td><td>105K</td><td>116K</td><td>128K</td><td>154K</td><td>177K</td><td>200K</td></tr>
+        <tr><td>Est. Monthly Leads</td><td>2,100</td><td>2,320</td><td>2,560</td><td>3,080</td><td>3,894</td><td>4,000+</td></tr>
+      </tbody>
+    </table>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 14 TEAM + KPIS -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Part 6 · Team Structure & KPIs</span>
+    <span class="slide-num">14 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">Team Structure & Key Performance Indicators</h2>
+    <div class="two-col">
+      <div>
+        <div class="section-label">Recommended Team (7 People)</div>
+        <table>
+          <thead><tr><th>Role</th><th>Headcount</th><th>Primary Responsibilities</th></tr></thead>
+          <tbody>
+            <tr><td><strong>SEO Lead</strong></td><td>1 (FT)</td><td>Strategy, GSC monitoring, audits, keyword research</td></tr>
+            <tr><td><strong>Content Writers</strong></td><td>3 (FT/Contract)</td><td>2 legal writers + 1 technical SEO writer — 10–15 articles/month</td></tr>
+            <tr><td><strong>On-Page SEO Specialist</strong></td><td>1 (FT)</td><td>Meta tags, schema, internal links, page optimization</td></tr>
+            <tr><td><strong>Digital PR / Link Builder</strong></td><td>1 (FT)</td><td>Outreach, guest posts, citations, media relations</td></tr>
+            <tr><td><strong>Web Developer</strong></td><td>1 (Part-time)</td><td>Core Web Vitals fixes, schema implementation, tools</td></tr>
+            <tr><td><strong>Analytics & Reporting</strong></td><td>1 (FT)</td><td>GA4, GSC dashboards, GEO tracking, monthly reports</td></tr>
+          </tbody>
+        </table>
+        <div style="margin-top:12px">
+        <div class="card">
+          <h3>🛠 Recommended Tools Stack</h3>
+          <ul>
+            <li><strong>Ahrefs / SEMrush</strong> — keyword research, backlink tracking</li>
+            <li><strong>Google Search Console + GA4</strong> — traffic and performance</li>
+            <li><strong>Screaming Frog</strong> — technical SEO crawls</li>
+            <li><strong>PageSpeed Insights + CrUX</strong> — Core Web Vitals</li>
+            <li><strong>Schema Markup Validator</strong> — structured data testing</li>
+            <li><strong>BrightLocal</strong> — local SEO and citation management</li>
+            <li><strong>Hotjar / MS Clarity</strong> — heatmaps and user behavior</li>
+          </ul>
+        </div>
+        </div>
+      </div>
+      <div>
+        <div class="section-label">Monthly KPI Dashboard</div>
+        <table>
+          <thead><tr><th>Metric</th><th>M1 Target</th><th>M3 Target</th><th>M6 Target</th></tr></thead>
+          <tbody>
+            <tr><td>Organic Sessions/mo</td><td>105,000</td><td>128,000</td><td><strong>200,000</strong></td></tr>
+            <tr><td>Organic Leads/mo</td><td>2,100</td><td>2,560</td><td><strong>4,000</strong></td></tr>
+            <tr><td>New Articles Published</td><td>8</td><td>30</td><td>63+</td></tr>
+            <tr><td>New Backlinks Earned</td><td>25</td><td>52</td><td>92+</td></tr>
+            <tr><td>Pages with Schema</td><td>10</td><td>60</td><td>100+</td></tr>
+            <tr><td>Core Web Vitals Pass %</td><td>40%</td><td>70%</td><td>90%+</td></tr>
+            <tr><td>Keyword Rankings Top 10</td><td>50</td><td>120</td><td>250+</td></tr>
+            <tr><td>Domain Rating (Ahrefs)</td><td>35→36</td><td>38</td><td>45+</td></tr>
+            <tr><td>AI Engine Mentions</td><td>2</td><td>8</td><td>25+</td></tr>
+            <tr><td>Google AI Overview Appearances</td><td>5</td><td>20</td><td>60+</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════════════════════════════ SLIDE 15 SUMMARY -->
+<div class="slide">
+  <div class="slide-header">
+    <span class="section-tag">Summary & Next Steps</span>
+    <span class="slide-num">15 / 15</span>
+  </div>
+  <div class="slide-body">
+    <h2 class="slide-title">The RegisterKaro Growth Playbook — 5 Pillars</h2>
+    <div style="display:grid; grid-template-columns: repeat(5,1fr); gap:12px; margin-bottom:16px">
+      <div class="pillar-card">
+        <div class="num">1</div>
+        <h4>Technical SEO</h4>
+        <p>Fix Core Web Vitals, schema, sitemaps, crawlability — the non-negotiable foundation for all other growth</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">2</div>
+        <h4>Content Clusters</h4>
+        <p>63+ articles across 5 service clusters → topical authority drives organic traffic at scale and compounds over time</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">3</div>
+        <h4>AEO</h4>
+        <p>FAQ schema, featured snippets, PAA, voice search → capture zero-click traffic and appear in Google AI Overviews</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">4</div>
+        <h4>GEO</h4>
+        <p>Entity SEO, citations, digital PR, citable content → become the brand ChatGPT, Gemini, Perplexity, and Copilot recommend</p>
+      </div>
+      <div class="pillar-card">
+        <div class="num">5</div>
+        <h4>CRO</h4>
+        <p>Sticky CTAs, social proof, simplified forms, live chat → convert the traffic lift into an equal lead lift (maintain 2% rate)</p>
+      </div>
+    </div>
+    <div class="two-col">
+      <div class="quick-wins">
+        <h3>⚡ Quick Wins — Do This Week</h3>
+        <ul>
+          <li>Fix meta descriptions on top 20 highest-traffic pages</li>
+          <li>Submit updated XML sitemap to Google Search Console</li>
+          <li>Add FAQPage schema to /trademark-registration page</li>
+          <li>Claim and complete Google Business Profile</li>
+          <li>Fix all broken internal links identified in crawl audit</li>
+          <li>Add "Quick Answer" box to the top of trademark service page</li>
+          <li>Compress all images to WebP format — instant speed win</li>
+        </ul>
+      </div>
+      <div style="display:flex; flex-direction:column; gap:12px">
+        <div class="north-star">
+          "From 100K to 200K monthly visitors.<br>
+          From 2,000 to 4,000 leads.<br>
+          From invisible to AI-cited."
+        </div>
+        <div class="callout">
+          <div class="label">Website</div>
+          <p>Strategy prepared for <strong>RegisterKaro</strong> · www.registerkaro.in · June 2026<br>
+          <span style="font-size:11px; color:rgba(255,255,255,0.5)">Focus service: Trademark Registration · 6-month execution roadmap</span></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
