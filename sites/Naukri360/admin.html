@@ -1049,6 +1049,13 @@ function pCsvTool(){
   h+='<div class="card-info" style="margin-top:8px">Or paste HTML directly:</div>';
   h+='<textarea id="htmlPasteArea" rows="6" style="width:100%;font-family:monospace;font-size:12px;padding:8px;border:1px solid #d1d5e0;border-radius:6px" placeholder="Paste full page HTML here..."></textarea>';
   h+='<button class="tb-btn outline full" style="margin-top:8px" onclick="doHtmlImport(true)">Import Pasted HTML</button></div>';
+
+  h+='<div class="card"><div class="ct">Bulk HTML Import / Export</div>';
+  h+='<div class="card-info">Import many pages at once — select multiple <code>.html</code> files (ctrl/shift-click in the file picker), or a single <code>.zip</code> containing HTML pages (e.g. one from the Bulk Export below, or this CMS\'s own "HTML Pages Only ZIP"). Each file is matched/created the same way as a single import; you get one summary at the end.</div>';
+  h+='<div class="fm"><label>HTML Files or ZIP</label><input type="file" accept=".html,.htm,.zip" id="htmlFilesBulk" multiple></div>';
+  h+='<button class="tb-btn primary full" onclick="doBulkHtmlImport()">⬆ Bulk Import</button>';
+  h+='<div class="card-info" style="margin-top:10px">Export every page in the CMS as HTML, zipped:</div>';
+  h+='<button class="tb-btn outline full" style="margin-top:8px" onclick="dlHtmlOnlyZip()">⬇ Bulk Export All '+Object.keys(allPages).length+' Pages (ZIP)</button></div>';
   return h;
 }
 function csvQ(v){v=String(v||'');return(v.indexOf(',')>=0||v.indexOf('"')>=0||v.indexOf('\n')>=0)?'"'+v.replace(/"/g,'""')+'"':v}
@@ -1572,17 +1579,13 @@ function slugFromCanonical(url){
   return slug.replace(/^\/+|\/+$/g,'').toLowerCase();
 }
 
-function applyImportedHtmlData(parsed){
-  if(!parsed||(!parsed.seo.title&&!parsed.hero.h1)){
-    toast('Could not find any recognizable page data in that HTML',false);
-    return;
-  }
+// Core merge — no save/render/toast side effects, so bulk import can call
+// this in a loop and only save+render once at the end.
+// Returns {ok:false,reason:'no-data'|'no-slug'} or {ok:true,slug,isNew}.
+function mergeHtmlDataIntoPages(parsed){
+  if(!parsed||(!parsed.seo.title&&!parsed.hero.h1)) return {ok:false,reason:'no-data'};
   var slug=slugFromCanonical(parsed.seo.canonical);
-  if(!slug){
-    slug=prompt('No canonical URL found to detect the page slug — enter one (e.g. resume-templates/basic):');
-    if(!slug) return;
-    slug=slug.trim().toLowerCase().replace(/^\/+|\/+$/g,'');
-  }
+  if(!slug) return {ok:false,reason:'no-slug'};
   var isNew=!allPages[slug];
   var target;
   if(isNew){
@@ -1603,10 +1606,88 @@ function applyImportedHtmlData(parsed){
   if(parsed.faq) target.faq=parsed.faq;
   if(parsed.templates) target.templates=parsed.templates;
   if(parsed.seo.title) target.title=parsed.seo.title;
+  return {ok:true,slug:slug,isNew:isNew};
+}
 
-  curSlug=slug; D=allPages[slug];
+function applyImportedHtmlData(parsed){
+  var res=mergeHtmlDataIntoPages(parsed);
+  if(!res.ok){
+    if(res.reason==='no-slug'){
+      var slug=prompt('No canonical URL found to detect the page slug — enter one (e.g. resume-templates/basic):');
+      if(!slug) return;
+      slug=slug.trim().toLowerCase().replace(/^\/+|\/+$/g,'');
+      if(!parsed.seo.canonical) parsed.seo.canonical='https://www.naukri.com/naukri360/'+slug;
+      res=mergeHtmlDataIntoPages(parsed);
+      if(!res.ok){ toast('Import failed',false); return; }
+    } else {
+      toast('Could not find any recognizable page data in that HTML',false);
+      return;
+    }
+  }
+  curSlug=res.slug; D=allPages[res.slug];
   doSave(); render();
-  toast((isNew?'Created':'Updated')+' page "/'+slug+'" from HTML!');
+  toast((res.isNew?'Created':'Updated')+' page "/'+res.slug+'" from HTML!');
+}
+
+// ═══════════════════════════════════════
+// BULK HTML IMPORT — multiple .html/.htm files, or a .zip of pages
+// (e.g. the file this CMS's own "Bulk Export" produces), in one go.
+// Skips (doesn't prompt for) any file with no detectable canonical/slug —
+// reports it in the summary instead, since bulk runs can't block on prompts.
+// ═══════════════════════════════════════
+function loadJsZipThen(cb){
+  if(typeof JSZip!=='undefined'){ cb(); return; }
+  var s=document.createElement('script');
+  s.src='https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
+  s.onload=cb;
+  s.onerror=function(){ toast('Failed to load JSZip. Check internet connection.',false); };
+  document.head.appendChild(s);
+}
+
+async function doBulkHtmlImport(){
+  var el=document.getElementById('htmlFilesBulk');
+  if(!el||!el.files||!el.files.length){toast('Select one or more HTML files (or a ZIP) first',false);return}
+  var files=Array.from(el.files);
+  var stats={created:0,updated:0,skipped:0,failed:0};
+
+  function handleText(text,label){
+    try{
+      var parsed=parseImportedHtml(text);
+      var res=mergeHtmlDataIntoPages(parsed);
+      if(!res.ok){ stats.skipped++; console.warn('[Bulk HTML Import] skipped',label,'-',res.reason); return; }
+      if(res.isNew) stats.created++; else stats.updated++;
+    }catch(err){ console.error('[Bulk HTML Import] failed on',label,err); stats.failed++; }
+  }
+
+  function handleZip(file){
+    return new Promise(function(resolve){
+      loadJsZipThen(function(){
+        JSZip.loadAsync(file).then(function(zip){
+          var names=Object.keys(zip.files).filter(function(n){return /\.html?$/i.test(n)&&!zip.files[n].dir});
+          var seq=Promise.resolve();
+          names.forEach(function(name){
+            seq=seq.then(function(){return zip.files[name].async('string');}).then(function(text){handleText(text,name);});
+          });
+          seq.then(resolve).catch(function(e){console.error(e);resolve();});
+        }).catch(function(e){console.error(e);resolve();});
+      });
+    });
+  }
+
+  toast('Importing '+files.length+' file(s)…');
+  for(var i=0;i<files.length;i++){
+    var f=files[i];
+    if(/\.zip$/i.test(f.name)){
+      await handleZip(f);
+    } else {
+      handleText(await f.text(), f.name);
+    }
+  }
+  doSave(); render();
+  var msg=stats.created+' created, '+stats.updated+' updated';
+  if(stats.skipped) msg+=', '+stats.skipped+' skipped (no canonical URL found)';
+  if(stats.failed) msg+=', '+stats.failed+' failed';
+  toast('Bulk import done: '+msg, stats.failed===0);
 }
 
 function doHtmlImport(fromPaste){
