@@ -1,0 +1,2451 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="robots" content="noindex, nofollow">
+<title>CMS Admin — Naukri360</title>
+<link rel="stylesheet" href="css/admin.css">
+</head>
+<body>
+<div id="cms-app">
+  <aside id="sidebar">
+    <div id="sb-logo"><span class="sb-ic">R</span><div>Naukri360<small>CMS Admin</small></div></div>
+    <div class="sb-group"><div class="sb-label">Pages</div>
+      <div class="sb-item active" data-p="pages">Page Manager</div>
+    </div>
+    <div class="sb-group"><div class="sb-label">Current Page</div>
+      <div class="sb-item" data-p="seo">SEO &amp; Meta</div>
+      <div class="sb-item" data-p="hero">Hero / Banner</div>
+      <div class="sb-item" data-p="stickybar">Sticky Top Bar</div>
+      <div class="sb-item" data-p="templates">Templates</div>
+      <div class="sb-item" data-p="filterchips">Filter Chips</div>
+      <div class="sb-item" data-p="interlinks">Interlinking</div>
+      <div class="sb-item" data-p="content">Content Sections</div>
+      <div class="sb-item" data-p="sidebar">Sidebar (3 Steps)</div>
+      <div class="sb-item" data-p="testimonials">Testimonials</div>
+      <div class="sb-item" data-p="faq">FAQ</div>
+      <div class="sb-item" data-p="footer">Footer CTA</div>
+    </div>
+    <div class="sb-group"><div class="sb-label">Tools</div>
+      <div class="sb-item" data-p="csvtool">CSV Import / Export</div>
+      <div class="sb-item" data-p="cdn">CDN Image Manager</div>
+      <div class="sb-item" data-p="copypublish">Copy &amp; Publish</div>
+      <div class="sb-item" data-p="download">Download HTML</div>
+    </div>
+  </aside>
+  <main id="main">
+    <header id="topbar">
+      <h1 id="panel-title">Page Manager</h1>
+      <div id="topbar-actions">
+        <span id="editing-badge"></span>
+        <label id="auto-publish-toggle" title="When ON, every Save & Publish also writes static HTML + cms-data.js + sitemap.xml into the project folder. Requires a project folder to be connected." style="display:inline-flex;align-items:center;gap:6px;font-size:12px;color:#6B7394;cursor:pointer;user-select:none">
+          <input type="checkbox" id="auto-publish-chk" onchange="setAutoPublish(this.checked)"> Auto-publish on save
+        </label>
+        <button class="tb-btn" onclick="window.open('index.html?page='+curSlug,'_blank')">Preview</button>
+        <button class="tb-btn outline" onclick="doExport()">Export JSON</button>
+        <button class="tb-btn danger" onclick="doReset()">Reset</button>
+        <button class="tb-btn primary" onclick="doSave()">Save &amp; Publish</button>
+      </div>
+    </header>
+    <div id="panel-area"></div>
+  </main>
+</div>
+<div id="toast"></div>
+<div id="modal" class="modal-overlay" onclick="if(event.target===this)closeModal()">
+  <div class="modal-box">
+    <h3 id="modal-title">Clone Page</h3>
+    <label>Page Title<input type="text" id="m-title" placeholder="e.g. Nursing Resume Templates"></label>
+    <label>URL Slug<input type="text" id="m-slug" placeholder="e.g. resume-templates/nursing"><small>Lowercase, hyphens. Used as ?page=slug</small></label>
+    <input type="hidden" id="m-clone-from">
+    <div class="modal-btns"><button class="tb-btn primary" onclick="doCreatePage()">Create Page</button><button class="tb-btn" onclick="closeModal()">Cancel</button></div>
+  </div>
+</div>
+<script src="js/cms-data.js"></script>
+<script>
+// ═══════════════════════════════════════
+// CMS ENGINE
+// ═══════════════════════════════════════
+var allPages, curSlug, D;
+// Migration version. NEVER wipes user's pages — only adds missing fields when
+// the data shape evolves. Imported pages, edits, and overrides all survive
+// across version bumps.
+var CMS_SCHEMA_VERSION = '2026-04-29-non-destructive';
+(function init(){
+  try{
+    var r=localStorage.getItem('cms_pages');allPages=r?JSON.parse(r):null;
+  }catch(e){allPages=null}
+  if(!allPages) allPages=JSON.parse(JSON.stringify(CMS_PAGES));
+  // Migrate stored data — add any fields newer schema versions require, but
+  // preserve every page (especially CSV-imported ones).
+  (function migrate(){
+    var defaultChips=(typeof DEFAULT_CHIPS!=='undefined' && DEFAULT_CHIPS) || [
+      {label:'All templates',cat:'all',url:'#templates/all'},
+      {label:'Modern',cat:'modern',url:'#templates/modern'},
+      {label:'Traditional',cat:'traditional',url:'#templates/traditional'},
+      {label:'Simple',cat:'simple',url:'#templates/simple'},
+      {label:'Creative',cat:'creative',url:'#templates/creative'},
+      {label:'ATS',cat:'ats',url:'#templates/ats'},
+      {label:'One page',cat:'onepage',url:'#templates/onepage'},
+      {label:'Two column',cat:'twocolumn',url:'#templates/twocolumn'},
+      {label:'Photo',cat:'photo',url:'#templates/photo'}
+    ];
+    Object.keys(allPages).forEach(function(slug){
+      var p=allPages[slug];
+      if(typeof p.useGlobalFilterChips==='undefined') p.useGlobalFilterChips=true;
+      if(!Array.isArray(p.globalFilterChips) || !p.globalFilterChips.length) p.globalFilterChips=JSON.parse(JSON.stringify(defaultChips));
+      if(!Array.isArray(p.filterChips)) p.filterChips=[];
+      if(typeof p.useGlobalTemplateButton==='undefined') p.useGlobalTemplateButton=true;
+      if(typeof p.globalTemplateButtonUrl==='undefined') p.globalTemplateButtonUrl=p.templateButtonUrl||'https://www.naukri.com/resume-editor';
+      if(typeof p.globalTemplateButtonText==='undefined') p.globalTemplateButtonText=p.templateButtonText||'Try this free template';
+      if(typeof p.useGlobalTemplateLinks==='undefined') p.useGlobalTemplateLinks=true;
+      if(!Array.isArray(p.globalTemplates) || !p.globalTemplates.length){
+        // Seed from this page's templates list so labels line up.
+        p.globalTemplates=(p.templates||[]).map(function(t){return {name:t.name||'',cat:t.cat||'',link:''};});
+      }
+      if(!p.seo)p.seo={};if(!p.hero)p.hero={};if(!p.schema)p.schema={};
+      if(!p.stickyBar)p.stickyBar={};if(!p.sidebar)p.sidebar={};if(!p.globalHeroLinks)p.globalHeroLinks={};
+      // Interlinking — replaces the old sec-cv "Resume Examples by Job Title"
+      if(typeof p.useGlobalInterlinks==='undefined') p.useGlobalInterlinks=true;
+      if(!Array.isArray(p.interlinks)) p.interlinks=[];
+      if(!Array.isArray(p.globalInterlinks)) p.globalInterlinks=[];
+      if(typeof p.interlinks_heading!=='string'||!p.interlinks_heading) p.interlinks_heading='Explore More Resume Templates';
+      if(typeof p.interlinks_sub!=='string') p.interlinks_sub='Browse our complete library of professional templates';
+      // Strip retired sec-cv fields so they stop showing in any older UI
+      delete p.cv_gallery_heading; delete p.cv_gallery_text;
+    });
+    // Auto-seed the GLOBAL interlinks pool on first migration so the section
+    // is visible immediately on the live preview. Uses every page in CMS as a
+    // chip (each page's renderer filters out the current slug at render time).
+    var globalPool=[];
+    Object.keys(allPages).forEach(function(slug){
+      var pp=allPages[slug];
+      var label=(pp&&pp.title)||slug;
+      var url=(pp&&pp.seo&&pp.seo.canonical)||('https://www.naukri.com/naukri360/'+slug);
+      globalPool.push({label:label,url:url});
+    });
+    Object.keys(allPages).forEach(function(slug){
+      var pool=allPages[slug].globalInterlinks;
+      if(!pool.length){
+        allPages[slug].globalInterlinks=JSON.parse(JSON.stringify(globalPool));
+      } else {
+        globalPool.forEach(function(link){
+          if(!pool.some(function(x){return x.url===link.url;})){
+            pool.push({label:link.label,url:link.url});
+          }
+        });
+      }
+    });
+    try{ localStorage.setItem('cms_schema_version', CMS_SCHEMA_VERSION); }catch(e){}
+  })();
+  // One-shot cleanup: replace U+FFFD (the "�" in rendered text) baked into
+  // localStorage by old CSV imports with their most likely original character
+  // (curly apostrophe U+2019). Re-save so the fix is permanent.
+  (function(){
+    var dirty=false;
+    function walk(v){
+      if (typeof v==='string'){
+        if (v.indexOf('\uFFFD')<0) return v;
+        dirty=true;
+        return v.replace(/([A-Za-z0-9])\uFFFD([A-Za-z])/g,"$1\u2019$2").replace(/\uFFFD/g,"\u2019");
+      }
+      if (Array.isArray(v)){ for(var i=0;i<v.length;i++) v[i]=walk(v[i]); return v; }
+      if (v&&typeof v==='object'){ for(var k in v) if(Object.prototype.hasOwnProperty.call(v,k)) v[k]=walk(v[k]); return v; }
+      return v;
+    }
+    walk(allPages);
+    if(dirty){ try{ localStorage.setItem('cms_pages',JSON.stringify(allPages)); }catch(e){} }
+  })();
+  curSlug=Object.keys(allPages)[0]||CMS_DEFAULT;
+  D=allPages[curSlug];
+})();
+
+var panel='pages';
+var $=function(s){return document.querySelector(s)};
+var $$=function(s){return document.querySelectorAll(s)};
+var area=$('#panel-area');
+var TITLES={pages:'Page Manager',seo:'SEO & Meta',hero:'Hero / Banner',stickybar:'Sticky Top Bar',templates:'Templates',filterchips:'Filter Chips',interlinks:'Interlinking',content:'Content Sections',sidebar:'Sidebar (3 Steps)',testimonials:'Testimonials',faq:'FAQ',footer:'Footer CTA',csvtool:'CSV Import / Export',cdn:'CDN Image Manager',copypublish:'Copy & Publish',download:'Download / Export HTML'};
+
+function toast(m,ok){var t=$('#toast');t.textContent=m;t.className='show'+(ok===false?' err':'');setTimeout(function(){t.className=''},2500)}
+// Auto-publish setting — when ON, every Save & Publish also writes static
+// HTML + cms-data.js + sitemap.xml into the connected project folder so the
+// /pages/ directory and live preview always reflect the latest CMS state.
+var AUTO_PUBLISH = (function(){
+  try { return localStorage.getItem('cms_auto_publish') === '1'; } catch(e){ return false; }
+})();
+function setAutoPublish(on){
+  AUTO_PUBLISH = !!on;
+  try { localStorage.setItem('cms_auto_publish', on ? '1' : '0'); } catch(e){}
+  if (on && !projectDirHandle && fsAccessSupported()){
+    toast('Auto-publish ON — connect a project folder (Download panel) for it to take effect.');
+  } else {
+    toast('Auto-publish ' + (on ? 'ON' : 'OFF'));
+  }
+}
+function doSave(){
+  allPages[curSlug]=D;
+  localStorage.setItem('cms_pages',JSON.stringify(allPages));
+  toast('Saved! ('+Object.keys(allPages).length+' pages)');
+  if (AUTO_PUBLISH) autoPublishNow();
+}
+async function autoPublishNow(){
+  // Folder-write path (Chrome/Edge on localhost or HTTPS, after pickProjectFolder).
+  if (typeof fsAccessSupported==='function' && fsAccessSupported() && projectDirHandle){
+    try{
+      var slugs=Object.keys(allPages);
+      var saved=0;
+      for (var i=0;i<slugs.length;i++){
+        var slug=slugs[i];
+        var html=buildPageHtml(slug); if(!html) continue;
+        var filename='pages/'+slug.replace(/\//g,'-')+'.html';
+        var ok=await writeFileToProject(filename,html);
+        if(ok) saved++;
+      }
+      await writeFileToProject('js/cms-data.js',       generateCmsDataJs());
+      await writeFileToProject('pages/js/cms-data.js', generateCmsDataJs());
+      await writeFileToProject('sitemap.xml',          generateSitemapXml());
+      toast('✅ Auto-published '+saved+' pages + cms-data.js + sitemap.xml to '+projectDirHandle.name+'/');
+    } catch(e){
+      console.warn('[Auto-publish]', e);
+      toast('Auto-publish failed: '+e.message+'. Use Download panel manually.', false);
+    }
+    return;
+  }
+  // Browser-download fallback — only fire on demand, never on every save (too noisy).
+  toast('Auto-publish ON but no project folder connected — use Download panel to push changes.', false);
+}
+function doReset(){if(!confirm('Reset ALL to defaults?'))return;allPages=JSON.parse(JSON.stringify(CMS_PAGES));curSlug=Object.keys(allPages)[0];D=allPages[curSlug];localStorage.removeItem('cms_pages');render();toast('Reset done')}
+function doExport(){dlFile(JSON.stringify(allPages,null,2),'cms-pages.json','application/json');toast('Exported!')}
+
+// ═══════════════════════════════════════════════════════════════
+// Repair bullets: rebuild <ul>/<ol> in any text field whose content
+// has been mangled to plain "? item" runs by an ANSI CSV round-trip.
+// Also repairs <p>…</p>-wrapped / nbsp-separated / inline-run variants.
+// ═══════════════════════════════════════════════════════════════
+function rescueBulletsText(html){
+  if(!html) return html;
+  if(/<table[\s>]/i.test(String(html))) return html;
+  var s=String(html).replace(/&nbsp;/g,' ').replace(/\u00A0/g,' ');
+  var MARK='[?•►▶▪◦‣⁃\\-*]';
+  var hit=new RegExp('(?:^|[>\\s\\n\\r:.)!;])\\s*'+MARK+'\\s','g');
+  if((s.match(hit)||[]).length<2) return s;
+  s=s.replace(/<\/(p|div|li|h[1-6])>\s*<(p|div|li|h[1-6])[^>]*>/gi,'\n')
+     .replace(/<\/?(p|div|li|h[1-6])[^>]*>/gi,'\n')
+     .replace(/<br\s*\/?>/gi,'\n')
+     .replace(/<\/?(span|b|i|em|strong|u|small)[^>]*>/gi,'')
+     .replace(new RegExp('([:).!])\\s*('+MARK+')\\s','g'),'$1\n$2 ')
+     .replace(new RegExp('\\s+('+MARK+')\\s+','g'),'\n$1 ');
+  var lines=s.split(/\r?\n+/).map(function(l){return l.trim()}).filter(Boolean);
+  var out=[], buf=[], mode='none';
+  var B=new RegExp('^'+MARK+'\\s+(.+)$'), N=/^(\d+)[\.)]\s+(.+)$/;
+  function flush(){
+    if(!buf.length){mode='none';return}
+    if(mode==='ul')      out.push('<ul>'+buf.map(function(t){return'<li>'+t+'</li>'}).join('')+'</ul>');
+    else if(mode==='ol') out.push('<ol start="'+buf[0].n+'">'+buf.map(function(x){return'<li value="'+x.n+'">'+x.t+'</li>'}).join('')+'</ol>');
+    else                 out.push(buf.join('<br>'));
+    buf=[]; mode='none';
+  }
+  for(var i=0;i<lines.length;i++){
+    var line=lines[i], m;
+    if((m=line.match(B))){ if(mode!=='ul')flush(); mode='ul'; buf.push(m[1]); }
+    else if((m=line.match(N))){ if(mode!=='ol')flush(); mode='ol'; buf.push({n:m[1],t:m[2]}); }
+    else { if(mode!=='text')flush(); mode='text'; buf.push(line); }
+  }
+  flush();
+  return out.join('');
+}
+
+function repairAllBullets(){
+  var TEXT_FIELDS=['text','h3_text']; // per-section rich text fields
+  var ANSWER_FIELDS=['a'];            // FAQ answer
+  var scanned=0, changed=0;
+  Object.keys(allPages).forEach(function(slug){
+    var p=allPages[slug];
+    // Hero text + footer text + sidebar heading — any string-bearing fields
+    ['hero','sidebar','stickyBar'].forEach(function(k){
+      if(p[k]) Object.keys(p[k]).forEach(function(kk){
+        if(typeof p[k][kk]==='string'){ scanned++; var fixed=rescueBulletsText(p[k][kk]); if(fixed!==p[k][kk]){p[k][kk]=fixed; changed++;} }
+      });
+    });
+    ['footer_text','footer_heading','templates_sub'].forEach(function(k){
+      if(typeof p[k]==='string'){ scanned++; var fixed=rescueBulletsText(p[k]); if(fixed!==p[k]){p[k]=fixed; changed++;} }
+    });
+    if(Array.isArray(p.sections)) p.sections.forEach(function(sec){
+      TEXT_FIELDS.forEach(function(f){
+        if(typeof sec[f]==='string'){ scanned++; var fixed=rescueBulletsText(sec[f]); if(fixed!==sec[f]){sec[f]=fixed; changed++;} }
+      });
+    });
+    if(Array.isArray(p.faq)) p.faq.forEach(function(f){
+      ANSWER_FIELDS.forEach(function(k){
+        if(typeof f[k]==='string'){ scanned++; var fixed=rescueBulletsText(f[k]); if(fixed!==f[k]){f[k]=fixed; changed++;} }
+      });
+    });
+    if(Array.isArray(p.content_blocks)) p.content_blocks.forEach(function(b){
+      if(typeof b.content==='string'){ scanned++; var fixed=rescueBulletsText(b.content); if(fixed!==b.content){b.content=fixed; changed++;} }
+    });
+  });
+  doSave();
+  render();
+  toast(changed>0
+    ? '✅ Rebuilt '+changed+' text field(s). Reload the live site to see proper bullets.'
+    : 'Scanned '+scanned+' fields — no broken bullet runs found. Content already clean.');
+}
+
+// ═══════════════════════════════════════════════════════════════
+// Persist CMS state back into the project files so the LAN-served
+// site and any ZIP/folder share reflect every page we've created.
+// This is what makes CMS edits propagate to teammates.
+// ═══════════════════════════════════════════════════════════════
+
+// Build a PAGE_TREE {parent: [children]} from the current slug list
+function buildPageTree(pages){
+  var tree={};
+  Object.keys(pages).forEach(function(slug){
+    if(slug.indexOf('/')>-1){
+      var parent=slug.substring(0,slug.lastIndexOf('/'));
+      if(!tree[parent])tree[parent]=[];
+      tree[parent].push(slug);
+    }
+  });
+  return tree;
+}
+
+// Serialize the live in-memory CMS (allPages) as a full js/cms-data.js file.
+// Keeps the helper functions (buildBreadcrumbs, clonePage) frozen at their
+// current definitions so the runtime contract is preserved.
+function generateCmsDataJs(){
+  var pages=allPages;
+  var tree=buildPageTree(pages);
+  var defaultSlug=(typeof CMS_DEFAULT!=='undefined'&&pages[CMS_DEFAULT])
+    ? CMS_DEFAULT
+    : Object.keys(pages).filter(function(s){return s.indexOf('/')<0})[0]||Object.keys(pages)[0];
+  var helpers=''
+    +'function buildBreadcrumbs(slug, title, pages) {\n'
+    +'  var root = "https://www.naukri.com";\n'
+    +'  var base = root + "/naukri360";\n'
+    +'  var crumbs = [\n'
+    +'    {n:"Home", u:root},\n'
+    +'    {n:"Naukri360", u:base}\n'
+    +'  ];\n'
+    +'  var parts = String(slug||"").split("/").filter(Boolean);\n'
+    +'  var path = "";\n'
+    +'  for (var i = 0; i < parts.length; i++) {\n'
+    +'    path = path ? path + "/" + parts[i] : parts[i];\n'
+    +'    var isLast = (i === parts.length - 1);\n'
+    +'    var name;\n'
+    +'    if (isLast) {\n'
+    +'      name = title;\n'
+    +'    } else if (pages && pages[path] && pages[path].title) {\n'
+    +'      name = pages[path].title;\n'
+    +'    } else {\n'
+    +'      name = parts[i].replace(/-/g," ").replace(/\\b\\w/g,function(c){return c.toUpperCase()});\n'
+    +'    }\n'
+    +'    crumbs.push({n:name, u:base + "/" + path});\n'
+    +'  }\n'
+    +'  return crumbs;\n'
+    +'}\n'
+    +'function clonePage(src, slug, title) {\n'
+    +'  var c = JSON.parse(JSON.stringify(CMS_PAGES[src]));\n'
+    +'  c.slug = slug; c.title = title; c.created = new Date().toISOString().slice(0,10);\n'
+    +'  c.seo.title = title + " | Naukri360";\n'
+    +'  c.seo.canonical = "https://www.naukri.com/naukri360/" + slug;\n'
+    +'  c.hero.h1 = "Free " + title + " Resume Templates";\n'
+    +'  c.hero.text = "Create a professional " + title.toLowerCase() + " resume in minutes.";\n'
+    +'  var parentSlug = slug.indexOf("/") > -1 ? slug.substring(0, slug.lastIndexOf("/")) : "";\n'
+    +'  c.parent = parentSlug;\n'
+    +'  c.schema.breadcrumbs = buildBreadcrumbs(slug, title, CMS_PAGES);\n'
+    +'  CMS_PAGES[slug] = c;\n'
+    +'  return c;\n'
+    +'}\n';
+  return 'var CMS_PAGES = '+JSON.stringify(pages,null,1)+';\n'
+       + 'var PAGE_TREE = '+JSON.stringify(tree,null,1)+';\n'
+       + 'var CMS_DEFAULT = '+JSON.stringify(defaultSlug)+';\n'
+       + helpers;
+}
+
+// Regenerate sitemap.xml from live CMS state so it matches the pages served.
+function generateSitemapXml(){
+  var today=new Date().toISOString().slice(0,10);
+  var slugs=Object.keys(allPages);
+  var urls=['<?xml version="1.0" encoding="UTF-8"?>','<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">'];
+  urls.push('  <url><loc>https://www.naukri.com/naukri360/</loc><lastmod>'+today+'</lastmod><changefreq>weekly</changefreq><priority>1.0</priority></url>');
+  slugs.forEach(function(s){
+    var p=allPages[s];
+    var loc=(p.seo&&p.seo.canonical)||('https://www.naukri.com/naukri360/'+s);
+    var priority=(s.indexOf('/')>-1)?'0.8':'0.9';
+    urls.push('  <url><loc>'+loc+'</loc><lastmod>'+today+'</lastmod><changefreq>weekly</changefreq><priority>'+priority+'</priority></url>');
+  });
+  urls.push('</urlset>');
+  return urls.join('\n')+'\n';
+}
+
+// One-click: download updated js/cms-data.js + sitemap.xml so user can drop
+// them into the project (or the ZIP picks them up automatically).
+function doPublishCmsData(){
+  dlFile(generateCmsDataJs(),'cms-data.js','application/javascript');
+  dlFile(generateSitemapXml(),'sitemap.xml','application/xml');
+  toast('Downloaded cms-data.js + sitemap.xml ('+Object.keys(allPages).length+' pages). Replace in your project.');
+}
+function switchPage(s){allPages[curSlug]=D;curSlug=s;D=allPages[s];render()}
+function closeModal(){$('#modal').classList.remove('open')}
+function dlFile(c,n,t){var b=new Blob([c],{type:t});var u=URL.createObjectURL(b);var a=document.createElement('a');a.href=u;a.download=n;a.click();URL.revokeObjectURL(u)}
+
+function doCreatePage(){
+  var title=$('#m-title').value.trim();
+  var slug=$('#m-slug').value.trim().toLowerCase().replace(/[^a-z0-9\/-]/g,'-').replace(/-+/g,'-').replace(/^-|-$/g,'');
+  var from=$('#m-clone-from').value;
+  if(!title||!slug){toast('Title & slug required',false);return}
+  if(allPages[slug]) slug+='-'+Date.now().toString(36);
+  if(from&&allPages[from]){
+    var c=JSON.parse(JSON.stringify(allPages[from]));
+    c.slug=slug;c.title=title;c.created=new Date().toISOString().slice(0,10);
+    c.seo.title=title+' | Naukri360';c.seo.canonical='https://www.naukri.com/naukri360/'+slug;
+    c.hero.h1='Free '+title+' Resume Templates';
+    c.parent=slug.indexOf('/')>-1?slug.substring(0,slug.lastIndexOf('/')):'';
+    c.schema.breadcrumbs=(typeof buildBreadcrumbs==='function')?buildBreadcrumbs(slug,title,allPages):[{n:'Home',u:'https://www.naukri.com/naukri360'},{n:title,u:'https://www.naukri.com/naukri360/'+slug}];
+    allPages[slug]=c;
+  } else { allPages[slug]=clonePage(CMS_DEFAULT,slug,title); }
+  curSlug=slug;D=allPages[slug];doSave();closeModal();render();toast('Page "'+title+'" created!')
+}
+
+// ═══════════════════════════════════════
+// FIELD HELPERS
+// ═══════════════════════════════════════
+var fid=0;
+function esc(s){return String(s||'').replace(/&/g,'&amp;').replace(/"/g,'&quot;').replace(/</g,'&lt;').replace(/>/g,'&gt;')}
+function stripH(s){var d=document.createElement('div');d.innerHTML=s||'';return d.textContent||''}
+// HTML → plain text preserving line breaks (for CSV export of rich-text fields)
+function htmlToText(s){
+  if(!s)return'';
+  // If content contains a table, keep the original HTML verbatim — tables are
+  // hard to represent in plain CSV and textToHtml re-detects raw HTML on import.
+  if(/<table[\s>]/i.test(String(s))) return String(s);
+  // Round-trip: convert UL bullet lists back to "- item" markdown.
+  // Ordered lists use the literal <li data-num="N"> prefix we wrote on import,
+  // so on export we rebuild "N. item" with the ORIGINAL number (not a re-count).
+  var str=String(s);
+  str=str.replace(/<ol([^>]*)>([\s\S]*?)<\/ol>/gi,function(_,olAttrs,inner){
+    var startMatch=olAttrs.match(/start="(\d+)"/i);
+    var counter=startMatch?parseInt(startMatch[1],10):1;
+    return '\n'+inner.replace(/<li([^>]*)>([\s\S]*?)<\/li>/gi,function(__,liAttrs,li){
+      var vm=liAttrs.match(/value="(\d+)"/i)||liAttrs.match(/data-num="(\d+)"/i);
+      var n=vm?vm[1]:counter;
+      counter=parseInt(n,10)+1;
+      return n+'. '+li.replace(/<[^>]*>/g,'').trim()+'\n';
+    }).trim()+'\n';
+  });
+  str=str.replace(/<ul[^>]*>([\s\S]*?)<\/ul>/gi,function(_,inner){
+    return '\n'+inner.replace(/<li[^>]*>([\s\S]*?)<\/li>/gi,function(__,li){
+      return '- '+li.replace(/<[^>]*>/g,'').trim()+'\n';
+    }).trim()+'\n';
+  });
+  str=str
+    .replace(/<\/p>\s*<p[^>]*>/gi,'\n\n')
+    .replace(/<br\s*\/?>/gi,'\n')
+    .replace(/<\/(div|h[1-6])>\s*<(div|h[1-6])[^>]*>/gi,'\n');
+  var d=document.createElement('div');d.innerHTML=str;
+  return (d.textContent||'').replace(/\u00A0/g,' ').replace(/[ \t]+\n/g,'\n').replace(/\n{3,}/g,'\n\n').trim();
+}
+
+// Plain text → HTML. Preserves line breaks from CSV exactly as written.
+// Only two structural conversions:
+//   "- ", "* ", "• "   → <ul> bullet list item (the marker is stripped; CSS renders "•")
+//   "1. ", "2) " ...   → <ol> ordered list item, with the EXACT number from the CSV
+//                         preserved via <li data-num="N">. CSS renders "N." so gaps
+//                         ("1.", "2.", "5.") stay as the user typed them.
+// Everything else becomes plain text with <br> line breaks.
+function textToHtml(s){
+  if(!s)return'';
+  var str=String(s);
+  if(/<(p|br|div|ul|ol|li|h[1-6]|strong|em|b|i|a|span|table|thead|tbody|tr|th|td)[\s>\/]/i.test(str))return str;
+  function escHtml(t){return t.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');}
+  var lines=str.replace(/\r\n?/g,'\n').split('\n');
+  var out=[], buf=[], mode='none'; // none | ul | ol | text
+  function flush(){
+    if(!buf.length){mode='none';return;}
+    if(mode==='ul'){
+      // Native <ul> — browser default renders a disc marker, works in every font + cache state.
+      out.push('<ul>'+buf.map(function(x){return '<li>'+x.text+'</li>';}).join('')+'</ul>');
+    } else if(mode==='ol'){
+      // <li value="N"> preserves the ORIGINAL number from the CSV ("1., 2., 5., 10.") using
+      // the browser's native ordered-list marker — no ::before tricks, no font/encoding risk.
+      var start=buf[0].num||'1';
+      out.push('<ol start="'+start+'">'+buf.map(function(x){return '<li value="'+x.num+'">'+x.text+'</li>';}).join('')+'</ol>');
+    } else {
+      out.push(buf.join('<br>'));
+    }
+    buf=[]; mode='none';
+  }
+  for(var i=0;i<lines.length;i++){
+    var raw=lines[i];
+    var line=raw.replace(/^\s+/,'');
+    if(line===''){flush(); continue;}
+    var m;
+    // Bullet markers include ?, which is what Excel substitutes when saving a
+    // Unicode bullet (•) to a legacy ANSI CSV — by the time the import runs,
+    // the real bullet is already gone, so we have to accept ? as a stand-in.
+    if((m=line.match(/^[-*•?►▶▪◦‣⁃]\s+(.*)$/))){
+      if(mode!=='ul')flush();
+      mode='ul'; buf.push({text:escHtml(m[1])});
+    } else if((m=line.match(/^(\d+)[\.)]\s+(.*)$/))){
+      if(mode!=='ol')flush();
+      mode='ol'; buf.push({num:m[1], text:escHtml(m[2])});
+    } else {
+      if(mode!=='text')flush();
+      mode='text'; buf.push(escHtml(line));
+    }
+  }
+  flush();
+  return out.join('');
+}
+
+function F(label,val,path,help){
+  var id='f'+(fid++);
+  return '<div class="fm"><label for="'+id+'">'+label+'</label><input id="'+id+'" type="text" value="'+esc(val)+'" data-bind="'+esc(path)+'">'+(help?'<small>'+help+'</small>':'')+'</div>';
+}
+function T(label,val,path,help){
+  var id='f'+(fid++);
+  return '<div class="fm"><label for="'+id+'">'+label+'</label><textarea id="'+id+'" data-bind="'+esc(path)+'">'+esc(val)+'</textarea>'+(help?'<small>'+help+'</small>':'')+'</div>';
+}
+function R(label,val,path,opts){
+  opts=opts||{};var id='r'+(fid++);var maxW=opts.maxWords||5000;
+  return '<div class="fm"><label>'+label+'</label><div class="rte-box" id="box-'+id+'"><div class="rte-bar">'+
+    '<button type="button" class="rb" data-cmd="formatBlock" data-val="H1">H1</button>'+
+    '<button type="button" class="rb" data-cmd="formatBlock" data-val="H2">H2</button>'+
+    '<button type="button" class="rb" data-cmd="formatBlock" data-val="H3">H3</button>'+
+    '<button type="button" class="rb" data-cmd="formatBlock" data-val="P">P</button>'+
+    '<span class="rb-sep"></span>'+
+    '<button type="button" class="rb" data-cmd="bold"><b>B</b></button>'+
+    '<button type="button" class="rb" data-cmd="italic"><i>I</i></button>'+
+    '<button type="button" class="rb" data-cmd="underline"><u>U</u></button>'+
+    '<button type="button" class="rb" data-cmd="strikeThrough">S</button>'+
+    '<span class="rb-sep"></span>'+
+    '<button type="button" class="rb" data-cmd="insertUnorderedList">&#8226;</button>'+
+    '<button type="button" class="rb" data-cmd="insertOrderedList">1.</button>'+
+    '<button type="button" class="rb" data-cmd="createLink">&#128279;</button>'+
+    '<button type="button" class="rb" data-cmd="insertTable" title="Insert Table">&#9638;</button>'+
+    '<button type="button" class="rb" data-cmd="addTableRow" title="Add row below">+R</button>'+
+    '<button type="button" class="rb" data-cmd="addTableCol" title="Add column right">+C</button>'+
+    '<button type="button" class="rb" data-cmd="delTableRow" title="Delete current row">-R</button>'+
+    '<button type="button" class="rb" data-cmd="delTableCol" title="Delete current column">-C</button>'+
+    '<button type="button" class="rb" data-cmd="removeFormat">&times;</button>'+
+    '</div><div class="rte-body'+(opts.large?' rte-lg':'')+'" contenteditable="true" id="'+id+'" data-rte="'+esc(path)+'" data-ph="'+(opts.placeholder||'Start typing...')+'">'+(val||'')+'</div></div>'+
+    '<div class="rte-wc">Words: <span id="wc-'+id+'">0</span> / '+maxW+'</div>'+(opts.help?'<small>'+opts.help+'</small>':'')+'</div>';
+}
+
+function testiBlock(arr,prefix){
+  var h='';
+  arr.forEach(function(t,i){
+    h+='<div class="rep"><div class="rep-h"><strong>#'+(i+1)+' '+esc(t.author)+'</strong><button class="tb-btn sm danger" onclick="'+prefix+'.splice('+i+',1);render()">Del</button></div>'+
+      F('Heading',t.heading,prefix+'['+i+'].heading')+
+      R('Text',t.text,prefix+'['+i+'].text',{large:true,maxWords:5000})+
+      F('Author',t.author,prefix+'['+i+'].author')+
+      F('Role',t.role,prefix+'['+i+'].role')+'</div>';
+  });
+  return h;
+}
+
+// ═══════════════════════════════════════
+// RENDER
+// ═══════════════════════════════════════
+function render(){
+  fid=0;
+  $('#editing-badge').textContent='Editing: /'+curSlug;
+  $$('.sb-item').forEach(function(el){el.classList.toggle('active',el.dataset.p===panel)});
+  var h='';
+  switch(panel){
+    case 'pages':h=pPages();break;case 'seo':h=pSeo();break;case 'hero':h=pHero();break;
+    case 'stickybar':h=pStickyBar();break;case 'templates':h=pTemplates();break;case 'filterchips':h=pFilterChips();break;
+    case 'content':h=pContent();break;case 'sidebar':h=pSidebar();break;case 'testimonials':h=pTestimonials();break;
+    case 'faq':h=pFaq();break;case 'footer':h=pFooter();break;
+    case 'interlinks':h=pInterlinks();break;
+    case 'csvtool':h=pCsvTool();break;case 'cdn':h=pCdn();break;case 'copypublish':h=pCopyPublish();break;case 'download':h=pDownload();break;
+  }
+  $('#panel-title').textContent=TITLES[panel]||panel;
+  area.innerHTML=h;
+  bindAll();
+}
+
+// ═══════════════════════════════════════
+// PANEL: PAGES
+// ═══════════════════════════════════════
+function pPages(){
+  var slugs=Object.keys(allPages);
+  var h='<div class="card"><div class="ct">All Pages ('+slugs.length+')</div>';
+  h+='<div class="card-info">Select a page to edit. Clone to create new ones.</div>';
+  slugs.forEach(function(s){
+    var p=allPages[s],cur=s===curSlug;
+    h+='<div class="pg-item'+(cur?' pg-active':'')+'"><div class="pg-info"><strong>'+esc(p.title)+'</strong> <span class="pg-slug">/'+s+'</span>'+(cur?' <span class="badge-b">editing</span>':'')+'</div><div class="pg-btns">';
+    if(!cur)h+='<button class="tb-btn sm" onclick="switchPage(\''+s+'\')">Edit</button>';
+    h+='<button class="tb-btn sm outline" onclick="openClone(\''+s+'\')">Clone</button>';
+    h+='<button class="tb-btn sm" onclick="window.open(\'index.html?page='+s+'\',\'_blank\')">Preview</button>';
+    if(slugs.indexOf(s)>0)h+='<button class="tb-btn sm danger" onclick="if(confirm(\'Delete /'+s+'?\')){delete allPages[\''+s+'\'];if(curSlug===\''+s+'\'){curSlug=Object.keys(allPages)[0];D=allPages[curSlug]}syncGlobalInterlinks();doSave();render()}">Del</button>';
+    h+='</div></div>';
+  });
+  h+='<div class="pg-add"><button class="tb-btn primary" onclick="openClone(curSlug)">+ Clone Current</button> <button class="tb-btn outline" onclick="openCreate()">+ New Blank</button></div></div>';
+  return h;
+}
+
+// ═══════════════════════════════════════
+// PANEL: SEO
+// ═══════════════════════════════════════
+function pSeo(){
+  var h='<div class="card"><div class="ct">SEO Meta Tags</div>'+
+    F('Title Tag',D.seo.title,'D.seo.title','50-60 chars')+
+    R('Meta Description',D.seo.desc,'D.seo.desc',{maxWords:200,help:'150-160 chars'})+
+    F('Keywords',D.seo.keywords,'D.seo.keywords','Comma-separated')+
+    F('Canonical URL',D.seo.canonical,'D.seo.canonical')+
+    F('OG Image',D.seo.ogImage,'D.seo.ogImage')+'</div>';
+  // Breadcrumbs
+  if(!D.schema.breadcrumbs)D.schema.breadcrumbs=[];
+  h+='<div class="card"><div class="ct">Breadcrumbs</div><div class="card-info">Auto-generates BreadcrumbList schema.</div>';
+  D.schema.breadcrumbs.forEach(function(b,i){
+    h+='<div class="rep"><div class="rep-h"><strong>Level '+(i+1)+'</strong><div>';
+    if(i>0)h+='<button class="tb-btn sm" onclick="var x=D.schema.breadcrumbs.splice('+i+',1)[0];D.schema.breadcrumbs.splice('+(i-1)+',0,x);render()">&uarr;</button>';
+    if(i<D.schema.breadcrumbs.length-1)h+='<button class="tb-btn sm" onclick="var x=D.schema.breadcrumbs.splice('+i+',1)[0];D.schema.breadcrumbs.splice('+(i+1)+',0,x);render()">&darr;</button>';
+    if(D.schema.breadcrumbs.length>1)h+='<button class="tb-btn sm danger" onclick="D.schema.breadcrumbs.splice('+i+',1);render()">Del</button>';
+    h+='</div></div>'+F('Name',b.n,'D.schema.breadcrumbs['+i+'].n')+F('URL',b.u,'D.schema.breadcrumbs['+i+'].u')+'</div>';
+  });
+  h+='<button class="tb-btn outline full" onclick="D.schema.breadcrumbs.push({n:\'New\',u:\'https://www.naukri.com/naukri360/\'});render()">+ Add Level</button></div>';
+  // Schema
+  h+='<div class="card"><div class="ct">Schema Settings</div>'+
+    F('Rating Value',D.schema.ratingValue,'D.schema.ratingValue','e.g. 4.8')+
+    F('Rating Count',D.schema.ratingCount,'D.schema.ratingCount')+
+    F('Review Count',D.schema.reviewCount,'D.schema.reviewCount')+'</div>';
+  return h;
+}
+
+// ═══════════════════════════════════════
+// PANEL: HERO
+// ═══════════════════════════════════════
+function pHero(){
+  if(!D.globalHeroLinks)D.globalHeroLinks={cta1_url:'',cta1_text:'Get Started Free',cta2_url:'#templates',cta2_text:'Browse Templates'};
+  if(!D.hero.cta1_url)D.hero.cta1_url='';if(!D.hero.cta2_url)D.hero.cta2_url='';
+  var h='<div class="card"><div class="ct">Global Hero Links (default for all pages)</div><div class="card-info">Set once, applies everywhere unless overridden at page level.</div>'+
+    F('CTA 1 Global URL',D.globalHeroLinks.cta1_url,'D.globalHeroLinks.cta1_url')+
+    F('CTA 1 Global Text',D.globalHeroLinks.cta1_text,'D.globalHeroLinks.cta1_text')+
+    F('CTA 2 Global URL',D.globalHeroLinks.cta2_url,'D.globalHeroLinks.cta2_url')+
+    F('CTA 2 Global Text',D.globalHeroLinks.cta2_text,'D.globalHeroLinks.cta2_text')+'</div>';
+  h+='<div class="card"><div class="ct">Hero / Banner (This Page)</div><div class="card-info">Leave URL fields empty to use global defaults above.</div>'+
+    R('H1 Heading',D.hero.h1,'D.hero.h1',{maxWords:100})+
+    R('Hero Text',D.hero.text,'D.hero.text',{large:true,maxWords:5000})+
+    F('CTA 1 Text',D.hero.cta1,'D.hero.cta1')+
+    F('CTA 1 Page URL Override',D.hero.cta1_url,'D.hero.cta1_url','Empty = use global')+
+    F('CTA 2 Text',D.hero.cta2,'D.hero.cta2')+
+    F('CTA 2 Page URL Override',D.hero.cta2_url,'D.hero.cta2_url','Empty = use global')+'</div>';
+  return h;
+}
+
+// ═══════════════════════════════════════
+// PANEL: STICKY BAR
+// ═══════════════════════════════════════
+function pStickyBar(){
+  if(!D.stickyBar)D.stickyBar={enabled:true,text:'',linkText:'',linkUrl:'',bgColor:'#fec924',textColor:'#000000'};
+  var sb=D.stickyBar;
+  var h='<div class="card"><div class="ct">Sticky Top Bar</div><div class="card-info">The yellow bar below the navbar. Apply to all pages for a global change.</div>';
+  h+='<div class="fm"><label>Visible</label><div style="display:flex;gap:8px"><button class="tb-btn sm '+(sb.enabled!==false?'primary':'outline')+'" onclick="D.stickyBar.enabled=true;render()">Show</button><button class="tb-btn sm '+(sb.enabled===false?'primary':'outline')+'" onclick="D.stickyBar.enabled=false;render()">Hide</button></div></div>';
+  h+=F('Bar Text',sb.text,'D.stickyBar.text');
+  h+=F('Link Text',sb.linkText,'D.stickyBar.linkText');
+  h+=F('Link URL',sb.linkUrl,'D.stickyBar.linkUrl');
+  h+=F('Background Color',sb.bgColor||'#fec924','D.stickyBar.bgColor');
+  h+=F('Text Color',sb.textColor||'#000000','D.stickyBar.textColor');
+  h+='<button class="tb-btn primary full" onclick="applyBarAll()">Apply to All '+Object.keys(allPages).length+' Pages</button></div>';
+  return h;
+}
+function applyBarAll(){var b=JSON.parse(JSON.stringify(D.stickyBar));Object.keys(allPages).forEach(function(s){allPages[s].stickyBar=JSON.parse(JSON.stringify(b))});doSave();toast('Bar applied to all pages!')}
+
+// ═══════════════════════════════════════
+// PANEL: TEMPLATES
+// ═══════════════════════════════════════
+function pTemplates(){
+  // Initialise truly-global fields if missing (older data / freshly created pages)
+  if(typeof D.globalTemplateButtonUrl==='undefined' || typeof D.globalTemplateButtonText==='undefined'){
+    var donor=null;
+    Object.keys(allPages).some(function(s){
+      if(s===curSlug) return false;
+      var p=allPages[s];
+      if(typeof p.globalTemplateButtonUrl==='string' || typeof p.globalTemplateButtonText==='string'){ donor=p; return true; }
+    });
+    if(typeof D.globalTemplateButtonUrl==='undefined') D.globalTemplateButtonUrl=(donor && donor.globalTemplateButtonUrl)||'https://www.naukri.com/resume-editor';
+    if(typeof D.globalTemplateButtonText==='undefined') D.globalTemplateButtonText=(donor && donor.globalTemplateButtonText)||'Try this free template';
+  }
+  if(typeof D.useGlobalTemplateButton==='undefined') D.useGlobalTemplateButton=true;
+  syncGlobalTemplateButton();
+  // Initialise globalTemplates if missing — pull from another page or seed from this page's templates
+  if(!Array.isArray(D.globalTemplates) || !D.globalTemplates.length){
+    var gtDonor=null;
+    Object.keys(allPages).some(function(s){
+      if(s===curSlug) return false;
+      if(Array.isArray(allPages[s].globalTemplates) && allPages[s].globalTemplates.length){ gtDonor=allPages[s].globalTemplates; return true; }
+    });
+    D.globalTemplates = gtDonor
+      ? JSON.parse(JSON.stringify(gtDonor))
+      : (D.templates||[]).map(function(t){return {name:t.name||'',cat:t.cat||'',link:''};});
+  }
+  if(typeof D.useGlobalTemplateLinks==='undefined') D.useGlobalTemplateLinks=true;
+  // Make sure globalTemplates has one entry per page template (extend or trim if drifted)
+  while(D.globalTemplates.length < (D.templates||[]).length){
+    var t=D.templates[D.globalTemplates.length];
+    D.globalTemplates.push({name:t&&t.name||'',cat:t&&t.cat||'',link:''});
+  }
+  syncGlobalTemplates();
+
+  var h='';
+  // 🌐 Truly-global card — applies to every page that has "Use global" enabled
+  h+='<div class="card"><div class="ct">🌐 Global Template Button</div>';
+  h+='<div class="card-info">Edit once — applies to every page where the toggle below is on. Per-template <code>link</code> overrides still win at render time.</div>';
+  h+=F('Global Button URL',D.globalTemplateButtonUrl||'','D.globalTemplateButtonUrl');
+  h+=F('Global Button Text',D.globalTemplateButtonText||'Try this free template','D.globalTemplateButtonText');
+  h+=F('Global PDF Download URL',D.globalTemplatePdfUrl||'','D.globalTemplatePdfUrl','Default PDF link for all template cards (per-template PDF URL overrides this).');
+  h+=F('Global DOC Download URL',D.globalTemplateDocUrl||'','D.globalTemplateDocUrl','Default DOC link for all template cards (per-template DOC URL overrides this).')+'</div>';
+
+  // 🌐 Global per-template links — one row per template, mirrored across pages.
+  h+='<div class="card"><div class="ct">🌐 Global Template Links ('+D.globalTemplates.length+')</div>';
+  h+='<div class="card-info">Set a default link per template. Edits apply to every page where the toggle below is on. <b>Per-page Link URL on a specific template (in the list below) overrides the matching global entry.</b></div>';
+  h+='<div class="fm"><label style="display:flex;gap:8px;align-items:center;text-transform:none;font-size:14px"><input type="checkbox" '+(D.useGlobalTemplateLinks?'checked':'')+' onchange="D.useGlobalTemplateLinks=this.checked;render()"> Use global template links on this page</label>';
+  h+='<small>'+(D.useGlobalTemplateLinks?'Templates on this page use the global links below unless a per-template "Link URL" is set.':'This page ignores the global links — only per-template "Link URL" or the page button URL is used.')+'</small></div>';
+  D.globalTemplates.forEach(function(g,i){
+    h+='<div class="rep"><div class="rep-h"><strong>#'+(i+1)+' '+esc(g.name||'(unnamed)')+(g.cat?' <small style="color:#717b9e;font-weight:400">['+esc(g.cat)+']</small>':'')+'</strong></div>';
+    h+=F('Global Link URL',g.link||'','D.globalTemplates['+i+'].link','Default URL for this template across every page.');
+    h+='</div>';
+  });
+  h+='</div>';
+
+  // Per-page toggle + override
+  h+='<div class="card"><div class="ct">This page</div>';
+  h+='<div class="fm"><label style="display:flex;gap:8px;align-items:center;text-transform:none;font-size:14px"><input type="checkbox" '+(D.useGlobalTemplateButton?'checked':'')+' onchange="D.useGlobalTemplateButton=this.checked;render()"> Use global template button on this page</label>';
+  h+='<small>'+(D.useGlobalTemplateButton?'Templates on this page point to the global URL above.':'This page is overriding the global button — fill in below.')+'</small></div>';
+  if(!D.useGlobalTemplateButton){
+    h+=F('Page Button URL',D.templateButtonUrl||'','D.templateButtonUrl','Used only on this page; overrides the global URL.');
+    h+=F('Page Button Text',D.templateButtonText||'','D.templateButtonText','Override the global button text on this page.');
+  }
+  h+='</div>';
+  h+='<div class="card"><div class="ct">Templates ('+D.templates.length+')</div>'+
+    R('First H2 — Templates Section Heading (e.g. "Explore Our Free ATS Resume Templates")',D.templates_heading,'D.templates_heading',{maxWords:50,help:'CSV column: templates_heading'})+
+    R('Templates Section Sub-text',D.templates_sub,'D.templates_sub',{maxWords:200,help:'CSV column: templates_sub'});
+  D.templates.forEach(function(t,i){
+    h+='<div class="rep"><div class="rep-h"><strong>#'+(i+1)+' '+esc(t.name)+'</strong><div>';
+    if(i>0)h+='<button class="tb-btn sm" onclick="var x=D.templates.splice('+i+',1)[0];D.templates.splice('+(i-1)+',0,x);render()">&uarr;</button>';
+    if(i<D.templates.length-1)h+='<button class="tb-btn sm" onclick="var x=D.templates.splice('+i+',1)[0];D.templates.splice('+(i+1)+',0,x);render()">&darr;</button>';
+    h+='<button class="tb-btn sm danger" onclick="D.templates.splice('+i+',1);render()">Del</button></div></div>';
+    h+=F('Name',t.name,'D.templates['+i+'].name');
+    h+=F('Description',t.desc,'D.templates['+i+'].desc');
+    h+=F('Category',t.cat,'D.templates['+i+'].cat','ats,modern,traditional,simple,creative,onepage,twocolumn,photo');
+    h+=F('Link URL',t.link||'','D.templates['+i+'].link','Override global button URL');
+    h+=F('PDF Download URL',t.pdfUrl||'','D.templates['+i+'].pdfUrl','Per-template PDF link (empty = use global)');
+    h+=F('DOC Download URL',t.docUrl||'','D.templates['+i+'].docUrl','Per-template DOC link (empty = use global)');
+    h+=F('Image Path',t.image||'','D.templates['+i+'].image','e.g. img/cv3.png');
+    h+='<label class="tb-btn sm outline" style="display:inline-flex;margin-top:4px">Upload <input type="file" accept="image/*" class="tpl-file-input" data-tpl-idx="'+i+'" hidden></label>';
+    h+='</div>';
+  });
+  h+='<button class="tb-btn primary full" onclick="D.templates.push({name:\'New\',desc:\'Desc\',cat:\'modern\',image:\'\',link:\'\'});render()">+ Add Template</button></div>';
+  return h;
+}
+
+// ═══════════════════════════════════════
+// PANEL: FILTER CHIPS (Templates section filters)
+// ═══════════════════════════════════════
+var DEFAULT_CHIPS=[
+  {label:'All templates',cat:'all',url:'#templates/all'},
+  {label:'Modern',cat:'modern',url:'#templates/modern'},
+  {label:'Traditional',cat:'traditional',url:'#templates/traditional'},
+  {label:'Simple',cat:'simple',url:'#templates/simple'},
+  {label:'Creative',cat:'creative',url:'#templates/creative'},
+  {label:'ATS',cat:'ats',url:'#templates/ats'},
+  {label:'One page',cat:'onepage',url:'#templates/onepage'},
+  {label:'Two column',cat:'twocolumn',url:'#templates/twocolumn'},
+  {label:'Photo',cat:'photo',url:'#templates/photo'}
+];
+function chipsList(arr){
+  return (arr||[]).map(function(c){return {label:c.label||'',cat:c.cat||'',url:c.url||''};});
+}
+function renderChipEditor(arr, pathPrefix){
+  // When editing global chips, every mutation also propagates to all other
+  // pages so "global" actually applies everywhere. The per-page editor uses
+  // a plain render().
+  var afterMutate = (pathPrefix==='D.globalFilterChips') ? 'syncGlobalChips();render()' : 'render()';
+  var html='';
+  arr.forEach(function(c,i){
+    html+='<div class="rep"><div class="rep-h"><strong>#'+(i+1)+' '+esc(c.label||'(empty)')+'</strong><div>';
+    if(i>0)html+='<button class="tb-btn sm" onclick="var x='+pathPrefix+'.splice('+i+',1)[0];'+pathPrefix+'.splice('+(i-1)+',0,x);'+afterMutate+'">&uarr;</button>';
+    if(i<arr.length-1)html+='<button class="tb-btn sm" onclick="var x='+pathPrefix+'.splice('+i+',1)[0];'+pathPrefix+'.splice('+(i+1)+',0,x);'+afterMutate+'">&darr;</button>';
+    html+='<button class="tb-btn sm danger" onclick="'+pathPrefix+'.splice('+i+',1);'+afterMutate+'">Del</button></div></div>';
+    html+=F('Label',c.label,pathPrefix+'['+i+'].label','Visible chip text e.g. "Modern"');
+    html+=F('Category',c.cat,pathPrefix+'['+i+'].cat','Must match template card data-category: all, modern, traditional, simple, creative, ats, onepage, twocolumn, photo');
+    html+=F('Link URL',c.url,pathPrefix+'['+i+'].url','In-page filter: #templates/<cat>  |  External: full URL');
+    html+='</div>';
+  });
+  return html;
+}
+function pFilterChips(){
+  // If this page has no globalFilterChips yet, pull from another page that
+  // already has them (preserving user customisations made on a different page)
+  // before falling back to the built-in defaults.
+  if(!D.globalFilterChips||!D.globalFilterChips.length){
+    var donor=null;
+    Object.keys(allPages).some(function(slug){
+      var gp=allPages[slug].globalFilterChips;
+      if(slug!==curSlug && Array.isArray(gp) && gp.length){ donor=gp; return true; }
+    });
+    D.globalFilterChips=donor
+      ? JSON.parse(JSON.stringify(donor))
+      : JSON.parse(JSON.stringify(DEFAULT_CHIPS));
+  }
+  if(!Array.isArray(D.filterChips)) D.filterChips=[];
+  if(typeof D.useGlobalFilterChips==='undefined') D.useGlobalFilterChips=true;
+  // After potentially seeding D.globalFilterChips, mirror to every other page
+  // so the global pool stays consistent.
+  syncGlobalChips();
+
+  var h='<div class="card"><div class="ct">📌 Filter Chips — Templates section filters</div>';
+  h+='<div class="card-info">Each chip filters the templates grid by category. The <b>Global</b> set applies to every page; toggle off below to give this page its own chip list. Default chip URLs use <code>#templates/&lt;cat&gt;</code> for in-page filtering — replace with full URLs (e.g. <code>https://www.naukri.com/naukri360/resume-templates/modern</code>) to send each chip to its own page.</div></div>';
+
+  // Per-page override toggle
+  h+='<div class="card"><div class="ct">This page</div>';
+  h+='<div class="fm"><label style="display:flex;gap:8px;align-items:center;text-transform:none;font-size:14px"><input type="checkbox" '+(D.useGlobalFilterChips?'checked':'')+' onchange="D.useGlobalFilterChips=this.checked;render()"> Use global filter chips on this page</label>';
+  h+='<small>'+(D.useGlobalFilterChips?'Global chips will be rendered on this page. Switch off to override below.':'This page is using its own chip list (overrides global).')+'</small></div></div>';
+
+  // Per-page list (only when override is on)
+  if(!D.useGlobalFilterChips){
+    h+='<div class="card"><div class="ct">Per-page chips ('+D.filterChips.length+')</div>';
+    h+='<div class="card-info">These appear only on <b>'+esc(D.title||curSlug)+'</b>.</div>';
+    h+=renderChipEditor(D.filterChips,'D.filterChips');
+    h+='<button class="tb-btn primary full" onclick="D.filterChips.push({label:\'New\',cat:\'all\',url:\'#templates/all\'});render()">+ Add Chip</button>';
+    h+='<button class="tb-btn outline full" style="margin-top:8px" onclick="D.filterChips=JSON.parse(JSON.stringify(D.globalFilterChips));render()">Copy global chips into this page</button></div>';
+  }
+
+  // Global list — always visible
+  h+='<div class="card"><div class="ct">🌐 Global chips ('+D.globalFilterChips.length+')</div>';
+  h+='<div class="card-info">Edit once, applies to every page that has "Use global filter chips" enabled.</div>';
+  h+=renderChipEditor(D.globalFilterChips,'D.globalFilterChips');
+  h+='<button class="tb-btn primary full" onclick="D.globalFilterChips.push({label:\'New\',cat:\'all\',url:\'#templates/all\'});syncGlobalChips();render()">+ Add Chip</button>';
+  h+='<button class="tb-btn outline full" style="margin-top:8px" onclick="if(confirm(\'Reset global chips to defaults?\')){D.globalFilterChips=JSON.parse(JSON.stringify(DEFAULT_CHIPS));syncGlobalChips();render();}">Reset to defaults</button></div>';
+
+  return h;
+}
+
+// ═══════════════════════════════════════
+// PANEL: INTERLINKING — chip-style links (replaces sec-cv "Resume Examples")
+// Global pool shared across pages + optional per-page override list.
+// ═══════════════════════════════════════
+function pruneInterlinks(arr){
+  var base='https://www.naukri.com/naukri360/';
+  return (Array.isArray(arr)?arr:[]).filter(function(x){
+    if(!x||!x.url) return false;
+    if(x.url.indexOf(base)===0){
+      var s=x.url.slice(base.length).replace(/\/+$/,'');
+      return !!allPages[s];
+    }
+    return true;
+  });
+}
+function renderInterlinkEditor(arr, pathPrefix){
+  var afterMutate = (pathPrefix==='D.globalInterlinks') ? 'syncGlobalInterlinks();render()' : 'render()';
+  var html='';
+  arr.forEach(function(c,i){
+    html+='<div class="rep"><div class="rep-h"><strong>#'+(i+1)+' '+esc(c.label||'(empty)')+'</strong><div>';
+    if(i>0)html+='<button class="tb-btn sm" onclick="var x='+pathPrefix+'.splice('+i+',1)[0];'+pathPrefix+'.splice('+(i-1)+',0,x);'+afterMutate+'">&uarr;</button>';
+    if(i<arr.length-1)html+='<button class="tb-btn sm" onclick="var x='+pathPrefix+'.splice('+i+',1)[0];'+pathPrefix+'.splice('+(i+1)+',0,x);'+afterMutate+'">&darr;</button>';
+    html+='<button class="tb-btn sm danger" onclick="'+pathPrefix+'.splice('+i+',1);'+afterMutate+'">Del</button></div></div>';
+    html+=F('Label',c.label,pathPrefix+'['+i+'].label','Visible chip text e.g. "Software Engineer Resume"');
+    html+=F('Link URL',c.url,pathPrefix+'['+i+'].url','Full URL or relative path');
+    html+='</div>';
+  });
+  return html;
+}
+function pInterlinks(){
+  if(!Array.isArray(D.interlinks)) D.interlinks=[];
+  if(!Array.isArray(D.globalInterlinks)) D.globalInterlinks=[];
+  if(typeof D.useGlobalInterlinks==='undefined') D.useGlobalInterlinks=true;
+  syncGlobalInterlinks();
+  var h='<div class="card"><div class="ct">🔗 Interlinking — Related-page chip links</div>';
+  h+='<div class="card-info">Renders as a chip strip at the bottom of every page (same look as the templates filter chips). Designed to hold many links (15–20+) and wrap to multiple rows. Global pool applies to every page that has "Use global interlinks" enabled; turn it off for per-page customisation.</div></div>';
+  h+='<div class="card"><div class="ct">Section copy (this page)</div>'+
+    F('Heading',D.interlinks_heading||'','D.interlinks_heading')+
+    F('Sub-text',D.interlinks_sub||'','D.interlinks_sub')+'</div>';
+  h+='<div class="card"><div class="ct">This page</div>';
+  h+='<div class="fm"><label style="display:flex;gap:8px;align-items:center;text-transform:none;font-size:14px"><input type="checkbox" '+(D.useGlobalInterlinks?'checked':'')+' onchange="D.useGlobalInterlinks=this.checked;render()"> Use global interlinks on this page</label>';
+  h+='<small>'+(D.useGlobalInterlinks?'Global chips render on this page. Switch off to override below.':'This page is using its own interlinks list (overrides global).')+'</small></div></div>';
+  if(!D.useGlobalInterlinks){
+    h+='<div class="card"><div class="ct">Per-page links ('+D.interlinks.length+')</div>';
+    h+='<div class="card-info">These appear only on <b>'+esc(D.title||curSlug)+'</b>.</div>';
+    h+=renderInterlinkEditor(D.interlinks,'D.interlinks');
+    h+='<button class="tb-btn primary full" onclick="D.interlinks.push({label:\'New link\',url:\'#\'});render()">+ Add Link</button>';
+    h+='<button class="tb-btn outline full" style="margin-top:8px" onclick="D.interlinks=JSON.parse(JSON.stringify(D.globalInterlinks));render()">Copy global links into this page</button></div>';
+  }
+  h+='<div class="card"><div class="ct">🌐 Global links ('+D.globalInterlinks.length+')</div>';
+  h+='<div class="card-info">Edit once, applies to every page that has "Use global interlinks" enabled.</div>';
+  h+=renderInterlinkEditor(D.globalInterlinks,'D.globalInterlinks');
+  h+='<button class="tb-btn primary full" onclick="D.globalInterlinks.push({label:\'New link\',url:\'#\'});syncGlobalInterlinks();render()">+ Add Link</button>';
+  h+='<button class="tb-btn outline full" style="margin-top:8px" onclick="if(confirm(\'Seed global interlinks from every other page in CMS?\')){seedInterlinksFromPages();syncGlobalInterlinks();render();}">Seed from existing pages</button></div>';
+  return h;
+}
+function seedInterlinksFromPages(){
+  if(!Array.isArray(D.globalInterlinks)) D.globalInterlinks=[];
+  Object.keys(allPages).forEach(function(slug){
+    if(slug===curSlug) return;
+    var pp=allPages[slug];
+    var label=(pp&&pp.title)||slug;
+    var url=(pp&&pp.seo&&pp.seo.canonical)||('https://www.naukri.com/naukri360/'+slug);
+    if(!D.globalInterlinks.some(function(x){return x.url===url})) D.globalInterlinks.push({label:label,url:url});
+  });
+}
+function syncGlobalInterlinks(){
+  if(!D || !Array.isArray(D.globalInterlinks)) return;
+  D.globalInterlinks=pruneInterlinks(D.globalInterlinks);
+  var snap=JSON.stringify(D.globalInterlinks);
+  Object.keys(allPages).forEach(function(slug){
+    if(slug===curSlug) return;
+    allPages[slug].globalInterlinks=JSON.parse(snap);
+    if(Array.isArray(allPages[slug].interlinks))
+      allPages[slug].interlinks=pruneInterlinks(allPages[slug].interlinks);
+  });
+  if(Array.isArray(D.interlinks)) D.interlinks=pruneInterlinks(D.interlinks);
+}
+
+// ═══════════════════════════════════════
+// PANEL: CONTENT
+// ═══════════════════════════════════════
+function pContent(){
+  if(!D.sections)D.sections=[];
+  var h='<div class="card" style="background:#FEF3C7;border:1px solid #F59E0B"><div class="ct">🧰 Repair Broken Bullets</div><div class="card-info">If your content shows <code>?</code> instead of bullet points (because the CSV was saved in legacy ANSI and lost the real bullet character), click below to rebuild proper <code>&lt;ul&gt;</code>/<code>&lt;ol&gt;</code> lists across <b>every page</b>. Safe to run multiple times.</div>';
+  h+='<button class="tb-btn primary full" onclick="repairAllBullets()">🧰 Repair bullets across all pages</button></div>';
+  h+='<div class="card"><div class="ct">Content Sections ('+D.sections.length+')</div><div class="card-info">Unlimited sections with H2, rich text, optional H3, and bullet points.</div>';
+  D.sections.forEach(function(sec,i){
+    h+='<div class="rep"><div class="rep-h"><strong>Section #'+(i+1)+'</strong><div>';
+    if(i>0)h+='<button class="tb-btn sm" onclick="var x=D.sections.splice('+i+',1)[0];D.sections.splice('+(i-1)+',0,x);render()">&uarr;</button>';
+    if(i<D.sections.length-1)h+='<button class="tb-btn sm" onclick="var x=D.sections.splice('+i+',1)[0];D.sections.splice('+(i+1)+',0,x);render()">&darr;</button>';
+    h+='<button class="tb-btn sm danger" onclick="D.sections.splice('+i+',1);render()">Del</button></div></div>';
+    h+=R('H2',sec.h2,'D.sections['+i+'].h2',{maxWords:100});
+    h+=F('Image',sec.image||'','D.sections['+i+'].image');
+    h+=R('Content',sec.text,'D.sections['+i+'].text',{large:true,maxWords:5000});
+    h+=R('H3 (optional)',sec.h3||'','D.sections['+i+'].h3',{maxWords:50});
+    h+=R('H3 Content',sec.h3_text||'','D.sections['+i+'].h3_text',{large:true,maxWords:5000});
+    var pts=sec.points||[];
+    pts.forEach(function(p,j){h+='<div class="fm" style="display:flex;gap:6px"><input type="text" value="'+esc(p)+'" data-bind="D.sections['+i+'].points['+j+']" style="flex:1"><button class="tb-btn sm danger" onclick="D.sections['+i+'].points.splice('+j+',1);render()">&times;</button></div>'});
+    h+='<button class="tb-btn sm outline" onclick="if(!D.sections['+i+'].points)D.sections['+i+'].points=[];D.sections['+i+'].points.push(\'New\');render()">+ Point</button></div>';
+  });
+  h+='<div class="pg-add"><button class="tb-btn primary" onclick="D.sections.push({h2:\'New Section\',text:\'\',image:\'\',h3:\'\',h3_text:\'\',points:[]});render()">+ Add Section</button>';
+  h+='<button class="tb-btn outline" onclick="D.sections.push({h2:\'Section with Points\',text:\'\',image:\'\',h3:\'Sub-heading\',h3_text:\'\',points:[\'Point 1\',\'Point 2\']});render()">+ With Points</button></div></div>';
+  // Content blocks
+  if(!D.content_blocks)D.content_blocks=[];
+  h+='<div class="card"><div class="ct">Free-Form Blocks ('+D.content_blocks.length+')</div>';
+  D.content_blocks.forEach(function(b,i){
+    h+='<div class="rep"><div class="rep-h"><strong>Block #'+(i+1)+'</strong><div>';
+    if(i>0)h+='<button class="tb-btn sm" onclick="var x=D.content_blocks.splice('+i+',1)[0];D.content_blocks.splice('+(i-1)+',0,x);render()">&uarr;</button>';
+    if(i<D.content_blocks.length-1)h+='<button class="tb-btn sm" onclick="var x=D.content_blocks.splice('+i+',1)[0];D.content_blocks.splice('+(i+1)+',0,x);render()">&darr;</button>';
+    h+='<button class="tb-btn sm danger" onclick="D.content_blocks.splice('+i+',1);render()">Del</button></div></div>';
+    h+=F('Title',b.title,'D.content_blocks['+i+'].title');
+    h+=R('Content',b.content,'D.content_blocks['+i+'].content',{large:true,maxWords:5000});
+    h+='</div>';
+  });
+  h+='<button class="tb-btn primary full" onclick="D.content_blocks.push({title:\'\',content:\'\',cssClass:\'\'});render()">+ Add Block</button></div>';
+  return h;
+}
+
+// ═══════════════════════════════════════
+// PANEL: TESTIMONIALS (Global + Page)
+// ═══════════════════════════════════════
+function pSidebar(){
+  if(!D.sidebar)D.sidebar={heading:'',image:'img/easy-step.png',steps:[],ctaText:'',ctaUrl:''};
+  var sd=D.sidebar;
+  var h='<div class="card"><div class="ct">Sidebar — 3 Easy Steps</div>';
+  h+='<div class="card-info">This sticky sidebar appears on the right side of the content sections. It stays visible as users scroll through the page content.</div>';
+  h+=F('Heading',sd.heading,'D.sidebar.heading');
+  h+=F('Image Path',sd.image,'D.sidebar.image','e.g. img/easy-step.png');
+  if(!sd.steps)sd.steps=[];
+  sd.steps.forEach(function(s,i){
+    h+='<div class="fm" style="display:flex;gap:6px"><input type="text" value="'+esc(s)+'" data-bind="D.sidebar.steps['+i+']" style="flex:1"><button class="tb-btn sm danger" onclick="D.sidebar.steps.splice('+i+',1);render()">&times;</button></div>';
+  });
+  h+='<button class="tb-btn sm outline full" onclick="if(!D.sidebar.steps)D.sidebar.steps=[];D.sidebar.steps.push(\'New step\');render()">+ Add Step</button>';
+  h+=F('CTA Button Text',sd.ctaText,'D.sidebar.ctaText');
+  h+=F('CTA Button URL',sd.ctaUrl,'D.sidebar.ctaUrl','Where the button links to');
+  h+='<button class="tb-btn primary full" style="margin-top:12px" onclick="applySidebarAll()">Apply to All '+Object.keys(allPages).length+' Pages</button>';
+  h+='</div>';
+  return h;
+}
+function applySidebarAll(){var sb=JSON.parse(JSON.stringify(D.sidebar));Object.keys(allPages).forEach(function(s){allPages[s].sidebar=JSON.parse(JSON.stringify(sb))});doSave();toast('Sidebar applied to all pages!')}
+
+function pTestimonials(){
+  if(!D.globalTestimonials)D.globalTestimonials=[];
+  if(D.useGlobalTestimonials===undefined)D.useGlobalTestimonials=true;
+  var ug=D.useGlobalTestimonials;
+  var h='<div class="card"><div class="ct">Testimonials</div>'+
+    R('Section Heading',D.testimonials_heading,'D.testimonials_heading',{maxWords:50})+
+    '<div class="fm"><label>Source</label><div style="display:flex;gap:8px">'+
+    '<button class="tb-btn sm '+(ug?'primary':'outline')+'" onclick="D.useGlobalTestimonials=true;render()">Global</button>'+
+    '<button class="tb-btn sm '+(!ug?'primary':'outline')+'" onclick="D.useGlobalTestimonials=false;render()">Page-Level</button>'+
+    '<span style="font-size:12px;color:#6B7394;margin-left:8px">'+(ug?'Using global (shared)':'Using page-specific')+'</span></div></div></div>';
+  // Global
+  h+='<div class="card"><div class="ct">Global Testimonials ('+D.globalTestimonials.length+')</div><div class="card-info">Shared across pages. Click Apply to sync.</div>';
+  h+=testiBlock(D.globalTestimonials,'D.globalTestimonials');
+  h+='<button class="tb-btn outline full" onclick="D.globalTestimonials.push({heading:\'New\',text:\'Review.\',author:\'Name\',role:\'Role\'});render()">+ Add Global</button>';
+  h+='<button class="tb-btn primary full" style="margin-top:8px" onclick="applyGlobalTesti()">Apply to All '+Object.keys(allPages).length+' Pages</button></div>';
+  // Page-level
+  h+='<div class="card"><div class="ct">Page-Level ('+D.testimonials.length+')</div><div class="card-info">Only used when source is Page-Level.</div>';
+  h+=testiBlock(D.testimonials,'D.testimonials');
+  h+='<button class="tb-btn outline full" onclick="D.testimonials.push({heading:\'New\',text:\'Review.\',author:\'Name\',role:\'Role\'});render()">+ Add Page</button></div>';
+  return h;
+}
+function applyGlobalTesti(){var gt=JSON.parse(JSON.stringify(D.globalTestimonials));Object.keys(allPages).forEach(function(s){allPages[s].globalTestimonials=JSON.parse(JSON.stringify(gt));allPages[s].useGlobalTestimonials=true});doSave();toast('Applied to all!')}
+
+// ═══════════════════════════════════════
+// PANEL: FAQ
+// ═══════════════════════════════════════
+function pFaq(){
+  var h='<div class="card"><div class="ct">FAQ</div><div class="card-info">Auto-generates FAQPage schema.</div>';
+  D.faq.forEach(function(f,i){
+    h+='<div class="rep"><div class="rep-h"><strong>Q'+(i+1)+'</strong><button class="tb-btn sm danger" onclick="D.faq.splice('+i+',1);render()">Del</button></div>'+
+      F('Question',f.q,'D.faq['+i+'].q')+R('Answer',f.a,'D.faq['+i+'].a',{large:true,maxWords:5000})+'</div>';
+  });
+  h+='<button class="tb-btn outline full" onclick="D.faq.push({q:\'Question?\',a:\'Answer.\'});render()">+ Add</button></div>';
+  return h;
+}
+
+// ═══════════════════════════════════════
+// PANEL: FOOTER
+// ═══════════════════════════════════════
+function pFooter(){
+  return '<div class="card"><div class="ct">Footer CTA</div>'+
+    R('Heading',D.footer_heading,'D.footer_heading',{maxWords:50})+
+    R('Text',D.footer_text,'D.footer_text',{maxWords:500})+
+    F('Breadcrumb Text',D.breadcrumb_text,'D.breadcrumb_text')+'</div>';
+}
+
+// ═══════════════════════════════════════
+// PANEL: CSV TOOL
+// ═══════════════════════════════════════
+function pCsvTool(){
+  var mc=getMaxCounts();
+  var h='<div class="card"><div class="ct">CSV Import / Export</div>';
+  h+='<div class="card-info"><b>Flexible schema — add as many sections & FAQs as you want:</b>';
+  h+='<ul style="margin:6px 0 6px 18px;font-size:12px">';
+  h+='<li>Current schema: <b>'+mc.maxSec+' content sections</b> + <b>'+mc.maxFaq+' FAQs</b> (auto-scales to max used)</li>';
+  h+='<li><b>Add more sections</b>: append <code>section3_h2, section3_text, section3_image, section3_h3, section3_h3_text, section3_points</code> — keep numbering (section4, section5, ...)</li>';
+  h+='<li><b>Add more FAQs</b>: append <code>faq_q6, faq_a6, faq_q7, faq_a7, ...</code> up to any N</li>';
+  h+='<li>Section points are pipe-separated: <code>point1|point2|point3</code></li>';
+  h+='<li>Blank fields = keep existing. Use <code>[CLEAR]</code> to explicitly empty a field.</li>';
+  h+='<li>All URL fields supported: canonical_url, cta1_url, cta2_url, bar_link_url, template_button_url, sidebar_cta_url</li>';
+  h+='</ul></div>';
+  // Bullet/number formatting hint
+  h+='<div class="card" style="background:#ECFDF5;border:1px solid #10B981"><div class="ct" style="color:#065F46">📋 Bullet & Numbered Lists in Content (auto-detected)</div>';
+  h+='<div class="card-info">In any rich-text column (<code>section_text</code>, <code>section_h3_text</code>, <code>faq_a*</code>) start each line with a marker — the importer rebuilds proper <code>&lt;ul&gt;</code> / <code>&lt;ol&gt;</code> automatically.<br><br>';
+  h+='<b>Bullets</b> — start a line with <code>?</code>, <code>-</code>, <code>*</code> or <code>•</code>:<pre style="background:#F0FDF4;padding:8px;border-radius:4px;font-size:12px;margin:4px 0">? Time-saving<br>? ATS-friendly<br>? Easy to customize</pre>';
+  h+='<b>Numbered</b> — start a line with <code>N.</code> or <code>N)</code> (preserves original numbers, even gapped like 1, 2, 5, 10):<pre style="background:#F0FDF4;padding:8px;border-radius:4px;font-size:12px;margin:4px 0">1. Application Cover Letter<br>2. Prospecting Cover Letter<br>5. Creative Cover Letter</pre>';
+  h+='Use <code>Alt+Enter</code> in Excel to add line breaks inside a cell. Excel saving as legacy CSV often replaces <code>•</code> with <code>?</code> — that\'s fine, the importer treats both the same.</div></div>';
+  h+='<div class="fm"><label>CSV File</label><input type="file" accept=".csv" id="csvFile"></div>';
+  h+='<button class="tb-btn primary full" onclick="doCsvImport()">Import CSV</button>';
+  h+='<button class="tb-btn outline full" style="margin-top:8px" onclick="dlSampleCsv()">Download Sample CSV</button></div>';
+  h+='<div class="card"><div class="ct">Export</div>';
+  h+='<button class="tb-btn primary full" onclick="doCsvExport()">Export All as CSV</button>';
+  h+='<button class="tb-btn outline full" style="margin-top:8px" onclick="doExport()">Export All as JSON</button></div>';
+  h+='<div class="card"><div class="ct">JSON Import</div>';
+  h+='<div class="fm"><label>JSON File</label><input type="file" accept=".json" id="jsonFile"></div>';
+  h+='<button class="tb-btn outline full" onclick="doJsonImport()">Import JSON</button></div>';
+  return h;
+}
+function csvQ(v){v=String(v||'');return(v.indexOf(',')>=0||v.indexOf('"')>=0||v.indexOf('\n')>=0)?'"'+v.replace(/"/g,'""')+'"':v}
+function parseCsvLine(l){var r=[],c='',q=false;for(var i=0;i<l.length;i++){var ch=l[i];if(q){if(ch==='"'&&l[i+1]==='"'){c+='"';i++}else if(ch==='"')q=false;else c+=ch}else{if(ch==='"')q=true;else if(ch===','){r.push(c);c=''}else c+=ch}}r.push(c);return r}
+// RFC 4180 tokenizer — handles quoted fields with embedded newlines/commas/""
+function parseCsvAll(text){
+  var rows=[],row=[],c='',q=false,i=0,n=text.length;
+  while(i<n){
+    var ch=text.charAt(i);
+    if(q){
+      if(ch==='"'){
+        if(text.charAt(i+1)==='"'){c+='"';i+=2;continue}
+        q=false;i++;continue;
+      }
+      c+=ch;i++;continue;
+    }
+    if(ch==='"'){q=true;i++;continue}
+    if(ch===','){row.push(c);c='';i++;continue}
+    if(ch==='\r'){if(text.charAt(i+1)==='\n')i++;row.push(c);rows.push(row);row=[];c='';i++;continue}
+    if(ch==='\n'){row.push(c);rows.push(row);row=[];c='';i++;continue}
+    c+=ch;i++;
+  }
+  if(c!==''||row.length){row.push(c);rows.push(row)}
+  return rows;
+}
+// ═══════════════════════════════════════════════
+// CSV: flexible schema — supports unlimited FAQ & content sections
+// Dynamic columns: faq_qN / faq_aN (N=any), sectionN_{h2,text,image,h3,h3_text,points}
+// ═══════════════════════════════════════════════
+
+// Base columns (non-repeating)
+var CSV_BASE_COLS=['slug','title','parent','seo_title','seo_desc','seo_keywords','canonical_url',
+  'hero_h1','hero_text','cta1_text','cta1_url','cta2_text','cta2_url',
+  'template_button_text','template_button_url',
+  'template_pdf_url','template_doc_url',
+  'templates_heading','templates_sub','testimonials_heading',
+  'footer_heading','footer_text',
+  'bar_text','bar_link_text','bar_link_url',
+  'sidebar_heading','sidebar_cta_text','sidebar_cta_url'];
+
+function buildCsvHeader(maxSections, maxFaqs){
+  var cols=CSV_BASE_COLS.slice();
+  for(var i=1;i<=maxSections;i++){
+    cols.push('section'+i+'_h2','section'+i+'_text','section'+i+'_image',
+              'section'+i+'_h3','section'+i+'_h3_text','section'+i+'_points');
+  }
+  for(var i=1;i<=maxFaqs;i++){
+    cols.push('faq_q'+i,'faq_a'+i);
+  }
+  return cols;
+}
+
+// Detect max sections and FAQs across all pages
+function getMaxCounts(){
+  var maxSec=2,maxFaq=5; // defaults (at least 2 sections and 5 FAQs for flexibility)
+  Object.keys(allPages).forEach(function(s){
+    var p=allPages[s];
+    if((p.sections||[]).length>maxSec)maxSec=p.sections.length;
+    if((p.faq||[]).length>maxFaq)maxFaq=p.faq.length;
+  });
+  return {maxSec:maxSec,maxFaq:maxFaq};
+}
+
+function dlSampleCsv(){
+  var mc=getMaxCounts();
+  var cols=buildCsvHeader(mc.maxSec,mc.maxFaq);
+
+  // Build sample row based on column structure
+  var sampleData={
+    slug:'resume-templates/nursing',title:'Nursing Resume',parent:'resume-templates',
+    seo_title:'Nursing Resume Templates | Naukri360',seo_desc:'Free ATS-friendly nursing resume templates',
+    seo_keywords:'nursing resume, nursing CV, ATS nursing resume',
+    canonical_url:'https://www.naukri.com/naukri360/resume-templates/nursing',
+    hero_h1:'Free Nursing Resume Templates',hero_text:'Build a professional nursing resume in minutes',
+    cta1_text:'Get Started Free',cta1_url:'https://www.naukri.com/resume-editor',
+    cta2_text:'Browse Templates',cta2_url:'#templates',
+    template_button_text:'Try this free template',
+    template_button_url:'https://www.naukri.com/resume-editor',
+    template_pdf_url:'https://www.naukri.com/resume-editor?download=pdf',
+    template_doc_url:'https://www.naukri.com/resume-editor?download=doc',
+    templates_heading:'Explore Our Free Nursing Resume Templates',
+    templates_sub:'Win over recruiters with our professionally designed nursing resume templates',
+    testimonials_heading:'What Nurses Say About Our Templates',
+    footer_heading:'Start Building Your Nursing Resume Now',
+    footer_text:'Join 4 million+ professionals',
+    bar_text:'Want an expert to help with your resume? Explore',
+    bar_link_text:'resume writing service',bar_link_url:'#',
+    sidebar_heading:'Create your nursing resume in 3 easy steps',
+    sidebar_cta_text:'Upgrade to Pro',sidebar_cta_url:'#',
+    // Section 1
+    section1_h2:'AI-Powered Nursing Content Suggestions',
+    section1_text:'Our AI analyzes job descriptions to suggest the most impactful bullet points for your nursing resume.',
+    section1_image:'img/cv-thumb1.png',
+    section1_h3:'',section1_h3_text:'',section1_points:'',
+    // Section 2
+    section2_h2:'ATS-Friendly Nursing Formatting',
+    section2_text:'Every nursing template is built to pass Applicant Tracking Systems.',
+    section2_image:'img/cv-thumb2.png',
+    section2_h3:'What makes our nursing builder different',
+    section2_h3_text:'Our nursing templates are designed by HR professionals.',
+    section2_points:'Real-time ATS scoring|Industry keywords|Professional formatting|PDF/Word export|Cloud storage',
+    // FAQs
+    faq_q1:'Is the nursing resume builder free?',faq_a1:'Yes! Completely free.',
+    faq_q2:'Are nursing templates ATS-friendly?',faq_a2:'Every template is tested against 50+ ATS platforms.',
+    faq_q3:'Can I download as PDF?',faq_a3:'Yes. Export as PDF, Word, or plain text.',
+    faq_q4:'How does the AI suggestion work?',faq_a4:'AI analyzes millions of resumes to suggest impactful content.',
+    faq_q5:'Can I switch templates later?',faq_a5:'Yes, switch anytime without losing content.'
+  };
+
+  var sampleRow=cols.map(function(c){return csvQ(sampleData[c]||'')}).join(',');
+
+  var notes=[
+    '# CSV Schema (flexible — add more FAQs/sections as needed):',
+    '# • section1_points, section2_points: pipe-separated (e.g. "point1|point2|point3")',
+    '# • Add MORE FAQs: just append faq_q6, faq_a6, faq_q7, faq_a7... up to any N',
+    '# • Add MORE sections: append section3_h2, section3_text, ... section3_points, etc.',
+    '# • Blank fields = keep existing value. To CLEAR a field, put "[CLEAR]"',
+    '# • URL columns: canonical_url, cta1_url, cta2_url, bar_link_url, template_button_url, sidebar_cta_url',
+    '# • Images accept local paths (img/xxx.png) or full CDN URLs',
+    ''
+  ].join('\n');
+
+  dlFile('\uFEFF'+notes+cols.join(',')+'\n'+sampleRow+'\n','cms-sample.csv','text/csv');
+  toast('Sample downloaded ('+mc.maxSec+' sections + '+mc.maxFaq+' FAQs)');
+}
+
+function doCsvExport(){
+  var mc=getMaxCounts();
+  var cols=buildCsvHeader(mc.maxSec,mc.maxFaq);
+  var rows=[cols.join(',')];
+
+  Object.keys(allPages).forEach(function(s){
+    var p=allPages[s];
+    var sb=p.stickyBar||{};
+    var gl=p.globalHeroLinks||{};
+    var sd=p.sidebar||{};
+    var secs=p.sections||[];
+    var faqs=p.faq||[];
+
+    var rowData={
+      slug:p.slug,title:p.title,parent:p.parent||'',
+      seo_title:p.seo.title,seo_desc:p.seo.desc,seo_keywords:p.seo.keywords,canonical_url:p.seo.canonical,
+      hero_h1:stripH(p.hero.h1),hero_text:stripH(p.hero.text),
+      cta1_text:p.hero.cta1||gl.cta1_text||'',cta1_url:p.hero.cta1_url||gl.cta1_url||'',
+      cta2_text:p.hero.cta2||gl.cta2_text||'',cta2_url:p.hero.cta2_url||gl.cta2_url||'',
+      template_button_text:p.templateButtonText||'',template_button_url:p.templateButtonUrl||'',
+      template_pdf_url:p.globalTemplatePdfUrl||p.templatePdfUrl||'',
+      template_doc_url:p.globalTemplateDocUrl||p.templateDocUrl||'',
+      templates_heading:stripH(p.templates_heading||''),
+      templates_sub:stripH(p.templates_sub||''),
+      testimonials_heading:stripH(p.testimonials_heading||''),
+      footer_heading:stripH(p.footer_heading||''),footer_text:stripH(p.footer_text||''),
+      bar_text:sb.text||'',bar_link_text:sb.linkText||'',bar_link_url:sb.linkUrl||'',
+      sidebar_heading:stripH(sd.heading||''),
+      sidebar_cta_text:sd.ctaText||'',sidebar_cta_url:sd.ctaUrl||''
+    };
+
+    // Sections (dynamic) — preserve line breaks in rich-text fields
+    for(var si=1;si<=mc.maxSec;si++){
+      var sec=secs[si-1]||{};
+      rowData['section'+si+'_h2']=stripH(sec.h2||'');
+      rowData['section'+si+'_text']=htmlToText(sec.text||'');
+      rowData['section'+si+'_image']=sec.image||'';
+      rowData['section'+si+'_h3']=stripH(sec.h3||'');
+      rowData['section'+si+'_h3_text']=htmlToText(sec.h3_text||'');
+      rowData['section'+si+'_points']=(sec.points||[]).join('|');
+    }
+    // FAQs (dynamic)
+    for(var fi=1;fi<=mc.maxFaq;fi++){
+      var fq=faqs[fi-1]||{};
+      rowData['faq_q'+fi]=fq.q||'';
+      rowData['faq_a'+fi]=htmlToText(fq.a||'');
+    }
+
+    rows.push(cols.map(function(c){return csvQ(rowData[c]||'')}).join(','));
+  });
+
+  // Prepend UTF-8 BOM so Excel opens with correct encoding (curly apostrophes etc. round-trip)
+  dlFile('\uFEFF'+rows.join('\n'),'cms-pages.csv','text/csv');
+  toast(Object.keys(allPages).length+' pages exported ('+mc.maxSec+' sections + '+mc.maxFaq+' FAQs)');
+}
+
+function doCsvImport(){
+  var el=document.getElementById('csvFile');if(!el||!el.files[0]){toast('Select CSV first',false);return}
+  var f=el.files[0];
+  // Reject Excel/binary files — xlsx is a zip (PK header) and would parse as garbage
+  var name=(f.name||'').toLowerCase();
+  if(/\.(xlsx|xls|xlsm|xlsb|ods|numbers)$/.test(name)){
+    toast('Excel files not supported — save as CSV first (File → Save As → CSV)',false);return;
+  }
+  if(!/\.csv$/.test(name)){
+    if(!confirm('File "'+f.name+'" is not a .csv. Continue anyway?'))return;
+  }
+  var reader=new FileReader();
+  reader.onerror=function(){toast('Failed to read file',false)};
+  reader.onload=function(e){
+    // Decode with UTF-8 first; on decode errors or if replacement char (U+FFFD) appears,
+    // fall back to Windows-1252 (Excel's default on Windows, where curly apostrophes → 0x92).
+    var buf=e.target.result;
+    var bytes=new Uint8Array(buf);
+    // Detect binary garbage (xlsx zip starts with PK)
+    if(bytes[0]===0x50&&bytes[1]===0x4B){
+      toast('This looks like an Excel/ZIP file, not CSV. Save as CSV first.',false);return;
+    }
+    var text='';
+    try{
+      text=new TextDecoder('utf-8',{fatal:true}).decode(bytes);
+    }catch(err){
+      try{text=new TextDecoder('windows-1252').decode(bytes);}
+      catch(e2){text=new TextDecoder('iso-8859-1').decode(bytes);}
+    }
+    // Some Excel/CP1252 exports ARE valid UTF-8 byte sequences yet contain U+FFFD placeholders —
+    // re-decode as cp1252 if we see the replacement character.
+    if(text.indexOf('\uFFFD')>=0){
+      try{
+        var alt=new TextDecoder('windows-1252').decode(bytes);
+        if(alt.indexOf('\uFFFD')<0)text=alt;
+      }catch(e3){}
+    }
+    if(text.indexOf('\u0000')>=0){
+      toast('Binary data detected — file is not plain CSV.',false);return;
+    }
+    // Strip BOM (Excel adds \uFEFF)
+    if(text.charCodeAt(0)===0xFEFF)text=text.slice(1);
+    // Normalize Windows-1252 smart punctuation that sometimes slips through as raw bytes
+    text=text
+      .replace(/\u0092/g,"\u2019").replace(/\u0091/g,"\u2018")
+      .replace(/\u0093/g,"\u201C").replace(/\u0094/g,"\u201D")
+      .replace(/\u0096/g,"\u2013").replace(/\u0097/g,"\u2014");
+    // Full RFC 4180 parse — handles multi-line quoted cells (bullet points in Excel)
+    var allRows=parseCsvAll(text);
+    // Drop comment rows (# prefix) and fully blank rows
+    var rows=allRows.filter(function(r){
+      if(!r.length)return false;
+      var first=(r[0]||'').trim();
+      if(first.charAt(0)==='#')return false;
+      // keep row if any cell has content
+      return r.some(function(v){return(v||'').trim()!==''});
+    });
+    if(rows.length<2){toast('Need header+data',false);return}
+    var hdrs=rows[0].map(function(h){return(h||'').trim()});
+    if(hdrs[0]!=='slug'){
+      toast('First column must be "slug" (got "'+hdrs[0].substring(0,30)+'")',false);return;
+    }
+    var count=0;
+    var updateSummary={urls:0,sections:0,faqs:0,newPages:0};
+    var debug=[];
+
+    // Detect dynamic section & FAQ columns in THIS CSV
+    var secNums={}, faqNums={};
+    hdrs.forEach(function(h){
+      var m=h.match(/^section(\d+)_/); if(m) secNums[m[1]]=true;
+      var f=h.match(/^faq_q(\d+)$/); if(f) faqNums[f[1]]=true;
+    });
+    var secList=Object.keys(secNums).map(Number).sort(function(a,b){return a-b});
+    var faqList=Object.keys(faqNums).map(Number).sort(function(a,b){return a-b});
+
+    // Helper: only update if value is non-empty, or handle [CLEAR] marker
+    function setIf(obj,key,val){
+      if(val===undefined||val===null||val==='')return false;
+      if(val==='[CLEAR]'){obj[key]='';return true}
+      obj[key]=val;return true;
+    }
+
+    for(var i=1;i<rows.length;i++){
+      var vals=rows[i];
+      if(!vals[0]||!vals[0].trim())continue;
+      var slug=vals[0].trim();
+      // Reject slugs with whitespace/control chars — catches fragmented rows
+      if(/[\s]/.test(slug)||slug.length>120){
+        debug.push('Skipped invalid slug: '+slug.substring(0,40));continue;
+      }
+      var row={};hdrs.forEach(function(h,j){row[h]=(vals[j]||'').trim()});
+
+      // Create or find page
+      if(!allPages[slug]){
+        allPages[slug]=JSON.parse(JSON.stringify(allPages[Object.keys(allPages)[0]]));
+        allPages[slug].slug=slug;
+        updateSummary.newPages++;
+      }
+      var p=allPages[slug];
+      if(!p.seo)p.seo={};if(!p.hero)p.hero={};if(!p.schema)p.schema={};
+      if(!p.stickyBar)p.stickyBar={};if(!p.sidebar)p.sidebar={};if(!p.globalHeroLinks)p.globalHeroLinks={};
+
+      // Basic fields
+      setIf(p,'title',row.title);
+      if(row.parent!==undefined)p.parent=row.parent;
+
+      // SEO — urls must update!
+      setIf(p.seo,'title',row.seo_title);
+      setIf(p.seo,'desc',row.seo_desc);
+      setIf(p.seo,'keywords',row.seo_keywords);
+      if(setIf(p.seo,'canonical',row.canonical_url))updateSummary.urls++;
+
+      // Hero
+      setIf(p.hero,'h1',row.hero_h1);
+      setIf(p.hero,'text',row.hero_text);
+      setIf(p.hero,'cta1',row.cta1_text);
+      if(setIf(p.hero,'cta1_url',row.cta1_url)){
+        p.globalHeroLinks.cta1_url=row.cta1_url; // also update global fallback
+        updateSummary.urls++;
+      }
+      setIf(p.hero,'cta2',row.cta2_text);
+      if(setIf(p.hero,'cta2_url',row.cta2_url)){
+        p.globalHeroLinks.cta2_url=row.cta2_url;
+        updateSummary.urls++;
+      }
+
+      // Template button
+      setIf(p,'templateButtonText',row.template_button_text);
+      if(setIf(p,'templateButtonUrl',row.template_button_url))updateSummary.urls++;
+      // Template PDF/DOC download URLs (global per page)
+      if(setIf(p,'globalTemplatePdfUrl',row.template_pdf_url))updateSummary.urls++;
+      if(setIf(p,'globalTemplateDocUrl',row.template_doc_url))updateSummary.urls++;
+
+      // Headings
+      setIf(p,'templates_heading',row.templates_heading);
+      setIf(p,'templates_sub',row.templates_sub);
+      setIf(p,'testimonials_heading',row.testimonials_heading);
+      setIf(p,'footer_heading',row.footer_heading);
+      setIf(p,'footer_text',row.footer_text);
+
+      // Sticky bar
+      setIf(p.stickyBar,'text',row.bar_text);
+      setIf(p.stickyBar,'linkText',row.bar_link_text);
+      if(setIf(p.stickyBar,'linkUrl',row.bar_link_url))updateSummary.urls++;
+
+      // Sidebar
+      setIf(p.sidebar,'heading',row.sidebar_heading);
+      setIf(p.sidebar,'ctaText',row.sidebar_cta_text);
+      if(setIf(p.sidebar,'ctaUrl',row.sidebar_cta_url))updateSummary.urls++;
+
+      // Content sections (dynamic — rebuild from CSV if ANY section col present)
+      var hasSectionCols=secList.length>0;
+      var csvSections=[];
+      secList.forEach(function(n){
+        var h2=row['section'+n+'_h2']||'';
+        var txt=row['section'+n+'_text']||'';
+        var img=row['section'+n+'_image']||'';
+        var h3=row['section'+n+'_h3']||'';
+        var h3t=row['section'+n+'_h3_text']||'';
+        var pts=row['section'+n+'_points']||'';
+        if(h2||txt||img||h3||h3t||pts){
+          var pointsArr=pts?pts.split('|').map(function(x){return x.trim()}).filter(Boolean):[];
+          csvSections.push({
+            type:pointsArr.length?'text-with-points':'text',
+            h2:h2==='[CLEAR]'?'':h2,
+            text:txt==='[CLEAR]'?'':textToHtml(txt),
+            image:img==='[CLEAR]'?'':img,
+            h3:h3==='[CLEAR]'?'':h3,
+            h3_text:h3t==='[CLEAR]'?'':textToHtml(h3t),
+            points:pointsArr
+          });
+        }
+      });
+      if(hasSectionCols&&csvSections.length>0){
+        p.sections=csvSections;
+        updateSummary.sections+=csvSections.length;
+      }
+
+      // FAQs (dynamic — rebuild from CSV if ANY faq col present)
+      var hasFaqCols=faqList.length>0;
+      var csvFaqs=[];
+      faqList.forEach(function(n){
+        var q=row['faq_q'+n]||'';var a=row['faq_a'+n]||'';
+        if(q||a){
+          csvFaqs.push({q:q==='[CLEAR]'?'':q,a:a==='[CLEAR]'?'':textToHtml(a)});
+        }
+      });
+      if(hasFaqCols&&csvFaqs.length>0){
+        p.faq=csvFaqs;
+        updateSummary.faqs+=csvFaqs.length;
+      }
+
+      // Rebuild breadcrumbs from title + slug (folder-aware)
+      if(!p.schema.breadcrumbs)p.schema.breadcrumbs=[];
+      p.parent=slug.indexOf('/')>-1?slug.substring(0,slug.lastIndexOf('/')):'';
+      p.schema.breadcrumbs=(typeof buildBreadcrumbs==='function')
+        ? buildBreadcrumbs(slug, p.title||slug, allPages)
+        : [{n:'Home',u:'https://www.naukri.com/naukri360'},{n:p.title||slug,u:p.seo.canonical||('https://www.naukri.com/naukri360/'+slug)}];
+
+      debug.push(slug+' → canonical:'+p.seo.canonical+', cta1_url:'+(p.hero.cta1_url||'—')+', sections:'+(p.sections||[]).length+', faqs:'+(p.faq||[]).length);
+      count++;
+    }
+
+    try{doSave();}catch(err){toast('Save failed: '+(err&&err.name==='QuotaExceededError'?'storage full':err.message),false);return}
+    render();
+    console.log('[CSV Import] Detected section cols:',secList,'| FAQ cols:',faqList);
+    console.log('[CSV Import] Per-page details:\n'+debug.join('\n'));
+    var summary='✅ '+count+' pages imported | '+updateSummary.urls+' URLs, '+updateSummary.sections+' sections, '+updateSummary.faqs+' FAQs'+(updateSummary.newPages?' ('+updateSummary.newPages+' new)':'');
+    toast(summary);
+    // Auto-persist newly-imported pages to the project folder (or trigger a
+    // download) so a fresh ZIP / a re-share automatically picks them up. The
+    // user no longer needs to remember to click "Publish" after CSV import.
+    persistImportedPages(count, updateSummary.newPages);
+  };reader.readAsArrayBuffer(el.files[0]);
+}
+
+// Auto-sync the current allPages snapshot into the project folder. If the
+// File System Access API + a folder handle are available, write each page's
+// HTML plus js/cms-data.js + sitemap.xml directly. Otherwise fall back to
+// downloading js/cms-data.js + sitemap.xml so the user can drop them into
+// the project before re-zipping.
+async function persistImportedPages(totalImported, newPagesCount){
+  // Always download the regenerated cms-data.js + sitemap.xml so the user has
+  // a self-contained snapshot they can drop into any project copy / share.
+  // Folder-write also runs if a directory handle exists, for instant updates.
+  if (typeof fsAccessSupported==='function' && fsAccessSupported() && projectDirHandle){
+    try{
+      var saved=0;
+      var slugs=Object.keys(allPages);
+      for (var i=0;i<slugs.length;i++){
+        var slug=slugs[i];
+        var html=buildPageHtml(slug); if(!html) continue;
+        var filename='pages/'+slug.replace(/\//g,'-')+'.html';
+        var ok=await writeFileToProject(filename,html);
+        if(ok) saved++;
+      }
+      await writeFileToProject('js/cms-data.js',       generateCmsDataJs());
+      await writeFileToProject('pages/js/cms-data.js', generateCmsDataJs());
+      await writeFileToProject('sitemap.xml',          generateSitemapXml());
+      toast('✅ Synced '+saved+' page(s) → /pages/ + cms-data.js + sitemap.xml — ready to zip & share');
+      return;
+    }catch(e){
+      console.warn('[CSV Import] folder-write failed, falling back to download:',e);
+    }
+  }
+  // Fallback: download the regenerated data files
+  try{
+    dlFile(generateCmsDataJs(), 'cms-data.js', 'application/javascript');
+    dlFile(generateSitemapXml(), 'sitemap.xml', 'application/xml');
+    toast('⬇ Downloaded cms-data.js + sitemap.xml — replace the files in your project folder, then re-zip to ship the '+totalImported+' imported page(s).');
+  }catch(e){
+    toast('CSV imported but could not auto-sync: '+e.message+'. Use Download HTML → Publish CMS Data to save manually.', false);
+  }
+}
+function doJsonImport(){
+  var el=document.getElementById('jsonFile');if(!el||!el.files[0]){toast('Select JSON first',false);return}
+  var reader=new FileReader();reader.onload=function(e){
+    try{var imp=JSON.parse(e.target.result);var c=0;for(var s in imp){if(imp[s]&&imp[s].seo){allPages[s]=imp[s];c++}}doSave();render();toast(c+' pages imported!')}
+    catch(err){toast('Invalid JSON',false)}
+  };reader.readAsText(el.files[0]);
+}
+
+// ═══════════════════════════════════════
+// PANEL: DOWNLOAD
+// ═══════════════════════════════════════
+function pCdn(){
+  var h='<div class="card"><div class="ct">CDN Image Manager</div>';
+  h+='<div class="card-info">Upload images to a CDN for faster page load. Set a CDN base URL and all template/content images will load from the CDN instead of the local <code>img/</code> folder. This dramatically improves Core Web Vitals (LCP).</div>';
+
+  // CDN Base URL setting
+  if(!D.cdnBaseUrl) D.cdnBaseUrl='';
+  h+=F('CDN Base URL',D.cdnBaseUrl,'D.cdnBaseUrl','e.g. https://cdn.naukri.com/naukri360/img/ or https://your-bucket.s3.amazonaws.com/');
+  h+='<button class="tb-btn primary full" onclick="applyCdnAll()">Apply CDN URL to All '+Object.keys(allPages).length+' Pages</button>';
+
+  // Image list with CDN status
+  h+='</div><div class="card"><div class="ct">All Images on This Page</div>';
+  h+='<div class="card-info">Below are all images used on this page. Enter CDN URLs for each, or set the base URL above and click "Auto-Generate CDN URLs" to prefix all local paths automatically.</div>';
+  h+='<button class="tb-btn outline full" onclick="autoGenCdn()">Auto-Generate CDN URLs from Base URL</button>';
+
+  // Template images
+  h+='<div style="margin-top:16px"><strong>Template Images</strong></div>';
+  (D.templates||[]).forEach(function(t,i){
+    h+='<div class="fm" style="display:flex;gap:8px;align-items:center">';
+    h+='<span style="min-width:100px;font-size:12px;color:#6B7394">'+esc(t.name)+'</span>';
+    h+='<input type="text" value="'+esc(t.image||'')+'" data-bind="D.templates['+i+'].image" style="flex:1" placeholder="img/cv3.png or CDN URL">';
+    h+='</div>';
+  });
+
+  // Content section images
+  h+='<div style="margin-top:16px"><strong>Content Section Images</strong></div>';
+  (D.sections||[]).forEach(function(s,i){
+    if(s.image){
+      h+='<div class="fm" style="display:flex;gap:8px;align-items:center">';
+      h+='<span style="min-width:100px;font-size:12px;color:#6B7394">Section '+(i+1)+'</span>';
+      h+='<input type="text" value="'+esc(s.image||'')+'" data-bind="D.sections['+i+'].image" style="flex:1">';
+      h+='</div>';
+    }
+  });
+
+  // Sidebar image
+  h+='<div style="margin-top:16px"><strong>Sidebar Image</strong></div>';
+  var sd=D.sidebar||{};
+  h+=F('Sidebar Image',sd.image||'img/easy-step.png','D.sidebar.image');
+
+  // OG Image
+  h+='<div style="margin-top:16px"><strong>OG / Social Share Image</strong></div>';
+  h+=F('OG Image',D.seo.ogImage||'','D.seo.ogImage');
+
+  h+='</div>';
+  return h;
+}
+
+function applyCdnAll(){
+  var url=D.cdnBaseUrl||'';
+  if(!url){toast('Set CDN Base URL first',false);return}
+  Object.keys(allPages).forEach(function(s){allPages[s].cdnBaseUrl=url});
+  doSave();toast('CDN URL applied to all pages!');
+}
+
+function autoGenCdn(){
+  var base=D.cdnBaseUrl;
+  if(!base){toast('Set CDN Base URL first',false);return}
+  if(!base.endsWith('/'))base+='/';
+  // Prefix all local img/ paths with CDN base
+  (D.templates||[]).forEach(function(t){
+    if(t.image&&t.image.startsWith('img/'))t.image=base+t.image;
+  });
+  (D.sections||[]).forEach(function(s){
+    if(s.image&&s.image.startsWith('img/'))s.image=base+s.image;
+  });
+  if(D.sidebar&&D.sidebar.image&&D.sidebar.image.startsWith('img/'))D.sidebar.image=base+D.sidebar.image;
+  if(D.seo.ogImage&&D.seo.ogImage.startsWith('img/'))D.seo.ogImage=base+D.seo.ogImage;
+  render();toast('CDN URLs generated for all images!');
+}
+
+// ═══════════════════════════════════════
+// INLINE ASSETS (base64 data URIs for self-contained HTML)
+// ═══════════════════════════════════════
+// ═══════════════════════════════════════
+// ASSET BASE URL SETTINGS
+// ═══════════════════════════════════════
+// Supports separate CDN bases for images, CSS, and fonts.
+// Each base maps: local "img/file.png" → "CDN_IMG_BASE/file.png" (strips local folder prefix).
+var CDN_SETTINGS = (function(){
+  try{
+    var s=localStorage.getItem('cms_cdn_settings');
+    if(s) return JSON.parse(s);
+  }catch(e){}
+  // Migration: if old single base URL exists, map it to images only
+  try{
+    var old=localStorage.getItem('cms_asset_base_url');
+    if(old) return {img:old.replace(/\/+$/,''), css:'', fonts:'', cssCombinedFile:''};
+  }catch(e){}
+  return {img:'https://static.naukimg.com/s/0/0/i/jobseeker', css:'https://static.naukimg.com/s/0/0/c/jobseeker', fonts:'', cssCombinedFile:'styles.css'};
+})();
+// Keep legacy ASSET_BASE_URL for backward compat (used nowhere critical now)
+var ASSET_BASE_URL = CDN_SETTINGS.img||CDN_SETTINGS.css||'';
+
+function saveCdnSettings(imgBase, cssBase, fontsBase, cssCombinedFile){
+  CDN_SETTINGS.img   = (imgBase||'').replace(/\/+$/,'');
+  CDN_SETTINGS.css   = (cssBase||'').replace(/\/+$/,'');
+  CDN_SETTINGS.fonts = (fontsBase||'').replace(/\/+$/,'');
+  CDN_SETTINGS.cssCombinedFile = (cssCombinedFile||'').trim();
+  ASSET_BASE_URL = CDN_SETTINGS.img||CDN_SETTINGS.css||'';
+  try{localStorage.setItem('cms_cdn_settings',JSON.stringify(CDN_SETTINGS));}catch(e){}
+}
+function saveAssetBase(v){
+  // Legacy single-URL save — maps to images base
+  saveCdnSettings(v, CDN_SETTINGS.css, CDN_SETTINGS.fonts, CDN_SETTINGS.cssCombinedFile);
+}
+
+// Asset path resolver: strips local folder prefix and prepends CDN base.
+// ap('img/cv3.png')   → 'https://cdn.example.com/images/cv3.png'
+// ap('css/style.css')  → 'https://cdn.example.com/css/style.css'
+// ap('fonts/Sat.woff2')→ 'https://cdn.example.com/fonts/Sat.woff2'
+function ap(rel){
+  if(!rel || rel.indexOf('data:')===0 || rel.indexOf('http')===0) return rel;
+  // Determine which CDN base to use based on the local folder prefix
+  var base='', stripped=rel;
+  if(rel.indexOf('img/')===0 && CDN_SETTINGS.img){
+    base=CDN_SETTINGS.img;
+    stripped=rel.substring(4); // strip 'img/'
+  } else if(rel.indexOf('css/')===0 && CDN_SETTINGS.css){
+    base=CDN_SETTINGS.css;
+    stripped=rel.substring(4); // strip 'css/'
+  } else if(rel.indexOf('fonts/')===0 && CDN_SETTINGS.fonts){
+    base=CDN_SETTINGS.fonts;
+    stripped=rel.substring(6); // strip 'fonts/'
+  }
+  if(base) return base+'/'+stripped;
+  return rel; // no CDN configured for this type — keep flat relative
+}
+
+// ═══════════════════════════════════════
+// COPY & PUBLISH PANEL
+// ═══════════════════════════════════════
+function splitHeadBody(html){
+  var headMatch=html.match(/<head[^>]*>([\s\S]*?)<\/head>/i);
+  var bodyMatch=html.match(/<body[^>]*>([\s\S]*?)<\/body>/i);
+  return {
+    head: headMatch ? headMatch[1].trim() : '',
+    body: bodyMatch ? bodyMatch[1].trim() : ''
+  };
+}
+
+function copyToClipboard(text, label){
+  // navigator.clipboard is only defined on secure contexts (HTTPS or localhost).
+  // Teammates opening http://<lan-ip>:8082 get `navigator.clipboard === undefined`
+  // so we cannot rely on the promise path — fall back to execCommand then.
+  function execFallback(){
+    var ta=document.createElement('textarea');
+    ta.value=text;
+    ta.setAttribute('readonly','');
+    ta.style.position='fixed'; ta.style.top='0'; ta.style.left='-9999px';
+    document.body.appendChild(ta);
+    ta.focus(); ta.select(); ta.setSelectionRange(0, text.length);
+    var ok=false;
+    try { ok=document.execCommand('copy'); } catch(e){}
+    document.body.removeChild(ta);
+    if(ok) toast('✅ '+label+' copied to clipboard!');
+    else   toast('Copy blocked by browser — use Ctrl+A then Ctrl+C in the preview box',false);
+  }
+  if(window.isSecureContext && navigator.clipboard && navigator.clipboard.writeText){
+    navigator.clipboard.writeText(text).then(function(){
+      toast('✅ '+label+' copied to clipboard!');
+    }).catch(execFallback);
+  } else {
+    execFallback();
+  }
+}
+
+var copyViewSlug='';
+
+function showCopyView(slug){
+  copyViewSlug=slug;
+  render();
+  // Scroll to the code view
+  setTimeout(function(){
+    var el=document.getElementById('copy-view-area');
+    if(el) el.scrollIntoView({behavior:'smooth'});
+  },100);
+}
+
+function pCopyPublish(){
+  var slugs=Object.keys(allPages);
+
+  var h='<div class="card"><div class="ct">📋 Copy & Publish — Paste into Internal Dashboard</div>';
+  h+='<div class="card-info">Select a page below → view the <b>&lt;head&gt;</b> and <b>&lt;body&gt;</b> sections separately → copy with one click → paste into your internal publishing dashboard.</div></div>';
+
+  // Page selector
+  h+='<div class="card"><div class="ct">Select Page</div>';
+  h+='<div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:12px">';
+  slugs.forEach(function(s){
+    var p=allPages[s];
+    var isActive=copyViewSlug===s;
+    h+='<button class="tb-btn sm'+(isActive?' primary':'')+'" onclick="showCopyView(\''+s+'\')" style="font-size:12px">'+esc(p.title)+'</button>';
+  });
+  h+='</div></div>';
+
+  // Code view area
+  if(copyViewSlug && allPages[copyViewSlug]){
+    var fullHtml=buildPageHtml(copyViewSlug);
+    var parts=splitHeadBody(fullHtml);
+    var p=allPages[copyViewSlug];
+
+    h+='<div id="copy-view-area">';
+
+    // Full HTML
+    h+='<div class="card"><div class="ct">📄 '+esc(p.title)+' — Full HTML</div>';
+    h+='<div style="display:flex;gap:8px;margin-bottom:8px">';
+    h+='<button class="tb-btn sm primary" onclick="copyToClipboard(buildPageHtml(\''+copyViewSlug+'\'),\'Full HTML\')">📋 Copy Full HTML</button>';
+    h+='<span style="font-size:12px;color:#717b9e;padding-top:6px">'+fullHtml.length.toLocaleString()+' chars</span></div>';
+    h+='<pre style="background:#1e1e2e;color:#cdd6f4;padding:12px;border-radius:8px;font-size:11px;line-height:1.5;max-height:150px;overflow:auto;white-space:pre-wrap;word-break:break-all">'+esc(fullHtml.substring(0,500))+'…</pre></div>';
+
+    // HEAD section
+    h+='<div class="card"><div class="ct" style="color:#275df5">🔷 &lt;head&gt; Section</div>';
+    h+='<div style="display:flex;gap:8px;margin-bottom:8px">';
+    h+='<button class="tb-btn sm primary" onclick="copyToClipboard(splitHeadBody(buildPageHtml(\''+copyViewSlug+'\')).head,\'Head section\')">📋 Copy &lt;head&gt; Content</button>';
+    h+='<span style="font-size:12px;color:#717b9e;padding-top:6px">'+parts.head.length.toLocaleString()+' chars | meta, schemas, CSS links</span></div>';
+    h+='<pre id="head-code" style="background:#1e1e2e;color:#89b4fa;padding:12px;border-radius:8px;font-size:11px;line-height:1.5;max-height:300px;overflow:auto;white-space:pre-wrap;word-break:break-all">'+esc(parts.head)+'</pre></div>';
+
+    // BODY section
+    h+='<div class="card"><div class="ct" style="color:#22c55e">🟢 &lt;body&gt; Section</div>';
+    h+='<div style="display:flex;gap:8px;margin-bottom:8px">';
+    h+='<button class="tb-btn sm primary" onclick="copyToClipboard(splitHeadBody(buildPageHtml(\''+copyViewSlug+'\')).body,\'Body section\')">📋 Copy &lt;body&gt; Content</button>';
+    h+='<span style="font-size:12px;color:#717b9e;padding-top:6px">'+parts.body.length.toLocaleString()+' chars | all visible content</span></div>';
+    h+='<pre id="body-code" style="background:#1e1e2e;color:#a6e3a1;padding:12px;border-radius:8px;font-size:11px;line-height:1.5;max-height:400px;overflow:auto;white-space:pre-wrap;word-break:break-all">'+esc(parts.body)+'</pre></div>';
+
+    h+='</div>';
+  } else {
+    h+='<div class="card"><div class="card-info" style="text-align:center;padding:40px;color:#717b9e">👆 Select a page above to view its head & body sections</div></div>';
+  }
+
+  return h;
+}
+
+function pDownload(){
+  var slugs=Object.keys(allPages);
+  var hasAny=CDN_SETTINGS.img||CDN_SETTINGS.css||CDN_SETTINGS.fonts;
+  var modeLabel=hasAny
+    ?'<span style="color:#22c55e">✔ CDN configured</span>'
+    :'<span style="color:#22c55e">✔ Flat relative paths — download into your site root folder</span>';
+
+  var h='<div class="card"><div class="ct">⚙ CDN / Asset Base URLs (optional)</div>';
+  h+='<div class="card-info">Leave all blank (recommended) for flat relative paths — files sit next to <code>css/</code>, <code>img/</code>, <code>fonts/</code>.<br><br>';
+  h+='Or set separate CDN base URLs. The local folder prefix (<code>img/</code>, <code>css/</code>, <code>fonts/</code>) is <b>stripped</b> and the file name is appended to the CDN base.<br>';
+  h+='Example: <code>img/cv3.png</code> with Images Base <code>https://cdn.example.com/i/jobseeker</code> → <code>https://cdn.example.com/i/jobseeker/cv3.png</code><br><br>';
+  h+='Current: '+modeLabel+'</div>';
+
+  h+='<div style="display:flex;flex-direction:column;gap:8px;margin-bottom:8px">';
+  h+='<div style="display:flex;gap:8px;align-items:center"><label style="min-width:110px;font-size:13px;font-weight:600">Images Base:</label>';
+  h+='<input type="text" id="cdn-img-inp" style="flex:1;padding:6px 10px;border:1px solid #d1d5e0;border-radius:6px;font-size:13px" placeholder="https://static.naukimg.com/s/0/0/i/jobseeker" value="'+esc(CDN_SETTINGS.img)+'"></div>';
+  h+='<div style="display:flex;gap:8px;align-items:center"><label style="min-width:110px;font-size:13px;font-weight:600">CSS Base:</label>';
+  h+='<input type="text" id="cdn-css-inp" style="flex:1;padding:6px 10px;border:1px solid #d1d5e0;border-radius:6px;font-size:13px" placeholder="https://static.naukimg.com/s/0/0/c/jobseeker" value="'+esc(CDN_SETTINGS.css)+'"></div>';
+  h+='<div style="display:flex;gap:8px;align-items:center"><label style="min-width:110px;font-size:13px;font-weight:600">CSS Filename:</label>';
+  h+='<input type="text" id="cdn-cssfile-inp" style="flex:1;padding:6px 10px;border:1px solid #d1d5e0;border-radius:6px;font-size:13px" placeholder="styles.css (leave blank to use style.css)" value="'+esc(CDN_SETTINGS.cssCombinedFile||'')+'"></div>';
+  h+='<div style="display:flex;gap:8px;align-items:center"><label style="min-width:110px;font-size:13px;font-weight:600">Fonts Base:</label>';
+  h+='<input type="text" id="cdn-fonts-inp" style="flex:1;padding:6px 10px;border:1px solid #d1d5e0;border-radius:6px;font-size:13px" placeholder="https://static.naukimg.com/s/0/0/f/jobseeker" value="'+esc(CDN_SETTINGS.fonts)+'"></div>';
+  h+='</div>';
+  h+='<div style="display:flex;gap:8px">';
+  h+='<button class="tb-btn primary" onclick="saveCdnSettings($(\'#cdn-img-inp\').value,$(\'#cdn-css-inp\').value,$(\'#cdn-fonts-inp\').value,$(\'#cdn-cssfile-inp\').value);render();toast(\'CDN settings saved!\')">Save</button>';
+  h+='<button class="tb-btn" onclick="saveCdnSettings(\'\',\'\',\'\',\'\');render();toast(\'Cleared\')">Clear All</button>';
+  h+='</div></div>';
+
+  // Project folder section — only works on HTTPS or http://localhost (secure context)
+  var fsOk=fsAccessSupported();
+  var folderStatus;
+  if(!fsOk){
+    folderStatus='<span style="color:#f59e0b">⚠ Direct folder save is unavailable here (needs Chrome/Edge on http://localhost or HTTPS). Use <b>Publish CMS Data</b> or the <b>ZIP Download</b> below instead.</span>';
+  } else if(projectDirHandle){
+    folderStatus='<span style="color:#22c55e">✔ Connected: <b>'+esc(projectDirHandle.name)+'</b></span>';
+  } else {
+    folderStatus='<span style="color:#ef4444">✘ Not set — click below to select your project folder</span>';
+  }
+  h+='<div class="card"><div class="ct">📁 Project Folder</div>';
+  h+='<div class="card-info">Select the folder where <code>index.html</code> lives. All pages will be saved <b>directly into this folder</b>.<br>Status: '+folderStatus+'</div>';
+  h+='<button class="tb-btn primary full" onclick="pickProjectFolder()"'+(fsOk?'':' disabled')+'>📁 '+(projectDirHandle?'Change':'Set')+' Project Folder</button></div>';
+
+  // Save all pages
+  h+='<div class="card"><div class="ct">💾 Save All Pages to Project ('+slugs.length+')</div>';
+  h+='<div class="card-info">Writes <b>all '+slugs.length+' HTML pages</b> <b>plus <code>js/cms-data.js</code> + <code>sitemap.xml</code></b> into your project folder next to <code>index.html</code>. This is what makes new pages visible when you share the folder/ZIP or serve it over LAN.</div>';
+  h+='<button class="tb-btn primary full" onclick="saveAllPages()"'+(projectDirHandle?'':' disabled')+'>💾 Save All '+slugs.length+' Pages + CMS Data to Project Folder</button></div>';
+
+  // Publish CMS data (fallback for browsers without File System Access API)
+  h+='<div class="card"><div class="ct">📤 Publish CMS Data ('+slugs.length+' pages)</div>';
+  h+='<div class="card-info">Download an updated <code>js/cms-data.js</code> + <code>sitemap.xml</code> that contains <b>every page you\'ve created in the CMS</b>. Drop the two files into your project (replacing the existing <code>js/cms-data.js</code> and <code>sitemap.xml</code>), then zip or share over LAN — teammates will see all '+slugs.length+' pages.</div>';
+  h+='<button class="tb-btn primary full" onclick="doPublishCmsData()">📤 Publish cms-data.js + sitemap.xml</button></div>';
+
+  // Individual pages
+  h+='<div class="card"><div class="ct">Individual Pages ('+slugs.length+')</div>';
+  h+='<div class="card-info">Save a single page directly into your project folder, or preview it.</div>';
+  slugs.forEach(function(s){
+    var p=allPages[s];
+    h+='<div class="pg-item"><div class="pg-info"><strong>'+esc(p.title)+'</strong><span class="pg-slug"> /'+s+'</span></div><div class="pg-btns">'+
+      '<button class="tb-btn sm primary" onclick="saveSinglePage(\''+s+'\')"'+(projectDirHandle?'':' disabled')+'>💾 Save</button>'+
+      '<button class="tb-btn sm" onclick="window.open(\'index.html?page='+s+'\',\'_blank\')">Preview</button></div></div>';
+  });
+  h+='</div>';
+
+  // ZIP fallback + JSON export
+  h+='<div class="card"><div class="ct">📦 ZIP Download (Fallback)</div>';
+  h+='<div class="card-info">If you prefer a ZIP instead of direct save.</div>';
+  h+='<button class="tb-btn full" onclick="dlAllPagesZip()">⬇ Download Full Site ZIP</button>';
+  h+='<button class="tb-btn full" style="margin-top:8px" onclick="dlHtmlOnlyZip()">⬇ HTML Pages Only ZIP</button>';
+  h+='<button class="tb-btn full" style="margin-top:8px" onclick="doExport()">⬇ Export CMS Data (JSON)</button></div>';
+  return h;
+}
+
+function buildPageHtml(slug){
+  var p=allPages[slug]; if(!p) return '';
+  var sb=p.stickyBar||{};
+  var gl=p.globalHeroLinks||{};
+  var sd=p.sidebar||{};
+  var testi=(p.useGlobalTestimonials!==false&&p.globalTestimonials&&p.globalTestimonials.length>0)
+            ?p.globalTestimonials:p.testimonials;
+  var cta1Text=gl.cta1_text||'Get Started Free';
+  var cta2Text=gl.cta2_text||'Browse Templates';
+  if(p.hero.cta1&&p.hero.cta1.trim()) cta1Text=p.hero.cta1;
+  if(p.hero.cta2&&p.hero.cta2.trim()) cta2Text=p.hero.cta2;
+  var cta1Url=p.hero.cta1_url||gl.cta1_url||'#';
+  var cta2Url=p.hero.cta2_url||gl.cta2_url||'#templates';
+  // Template button URL/text precedence:
+  //   per-template link (handled inside the .forEach below)
+  //   → if useGlobalTemplateButton (default true): global → page → cta1Url → '#'
+  //   → else (override is on for this page):       page → global → cta1Url → '#'
+  var pUseGlobalBtn = p.useGlobalTemplateButton !== false;
+  var gBtnUrl = pUseGlobalBtn
+    ? (p.globalTemplateButtonUrl || p.templateButtonUrl || cta1Url || '#')
+    : (p.templateButtonUrl || p.globalTemplateButtonUrl || cta1Url || '#');
+  var gBtnText = pUseGlobalBtn
+    ? (p.globalTemplateButtonText || p.templateButtonText || 'Try this free template')
+    : (p.templateButtonText || p.globalTemplateButtonText || 'Try this free template');
+  // Always rebuild breadcrumbs from the slug (folder-aware) so the exported
+  // HTML matches the URL structure regardless of any stale stored data.
+  var bcCrumbs=(typeof buildBreadcrumbs==='function')
+    ? buildBreadcrumbs(slug, p.title||slug, allPages)
+    : (p.schema.breadcrumbs||[{n:'Home',u:'https://www.naukri.com/naukri360'},{n:p.title||slug,u:p.seo.canonical||('https://www.naukri.com/naukri360/'+slug)}]);
+  // Sync the page's stored breadcrumbs so the JSON-LD schema below matches.
+  p.schema.breadcrumbs=bcCrumbs;
+  // Build the visible breadcrumb HTML with linked segments + aria-current on
+  // the last item so it matches the JSON-LD itemListElement entries.
+  var bcHtml=bcCrumbs.map(function(b,i,arr){
+    var name=esc(b.n||'');
+    if(i===arr.length-1) return '<span aria-current="page">'+name+'</span>';
+    return '<a href="'+esc(b.u||'')+'">'+name+'</a>';
+  }).join(' <span class="bc-sep" aria-hidden="true">&gt;</span> ');
+
+  // HEAD
+  var h='<!DOCTYPE html>\n<html lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">\n<head>\n';
+  h+='<meta charset="UTF-8">\n<meta name="viewport" content="width=device-width, initial-scale=1.0">\n';
+  h+='<title>'+esc(p.seo.title)+'<\/title>\n';
+  h+='<meta name="description" content="'+esc(p.seo.desc)+'">\n';
+  h+='<meta name="keywords" content="'+esc(p.seo.keywords)+'">\n';
+  h+='<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">\n';
+  h+='<meta name="author" content="Naukri360">\n';
+  h+='<meta name="theme-color" content="#4A3AFF">\n';
+  h+='<meta property="og:type" content="website">\n';
+  h+='<meta property="og:site_name" content="Naukri360">\n';
+  h+='<meta property="og:title" content="'+esc(p.seo.title)+'">\n';
+  h+='<meta property="og:description" content="'+esc(p.seo.desc)+'">\n';
+  h+='<meta property="og:url" content="'+esc(p.seo.canonical)+'">\n';
+  var ogImgRaw=p.seo.ogImage||'img/banner-right.png';
+  var ogImgAbs=(ogImgRaw.indexOf('http')===0)?ogImgRaw:'https://www.naukri.com/naukri360/'+ogImgRaw;
+  h+='<meta property="og:image" content="'+esc(ogImgAbs)+'">\n';
+  h+='<meta property="og:locale" content="en_IN">\n';
+  h+='<meta name="twitter:card" content="summary_large_image">\n';
+  h+='<meta name="twitter:title" content="'+esc(p.seo.title)+'">\n';
+  h+='<meta name="twitter:description" content="'+esc(p.seo.desc)+'">\n';
+  h+='<meta name="twitter:image" content="'+esc(ogImgAbs)+'">\n';
+  h+='<meta http-equiv="X-UA-Compatible" content="IE=edge">\n';
+  h+='<link rel="canonical" href="'+esc(p.seo.canonical)+'">\n';
+  h+='<meta name="ai-content-declaration" content="This website contains original content created for job seekers. All resume templates and career advice are produced by professional HR experts.">\n';
+  h+='<meta name="citation_title" content="'+esc(p.seo.title)+'">\n';
+  h+='<meta name="citation_author" content="Naukri360">\n';
+  h+='<meta name="citation_public_url" content="'+esc(p.seo.canonical)+'">\n';
+  h+='<link rel="preconnect" href="https://static.naukimg.com" crossorigin>\n';
+  h+='<link rel="dns-prefetch" href="https://static.naukimg.com">\n';
+  h+='<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>\n';
+  h+='<link rel="preload" href="'+ap('img/banner-right.png')+'" as="image" fetchpriority="high">\n';
+  h+='<link rel="stylesheet" href="{{nr_desktop_resume_templates_wdgt_tmpl_svc_tmpl_v0_nocode_service.response.successResponse.resumeTemplatesCssUrl}}">\n';
+  // JSON-LD Schemas
+  // BreadcrumbList — last item intentionally omits "item" so the current page
+  // is not interlinked (Google's recommended shape; matches visible HTML).
+  var schemaBC={"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":(p.schema.breadcrumbs||[]).map(function(b,i,arr){var e={"@type":"ListItem","position":i+1,"name":b.n};if(i<arr.length-1)e.item=b.u;return e;})};
+  var faqItemsExp=(p.faq||[])
+    .filter(function(f){return f&&f.q&&String(f.q).trim()&&f.a&&String(f.a).trim()})
+    .map(function(f){var q=String(f.q).replace(/<[^>]*>/g,'').replace(/\s+/g,' ').trim();return{"@type":"Question","name":q,"acceptedAnswer":{"@type":"Answer","text":String(f.a).trim()}}});
+  var schemaFAQ=faqItemsExp.length>0?{"@context":"https://schema.org","@type":"FAQPage","mainEntity":faqItemsExp}:null;
+  var schemaTpls=(p.templates&&p.templates.length>0)?{"@context":"https://schema.org","@type":"ItemList","name":p.templates_heading||"Resume Templates","numberOfItems":p.templates.length,"itemListElement":p.templates.map(function(t,i){return{"@type":"ListItem","position":i+1,"item":{"@type":"CreativeWork","name":t.name,"description":t.desc,"image":ap(t.image||'img/cv3.png'),"url":t.link||p.seo.canonical}}})}:null;
+  h+='<script type="application/ld+json">'+JSON.stringify(schemaBC)+'<\/script>\n';
+  if(schemaFAQ) h+='<script type="application/ld+json">'+JSON.stringify(schemaFAQ)+'<\/script>\n';
+  if(schemaTpls) h+='<script type="application/ld+json" id="schema-itemlist">'+JSON.stringify(schemaTpls)+'<\/script>\n';
+  // SoftwareApplication schema with AggregateRating + Reviews
+  var ogImg=p.seo.ogImage||'img/banner-right.png';
+  var absOgImg=(ogImg.indexOf('http')===0)?ogImg:'https://www.naukri.com/naukri360/'+ogImg;
+  var schemaSoftware={"@context":"https://schema.org","@type":"SoftwareApplication","name":esc(p.seo.title),"applicationCategory":"BusinessApplication","operatingSystem":"Web","url":p.seo.canonical,"image":absOgImg,"description":p.seo.desc,"offers":{"@type":"Offer","price":"0.00","priceCurrency":"INR","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":p.schema.ratingValue||"4.8","ratingCount":p.schema.ratingCount||"12847","reviewCount":p.schema.reviewCount||"8934","bestRating":"5","worstRating":"1"},"review":testi.slice(0,4).map(function(t){return{"@type":"Review","name":t.heading,"reviewBody":t.text,"datePublished":p.created||"2026-01-01","author":{"@type":"Person","name":t.author},"reviewRating":{"@type":"Rating","ratingValue":"5","bestRating":"5","worstRating":"1"},"publisher":{"@type":"Organization","name":"Naukri360"}}})};
+  h+='<script type="application/ld+json">'+JSON.stringify(schemaSoftware)+'<\/script>\n';
+  // Organization schema
+  h+='<script type="application/ld+json">'+JSON.stringify({"@context":"https://schema.org","@type":"Organization","name":"Naukri360","url":"https://www.naukri.com/naukri360","logo":"https://www.naukri.com/naukri360/img/naukri-logo.png","sameAs":["https://twitter.com/naukri360","https://www.linkedin.com/company/naukri360"]})+'<\/script>\n';
+  // CollectionPage schema — marks this page as a curated collection of resume templates
+  if(schemaTpls){var schemaCP={"@context":"https://schema.org","@type":"CollectionPage","name":p.seo.title,"description":p.seo.desc,"url":p.seo.canonical,"mainEntity":schemaTpls};h+='<script type="application/ld+json" id="schema-collection">'+JSON.stringify(schemaCP)+'<\/script>\n';}
+  // SoftwareApplication schema for the Naukri Resume Maker tool
+  var schemaRM={"@context":"https://schema.org","@type":"SoftwareApplication","name":"Naukri Resume Maker","applicationCategory":"BusinessApplication","operatingSystem":"Web","url":"https://www.naukri.com/resume-maker","description":"Create professional resumes online with Naukri's free resume maker. Choose from 25+ ATS-friendly templates.","offers":{"@type":"Offer","price":"0.00","priceCurrency":"INR","availability":"https://schema.org/InStock"},"aggregateRating":{"@type":"AggregateRating","ratingValue":p.schema.ratingValue||"4.8","ratingCount":p.schema.ratingCount||"12847","reviewCount":p.schema.reviewCount||"8934","bestRating":"5","worstRating":"1"}};
+  h+='<script type="application/ld+json" id="schema-resume-maker">'+JSON.stringify(schemaRM)+'<\/script>\n';
+  // Speakable / Voice schema — signals to voice assistants and LLMs which content to read aloud
+  var schemaSP={"@context":"https://schema.org","@type":"WebPage","name":p.seo.title,"url":p.seo.canonical,"speakable":{"@type":"SpeakableSpecification","cssSelector":["#hero-h1",".banner-left p",".answer-content",".testimonial-text"]}};
+  h+='<script type="application/ld+json" id="schema-speakable">'+JSON.stringify(schemaSP)+'<\/script>\n';
+  h+='<\/head>\n<body>\n';
+
+  // STICKY BAR (no inline styles — .sec-offer CSS handles default colors)
+  if(sb.enabled!==false&&sb.text){
+    h+='<div class="sec-offer" id="stickyBar">'+
+       '<span id="bar-text">'+esc(sb.text||'')+'<\/span> '+
+       '<a href="'+esc(sb.linkUrl||'#')+'" id="bar-link"><span id="bar-linktext">'+esc(sb.linkText||'')+'<\/span><\/a>'+
+       '<img src="'+ap('img/rightArrow.png')+'" width="20" height="20" alt="" aria-hidden="true"><\/div>\n';
+  }
+
+  // HERO
+  h+='<main id="main-content">\n<section class="banner" aria-labelledby="hero-h1">\n<div class="container">\n<div class="banner-left">\n';
+  h+='<h1 id="hero-h1">'+p.hero.h1+'<\/h1>\n<p>'+p.hero.text+'<\/p>\n';
+  h+='<a href="'+esc(cta1Url)+'" class="get-started"'+(cta1Url.indexOf('http')===0?' target="_blank" rel="noopener noreferrer"':'')+'>'+esc(cta1Text)+'<\/a>\n';
+  h+='<a href="'+esc(cta2Url)+'" class="become-pro"'+(cta2Url.indexOf('http')===0?' target="_blank" rel="noopener noreferrer"':'')+'>'+esc(cta2Text)+'<\/a>\n';
+  h+='<div class="subheading"><img src="'+ap('img/graph.png')+'" width="24" height="14" alt="" aria-hidden="true"> <span>48,549<\/span> resumes created today<\/div>\n';
+  h+='<\/div>\n<div class="banner-right"><img src="'+ap('img/banner-right.png')+'" width="415" height="265" alt="'+esc(p.title)+'" loading="eager" fetchpriority="high"><\/div>\n<\/div>\n<\/section>\n';
+
+  // TEMPLATE GALLERY — chips come from page data (per-page override or global)
+  var pageChips = (p.useGlobalFilterChips===false && p.filterChips && p.filterChips.length)
+    ? p.filterChips
+    : (p.globalFilterChips && p.globalFilterChips.length ? p.globalFilterChips : [
+        {label:'All templates',cat:'all',url:'#templates/all'},
+        {label:'Modern',cat:'modern',url:'#templates/modern'},
+        {label:'Traditional',cat:'traditional',url:'#templates/traditional'},
+        {label:'Simple',cat:'simple',url:'#templates/simple'},
+        {label:'Creative',cat:'creative',url:'#templates/creative'},
+        {label:'ATS',cat:'ats',url:'#templates/ats'},
+        {label:'One page',cat:'onepage',url:'#templates/onepage'},
+        {label:'Two column',cat:'twocolumn',url:'#templates/twocolumn'},
+        {label:'Photo',cat:'photo',url:'#templates/photo'}
+      ]);
+  h+='<section class="sec1" id="templates" aria-labelledby="tpl-h2">\n<div class="container">\n';
+  h+='<h2 id="tpl-h2">'+stripH(p.templates_heading||'Resume Templates')+'<\/h2>\n';
+  h+='<p>'+esc(p.templates_sub||'Win over recruiters by choosing one of our well-designed templates')+'<\/p>\n';
+  h+='<div class="filter-wrapper">\n';
+  pageChips.forEach(function(c,i){
+    var cat=String(c.cat||'').toLowerCase(); if(!cat)return;
+    h+='<input type="radio" name="filter" id="filter-'+cat+'"'+(i===0?' checked':'')+' hidden>\n';
+  });
+  h+='<ul class="filter-buttons" role="tablist" aria-label="Template filters">\n';
+  pageChips.forEach(function(c){
+    var cat=String(c.cat||'').toLowerCase(); if(!cat)return;
+    var url=c.url||('#templates/'+cat);
+    h+='<li role="none"><a href="'+esc(url)+'" data-filter="'+cat+'" class="filter-btn" role="tab"><span>'+esc(c.label||cat)+'<\/span><\/a><\/li>\n';
+  });
+  h+='<\/ul>\n<div class="gallery-grid" id="gallery" role="tabpanel">\n';
+  var pUseGlobalTplLinks = p.useGlobalTemplateLinks !== false;
+  var pGlobalTpls = Array.isArray(p.globalTemplates) ? p.globalTemplates : [];
+  var pPdfGlobal = p.templatePdfUrl || p.globalTemplatePdfUrl || '';
+  var pDocGlobal = p.templateDocUrl || p.globalTemplateDocUrl || '';
+  (p.templates||[]).forEach(function(t,i){
+    var imgSrc=ap(t.image||'img/cv3.png');
+    // Link precedence: per-template t.link → globalTemplates[i].link (if useGlobalTemplateLinks) → page button URL → '#'
+    var globalTplLink = pUseGlobalTplLinks && pGlobalTpls[i] ? (pGlobalTpls[i].link||'') : '';
+    var cardLink = t.link || globalTplLink || gBtnUrl || '#';
+    var pdfHref = t.pdfUrl || pPdfGlobal || cardLink;
+    var docHref = t.docUrl || pDocGlobal || cardLink;
+    var ext = (cardLink.indexOf('http')===0);
+    var tgt = ext ? ' target="_blank" rel="noopener noreferrer"' : '';
+    h+='<article class="image-card" data-category="'+esc(t.cat||'modern')+'" data-tpl="'+(i+1)+'" itemscope itemtype="https://schema.org/CreativeWork">';
+    h+='<a class="cardlink" href="'+esc(cardLink)+'"'+tgt+' title="'+esc(t.name)+' resume template">';
+    h+='<img src="'+imgSrc+'" alt="'+esc(t.name)+' resume template" loading="lazy" width="280" height="360">';
+    h+='<div class="image-overlay"><\/div><a class="read-more-btn" href="'+esc(cardLink)+'"'+tgt+'>'+esc(gBtnText)+'<\/a>';
+    h+='<div class="tpl-format-cta"><a class="tpl-fmt-btn tpl-fmt-pdf" href="'+esc(pdfHref)+'" target="_blank" rel="noopener noreferrer" data-format="pdf">PDF<\/a><a class="tpl-fmt-btn tpl-fmt-doc" href="'+esc(docHref)+'" target="_blank" rel="noopener noreferrer" data-format="doc">DOC<\/a><\/div>';
+    h+='<div class="clear"><\/div><div class="card-name" itemprop="name">'+esc(t.name)+'<\/div>';
+    h+='<div class="caption" itemprop="description">'+esc(t.desc)+'<\/div><\/a><\/article>\n';
+  });
+  h+='<\/div>\n<\/div>\n<\/div>\n<\/section>\n<div class="clear"><\/div>\n';
+
+  // CONTENT SECTIONS
+  var sections=p.sections||[];
+  if(sections.length>0){
+    h+='<section class="sec2">\n<div class="container midWraper">\n<div class="sec2-left" id="dynamic-sections">\n';
+    sections.forEach(function(sec,idx){
+      h+='<div class="sec2Inner'+(idx>0?' sec2Inner2':'')+'">\n';
+      if(sec.h2) h+='<h2>'+sec.h2+'<\/h2>\n';
+      if(sec.image) h+='<img src="'+ap(sec.image)+'" width="640" height="382" alt="'+esc(sec.h2||'')+'" loading="lazy">\n';
+      if(sec.text) h+='<div class="sec-body">'+sec.text+'<\/div>\n';
+      if(sec.h3) h+='<h3>'+sec.h3+'<\/h3>\n';
+      if(sec.h3_text) h+='<div class="sec-body">'+sec.h3_text+'<\/div>\n';
+      if(sec.points&&sec.points.length>0){
+        h+='<div class="clear"><\/div><ul class="ulLast">\n';
+        sec.points.forEach(function(pt){h+='<li>'+esc(pt)+'<\/li>\n';});
+        h+='<\/ul>\n';
+      }
+      h+='<\/div>\n';
+    });
+    h+='<\/div>\n';
+    // SIDEBAR
+    h+='<div class="sec2-right">\n<aside class="rightContainer sec2Inner" id="myDiv">\n';
+    h+='<img src="'+ap(sd.image||'img/easy-step.png')+'" width="329" height="225" alt="3 easy steps" loading="lazy">\n';
+    h+='<h4>'+esc(sd.heading||'Create your resume in 3 easy steps')+'<\/h4>\n';
+    h+='<ul id="sidebar-steps">\n';
+    (sd.steps||[]).forEach(function(s){h+='<li>'+esc(s)+'<\/li>\n';});
+    h+='<\/ul>\n';
+    var sdCtaUrl=sd.ctaUrl||'#';
+    h+='<a href="'+esc(sdCtaUrl)+'" class="btn360"'+(sdCtaUrl.indexOf('http')===0?' target="_blank" rel="noopener noreferrer"':'')+'>'+
+       '<img src="'+ap('img/crown.png')+'" width="14" height="14" alt="" aria-hidden="true">'+
+       '<span>'+esc(sd.ctaText||'Upgrade to Pro')+'<\/span><\/a>\n';
+    h+='<\/aside>\n<\/div>\n<\/div>\n<\/section>\n<div class="clear myHeight"><\/div>\n';
+  }
+
+  // CONTENT BLOCKS
+  var cbs=p.content_blocks||[];
+  if(cbs.length>0){
+    h+='<section class="sec-content-blocks">\n<div class="container" id="content-blocks">\n';
+    cbs.forEach(function(b){
+      h+='<div class="content-block-item'+(b.cssClass?' '+b.cssClass:'')+'">\n';
+      if(b.title) h+='<h2>'+b.title+'<\/h2>\n';
+      h+='<div class="block-body">'+b.content+'<\/div>\n<\/div>\n';
+    });
+    h+='<\/div>\n<\/section>\n';
+  }
+
+  // TESTIMONIALS
+  h+='<section class="sec3-carousel" aria-labelledby="testi-h2">\n<div class="container">\n<div class="bx">\n';
+  h+='<h2 id="testi-h2">'+stripH(p.testimonials_heading||'What Job Seekers Are Saying')+'<\/h2>\n';
+  h+='<div class="carousel-container sec3-carousel">\n';
+  var numSlides=Math.min(testi.length,4);
+  for(var si=1;si<=numSlides;si++) h+='<input type="radio" name="carousel" id="slide'+si+'" class="carousel-input"'+(si===1?' checked':'')+' />\n';
+  if(numSlides>1){
+    h+='<label for="slide1" class="carousel-arrow carousel-arrow-left" aria-label="Previous"><\/label>\n';
+    h+='<label for="slide2" class="carousel-arrow carousel-arrow-right" aria-label="Next"><\/label>\n';
+  }
+  h+='<div class="carousel-track"><div class="carousel-wrapper">\n';
+  testi.forEach(function(t){
+    h+='<article class="testimonial-card">\n';
+    h+='<div class="quote-icon"><img src="'+ap('img/db-code.png')+'" width="24" height="24" alt="" aria-hidden="true"><\/div>\n';
+    h+='<div><div class="testimonial-title">'+esc(t.heading)+'<\/div><p class="testimonial-text">'+esc(t.text)+'<\/p><\/div>\n';
+    h+='<div class="testimonial-author"><div class="author-avatar"><img src="'+ap('img/profile.png')+'" width="40" height="40" alt="User avatar" loading="lazy"><\/div>'+
+       '<div class="author-info"><div class="author-name">'+esc(t.author)+'<\/div><div class="author-role">'+esc(t.role)+'<\/div><\/div><\/div>\n';
+    h+='<\/article>\n';
+  });
+  h+='<\/div><\/div>\n<\/div>\n<\/div>\n<\/div>\n<\/section>\n<div class="clear"><\/div>\n';
+
+  // FAQ
+  h+='<section class="sec3" aria-labelledby="faq-h2">\n<div class="container">\n<div class="accordion">\n';
+  h+='<h2 id="faq-h2">Frequently Asked Questions<\/h2>\n';
+  (p.faq||[]).forEach(function(f,i){
+    var qid='q'+(i+1);
+    h+='<div class="faq-item">'+
+       '<input type="checkbox" id="'+qid+'"'+(i===0?' checked':'')+'>'+
+       '<label for="'+qid+'" class="faq-question"><div class="question-label"><span class="q-num">Q'+(i+1)+'<\/span>'+
+       '<span class="q-text">'+esc(f.q)+'<\/span><\/div>'+
+       '<span class="toggle-icon"><img src="'+ap('img/arrow.png')+'" width="16" height="16" alt="" aria-hidden="true"><\/span><\/label>'+
+       '<div class="faq-answer">'+
+       '<div class="answer-content">'+f.a+'<\/div><\/div><\/div>\n';
+  });
+  h+='<\/div>\n<\/div>\n<\/section>\n<div class="clear"><\/div>\n';
+
+  // INTERLINKING — chip-style related-page links (replaces old sec-cv)
+  var ilUseGlobal = p.useGlobalInterlinks !== false;
+  var ilRaw = ilUseGlobal
+    ? (Array.isArray(p.globalInterlinks) ? p.globalInterlinks : [])
+    : (Array.isArray(p.interlinks) ? p.interlinks : []);
+  var ilSelf = (p.seo&&p.seo.canonical) || ('https://www.naukri.com/naukri360/'+slug);
+  var ilList = pruneInterlinks(ilRaw.filter(function(x){ return x && x.url && x.url !== ilSelf; }));
+  if(ilList.length>0){
+    h+='<section class="sec-interlinks" aria-labelledby="interlinks-h2">\n<div class="container">\n';
+    h+='<h2 id="interlinks-h2">'+esc(p.interlinks_heading||'Explore More Resume Templates')+'<\/h2>\n';
+    if(p.interlinks_sub) h+='<p>'+esc(p.interlinks_sub)+'<\/p>\n';
+    h+='<ul class="filter-buttons interlink-list" role="list" aria-label="Related links">\n';
+    ilList.forEach(function(l){
+      if(!l||!l.label) return;
+      var url=l.url||'#';
+      var ext=/^https?:\/\//i.test(url);
+      h+='<li><a href="'+esc(url)+'" class="filter-btn"'+(ext?' target="_blank" rel="noopener noreferrer"':'')+'><span>'+esc(l.label)+'<\/span><\/a><\/li>\n';
+    });
+    h+='<\/ul>\n<\/div>\n<\/section>\n';
+  }
+
+  // FOOTER CTA
+  h+='<section class="sec4" aria-labelledby="cta-h2">\n<div class="container"><div class="bx">\n';
+  h+='<h2 id="cta-h2">'+stripH(p.footer_heading||'Start Building Your Resume Now')+'<\/h2>\n';
+  h+='<p>'+stripH(p.footer_text||'Join 4 million+ professionals.')+'<\/p>\n';
+  h+='<nav class="nav" aria-label="Breadcrumb" data-cms="breadcrumb">'+bcHtml+'<\/nav>\n';
+  h+='<\/div><\/div>\n<\/section>\n<\/main>\n<div class="clear"><\/div>\n';
+
+  // External JS for interactivity (carousel, mobile menu, sticky filter)
+  h+='<script>(function(){var s=\'button.nI-gNb-sb__icon-wrapper\';function f(b){b.setAttribute(\'aria-label\',\'Search\');}var e=document.querySelector(s);if(e&&!e.getAttribute(\'aria-label\'))f(e);if(window.MutationObserver){var o=new MutationObserver(function(){var b=document.querySelector(s);if(b&&!b.getAttribute(\'aria-label\')){f(b);o.disconnect();}});o.observe(document.documentElement,{childList:true,subtree:true});}}());<\/script>\n';
+  h+='<\/body>\n<\/html>';
+  return h;
+}
+
+// ═══════════════════════════════════════
+// FILE SYSTEM ACCESS — Direct save to project folder
+// ═══════════════════════════════════════
+var projectDirHandle=null;
+
+function fsAccessSupported(){
+  // Chromium-only API and requires a secure context (HTTPS or http://localhost).
+  // On http://<lan-ip> or on Firefox/Safari it's simply absent.
+  return !!(window.isSecureContext && typeof window.showDirectoryPicker==='function');
+}
+
+async function pickProjectFolder(){
+  if(!fsAccessSupported()){
+    toast('Direct folder save needs Chrome/Edge on http://localhost or HTTPS. Use the "Publish CMS Data" or ZIP download instead.', false);
+    return;
+  }
+  try{
+    projectDirHandle=await window.showDirectoryPicker({mode:'readwrite'});
+    toast('Project folder set: '+projectDirHandle.name+' ✅');
+    render();
+  }catch(e){
+    if(e.name!=='AbortError') toast('Failed: '+e.message,false);
+  }
+}
+
+async function writeFileToProject(filename, content){
+  if(!projectDirHandle){toast('Set project folder first!',false);return false;}
+  try{
+    // Walk any "a/b/c.ext" style path, creating subdirectories as needed.
+    var parts=String(filename).split('/').filter(Boolean);
+    var leaf=parts.pop();
+    var dir=projectDirHandle;
+    for(var i=0;i<parts.length;i++){
+      dir=await dir.getDirectoryHandle(parts[i],{create:true});
+    }
+    var fileHandle=await dir.getFileHandle(leaf,{create:true});
+    var writable=await fileHandle.createWritable();
+    await writable.write(content);
+    await writable.close();
+    return true;
+  }catch(e){
+    toast('Write error: '+e.message,false);
+    return false;
+  }
+}
+
+async function saveSinglePage(slug){
+  if(!projectDirHandle){toast('Set project folder first!',false);return;}
+  var html=buildPageHtml(slug);if(!html)return;
+  var filename='pages/'+slug.replace(/\//g,'-')+'.html';
+  toast('Saving '+filename+'…');
+  var ok=await writeFileToProject(filename,html);
+  if(ok) toast('✅ Saved: '+filename+' → '+projectDirHandle.name+'/');
+}
+
+async function saveAllPages(){
+  if(!projectDirHandle){toast('Set project folder first!',false);return;}
+  var slugs=Object.keys(allPages);
+  toast('Saving '+slugs.length+' pages + CMS data to '+projectDirHandle.name+'/pages/ …');
+  var saved=0,failed=0;
+  for(var i=0;i<slugs.length;i++){
+    var slug=slugs[i];
+    var html=buildPageHtml(slug);if(!html){failed++;continue;}
+    var filename='pages/'+slug.replace(/\//g,'-')+'.html';
+    var ok=await writeFileToProject(filename,html);
+    if(ok)saved++;else failed++;
+  }
+  // Keep BOTH cms-data.js copies in sync (root js/ for index.html, pages/js/ for static pages)
+  var dataOk1=await writeFileToProject('js/cms-data.js',       generateCmsDataJs());
+  var dataOk2=await writeFileToProject('pages/js/cms-data.js', generateCmsDataJs());
+  var mapOk  =await writeFileToProject('sitemap.xml',          generateSitemapXml());
+  var extra=[]; if(dataOk1||dataOk2)extra.push('cms-data.js'); if(mapOk)extra.push('sitemap.xml');
+  toast('✅ Done! '+saved+' pages → /pages/'+(extra.length?' + '+extra.join(' + '):'')+(failed?' ('+failed+' failed)':''));
+}
+
+// Legacy browser download fallback
+function dlPageHtml(slug){
+  var html=buildPageHtml(slug);if(!html)return;
+  var filename=slug.replace(/\//g,'-')+'.html';
+  dlFile(html,filename,'text/html');
+  toast('Downloaded: '+filename);
+}
+
+// ═══════════════════════════════════════
+// ZIP BULK DOWNLOAD — Complete site package
+// ═══════════════════════════════════════
+
+// Helper: fetch a local file as text (for bundling into ZIP)
+function fetchLocal(path){
+  return fetch(path).then(function(r){return r.ok?r.text():''}).catch(function(){return ''});
+}
+function fetchLocalBlob(path){
+  return fetch(path).then(function(r){return r.ok?r.blob():null}).catch(function(){return null});
+}
+
+function dlAllPagesZip(){
+  function doZip(){
+    var zip=new JSZip();
+    var slugs=Object.keys(allPages);
+
+    // 1. Add all generated HTML pages (flat in root)
+    slugs.forEach(function(slug){
+      var html=buildPageHtml(slug);
+      var filename=slug.replace(/\//g,'-')+'.html';
+      zip.file(filename, html);
+    });
+
+    // 2. Inject LIVE cms-data.js + sitemap.xml from the in-memory CMS so the ZIP
+    //    reflects every page we've created — not the stale on-disk copies.
+    zip.file('js/cms-data.js', generateCmsDataJs());
+    zip.file('sitemap.xml',    generateSitemapXml());
+
+    // 3. Bundle remaining supporting assets from local folder
+    var assets=[
+      {path:'css/style.css',    zipPath:'css/style.css'},
+      {path:'js/app.js',        zipPath:'js/app.js'},
+      {path:'js/site.js',       zipPath:'js/site.js'},
+      {path:'index.html',       zipPath:'index.html'},
+      {path:'admin.html',       zipPath:'admin.html'},
+      {path:'serve.bat',        zipPath:'serve.bat'},
+      {path:'serve.sh',         zipPath:'serve.sh'},
+      {path:'llms.txt',         zipPath:'llms.txt'}
+    ];
+    // Image files to bundle (SVGs + key PNGs used locally)
+    var imgFiles=[
+      'nk-pro-logo.svg','tpl-executive-pro.svg','tpl-minimal-edge.svg','tpl-classic-plus.svg',
+      'tpl-tech-stack.svg','tpl-creative-spark.svg','tpl-corporate-slate.svg','tpl-fresh-start.svg',
+      'tpl-bold-impact.svg','tpl-amber-classic.svg','banner-right.png','easy-step.png',
+      'cv-thumb1.png','cv-thumb2.png','cv3.png','crown.png','graph.png','arrow.png',
+      'rightArrow.png','db-code.png','profile.png','nk-pro-logo.png','green-tick.png',
+      'bullet.png','naukri-logo.png','cv-1.jpg','cv-2.jpg','cv-3.jpg',
+      'fb.png','twitter.png','linkedin.png','instagram.png'
+    ];
+    // Font files
+    var fontFiles=[
+      'Satoshi-Regular.woff2','Satoshi-Regular.woff','Satoshi-Bold.woff2','Satoshi-Bold.woff',
+      'Satoshi-Medium.woff2','Satoshi-Medium.woff','Satoshi-Black.woff2','Satoshi-Black.woff',
+      'Satoshi-Light.woff2','Satoshi-Light.woff','Satoshi-Variable.woff2','Satoshi-Variable.woff',
+      'Satoshi-Italic.woff2','Satoshi-Italic.woff','Satoshi-BoldItalic.woff2','Satoshi-BoldItalic.woff',
+      'Satoshi-MediumItalic.woff2','Satoshi-MediumItalic.woff','Satoshi-LightItalic.woff2','Satoshi-LightItalic.woff',
+      'Satoshi-BlackItalic.woff2','Satoshi-BlackItalic.woff','Satoshi-VariableItalic.woff2','Satoshi-VariableItalic.woff'
+    ];
+
+    toast('Building ZIP with '+slugs.length+' pages + assets…');
+
+    // Fetch all text assets
+    var textPromises=assets.map(function(a){
+      return fetchLocal(a.path).then(function(txt){if(txt)zip.file(a.zipPath,txt)});
+    });
+    // Fetch all image blobs
+    var imgPromises=imgFiles.map(function(f){
+      return fetchLocalBlob('img/'+f).then(function(blob){if(blob)zip.file('img/'+f,blob)});
+    });
+    // Fetch all font blobs
+    var fontPromises=fontFiles.map(function(f){
+      return fetchLocalBlob('fonts/'+f).then(function(blob){if(blob)zip.file('fonts/'+f,blob)});
+    });
+
+    Promise.all(textPromises.concat(imgPromises).concat(fontPromises)).then(function(){
+      return zip.generateAsync({type:'blob',compression:'DEFLATE',compressionOptions:{level:6}});
+    }).then(function(blob){
+      var a=document.createElement('a');
+      a.href=URL.createObjectURL(blob);
+      a.download='naukri360-site.zip';
+      a.click();
+      URL.revokeObjectURL(a.href);
+      toast(slugs.length+' pages + css + js + img + fonts → naukri360-site.zip ✅');
+    }).catch(function(e){
+      toast('ZIP error: '+e.message,false);
+    });
+  }
+  if(typeof JSZip==='undefined'){
+    var s=document.createElement('script');
+    s.src='https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
+    s.onload=doZip;
+    s.onerror=function(){toast('Failed to load JSZip. Check internet connection.',false);};
+    document.head.appendChild(s);
+    toast('Loading JSZip…');
+  } else { doZip(); }
+}
+
+// Download only HTML pages (no assets)
+function dlHtmlOnlyZip(){
+  function doZip(){
+    var zip=new JSZip();
+    var slugs=Object.keys(allPages);
+    slugs.forEach(function(slug){
+      var html=buildPageHtml(slug);
+      var filename=slug.replace(/\//g,'-')+'.html';
+      zip.file(filename, html);
+    });
+    zip.generateAsync({type:'blob'}).then(function(blob){
+      var a=document.createElement('a');
+      a.href=URL.createObjectURL(blob);
+      a.download='cms-pages-html-only.zip';
+      a.click();
+      URL.revokeObjectURL(a.href);
+      toast(slugs.length+' HTML pages downloaded → cms-pages-html-only.zip ✅');
+    });
+  }
+  if(typeof JSZip==='undefined'){
+    var s=document.createElement('script');
+    s.src='https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js';
+    s.onload=doZip;
+    s.onerror=function(){toast('Failed to load JSZip.',false);};
+    document.head.appendChild(s);
+  } else { doZip(); }
+}
+
+function openClone(s){$('#modal-title').textContent='Clone: '+allPages[s].title;$('#m-title').value=allPages[s].title+' (Copy)';$('#m-slug').value=s+'-copy';$('#m-clone-from').value=s;$('#modal').classList.add('open')}
+function openCreate(){$('#modal-title').textContent='New Page';$('#m-title').value='';$('#m-slug').value='';$('#m-clone-from').value='';$('#modal').classList.add('open')}
+
+// ═══════════════════════════════════════
+// DATA BINDING ENGINE
+// ═══════════════════════════════════════
+function setByPath(path,val){
+  try{var parts=path.split(/[\.\[\]]+/).filter(Boolean);var obj=window;
+    for(var i=0;i<parts.length-1;i++){var k=isNaN(parts[i])?parts[i]:+parts[i];obj=obj[k]}
+    var last=isNaN(parts[parts.length-1])?parts[parts.length-1]:+parts[parts.length-1];obj[last]=val;
+  }catch(e){console.warn('Bind:',path,e)}
+}
+// "Global filter chips" must propagate across every page. Each page stores
+// its own copy of globalFilterChips (so the published cms-data.js is
+// self-contained), but edits made on the current page need to mirror to all
+// other pages — otherwise users see "global" changes only on the page they
+// were editing on.
+function syncGlobalChips(){
+  if(!D || !Array.isArray(D.globalFilterChips)) return;
+  var snap=JSON.stringify(D.globalFilterChips);
+  Object.keys(allPages).forEach(function(slug){
+    if(slug===curSlug) return;
+    allPages[slug].globalFilterChips=JSON.parse(snap);
+  });
+}
+// Mirror edits to the truly-global template button (URL + text) across every
+// page, same pattern as syncGlobalChips. Per-template "link" overrides still
+// win at render time; per-page templateButtonUrl/Text override only when
+// "useGlobalTemplateButton" is false on that page.
+function syncGlobalTemplateButton(){
+  if(!D) return;
+  var url=D.globalTemplateButtonUrl, text=D.globalTemplateButtonText;
+  Object.keys(allPages).forEach(function(slug){
+    if(slug===curSlug) return;
+    if(typeof url==='string') allPages[slug].globalTemplateButtonUrl=url;
+    if(typeof text==='string') allPages[slug].globalTemplateButtonText=text;
+  });
+}
+// Mirror globalTemplates (per-template link table) across every page so a
+// link change on one page propagates everywhere. Per-page templates[i].link
+// still wins at render time.
+function syncGlobalTemplates(){
+  if(!D || !Array.isArray(D.globalTemplates)) return;
+  var snap=JSON.stringify(D.globalTemplates);
+  Object.keys(allPages).forEach(function(slug){
+    if(slug===curSlug) return;
+    allPages[slug].globalTemplates=JSON.parse(snap);
+  });
+}
+// ═══════════════════════════════════════
+// RICH-TEXT TABLE INSERTER
+// Tables are stored as inline-styled <table> HTML so they render correctly
+// on the live site without touching the project CSS files.
+// ═══════════════════════════════════════
+function getCursorCell(rteEl){
+  var sel=window.getSelection(); if(!sel||sel.rangeCount===0) return null;
+  var node=sel.getRangeAt(0).startContainer;
+  while(node && node!==rteEl){ if(node.nodeType===1 && (node.tagName==='TD'||node.tagName==='TH')) return node; node=node.parentNode; }
+  return null;
+}
+function insertTableAtCursor(rteEl){
+  var rows=parseInt(prompt('Number of rows (including header):','3'),10);
+  if(!rows||rows<1) return;
+  var cols=parseInt(prompt('Number of columns:','3'),10);
+  if(!cols||cols<1) return;
+  var tStyle='border-collapse:collapse;width:100%;margin:12px 0;font-size:15px';
+  var thStyle='border:1px solid #d0d7de;padding:8px 10px;background:#f6f8fa;text-align:left;font-weight:600';
+  var tdStyle='border:1px solid #d0d7de;padding:8px 10px;text-align:left';
+  var html='<table style="'+tStyle+'"><thead><tr>';
+  for(var c=0;c<cols;c++) html+='<th style="'+thStyle+'">Heading '+(c+1)+'</th>';
+  html+='</tr></thead><tbody>';
+  for(var r=1;r<rows;r++){
+    html+='<tr>';
+    for(var c=0;c<cols;c++) html+='<td style="'+tdStyle+'">Cell</td>';
+    html+='</tr>';
+  }
+  html+='</tbody></table><p><br></p>';
+  rteEl.focus();
+  document.execCommand('insertHTML',false,html);
+}
+function tableAddRow(rteEl){
+  var cell=getCursorCell(rteEl); if(!cell){toast('Place cursor inside a table cell first',false);return;}
+  var row=cell.parentNode, tbl=row.closest('table'); if(!tbl) return;
+  var newRow=row.cloneNode(true);
+  Array.prototype.forEach.call(newRow.children,function(td){
+    td.innerHTML='Cell';
+    if(td.tagName==='TH'){
+      var nd=document.createElement('td');
+      nd.setAttribute('style','border:1px solid #d0d7de;padding:8px 10px;text-align:left');
+      nd.textContent='Cell';
+      td.parentNode.replaceChild(nd,td);
+    }
+  });
+  row.parentNode.insertBefore(newRow,row.nextSibling);
+}
+function tableAddCol(rteEl){
+  var cell=getCursorCell(rteEl); if(!cell){toast('Place cursor inside a table cell first',false);return;}
+  var idx=Array.prototype.indexOf.call(cell.parentNode.children,cell);
+  var tbl=cell.closest('table'); if(!tbl) return;
+  Array.prototype.forEach.call(tbl.rows,function(r){
+    var ref=r.children[idx];
+    var isHead=ref && ref.tagName==='TH';
+    var nc=document.createElement(isHead?'th':'td');
+    nc.setAttribute('style',isHead
+      ? 'border:1px solid #d0d7de;padding:8px 10px;background:#f6f8fa;text-align:left;font-weight:600'
+      : 'border:1px solid #d0d7de;padding:8px 10px;text-align:left');
+    nc.textContent=isHead?'Heading':'Cell';
+    r.insertBefore(nc, ref?ref.nextSibling:null);
+  });
+}
+function tableDelRow(rteEl){
+  var cell=getCursorCell(rteEl); if(!cell){toast('Place cursor inside a table cell first',false);return;}
+  var row=cell.parentNode, tbl=cell.closest('table');
+  if(tbl && tbl.rows.length<=1){ tbl.parentNode.removeChild(tbl); return; }
+  row.parentNode.removeChild(row);
+}
+function tableDelCol(rteEl){
+  var cell=getCursorCell(rteEl); if(!cell){toast('Place cursor inside a table cell first',false);return;}
+  var idx=Array.prototype.indexOf.call(cell.parentNode.children,cell);
+  var tbl=cell.closest('table'); if(!tbl) return;
+  Array.prototype.forEach.call(tbl.rows,function(r){ if(r.children[idx]) r.removeChild(r.children[idx]); });
+  // If table has no columns left, remove it
+  if(tbl.rows[0] && tbl.rows[0].children.length===0) tbl.parentNode.removeChild(tbl);
+}
+
+function bindAll(){
+  $$('[data-bind]').forEach(function(el){el.addEventListener('input',function(){
+    setByPath(el.dataset.bind,el.value);
+    if(/^D\.globalFilterChips\b/.test(el.dataset.bind)) syncGlobalChips();
+    if(/^D\.globalTemplateButton(Url|Text)\b/.test(el.dataset.bind)) syncGlobalTemplateButton();
+    if(/^D\.globalTemplates\b/.test(el.dataset.bind)) syncGlobalTemplates();
+    if(/^D\.globalInterlinks\b/.test(el.dataset.bind)) syncGlobalInterlinks();
+  })});
+  $$('.tpl-file-input').forEach(function(inp){
+    inp.addEventListener('change',function(){var idx=parseInt(inp.dataset.tplIdx);var file=inp.files[0];if(!file)return;
+      var reader=new FileReader();reader.onload=function(e){D.templates[idx].image=e.target.result;render()};reader.readAsDataURL(file)})});
+  $$('[data-rte]').forEach(function(el){
+    var path=el.dataset.rte;var wcEl=document.getElementById('wc-'+el.id);
+    function sync(){var html=el.innerHTML;if(html==='<br>'||html==='<div><br></div>')html='';setByPath(path,html);if(wcEl){var w=el.innerText.trim();wcEl.textContent=w?w.split(/\s+/).length:0}}
+    el.addEventListener('input',sync);el.addEventListener('blur',sync);
+    var box=el.closest('.rte-box');
+    if(box){box.querySelectorAll('.rb[data-cmd]').forEach(function(btn){
+      btn.addEventListener('mousedown',function(e){e.preventDefault()});
+      btn.addEventListener('click',function(e){e.preventDefault();el.focus();var cmd=btn.dataset.cmd;var val=btn.dataset.val||null;
+        if(cmd==='formatBlock'&&val)document.execCommand(cmd,false,'<'+val+'>');
+        else if(cmd==='createLink'){var u=prompt('URL:','https://');if(u)document.execCommand(cmd,false,u)}
+        else if(cmd==='insertTable'){insertTableAtCursor(el)}
+        else if(cmd==='addTableRow'){tableAddRow(el)}
+        else if(cmd==='addTableCol'){tableAddCol(el)}
+        else if(cmd==='delTableRow'){tableDelRow(el)}
+        else if(cmd==='delTableCol'){tableDelCol(el)}
+        else document.execCommand(cmd,false,val);sync()})
+    })}
+    if(wcEl){var w=el.innerText.trim();wcEl.textContent=w?w.split(/\s+/).length:0}
+  });
+}
+
+$$('.sb-item').forEach(function(el){el.addEventListener('click',function(){panel=el.dataset.p;render()})});
+// Reflect persisted auto-publish state in the topbar checkbox.
+(function(){ var c=document.getElementById('auto-publish-chk'); if(c) c.checked=AUTO_PUBLISH; })();
+render();
+</script>
+</body>
+</html>

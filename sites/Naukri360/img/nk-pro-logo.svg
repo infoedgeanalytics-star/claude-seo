@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 108 28" width="108" height="28">
+  <defs>
+    <linearGradient id="textGrad" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#5C3D1A"/>
+      <stop offset="100%" stop-color="#D4870E"/>
+    </linearGradient>
+  </defs>
+  <!-- Pill background -->
+  <rect x="0.5" y="0.5" width="107" height="27" rx="14" fill="#fff" stroke="#E8E0D4" stroke-width="1"/>
+  <!-- Circle icon -->
+  <circle cx="16" cy="14" r="10" fill="#3D2B0F"/>
+  <!-- Crown icon inside circle -->
+  <path d="M10.5 17.5V16.5L12 13L14 15.5L16 11L18 15.5L20 13L21.5 16.5V17.5H10.5Z" fill="#E8A413"/>
+  <!-- Naukri text -->
+  <text x="30" y="18.5" font-family="Satoshi Bold, Satoshi Medium, Arial, sans-serif" font-size="12" font-weight="600" fill="url(#textGrad)">Naukri Pro</text>
+</svg>

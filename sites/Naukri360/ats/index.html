@@ -1,0 +1,197 @@
+<!--
+  ATS Resume Checker — standalone page fragment
+  Drop the <main>…</main> block into your internal system, or serve this file
+  as-is for QA. No site header/footer included by design.
+  Pair with: ats.css (styles), ats.js (file upload + mock scoring).
+-->
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Free ATS Resume Checker — Score Your Resume Instantly</title>
+<meta name="description" content="Check your resume's ATS score in seconds. Get a free, actionable report on formatting, keywords, sections, and recruiter-readiness.">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="ats.css">
+</head>
+<body>
+
+<!-- ════════════════════════════════════════════════════════════════
+     EVERYTHING INSIDE <main id="ats-app"> IS THE STANDALONE BLOCK
+     to paste into the internal system. No header / no footer.
+═══════════════════════════════════════════════════════════════════ -->
+<main id="ats-app">
+
+  <!-- ═══ HERO + UPLOAD ═══ -->
+  <section class="ats-hero">
+    <div class="ats-container ats-hero-grid">
+      <div class="ats-hero-copy">
+        <span class="ats-eyebrow">Free • No sign-up • Instant report</span>
+        <h1 class="ats-h1">Is your resume ready to beat the ATS?</h1>
+        <p class="ats-lead">Upload your resume and get an instant ATS score across 8 hiring categories — keyword match, formatting, structure, length and more. Powered by the same parser logic used by leading Applicant Tracking Systems.</p>
+        <ul class="ats-bullets">
+          <li><span class="ats-tick" aria-hidden="true">✓</span> Works with PDF, DOC, DOCX (up to 5 MB)</li>
+          <li><span class="ats-tick" aria-hidden="true">✓</span> Personalised fix-list, prioritised by impact</li>
+          <li><span class="ats-tick" aria-hidden="true">✓</span> Your file is processed privately and never shared</li>
+        </ul>
+      </div>
+
+      <!-- Upload card -->
+      <form id="ats-upload-form" class="ats-upload-card" novalidate>
+        <div class="ats-dropzone" id="ats-dropzone" tabindex="0" role="button" aria-label="Upload your resume">
+          <svg class="ats-dz-icon" viewBox="0 0 48 48" width="48" height="48" aria-hidden="true">
+            <path d="M24 6v24M14 18l10-10 10 10" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+            <path d="M8 32v6a4 4 0 0 0 4 4h24a4 4 0 0 0 4-4v-6" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+          </svg>
+          <div class="ats-dz-title">Drop your resume here or <span class="ats-dz-browse">browse files</span></div>
+          <div class="ats-dz-sub">PDF, DOC, DOCX • max 5 MB</div>
+          <input type="file" id="ats-file" name="resume" accept=".pdf,.doc,.docx,application/pdf,application/msword,application/vnd.openxmlformats-officedocument.wordprocessingml.document" hidden>
+        </div>
+        <div class="ats-file-pill" id="ats-file-pill" hidden>
+          <span class="ats-file-name" id="ats-file-name">resume.pdf</span>
+          <button type="button" class="ats-file-clear" id="ats-file-clear" aria-label="Remove file">×</button>
+        </div>
+        <div class="ats-jd">
+          <label for="ats-jd-input" class="ats-jd-label">Paste job description <span class="ats-jd-opt">(optional — boosts keyword match scoring)</span></label>
+          <textarea id="ats-jd-input" name="jd" rows="4" placeholder="Paste the job description you're targeting…"></textarea>
+        </div>
+        <button type="submit" class="ats-cta-primary" id="ats-analyze-btn" disabled>Analyse my resume</button>
+        <div class="ats-privacy">🔒 Files are processed in memory and discarded immediately.</div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ═══ TRUST STRIP ═══ -->
+  <section class="ats-trust">
+    <div class="ats-container">
+      <div class="ats-trust-grid">
+        <div><strong>4M+</strong><span>resumes scored</span></div>
+        <div><strong>50+</strong><span>ATS platforms covered</span></div>
+        <div><strong>92%</strong><span>users improve in 1 edit</span></div>
+        <div><strong>4.8 ★</strong><span>average user rating</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ RESULTS (revealed after upload + analyse) ═══ -->
+  <section class="ats-results" id="ats-results" hidden>
+    <div class="ats-container">
+      <header class="ats-results-head">
+        <h2 class="ats-h2">Your resume scored <span id="ats-score-inline">82</span>/100</h2>
+        <p>Here's how your resume performs against typical ATS rules. Fix the items in red first — they have the biggest impact on shortlisting.</p>
+      </header>
+
+      <div class="ats-results-grid">
+        <!-- Overall score gauge -->
+        <div class="ats-score-card">
+          <div class="ats-gauge">
+            <svg viewBox="0 0 120 120" width="160" height="160" aria-hidden="true">
+              <circle cx="60" cy="60" r="52" fill="none" stroke="#eef0f6" stroke-width="12"/>
+              <circle cx="60" cy="60" r="52" fill="none" stroke="#275df5" stroke-width="12" stroke-linecap="round"
+                      stroke-dasharray="326.7" stroke-dashoffset="58.8" id="ats-gauge-ring" transform="rotate(-90 60 60)"/>
+            </svg>
+            <div class="ats-gauge-text">
+              <div class="ats-gauge-num" id="ats-gauge-num">82</div>
+              <div class="ats-gauge-label">ATS Score</div>
+            </div>
+          </div>
+          <div class="ats-score-meta">
+            <div class="ats-score-band ats-band-good">Good — recruiter-ready with minor fixes</div>
+            <button type="button" class="ats-cta-ghost" id="ats-download-report">Download full PDF report</button>
+          </div>
+        </div>
+
+        <!-- Category breakdown -->
+        <ul class="ats-cat-list" id="ats-cat-list">
+          <!-- Each <li> is generated/populated by ats.js -->
+          <li class="ats-cat" data-status="ok"><div class="ats-cat-head"><span>Keyword match</span><span class="ats-cat-score">88%</span></div><div class="ats-bar"><span class="w-90"></span></div><div class="ats-cat-note">Strong overlap with the job description. Consider adding "stakeholder management".</div></li>
+          <li class="ats-cat" data-status="ok"><div class="ats-cat-head"><span>Formatting & parseability</span><span class="ats-cat-score">95%</span></div><div class="ats-bar"><span class="w-95"></span></div><div class="ats-cat-note">Clean single-column layout, no images or tables blocking the parser.</div></li>
+          <li class="ats-cat" data-status="warn"><div class="ats-cat-head"><span>Section structure</span><span class="ats-cat-score">70%</span></div><div class="ats-bar"><span class="w-70"></span></div><div class="ats-cat-note">Missing a clear "Skills" header — most ATS look for the literal word.</div></li>
+          <li class="ats-cat" data-status="warn"><div class="ats-cat-head"><span>Action verbs & impact</span><span class="ats-cat-score">68%</span></div><div class="ats-bar"><span class="w-70"></span></div><div class="ats-cat-note">Replace "responsible for" with verbs like "led", "shipped", "owned".</div></li>
+          <li class="ats-cat" data-status="ok"><div class="ats-cat-head"><span>Length & density</span><span class="ats-cat-score">90%</span></div><div class="ats-bar"><span class="w-90"></span></div><div class="ats-cat-note">Right-sized for your years of experience (1.2 pages).</div></li>
+          <li class="ats-cat" data-status="bad"><div class="ats-cat-head"><span>Contact information</span><span class="ats-cat-score">55%</span></div><div class="ats-bar"><span class="w-55"></span></div><div class="ats-cat-note">Add LinkedIn URL and city — recruiters filter on both.</div></li>
+          <li class="ats-cat" data-status="ok"><div class="ats-cat-head"><span>Quantified achievements</span><span class="ats-cat-score">82%</span></div><div class="ats-bar"><span class="w-80"></span></div><div class="ats-cat-note">Good use of metrics. Add one more in your most recent role.</div></li>
+          <li class="ats-cat" data-status="warn"><div class="ats-cat-head"><span>File type & encoding</span><span class="ats-cat-score">75%</span></div><div class="ats-bar"><span class="w-75"></span></div><div class="ats-cat-note">Re-export from Word as PDF (not "print to PDF") for cleaner text.</div></li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ WHAT WE CHECK ═══ -->
+  <section class="ats-what">
+    <div class="ats-container">
+      <h2 class="ats-h2">What we check on every resume</h2>
+      <p class="ats-sub">Eight categories, mapped to how real Applicant Tracking Systems parse and rank candidates.</p>
+      <div class="ats-what-grid">
+        <article class="ats-what-card"><div class="ats-icon">🎯</div><h3>Keyword match</h3><p>How well your skills, titles and tools align with the job description (or your target role).</p></article>
+        <article class="ats-what-card"><div class="ats-icon">📄</div><h3>Formatting & parseability</h3><p>Detects images, tables, columns and headers that scramble ATS parsing.</p></article>
+        <article class="ats-what-card"><div class="ats-icon">🧱</div><h3>Section structure</h3><p>Confirms the recruiter-standard sections — Summary, Experience, Education, Skills.</p></article>
+        <article class="ats-what-card"><div class="ats-icon">⚡</div><h3>Action verbs & impact</h3><p>Flags weak language and recommends stronger, results-oriented verbs.</p></article>
+        <article class="ats-what-card"><div class="ats-icon">📏</div><h3>Length & density</h3><p>Checks whether your resume length matches your years of experience.</p></article>
+        <article class="ats-what-card"><div class="ats-icon">📞</div><h3>Contact information</h3><p>Verifies email, phone, city and LinkedIn — the fields recruiters filter on.</p></article>
+        <article class="ats-what-card"><div class="ats-icon">📊</div><h3>Quantified achievements</h3><p>Looks for numbers, percentages and metrics that prove your impact.</p></article>
+        <article class="ats-what-card"><div class="ats-icon">💾</div><h3>File type & encoding</h3><p>Validates the export format, font embedding, and selectable-text quality.</p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ HOW IT WORKS ═══ -->
+  <section class="ats-how">
+    <div class="ats-container">
+      <h2 class="ats-h2">How it works</h2>
+      <ol class="ats-steps">
+        <li><span class="ats-step-num">1</span><h3>Upload your resume</h3><p>PDF, DOC or DOCX. No account needed. Your file is processed in memory and never stored.</p></li>
+        <li><span class="ats-step-num">2</span><h3>We score it instantly</h3><p>Our parser runs the same checks an Applicant Tracking System does, then scores each category 0–100.</p></li>
+        <li><span class="ats-step-num">3</span><h3>Get a prioritised fix-list</h3><p>You'll see exactly what to change, why it matters, and how much each fix lifts your score.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ═══ FAQ ═══ -->
+  <section class="ats-faq">
+    <div class="ats-container">
+      <h2 class="ats-h2">Frequently asked questions</h2>
+      <div class="ats-faq-list">
+        <details class="ats-faq-item" open>
+          <summary>Is the ATS resume checker really free?</summary>
+          <div>Yes. The full score, category breakdown, and fix-list are free with no sign-up. You can run unlimited checks.</div>
+        </details>
+        <details class="ats-faq-item">
+          <summary>What does an "ATS score" actually mean?</summary>
+          <div>It's a 0–100 estimate of how well your resume will be parsed and ranked by a typical Applicant Tracking System. Scores ≥80 are considered recruiter-ready; 60–79 needs minor fixes; below 60 will likely be filtered out.</div>
+        </details>
+        <details class="ats-faq-item">
+          <summary>What file types do you support?</summary>
+          <div>PDF, DOC and DOCX, up to 5 MB. We recommend exporting from Word as PDF for the cleanest result. Image-only PDFs (scanned files) cannot be parsed by any ATS.</div>
+        </details>
+        <details class="ats-faq-item">
+          <summary>Do you store my resume?</summary>
+          <div>No. Files are processed in memory and discarded as soon as the score is generated. We do not retain, share, or sell your data.</div>
+        </details>
+        <details class="ats-faq-item">
+          <summary>Why does pasting a job description help?</summary>
+          <div>It lets us compare your resume's keywords, skills and experience against the exact role you're targeting — making the "keyword match" score much more accurate.</div>
+        </details>
+        <details class="ats-faq-item">
+          <summary>How is this different from spell-check or grammar tools?</summary>
+          <div>Spell-checkers look at language. We look at structure — whether an ATS can read your resume at all, find the right sections, and surface you for the right keywords.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══ FINAL CTA ═══ -->
+  <section class="ats-final-cta">
+    <div class="ats-container">
+      <h2 class="ats-h2">Ready to score your resume?</h2>
+      <p>It takes 30 seconds. No sign-up. No credit card.</p>
+      <a href="#ats-upload-form" class="ats-cta-primary ats-cta-large">Run my free ATS check</a>
+    </div>
+  </section>
+
+</main>
+<!-- ═══ END OF STANDALONE BLOCK ═══ -->
+
+<script src="ats.js" defer></script>
+</body>
+</html>

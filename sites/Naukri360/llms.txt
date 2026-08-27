@@ -1,0 +1,18 @@
+# Naukri360
+
+> Naukri360 is a free, ATS-friendly resume and cover letter builder from Naukri. Pick a professionally designed template, customize it in minutes, and export a recruiter-ready document.
+
+Site: https://www.naukri.com/naukri360
+Audience: Job seekers, students, and professionals
+Geography: India (primary), Global
+
+## Pages
+
+- [Resume Templates](https://www.naukri.com/naukri360/resume-templates): HR-designed, ATS-optimized resume templates ready to download and customize.
+- [Basic Resume Template](https://www.naukri.com/naukri360/resume-templates/basic): Clean, single-column basic resume layout suitable for most roles and ATS systems.
+- [Cover Letter Templates](https://www.naukri.com/naukri360/cover-letter-templates): Professional, ATS-friendly cover letter templates ready to customize.
+- [Software Engineer Cover Letter](https://www.naukri.com/naukri360/cover-letter-templates/software-engineer): Cover letter templates tailored for software engineering and tech roles.
+
+## Optional
+
+- [Sitemap](https://www.naukri.com/naukri360/sitemap.xml)
