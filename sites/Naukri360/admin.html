@@ -1863,7 +1863,7 @@ function buildPageHtml(slug){
   h+='<link rel="dns-prefetch" href="https://static.naukimg.com">\n';
   h+='<link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>\n';
   h+='<link rel="preload" href="'+ap('img/banner-right.png')+'" as="image" fetchpriority="high">\n';
-  h+='<link rel="stylesheet" href="{{nr_desktop_resume_templates_wdgt_tmpl_svc_tmpl_v0_nocode_service.response.successResponse.resumeTemplatesCssUrl}}">\n';
+  h+='<link rel="stylesheet" href="'+(CDN_SETTINGS.css?CDN_SETTINGS.css+'/'+(CDN_SETTINGS.cssCombinedFile||'style.css'):'css/style.css')+'">\n';
   // JSON-LD Schemas
   // BreadcrumbList — last item intentionally omits "item" so the current page
   // is not interlinked (Google's recommended shape; matches visible HTML).
