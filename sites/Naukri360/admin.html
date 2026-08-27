@@ -1042,6 +1042,13 @@ function pCsvTool(){
   h+='<div class="card"><div class="ct">JSON Import</div>';
   h+='<div class="fm"><label>JSON File</label><input type="file" accept=".json" id="jsonFile"></div>';
   h+='<button class="tb-btn outline full" onclick="doJsonImport()">Import JSON</button></div>';
+  h+='<div class="card"><div class="ct">HTML Import</div>';
+  h+='<div class="card-info">Upload a page exported from this CMS (or any <code>pages/*.html</code> file from the site) to pull its SEO meta, hero copy, sticky bar, FAQ, ratings, and template list back into the CMS. Matches an existing page by its canonical URL slug; if there\'s no match, creates a new page. Fields the HTML doesn\'t contain are left untouched.</div>';
+  h+='<div class="fm"><label>HTML File</label><input type="file" accept=".html,.htm" id="htmlFile"></div>';
+  h+='<button class="tb-btn outline full" onclick="doHtmlImport()">Import HTML</button>';
+  h+='<div class="card-info" style="margin-top:8px">Or paste HTML directly:</div>';
+  h+='<textarea id="htmlPasteArea" rows="6" style="width:100%;font-family:monospace;font-size:12px;padding:8px;border:1px solid #d1d5e0;border-radius:6px" placeholder="Paste full page HTML here..."></textarea>';
+  h+='<button class="tb-btn outline full" style="margin-top:8px" onclick="doHtmlImport(true)">Import Pasted HTML</button></div>';
   return h;
 }
 function csvQ(v){v=String(v||'');return(v.indexOf(',')>=0||v.indexOf('"')>=0||v.indexOf('\n')>=0)?'"'+v.replace(/"/g,'""')+'"':v}
@@ -1487,6 +1494,141 @@ function doJsonImport(){
 }
 
 // ═══════════════════════════════════════
+// HTML IMPORT — reverse-parse a rendered page
+// (this CMS's own export, or any pages/*.html from the site) back into
+// CMS field data. Best-effort: only fields actually found are written.
+// ═══════════════════════════════════════
+function parseImportedHtml(htmlText){
+  var doc=new DOMParser().parseFromString(htmlText,'text/html');
+  var out={seo:{},hero:{}};
+
+  var titleEl=doc.querySelector('title');
+  if(titleEl&&titleEl.textContent.trim()) out.seo.title=titleEl.textContent.trim();
+  var descEl=doc.querySelector('meta[name="description"]');
+  if(descEl&&descEl.getAttribute('content')) out.seo.desc=descEl.getAttribute('content');
+  var kwEl=doc.querySelector('meta[name="keywords"]');
+  if(kwEl&&kwEl.getAttribute('content')) out.seo.keywords=kwEl.getAttribute('content');
+  var canEl=doc.querySelector('link[rel="canonical"]');
+  if(canEl&&canEl.getAttribute('href')) out.seo.canonical=canEl.getAttribute('href');
+  var ogImgEl=doc.querySelector('meta[property="og:image"]');
+  if(ogImgEl&&ogImgEl.getAttribute('content')) out.seo.ogImage=ogImgEl.getAttribute('content');
+
+  var h1El=doc.querySelector('#hero-h1')||doc.querySelector('h1');
+  if(h1El&&h1El.textContent.trim()) out.hero.h1=h1El.textContent.trim();
+  var pEl=doc.querySelector('.banner-left p');
+  if(pEl&&pEl.textContent.trim()) out.hero.text=pEl.textContent.trim();
+  var cta1El=doc.querySelector('.get-started');
+  if(cta1El){ out.hero.cta1=cta1El.textContent.trim(); out.hero.cta1_url=cta1El.getAttribute('href')||''; }
+  var cta2El=doc.querySelector('.become-pro');
+  if(cta2El){ out.hero.cta2=cta2El.textContent.trim(); out.hero.cta2_url=cta2El.getAttribute('href')||''; }
+
+  var sbEl=doc.querySelector('#stickyBar');
+  if(sbEl){
+    out.stickyBar={};
+    var bt=sbEl.querySelector('#bar-text'); if(bt) out.stickyBar.text=bt.textContent.trim();
+    var bl=sbEl.querySelector('#bar-link'); if(bl) out.stickyBar.linkUrl=bl.getAttribute('href')||'';
+    var blt=sbEl.querySelector('#bar-linktext'); if(blt) out.stickyBar.linkText=blt.textContent.trim();
+  }
+
+  var faqList=[],breadcrumbs=null,rating=null,templates=[];
+  Array.from(doc.querySelectorAll('script[type="application/ld+json"]')).forEach(function(s){
+    var data; try{ data=JSON.parse(s.textContent); }catch(e){ return; }
+    var type=data['@type'];
+    if(type==='FAQPage'&&Array.isArray(data.mainEntity)){
+      data.mainEntity.forEach(function(q){
+        faqList.push({q:q.name||'',a:(q.acceptedAnswer&&q.acceptedAnswer.text)||''});
+      });
+    } else if(type==='BreadcrumbList'&&Array.isArray(data.itemListElement)){
+      breadcrumbs=data.itemListElement.map(function(li){return {n:li.name||'',u:li.item||''};});
+    } else if(type==='SoftwareApplication'&&data.aggregateRating&&data.url&&out.seo.canonical&&data.url===out.seo.canonical){
+      // Only trust the rating block whose own url matches this page's canonical —
+      // pages also embed a second, unrelated "Naukri Resume Maker" schema block.
+      rating={ratingValue:data.aggregateRating.ratingValue,ratingCount:data.aggregateRating.ratingCount,reviewCount:data.aggregateRating.reviewCount};
+    } else if((type==='ItemList'&&s.id==='schema-itemlist')||type==='CollectionPage'){
+      var il=type==='ItemList'?data:(data.mainEntity||null);
+      if(il&&Array.isArray(il.itemListElement)){
+        templates=il.itemListElement.map(function(li){
+          var it=li.item||{};
+          return {name:it.name||'',desc:it.description||'',image:it.image||'',link:(it.url&&it.url!==out.seo.canonical)?it.url:''};
+        });
+      }
+    }
+  });
+  if(faqList.length) out.faq=faqList;
+  if(breadcrumbs||rating){
+    out.schema={};
+    if(breadcrumbs) out.schema.breadcrumbs=breadcrumbs;
+    if(rating){ out.schema.ratingValue=rating.ratingValue; out.schema.ratingCount=rating.ratingCount; out.schema.reviewCount=rating.reviewCount; }
+  }
+  if(templates.length) out.templates=templates;
+  return out;
+}
+
+function slugFromCanonical(url){
+  if(!url) return null;
+  var m=String(url).match(/naukri360\/?(.*)$/i);
+  var slug=m?m[1]:null;
+  if(!slug) return null;
+  return slug.replace(/^\/+|\/+$/g,'').toLowerCase();
+}
+
+function applyImportedHtmlData(parsed){
+  if(!parsed||(!parsed.seo.title&&!parsed.hero.h1)){
+    toast('Could not find any recognizable page data in that HTML',false);
+    return;
+  }
+  var slug=slugFromCanonical(parsed.seo.canonical);
+  if(!slug){
+    slug=prompt('No canonical URL found to detect the page slug — enter one (e.g. resume-templates/basic):');
+    if(!slug) return;
+    slug=slug.trim().toLowerCase().replace(/^\/+|\/+$/g,'');
+  }
+  var isNew=!allPages[slug];
+  var target;
+  if(isNew){
+    var base=allPages[curSlug]||allPages[Object.keys(allPages)[0]];
+    target=JSON.parse(JSON.stringify(base));
+    target.slug=slug;
+    target.created=new Date().toISOString().slice(0,10);
+    target.published=true;
+    target.parent=slug.indexOf('/')>-1?slug.substring(0,slug.lastIndexOf('/')):'';
+    allPages[slug]=target;
+  } else {
+    target=allPages[slug];
+  }
+  Object.assign(target.seo,parsed.seo);
+  Object.assign(target.hero,parsed.hero);
+  if(parsed.stickyBar) Object.assign(target.stickyBar||(target.stickyBar={}),parsed.stickyBar);
+  if(parsed.schema) Object.assign(target.schema||(target.schema={}),parsed.schema);
+  if(parsed.faq) target.faq=parsed.faq;
+  if(parsed.templates) target.templates=parsed.templates;
+  if(parsed.seo.title) target.title=parsed.seo.title;
+
+  curSlug=slug; D=allPages[slug];
+  doSave(); render();
+  toast((isNew?'Created':'Updated')+' page "/'+slug+'" from HTML!');
+}
+
+function doHtmlImport(fromPaste){
+  if(fromPaste){
+    var ta=document.getElementById('htmlPasteArea');
+    var text=ta?ta.value:'';
+    if(!text||!text.trim()){toast('Paste some HTML first',false);return}
+    try{ applyImportedHtmlData(parseImportedHtml(text)); }
+    catch(err){ console.error(err); toast('Could not parse that HTML: '+err.message,false); }
+    return;
+  }
+  var el=document.getElementById('htmlFile');
+  if(!el||!el.files[0]){toast('Select an HTML file first',false);return}
+  var reader=new FileReader();
+  reader.onload=function(e){
+    try{ applyImportedHtmlData(parseImportedHtml(e.target.result)); }
+    catch(err){ console.error(err); toast('Could not parse that HTML file: '+err.message,false); }
+  };
+  reader.readAsText(el.files[0]);
+}
+
+// ═══════════════════════════════════════
 // PANEL: DOWNLOAD
 // ═══════════════════════════════════════
 function pCdn(){
@@ -1779,6 +1921,7 @@ function pDownload(){
     var p=allPages[s];
     h+='<div class="pg-item"><div class="pg-info"><strong>'+esc(p.title)+'</strong><span class="pg-slug"> /'+s+'</span></div><div class="pg-btns">'+
       '<button class="tb-btn sm primary" onclick="saveSinglePage(\''+s+'\')"'+(projectDirHandle?'':' disabled')+'>💾 Save</button>'+
+      '<button class="tb-btn sm outline" onclick="dlSinglePageHtml(\''+s+'\')">⬇ HTML</button>'+
       '<button class="tb-btn sm" onclick="window.open(\'index.html?page='+s+'\',\'_blank\')">Preview</button></div></div>';
   });
   h+='</div>';
@@ -2129,6 +2272,13 @@ async function saveSinglePage(slug){
   toast('Saving '+filename+'…');
   var ok=await writeFileToProject(filename,html);
   if(ok) toast('✅ Saved: '+filename+' → '+projectDirHandle.name+'/');
+}
+
+function dlSinglePageHtml(slug){
+  var html=buildPageHtml(slug);if(!html){toast('Page not found',false);return}
+  var filename=slug.replace(/\//g,'-')+'.html';
+  dlFile(html,filename,'text/html');
+  toast('Downloaded '+filename);
 }
 
 async function saveAllPages(){
