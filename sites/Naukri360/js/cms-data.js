@@ -6,8 +6,8 @@ var CMS_PAGES = {
   "published": true,
   "created": "2026-03-16",
   "seo": {
-   "title": "Free Resume Templates Resume Templates - ATS-Friendly Designs | Naukri360",
-   "desc": "Download free resume templates resume templates designed by HR experts. ATS-optimized, professional layouts ready in minutes.",
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
    "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
    "canonical": "https://www.naukri.com/naukri360/resume-templates",
    "ogImage": "img/banner-right.png"
@@ -32,77 +32,84 @@ var CMS_PAGES = {
    "reviewCount": "8934"
   },
   "hero": {
-   "h1": "Free Resume Templates Resume Templates",
-   "text": "Create a professional resume templates resume in minutes with our AI-powered builder. Choose from expertly designed templates optimized for ATS.",
-   "cta1": "",
-   "cta2": "",
-   "cta1_url": "",
-   "cta2_url": ""
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
   },
-  "templates_heading": "Resume Templates - Professional Templates",
+  "templates_heading": "Explore Our Resume Templates",
   "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
   "templates": [
    {
-    "name": "Executive Pro",
-    "desc": "Clean corporate design for senior roles",
-    "cat": "ats",
-    "image": "",
-    "link": ""
-   },
-   {
-    "name": "Minimal Edge",
-    "desc": "Simple elegance with sharp typography",
-    "cat": "simple",
-    "image": "",
-    "link": ""
-   },
-   {
-    "name": "Classic Plus",
+    "name": "Pulse",
     "desc": "Time-tested traditional layout",
-    "cat": "traditional",
-    "image": "",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/Modern_Resume_Templates___Priya_Sharma.webp",
     "link": ""
    },
    {
-    "name": "Tech Stack",
+    "name": "Horizon",
     "desc": "Built for developers and engineers",
     "cat": "modern",
-    "image": "",
+    "image": "https://media.naukri.com/media/nicms/Modern_Resume_Templates_Horizon_Ananya_Iyer.webp",
     "link": ""
    },
    {
-    "name": "Creative Spark",
+    "name": "Vertex",
     "desc": "Stand out with bold visual design",
-    "cat": "creative",
-    "image": "",
-    "link": ""
-   },
-   {
-    "name": "Corporate Slate",
-    "desc": "Professional two-column format",
-    "cat": "twocolumn",
-    "image": "",
-    "link": ""
-   },
-   {
-    "name": "Fresh Start",
-    "desc": "Perfect for recent graduates",
-    "cat": "simple",
-    "image": "",
-    "link": ""
-   },
-   {
-    "name": "Bold Impact",
-    "desc": "High-contrast modern design",
     "cat": "modern",
-    "image": "",
+    "image": "http://media.naukri.com/media/nicms/Modern_Resume_Templates_Karan_Malhotra.webp",
     "link": ""
    },
    {
-    "name": "Amber Classic",
-    "desc": "Warm inviting traditional layout",
-    "cat": "traditional",
-    "image": "",
+    "name": "Elevate",
+    "desc": "Professional look suited for corporate roles.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/Modern_Resume_Templates_Elevate_Rohan_Mehta.webp",
+    "link": ""
+   },
+   {
+    "name": "Apex",
+    "desc": "Dark theme creates a high-end professional feel.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/modern_resume_templates_apex_ananya_deshpande.webp",
+    "link": ""
+   },
+   {
+    "name": "Orbit",
+    "desc": "Soft color palette adds a fresh and modern feel.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/modern_resume_templates_orbit_riddhi_malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Fusion",
+    "desc": "Warm tones add a creative and engaging feel.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/modern_resume_templates_fusion_meghna_iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "Canvas",
+    "desc": "Creative layout with a bold visual profile section.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-ananya-iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "Studio",
+    "desc": "Sidebar layout highlights skills and tools clearly.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-ritvik-malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Designify",
+    "desc": "Clean sections highlight experience and storytelling.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-vivan-rao.webp",
     "link": ""
    }
   ],
@@ -135,20 +142,20 @@ var CMS_PAGES = {
   ],
   "faq": [
    {
-    "q": "Is the resume templates feature free?",
-    "a": "Yes! You can use our resume templates tools completely free. Create, edit and download without any cost. Premium features available with Pro plan."
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
    },
    {
-    "q": "Are resume templates templates ATS-friendly?",
-    "a": "Every template is rigorously tested against 50+ major Applicant Tracking Systems to ensure your resume passes automated screening."
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
    },
    {
-    "q": "Can I download as PDF?",
-    "a": "Yes. Export your resume as a high-quality PDF, Word document (.docx), or plain text file with perfect formatting."
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
    },
    {
-    "q": "How does the AI suggestion work?",
-    "a": "Our AI analyzes millions of successful resumes and job descriptions to suggest impactful content tailored to your target role."
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
    }
   ],
   "footer_heading": "Start Building Your Resume Templates Resume Now",
@@ -158,42 +165,45 @@ var CMS_PAGES = {
   "sections": [
    {
     "type": "text",
-    "h2": "AI-Powered Resume Templates Content Suggestions",
-    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your resume templates resume.",
+    "h2": "What Makes the Best Resume Template?",
+    "text": "The most suitable resume template should present the qualifications in a way that not only appears professional but also is easy to read and comprehend for recruiters and ATS systems. A resume template is considered effective due to the presence of the following features:<ul><li>Easy to Grasp and Formal Design: The resume template should be well-designed and have well-defined sections for details such as contact information, professional summary, work experience, skills, and education, so that the recruiter can obtain valuable information within a short period of time.</li></ul><ul><li>Well-Formatted and Easy to Read: A good resume template must be properly formatted and easy to read, featuring similar headings and font types to ensure that the resume is appealing and not overcrowded.</li></ul><ul><li>ATS-Friendly Structure: The best resume templates are ATS-compatible, and they are not based on complicated graphics, tables, and fonts, which would allow the resume to be perceived as readable and processed adequately.</li></ul><ul><li>Adheres to Standard Resume Formats: Professional resume templates are organized in line with the widely recognized formats, including chronological resume templates, functional resume templates, and combination resume templates. These formats allow showing career history logically and professionally.</li></ul>",
     "image": "img/cv-thumb1.png",
     "h3": "",
     "h3_text": "",
     "points": []
    },
    {
-    "type": "text-with-points",
-    "h2": "ATS-Friendly Resume Templates Formatting",
-    "text": "Every resume templates template is built to pass Applicant Tracking Systems with flying colors.",
+    "type": "text",
+    "h2": "What are the Different Types of Resumes?",
+    "text": "Resumes exist in multiple forms, and each resume is supposed to be able to emphasize the qualifications in various ways based on the level of career, experience, and objective of the job. <ol start=\"1\"><li value=\"1\">Chronological Resume: This is the most popular resume format. It gives a chronological list of work experience, beginning with the most recent one. It is ideal for:</li></ol><ul><li>Applicants who have stable work experience.</li><li>Relevant experienced professionals.</li><li>The majority of the corporate and traditional roles.</li><li>The major priority: Job experience and career growth.</li></ul><ol start=\"2\"><li value=\"2\">Functional Resume: A functional resume is centred on skills and abilities as opposed to work history. It focuses on competencies rather than a detailed job listing. It is ideal for:</li></ol><ul><li>Entry-level or fresher candidates.</li><li>Career changers</li><li>Applicants with a lack of work history.</li></ul><ol start=\"3\"><li value=\"3\">Mix-Hybrid Resume (Combination Resume): This resume is a mixture of both chronological and functional formats. It puts the skills first and then the work experience. It is ideal for:</li></ol><ul><li>Experienced professionals</li><li>Candidates who have good skills and proven work history.</li><li>Mid-level and senior roles</li></ul><ol start=\"4\"><li value=\"4\">Targeted Resume: A targeted resume is job-specific. It is pegged on the corresponding skills and experience that comply with the job description. It is ideal for:</li></ol><ul><li>Applying to specific roles</li><li>Competitive job positions</li><li>Increasing the chances of an interview.</li></ul><ol start=\"5\"><li value=\"5\">Academic Resume (CV): Curriculum Vitae (also known as an academic resume) is a more detailed resume that involves education, research, publications, and academic achievements. It is best for:</li></ol><ul><li>Academic roles</li><li>Research positions</li><li>Teaching jobs</li></ul><ol start=\"6\"><li value=\"6\">Entry-Level Resume: It is a resume that is submitted to an individual with little or no work experience. It focuses on learning, internship, projects, and skills. It is ideal for:</li></ol><ul><li>Students</li><li>Fresh graduates</li><li>First-time job seekers</li></ul><ol start=\"7\"><li value=\"7\">Creative Resume: Creative resumes are developed in unique designs, colors, and layouts to show creativity and other qualifications. It is ideal for:</li></ol><ul><li>Graphic designers</li><li>Marketing professionals</li><li>Personnel working in creative industries</li></ul>",
     "image": "img/cv-thumb2.png",
-    "h3": "What makes our resume templates builder different",
-    "h3_text": "Our resume templates templates are designed by HR professionals and tested with real recruiters.",
-    "points": [
-     "Real-time ATS compatibility scoring",
-     "Industry-specific keyword optimization",
-     "Professional formatting recruiters love",
-     "One-click export to PDF or Word",
-     "Unlimited revisions and cloud storage"
-    ]
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Write a Resume (Step-by-Step)",
+    "text": "Writing a resume is basically about gathering your professional information neatly, categorizing your skills, experiences, and achievements most prominently.<ul><li>Pick the proper style: Decide chronological, functional, or combination format depending on your work experience and career objectives.</li></ul><ul><li>Provide contact information: Include your full name, phone number, professional email, and location to ensure that the employer easily gets in touch with you.</li></ul><ul><li>Write a summary or objective: Prepare a brief account of your skills, experience, and career goals to enable recruiters to take an interest in your details.</li></ul><ul><li>State experience in detail: Starting with inserts and working backwards and focusing on the accomplishments as compared to the responsibilities.</li></ul><ul><li>Education and skills: You should not overlook education and skills. Add your degree, skills and relevant certifications and projects to make your profile persuasive.</li></ul><ul><li>No error: Check for errors, maintain consistency in the formatting of the document and ensure that the document is comprehensible and understandable.</li></ul><ul><li>Customize resume specific to the job: Find out and apply the appropriate keywords, and tailor your content to job specifications and the ATS.</li></ul><ul><li>File and hand in properly: Save your resume in PDF file and use a proper/standard file name so as not to lose the layout.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
    }
   ],
   "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
   "templateButtonText": "Try this free template",
   "globalHeroLinks": {
-   "cta1_url": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
-   "cta1_text": "Get Started Free",
-   "cta2_url": "#templates",
-   "cta2_text": "Browse Templates"
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Try Our Resume Maker",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Buy Naukri360 Pro"
   },
   "stickyBar": {
    "enabled": true,
    "text": "Want an expert to help with your resume? Explore",
    "linkText": "resume writing service",
-   "linkUrl": "#",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
    "bgColor": "#fec924",
    "textColor": "#000000"
   },
@@ -225,31 +235,118 @@ var CMS_PAGES = {
   ],
   "useGlobalTestimonials": true,
   "useGlobalTemplateButton": true,
-  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
   "globalTemplateButtonText": "Try this free template",
-  "useGlobalTemplateLinks": true,
+  "useGlobalTemplateLinks": false,
   "globalTemplates": [
-   {"name":"Executive Pro","cat":"ats","link":""},
-   {"name":"Minimal Edge","cat":"simple","link":""},
-   {"name":"Classic Plus","cat":"traditional","link":""},
-   {"name":"Tech Stack","cat":"modern","link":""},
-   {"name":"Creative Spark","cat":"creative","link":""},
-   {"name":"Corporate Slate","cat":"twocolumn","link":""},
-   {"name":"Fresh Start","cat":"simple","link":""},
-   {"name":"Bold Impact","cat":"modern","link":""},
-   {"name":"Amber Classic","cat":"traditional","link":""}
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
   ],
   "useGlobalFilterChips": true,
   "globalFilterChips": [
-   {"label":"All templates","cat":"all","url":"#templates/all"},
-   {"label":"Modern","cat":"modern","url":"#templates/modern"},
-   {"label":"Traditional","cat":"traditional","url":"#templates/traditional"},
-   {"label":"Simple","cat":"simple","url":"#templates/simple"},
-   {"label":"Creative","cat":"creative","url":"#templates/creative"},
-   {"label":"ATS","cat":"ats","url":"#templates/ats"},
-   {"label":"One page","cat":"onepage","url":"#templates/onepage"},
-   {"label":"Two column","cat":"twocolumn","url":"#templates/twocolumn"},
-   {"label":"Photo","cat":"photo","url":"#templates/photo"}
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
   ],
   "filterChips": [],
   "sidebar": {
@@ -261,18 +358,19 @@ var CMS_PAGES = {
     "Improve the content with AI"
    ],
    "ctaText": "Upgrade to Pro",
-   "ctaUrl": "#"
-  }
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  },
+  "cdnBaseUrl": ""
  },
  "resume-templates/basic": {
   "slug": "resume-templates/basic",
-  "title": "Basic",
+  "title": "Basic Resume Templates",
   "parent": "resume-templates",
   "published": true,
   "created": "2026-03-16",
   "seo": {
-   "title": "Free Basic Resume Templates - ATS-Friendly Designs | Naukri360",
-   "desc": "Download free basic resume templates designed by HR experts. ATS-optimized, professional layouts ready in minutes.",
+   "title": "Basic Resume Templates: Basic Resume Format, CV Examples & Samples",
+   "desc": "Explore basic resume templates with basic Resume Format, basic CV Templates, and basic Resume Examples to create simple and professional resumes.",
    "keywords": "basic resume template, basic CV, free basic resume, ATS basic resume",
    "canonical": "https://www.naukri.com/naukri360/resume-templates/basic",
    "ogImage": "img/banner-right.png"
@@ -292,7 +390,7 @@ var CMS_PAGES = {
      "u": "https://www.naukri.com/naukri360/resume-templates"
     },
     {
-     "n": "Basic",
+     "n": "Basic Resume Templates",
      "u": "https://www.naukri.com/naukri360/resume-templates/basic"
     }
    ],
@@ -301,14 +399,14 @@ var CMS_PAGES = {
    "reviewCount": "8934"
   },
   "hero": {
-   "h1": "Free Basic Resume Templates",
-   "text": "Create a professional basic resume in minutes with our AI-powered builder. Choose from expertly designed templates optimized for ATS.",
-   "cta1": "",
-   "cta2": "",
-   "cta1_url": "",
-   "cta2_url": ""
+   "h1": "Basic Resume Templates",
+   "text": "Basic resume templates are tidy, plain, and well-organized templates, which are supposed to render your abilities, education, and experience impartially. The templates are based on basic information without complicated graphics and designs, which makes them suitable for freshers, students, and professionals in all fields.\n\nBasic resume templates can make the recruiter immediately perceive your qualifications and help to increase readability, particularly with the use of Applicant Tracking Systems (ATS).",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
   },
-  "templates_heading": "Basic - Professional Templates",
+  "templates_heading": "Explore Our Free Basic Resume Templates",
   "templates_sub": "Win over recruiters with our professionally designed basic templates",
   "templates": [
    {
@@ -404,20 +502,20 @@ var CMS_PAGES = {
   ],
   "faq": [
    {
-    "q": "Is the basic feature free?",
-    "a": "Yes! You can use our basic tools completely free. Create, edit and download without any cost. Premium features available with Pro plan."
+    "q": "What are basic resume templates used for?",
+    "a": "Basic Resume Templates assist you in preparing basic professional resumes that effectively display your skills, education, and work experience."
    },
    {
-    "q": "Are basic templates ATS-friendly?",
-    "a": "Every template is rigorously tested against 50+ major Applicant Tracking Systems to ensure your resume passes automated screening."
+    "q": "Who should use basic CV templates?",
+    "a": "Basic CV templates are suitable for freshers, students, entry-level employees, and individuals applying for academic or organisational jobs."
    },
    {
-    "q": "Can I download as PDF?",
-    "a": "Yes. Export your resume as a high-quality PDF, Word document (.docx), or plain text file with perfect formatting."
+    "q": "How long should a basic resume sample be?",
+    "a": "A basic resume sample should be one page for freshers and two pages for experienced individuals."
    },
    {
-    "q": "How does the AI suggestion work?",
-    "a": "Our AI analyzes millions of successful resumes and job descriptions to suggest impactful content tailored to your target role."
+    "q": "What should be included in a basic CV example?",
+    "a": "A basic CV Example should include contact information, a summary, skills, education, and work experience."
    }
   ],
   "footer_heading": "Start Building Your Basic Resume Now",
@@ -427,42 +525,81 @@ var CMS_PAGES = {
   "sections": [
    {
     "type": "text",
-    "h2": "AI-Powered Basic Content Suggestions",
-    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your basic resume.",
+    "h2": "Why Use Resume Templates?",
+    "text": "A simple resume is a simple and straightforward plan that displays your credentials in a simple format. It allows employers to know in the shortest time possible about your abilities, experience, and general fit for the position. These templates are mostly favoured because they are not only professional, efficient and simple to get through, but also simple to design since their emphasis is on clarity and structure as opposed to design features.",
     "image": "img/cv-thumb1.png",
     "h3": "",
     "h3_text": "",
     "points": []
    },
    {
-    "type": "text-with-points",
-    "h2": "ATS-Friendly Basic Formatting",
-    "text": "Every basic template is built to pass Applicant Tracking Systems with flying colors.",
+    "type": "text",
+    "h2": "Key Features of Basic Resume Templates",
+    "text": "Basic resume templates consist of basic factors necessary during the job application:<ul><li>Clean and professional layout: A simple and clean layout of your resume will make it professional and easy to scan for the recruiter.</li><li>Proper section headings: Use headings such as Skills, Experience, and Education that are easy to understand and allow the recruiter to locate key information easily.</li><li>Easy font and layout: Have easy-to-read fonts and lay out in an easy-to-read format.</li><li>ATS-friendly formatting: The formatting is to be kept basic and not contain any pictures in order to make the ATS software read it correctly.</li><li>Focus on the skills and experience: focus on the skills and the experience that are suitable for the position, in order to show that you are a good applicant.</li></ul>",
     "image": "img/cv-thumb2.png",
-    "h3": "What makes our basic builder different",
-    "h3_text": "Our basic templates are designed by HR professionals and tested with real recruiters.",
-    "points": [
-     "Real-time ATS compatibility scoring",
-     "Industry-specific keyword optimization",
-     "Professional formatting recruiters love",
-     "One-click export to PDF or Word",
-     "Unlimited revisions and cloud storage"
-    ]
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Basic Resume Format: Essential Sections to Include",
+    "text": "A decent template of the basic resume format must have the following components:Header: Type in your full name, contact number, email address, and address.Professional Summary: Here, you will be asked to provide a concise overview of your skills, experience, and career objectives. It helps employers to know your profile without any problem.Skills Section: Include relevant technical and soft skills for the job position.Work Experience: Provide job titles, company names, duties, and accomplishments in the reverse chronological order.Education: Name your degree, name of your institution, year of graduation.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Benefits of Using Basic Resume Templates",
+    "text": "Using basic resume templates provides several advantages:Enhances readability and clarity: Recruiters can immediately understand your qualifications when basic resume templates are used.<br>Helps recruiters take a brief look at your qualifications: It helps recruiters quickly select your resume and pick out important details like skills, experience and education.<br>Ensures professional and structured presentation: It gives a professional and organized look, with a clean, standardized appearance that matches industry standards.<br>Saves time with ready-to-use formats: Basic resume templates are designed in a manner that allows you to quickly create a resume without having to start from scratch.<br>Improves ATS compatibility: basic resume templates are designed in a manner that is ATS-friendly, and they ensure that your resume is processed and filtered into the pool of qualified candidates.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Write a Successful Basic Resume Sample",
+    "text": "Here are some tips to make your basic resume example better:Make use of headings that are clear and a simple resume format.<br>Write relevant skills and experience.<br>Be clear and to the point.<br>Do not use unnecessary graphics and pictures.<br>Personalize the resume according to the job description.These tips will help you make a great resume.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Basic Resume Templates and ATS Compatibility",
+    "text": "Basic resume templates are suitable for use with ATS software because they contain common headings and are not complex. The ATS software can easily scan and extract skills, education, and work experience from the resume.Applying basic resume templates will make your resume more detectable and will improve your chances of being shortlisted.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Takeaway",
+    "text": "Basic resume templates are a simple and effective means of presenting your qualifications. Using a basic CV template, basic resume template, or basic resume sample, you can be sure that these templates will keep things simple and help you succeed in your job application. Choosing the right basic resume templates is an important step in creating a strong resume and succeeding in your job application.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
    }
   ],
   "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
   "templateButtonText": "Try this free template",
   "globalHeroLinks": {
-   "cta1_url": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
    "cta1_text": "Get Started Free",
-   "cta2_url": "#templates",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
    "cta2_text": "Browse Templates"
   },
   "stickyBar": {
    "enabled": true,
    "text": "Want an expert to help with your resume? Explore",
    "linkText": "resume writing service",
-   "linkUrl": "#",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
    "bgColor": "#fec924",
    "textColor": "#000000"
   },
@@ -494,31 +631,118 @@ var CMS_PAGES = {
   ],
   "useGlobalTestimonials": true,
   "useGlobalTemplateButton": true,
-  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
   "globalTemplateButtonText": "Try this free template",
   "useGlobalTemplateLinks": true,
   "globalTemplates": [
-   {"name":"Executive Pro","cat":"ats","link":""},
-   {"name":"Minimal Edge","cat":"simple","link":""},
-   {"name":"Classic Plus","cat":"traditional","link":""},
-   {"name":"Tech Stack","cat":"modern","link":""},
-   {"name":"Creative Spark","cat":"creative","link":""},
-   {"name":"Corporate Slate","cat":"twocolumn","link":""},
-   {"name":"Fresh Start","cat":"simple","link":""},
-   {"name":"Bold Impact","cat":"modern","link":""},
-   {"name":"Amber Classic","cat":"traditional","link":""}
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
   ],
   "useGlobalFilterChips": true,
   "globalFilterChips": [
-   {"label":"All templates","cat":"all","url":"#templates/all"},
-   {"label":"Modern","cat":"modern","url":"#templates/modern"},
-   {"label":"Traditional","cat":"traditional","url":"#templates/traditional"},
-   {"label":"Simple","cat":"simple","url":"#templates/simple"},
-   {"label":"Creative","cat":"creative","url":"#templates/creative"},
-   {"label":"ATS","cat":"ats","url":"#templates/ats"},
-   {"label":"One page","cat":"onepage","url":"#templates/onepage"},
-   {"label":"Two column","cat":"twocolumn","url":"#templates/twocolumn"},
-   {"label":"Photo","cat":"photo","url":"#templates/photo"}
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
   ],
   "filterChips": [],
   "sidebar": {
@@ -530,7 +754,7 @@ var CMS_PAGES = {
     "Improve the content with AI"
    ],
    "ctaText": "Upgrade to Pro",
-   "ctaUrl": "#"
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
   }
  },
  "cover-letter-templates": {
@@ -540,8 +764,8 @@ var CMS_PAGES = {
   "published": true,
   "created": "2026-03-16",
   "seo": {
-   "title": "Free Cover Letter Templates Cover Letter Templates - Download Now | Naukri360",
-   "desc": "Download free cover letter templates cover letter templates. Professional, ATS-friendly designs ready to customize.",
+   "title": "Cover Letter Templates:  Professional Format & Free Examples",
+   "desc": "Find professionally designed cover letter templates to enhance your job search. Download free templates and make your cover letter stand out among the rest.",
    "keywords": "cover letter templates resume template, cover letter templates CV, free cover letter templates resume, ATS cover letter templates resume",
    "canonical": "https://www.naukri.com/naukri360/cover-letter-templates",
    "ogImage": "img/banner-right.png"
@@ -566,14 +790,14 @@ var CMS_PAGES = {
    "reviewCount": "8934"
   },
   "hero": {
-   "h1": "Free Cover Letter Templates Resume Templates",
-   "text": "Create a professional cover letter templates resume in minutes with our AI-powered builder. Choose from expertly designed templates optimized for ATS.",
-   "cta1": "",
-   "cta2": "",
-   "cta1_url": "",
-   "cta2_url": ""
+   "h1": "Cover Letter Templates",
+   "text": "First impressions count. Enhance your chances of acing interviews with these free cover letter templates designed for professionals, students, and career changers.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
   },
-  "templates_heading": "Cover Letter Templates - Professional Templates",
+  "templates_heading": "Explore Our Free Cover Letter Templates",
   "templates_sub": "Win over recruiters with our professionally designed cover letter templates templates",
   "templates": [
    {
@@ -640,7 +864,7 @@ var CMS_PAGES = {
     "link": ""
    }
   ],
-  "testimonials_heading": "What Users Say About Our Cover Letter Templates Templates",
+  "testimonials_heading": "What Users Say About Our Cover Letter Templates",
   "testimonials": [
    {
     "heading": "Landed my dream job!",
@@ -669,65 +893,86 @@ var CMS_PAGES = {
   ],
   "faq": [
    {
-    "q": "Is the cover letter templates feature free?",
-    "a": "Yes! You can use our cover letter templates tools completely free. Create, edit and download without any cost. Premium features available with Pro plan."
+    "q": "Why should I use a cover letter template when applying for jobs?",
+    "a": "A cover letter template can help you organize your information in a clear structure with elements such as an introduction, skills, a tailored summary, with a compelling closing."
    },
    {
-    "q": "Are cover letter templates templates ATS-friendly?",
-    "a": "Every template is rigorously tested against 50+ major Applicant Tracking Systems to ensure your resume passes automated screening."
+    "q": "Can I use the same cover letter for multiple jobs?",
+    "a": "Individualizing all the cover letters is preferable. Recruiters will be able to identify generic letters, and personalization demonstrates that one is interested in the job."
    },
    {
-    "q": "Can I download as PDF?",
-    "a": "Yes. Export your resume as a high-quality PDF, Word document (.docx), or plain text file with perfect formatting."
+    "q": "How long should a cover letter be?",
+    "a": "Ideally, one page. It should be 250-400 words, on the most relevant skills and experiences."
    },
    {
-    "q": "How does the AI suggestion work?",
-    "a": "Our AI analyzes millions of successful resumes and job descriptions to suggest impactful content tailored to your target role."
+    "q": "What words should not be used in a cover letter?",
+    "a": "Weak words, such as “I think,” “I believe,” “I hope,” and “I feel,” should not be used because they give the impression that the candidate is not sure. Instead, the candidate should use words that are confident, such as “I am confident,” “I have demonstrated,” or “I successfully achieved.”"
    }
   ],
-  "footer_heading": "Start Building Your Cover Letter Templates Resume Now",
-  "footer_text": "Join 4 million+ professionals who built their winning cover letter templates resume with Naukri360",
+  "footer_heading": "Start Building Your Cover letter Now!",
+  "footer_text": "Join 4 million+ professionals who built their winning cover letter with Naukri360",
   "breadcrumb_text": "Home > Cover Letter Templates",
   "content_blocks": [],
   "sections": [
    {
     "type": "text",
-    "h2": "AI-Powered Cover Letter Templates Content Suggestions",
-    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your cover letter templates resume.",
+    "h2": "Why Use Professional Cover Letter Templates?",
+    "text": "A well-organized cover letter will give you a better chance of securing interviews. The cover letter template will help you communicate your skills, experience, and achievements clearly and effectively. Rather than beginning from scratch, you can follow a tried-and-true format that employers are familiar with.<ul><li>Time-saving</li><li>Industry-standard format</li><li>ATS-friendly design</li><li>Simple to customize</li></ul>",
     "image": "img/cv-thumb1.png",
     "h3": "",
     "h3_text": "",
     "points": []
    },
    {
-    "type": "text-with-points",
-    "h2": "ATS-Friendly Cover Letter Templates Formatting",
-    "text": "Every cover letter templates template is built to pass Applicant Tracking Systems with flying colors.",
+    "type": "text",
+    "h2": "Types of Cover Letter Templates",
+    "text": "The selection of the appropriate cover letter template can be the deciding factor in a job application's success. Depending on the circumstances, the strategy may vary, from applying for a job posting to directly contacting a company or demonstrating creativity in a competitive industry. <ol start=\"1\"><li value=\"1\">Application Cover Letter: This should be used when seeking employment at a certain facility; it will summarize your skills and motivations related to that role.</li><li value=\"2\">Prospecting Cover Letter: Designed for employers without any job vacancies, this letter focuses on the advantages the candidate can provide.</li><li value=\"3\">Networking Cover Letter: Used to contact friends or acquaintances to ask for job recommendations; casual and relationship-building.</li><li value=\"4\">Industry-Specific Templates: Created for each field (i.e., Finance, IT, Health Care, Marketing, Education), with wording specific to each recognition.</li><li value=\"5\">Experience-Level Templates: Executive (management and influence), Mid-level (accomplishments and development), and Entry-level (education and transferable abilities).</li><li value=\"6\">Style-Based Templates: Modern (simple designs), Creative (bold designs for creative industries), Traditional (classic designs for conservative industries).</li><li value=\"7\">ATS-Friendly Templates: Designed to function with applicant tracking systems, these templates have straightforward designs, make use of keywords, and don't have complicated layouts or graphics.</li></ol>",
     "image": "img/cv-thumb2.png",
-    "h3": "What makes our cover letter templates builder different",
-    "h3_text": "Our cover letter templates templates are designed by HR professionals and tested with real recruiters.",
-    "points": [
-     "Real-time ATS compatibility scoring",
-     "Industry-specific keyword optimization",
-     "Professional formatting recruiters love",
-     "One-click export to PDF or Word",
-     "Unlimited revisions and cloud storage"
-    ]
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Cover Letter Examples by Industry and Job Role",
+    "text": "Find both professionally written sample cover letters and examples of industry-specific cover letters in such areas as IT, marketing, healthcare, finance, customer service, etc. Every example of the cover letter is specific to the particular job opportunities, and thus would guide you on what the employers demand and how best your qualifications can be advertised.<ul><li>IT Cover Letter Examples: These cover letters emphasize technical expertise, software, problem-solving skills, and familiarity with IT systems or tools for technology-related jobs.</li><li>Marketing Cover Letter Examples: These will be based on communication, campaign experience, creativity, and experience in digital marketing, branding, or customer engagement.</li><li>Customer Service Cover Letter Sample: These highlight the requirement of communication skills, experience that one has in customer handling, solving issues, and the capability to keep the customers satisfied.</li><li>Administrative Cover Letter Example: These include office management skills, scheduling, documentation, and administrative support skills.</li><li>Entry-Level Cover Letter Templates: These templates are for freshers and highlight education, intern experience, transferable skills, and the desire to learn and grow.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Write a Winning Cover Letter (Step-by-Step)",
+    "text": "Use this easy formula when personalizing your cover letter template:<ul><li>Step 1: Personalize Your Introduction: Discuss the position title and your reason for applying.</li></ul><ul><li>Step 2: Highlight Relevant Achievements: Emphasize measurable achievements.</li></ul><ul><li>Step 3: Show Cultural Fit: Illustrate how you fit in the company’s values.</li></ul><ul><li>Step 4: End with Confidence: Finish with a strong call to action.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "What is the Correct Cover Letter Format?",
+    "text": "A professional cover letter form generally contains:<ul><li>Header (Your contact information): Add your name, phone number, email address, and professional profile link.</li><li>Employer: Include the name of the hiring manager, company name, and company address.</li><li>Professional greetings: The professional greeting should be formal, like addressing the hiring manager as dear or using the name of the recruiter.</li><li>Introduction paragraph: Be brief about yourself and state the job position you are seeking.</li><li>Body paragraphs (skills and achievements): List your skills, experience, and the relevant achievements in the position.</li><li>Call-to-action, closing sentence: show interest in the position and inquire about a chance of an interview.</li><li>Professional signature: Complete politely with an ending like Sincerely, and your full name.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
    }
   ],
   "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
   "templateButtonText": "Try this free template",
   "globalHeroLinks": {
-   "cta1_url": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
    "cta1_text": "Get Started Free",
-   "cta2_url": "#templates",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
    "cta2_text": "Browse Templates"
   },
   "stickyBar": {
    "enabled": true,
    "text": "Want an expert to help with your resume? Explore",
    "linkText": "resume writing service",
-   "linkUrl": "#",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
    "bgColor": "#fec924",
    "textColor": "#000000"
   },
@@ -759,31 +1004,118 @@ var CMS_PAGES = {
   ],
   "useGlobalTestimonials": true,
   "useGlobalTemplateButton": true,
-  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
   "globalTemplateButtonText": "Try this free template",
   "useGlobalTemplateLinks": true,
   "globalTemplates": [
-   {"name":"Executive Pro","cat":"ats","link":""},
-   {"name":"Minimal Edge","cat":"simple","link":""},
-   {"name":"Classic Plus","cat":"traditional","link":""},
-   {"name":"Tech Stack","cat":"modern","link":""},
-   {"name":"Creative Spark","cat":"creative","link":""},
-   {"name":"Corporate Slate","cat":"twocolumn","link":""},
-   {"name":"Fresh Start","cat":"simple","link":""},
-   {"name":"Bold Impact","cat":"modern","link":""},
-   {"name":"Amber Classic","cat":"traditional","link":""}
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
   ],
   "useGlobalFilterChips": true,
   "globalFilterChips": [
-   {"label":"All templates","cat":"all","url":"#templates/all"},
-   {"label":"Modern","cat":"modern","url":"#templates/modern"},
-   {"label":"Traditional","cat":"traditional","url":"#templates/traditional"},
-   {"label":"Simple","cat":"simple","url":"#templates/simple"},
-   {"label":"Creative","cat":"creative","url":"#templates/creative"},
-   {"label":"ATS","cat":"ats","url":"#templates/ats"},
-   {"label":"One page","cat":"onepage","url":"#templates/onepage"},
-   {"label":"Two column","cat":"twocolumn","url":"#templates/twocolumn"},
-   {"label":"Photo","cat":"photo","url":"#templates/photo"}
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
   ],
   "filterChips": [],
   "sidebar": {
@@ -795,7 +1127,19193 @@ var CMS_PAGES = {
     "Improve the content with AI"
    ],
    "ctaText": "Upgrade to Pro",
-   "ctaUrl": "#"
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/academic": {
+  "slug": "resume-templates/academic",
+  "title": "Academic Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Academic Resume Templates | Academic CV Examples, Format & Samples",
+   "desc": "Discover Academic Resume Templates with academic CV Templates, academic Resume Examples, and academic CV Samples. Best for research and academic job searches.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/academic",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Academic Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/academic"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Academic Resume Templates",
+   "text": "Develop an improved academic resume using the Academic Resume Templates that emphasize your education, publications, research projects, and academic achievements.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Academic Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Scholar",
+    "desc": "Research-focused academic resume with publication sections and clean scholarly formatting",
+    "cat": "Academic",
+    "image": "http://media.naukri.com/media/nicms/academic-scholar-resume-template-ritika-sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "Thesis",
+    "desc": "Modern academic layout designed for thesis work, research projects, and publications",
+    "cat": "Academic",
+    "image": "http://media.naukri.com/media/nicms/academic-thesis-resume-template-anirudh-iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "Ivory",
+    "desc": "Elegant ivory-toned academic template with refined typography and research-first structure",
+    "cat": "Academic",
+    "image": "http://media.naukri.com/media/nicms/academic-ivory-resume-template-megha-nair.webp",
+    "link": ""
+   },
+   {
+    "name": "Campus",
+    "desc": "Fresh academic resume design tailored for students, internships, and campus placements",
+    "cat": "Academic",
+    "image": "http://media.naukri.com/media/nicms/academic-campus-resume-template-karan-verma.webp",
+    "link": ""
+   },
+   {
+    "name": "Merit",
+    "desc": "Achievement-focused academic template highlighting ranks, scholarships, and coursework",
+    "cat": "Academic",
+    "image": "http://media.naukri.com/media/nicms/academic-merit-resume-template-disha-jain.webp",
+    "link": ""
+   },
+   {
+    "name": "Oxford",
+    "desc": "Traditional university-inspired resume with editorial styling and formal academic presentation",
+    "cat": "Academic",
+    "image": "http://media.naukri.com/media/nicms/academic-oxford-resume-template-arjun-mehra.webp",
+    "link": ""
+   },
+   {
+    "name": "Dean",
+    "desc": "Faculty-oriented academic CV designed for researchers, lecturers, and university professionals",
+    "cat": "Academic",
+    "image": "http://media.naukri.com/media/nicms/academic-dean-resume-template-riya-kapoor.webp",
+    "link": ""
+   },
+   {
+    "name": "Crest",
+    "desc": "Institutional-style academic template with balanced sections and classic university aesthetics",
+    "cat": "Academic",
+    "image": "http://media.naukri.com/media/nicms/academic-crest-resume-template-sameer-khan.webp",
+    "link": ""
+   },
+   {
+    "name": "Aurora",
+    "desc": "Clean modern academic resume with soft structure and publication-friendly formatting",
+    "cat": "Academic",
+    "image": "http://media.naukri.com/media/nicms/academic-aurora-resume-template-neha-sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "Insight",
+    "desc": "Data-driven academic CV designed for technical researchers and analytical professionals",
+    "cat": "Academic",
+    "image": "http://media.naukri.com/media/nicms/academic-insight-resume-template-kartik-iyer.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Academic Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How is an academic resume different from a regular resume?",
+    "a": "Unlike job resumes, which place more emphasis on work history, academic resumes place more emphasis on education, research, publications, and teaching experience. Academic CV Templates are normally more elaborate and specific to academic jobs."
+   },
+   {
+    "q": "How long should an academic resume be?",
+    "a": "Depending on research, publications, and academic experience, academic resumes may take 2-4 pages. Academic CV Samples permit more detailed academic information, unlike standard resumes"
+   },
+   {
+    "q": "Can Academic Resume Templates be used for scholarship applications?",
+    "a": "Yes, academic Resume Templates would be perfect an application to a scholarship and fellowship. They assist in stating academic performance, research, and academic Resume Samples professionally."
+   },
+   {
+    "q": "Should publications be included in academic resumes?",
+    "a": "Yes, academic CV Samples require publications because they show proficiency in research and scholarly contributions. They enhance the academic/research posts."
+   }
+  ],
+  "footer_heading": "Start Building Your Academic Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning academic resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Use Academic Resume Templates?",
+    "text": "It has academic resume templates that offer a well-organized structure that assists one in organizing academic information appropriately and professionally. They keep the most important parts of the faculty, like education, research, publications, and teaching experience, easily accessible to the recruiters and the academic committees. Such templates are also in professional academic resume format and academic CV format, thus being consistent and readable. This facilitates easier evaluation of qualifications and academic potential by the hiring committees.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Features of Academic Resume Templates",
+    "text": "Academic resume templates are tailor-made; they have their distinct sections that apply to academic and research jobs. These templates are useful in demonstrating qualifications rationally and professionally. Key sections include:<ul><li>Contact Information</li><li>Summary or Objective of the Academic.</li><li>Academic Qualifications and Education.</li><li>Research Experience</li><li>Teaching Experience</li><li>Publications and Projects</li><li>Academic Awards and Certifications.</li><li>Skills and Technical Competencies.</li></ul>With the help of professionally-designed academic CV templates and academic resume templates, all valuable academic data will be arranged in the right way, and no one will have problems with its review.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Types of Academic Resume Templates",
+    "text": "Various kinds of academic resume templates have been designed to meet various academic career phases and objectives. Here are the key types:<ol start=\"1\"><li value=\"1\">Student Academic Resume Templates: This is aimed at students to emphasize education, academic projects, internships, and other skills to apply to academic programs or any other entry-level opportunity. The templates are based on academic performance, academic coursework, certifications, and extracurricular activities. They suit undergraduate and postgraduate students who have less work experience.</li></ol><ol start=\"2\"><li value=\"2\">Research Academic Resume Templates: It is created to show research-oriented jobs and prove their experience, publications, projects, and technical skills. The templates are oriented towards research work, academic projects, laboratory work, and contributions to research. They are suitable in the case of research assistants, PhD applicants, and research fellows.</li></ol><ol start=\"3\"><li value=\"3\">Teaching Academic Resume Templates: Organized to reveal the teaching experience, academic credentials, and teaching abilities to teach and work as a faculty member. These templates are used for teaching experience-centered, curriculum development and design, academic qualification-focused, and knowledge in the subject matter. They apply to teachers, lecturers, and academic staff.</li></ol><ol start=\"4\"><li value=\"4\">Graduate School Academic Resume Templates: Targeted at students who are applying to graduate programs and are interested in academic achievement, research, and education history. These templates showcase GPA, academic accomplishments, research experience, internship, and academic projects. They can be applied to master's and PhD programs.</li></ol><ol start=\"5\"><li value=\"5\">Academic CV Templates: Mainly used for Individual academic history, research papers, talks, and academic contributions appear in elaborate templates. These templates are very informative and contain research work, publications, conferences, academic awards, and teaching experience, among others. In most cases, they are applied during academic and research positions.</li></ol>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Benefits of Using Academic Resume Templates",
+    "text": "There are many benefits to using academic resume templates when applying for academic and research positions:<ul><li>Checks the correct format and structure of an academic resume.</li><li>Highlights studies and research experience well.</li><li>Enhances professionalism and readability.</li><li>Time saver with ready-to-use templates.</li><li>Enhances the possibility of being selected for academic opportunities.</li></ul>Academic resume templates and academic CV templates are professionally designed and assist the job seeker in making a good academic resume that can portray qualifications well.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Academic Resume Templates vs Academic CV Templates",
+    "text": "Academic resume templates are usually shorter and emphasize education, research, and academic experience. Academic CV templates, on the other hand, are more detailed and include information such as publications, presentations, research work, and academic contributions. Looking at an example of an academic CV can assist individuals in learning how to make detailed academic profiles, while an example of an academic resume can assist in making a short academic job application.Academic resume templates and academic CV templates can assist in making academic qualifications look professional and increase the chances of employment in education and research.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": false,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  },
+  "cdnBaseUrl": ""
+ },
+ "resume-templates/accounting": {
+  "slug": "resume-templates/accounting",
+  "title": "Accounting Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Best Accounting Resume Templates for Freshers & Professionals",
+   "desc": "Use accounting resume templates to create a professional finance resume. ATS-friendly layouts for accountants, auditors, bookkeepers, and finance professionals.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/accounting",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Accounting Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/accounting"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Accounting Resume Templates",
+   "text": "You can take advantage of the Accounting Resume Templates to highlight your skills in finance. These templates are designed to ensure your background, credentials, and accounting skills are highlighted in an easy-to-read format.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Accounting Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Ledger",
+    "desc": "Clean ledger-inspired accounting resume with balanced financial sections and professional formatting",
+    "cat": "Accounting",
+    "image": "http://media.naukri.com/media/nicms/accounting-ledger-resume-template-vivan-aggrawal.webp",
+    "link": ""
+   },
+   {
+    "name": "Balance",
+    "desc": "Modern accounting template with balanced spacing and finance-focused content structure",
+    "cat": "Accounting",
+    "image": "http://media.naukri.com/media/nicms/accounting-balance-resume-template-aditya-malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Audit",
+    "desc": "Audit-focused resume layout designed for internal audit, compliance, and risk management roles",
+    "cat": "Accounting",
+    "image": "http://media.naukri.com/media/nicms/accounting-audit-resume-template-rahul-chauhan.webp",
+    "link": ""
+   },
+   {
+    "name": "Fiscal",
+    "desc": "Fiscal accounting template tailored for budgeting, reporting, and government finance professionals",
+    "cat": "Accounting",
+    "image": "http://media.naukri.com/media/nicms/accounting-fiscal-resume-template-nikhil-deshpande.webp",
+    "link": ""
+   },
+   {
+    "name": "Capital",
+    "desc": "Executive accounting resume designed for capital asset management and financial reporting roles",
+    "cat": "Accounting",
+    "image": "http://media.naukri.com/media/nicms/accounting-capital-resume-template-siddharth-joshi.webp",
+    "link": ""
+   },
+   {
+    "name": "PrimeTax",
+    "desc": "Tax-focused professional resume optimized for GST, compliance, and financial reporting profiles",
+    "cat": "Accounting",
+    "image": "http://media.naukri.com/media/nicms/accounting-primetax-resume-template-tanmay-agarwal.webp",
+    "link": ""
+   },
+   {
+    "name": "Asset",
+    "desc": "Modern fixed-asset accounting template with structured reporting and reconciliation sections",
+    "cat": "Accounting",
+    "image": "http://media.naukri.com/media/nicms/accounting-asset-resume-template-vikram-rathore.webp",
+    "link": ""
+   },
+   {
+    "name": "Vault",
+    "desc": "Secure finance-inspired accounting resume with strong compliance and reporting emphasis",
+    "cat": "Accounting",
+    "image": "http://media.naukri.com/media/nicms/accounting-vault-resume-template-aditya-malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Equity",
+    "desc": "Premium equity accounting resume built for shareholder reporting and capital management roles",
+    "cat": "Accounting",
+    "image": "http://media.naukri.com/media/nicms/accounting-equity-resume-template-ananya-ravichandran.webp",
+    "link": ""
+   },
+   {
+    "name": "Numeric",
+    "desc": "Data-driven accounting template focused on reporting, analytics, and numerical accuracy",
+    "cat": "Accounting",
+    "image": "http://media.naukri.com/media/nicms/accounting-numeric-resume-template-nukhil-deshmukh.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Accounting Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How are accounting resume templates different from general resume templates?",
+    "a": "Accounting resume templates highlight accounting skills, knowledge of rules and compliance, and the accounting software that is required in accounting positions."
+   },
+   {
+    "q": "Which accounting resume format is best for experienced accountants?",
+    "a": "Reverse chronological order is the best resume format to use, as it will highlight your progression in your career, work history, and achievements."
+   },
+   {
+    "q": "What makes a good accounting resume stand out to employers?",
+    "a": "A good accounting resume will highlight your achievements, accounting certifications, accounting software, and your responsibilities in finance."
+   },
+   {
+    "q": "How long should an accounting resume be?",
+    "a": "The Resume should be 1 page for beginners and 2 pages for experienced individuals."
+   }
+  ],
+  "footer_heading": "Start Building Your Accounting Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning accounting resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Choose an Accounting Resume Template?",
+    "text": "Accounting is a highly important operation in all industries, finance, government, and corporate sectors as well, and the job demand is stable because of the multifaceted financial regulations and business development.<br>Nonetheless, human resource practices under recruitment are currently dependent on the Applicant Tracking System (ATS) that searches through resumes by keywords, format, and structure. Failure to format your resume correctly can mean that it will never get to recruiters.<br>Professional accounting resume templates increase compatibility with ATS, accentuate the necessary skills, and ensure that your accounting CV Format is drawn up to industry standards, which enhances your shortlisting opportunities.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Accounting Resume Format: Best Structure for Accounting Professionals",
+    "text": "An effective accounting Resume Format must have the following sections:<ol start=\"1\"><li value=\"1\">Header: Add your name, contact number, email, and work profile.</li><li value=\"2\">Professional Summary: In this section, a brief description of your accounting experience, expertise, and career goals will be provided. It makes the employers realize your worth in a short period.</li><li value=\"3\">Work Experience: This is among the crucial sections. Provide job titles, company names, roles, and quantifiable accomplishments like handling of financial records, writing of reports, or cutting down on expenses.</li><li value=\"4\">Education and Certifications: Add accounting degrees, diplomas, and certifications like CPA, ACCA, or CMA. Certification enhances professionalism and employment.</li><li value=\"5\">Skills Section: Emphasize both hard and soft skills that apply to accounting positions. </li></ol>When it comes to accounting resumes, the sections that highlight qualifications professionally and effectively include summary, work experience, education, and skills.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Accounting Resume Example: Professional Summary Sample",
+    "text": "The following is a sample accounting Resume example summary:<br>Detail-oriented accountant with experience in financial reporting, account reconciliation, and tax preparation. Proficient in analyzing financial information, ensuring compliance, and increasing the accuracy of financial reports.<br>This part assists employers in determining your accounting qualification within a short time.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Accounting CV Templates and Resume Templates for Different Experience Levels",
+    "text": "There are various accounting CV Templates and accounting resume templates depending on the level of experience.Entry-Level Accounting Resume Templates: These templates are ideal for fresh graduates and new employees. Modify education, internship experience, and accounting skills.Mid-Level Accounting Resume Templates: These templates are suitable for accountants with work experience. Focus on Financial Reporting, Compliance, and Software Skills.Senior Accounting Resume Templates: This resume template is appropriate for individuals in charge of audits, financial analysis, and accounting staff.Using accounting resume templates helps ensure your details are well understood and presented professionally.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Accounting Resume Sample: Key Skills to Include",
+    "text": "The skills to include in your resume are:<ol start=\"1\"><li value=\"1\">Technical Skills:</li></ol>Financial Reporting<br>Tax Preparation<br>Auditing<br>Budgeting and Forecasting<br>Account Reconciliation<ol start=\"2\"><li value=\"2\">Software Skills:</li></ol>Accounting software<br>ERP systems<br>Spreadsheet tools<ol start=\"3\"><li value=\"3\">Soft Skills:</li></ol>Analytical thinking<br>Attention to detail<br>Communication skills<br>Problem-solvingAccounting professionals are supposed to incorporate pertinent technical and analytical skills in line with the job requirements and enhance ATS compatibility.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How Accounting Resume Templates Improve ATS Compatibility",
+    "text": "ATS software is primarily used by most companies to filter the resumes prior to human analysis. These systems are used to scan resumes with the aim of identifying the keywords, skills, and qualifications related to an accounting position. The structured accounting resume templates are essential in making sure that your resume has the right sections and keywords.ATS-optimized accounting resume templates enhance your visibility and higher probability of being called in to interview.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips to Create a Strong Accounting Resume Sample",
+    "text": "These are the tips that can help you make your accounting Resume Sample better:Clear headings and structuring of the accounting Resume Format.<br>Provide quantifiable accomplishments and outcomes.<br>Showcase accounting qualifications and certification.<br>Include pertinent accounting computer skills.<br>Make your resume brief and business-like.An accounting resume template is a well-organized document that enhances the effectiveness of the reading process and raises the chances of being hired.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": false,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/ats": {
+  "slug": "resume-templates/ats",
+  "title": "Ats Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "ATS Resume Templates: Resume Format, Examples & Samples",
+   "desc": "Explore ATS Resume Templates with ATS-friendly Resume Format, ATS Resume Examples, ATS CV Templates to improve selection chances.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/ats",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Ats Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/ats"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "ATS Resume Templates",
+   "text": "Utilize ATS resume templates with appropriate keywords and a clean design to bypass the current hiring systems. These templates will ensure your resume passes through the ATS and reaches the recruiter’s hands sooner.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Ats Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "ATS Base",
+    "desc": "Clean and structured layout built for reliable ATS parsing and easy readability",
+    "cat": "ATS",
+    "image": "http://media.naukri.com/media/nicms/ats-friendly-resume-template-base-neha-sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "ATS Pro",
+    "desc": "Professional layout with clear sections that balance ATS compatibility and presentation",
+    "cat": "ATS",
+    "image": "http://media.naukri.com/media/nicms/ats-friendly-resume-template-pro-devansh-kulkari.webp",
+    "link": ""
+   },
+   {
+    "name": "ATS Lite",
+    "desc": "Minimal one-column design focused on maximum ATS readability and simplicity",
+    "cat": "ATS",
+    "image": "http://media.naukri.com/media/nicms/ats-friendly-resume-template-lite-ritika-nair.webp",
+    "link": ""
+   },
+   {
+    "name": "ATS Linear",
+    "desc": "Straight flow layout with a text-first structure for seamless ATS scanning",
+    "cat": "ATS",
+    "image": "http://media.naukri.com/media/nicms/ats-friendly-resume-template-linear-arjun-deshpande.webp",
+    "link": ""
+   },
+   {
+    "name": "ATS Clean",
+    "desc": "Simple and clean design with well-organized sections for smooth parsing",
+    "cat": "ATS",
+    "image": "http://media.naukri.com/media/nicms/ats-friendly-resume-template-clean-meera-iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "ATS Edge",
+    "desc": "Modern layout with slight visual structure while staying ATS-friendly",
+    "cat": "ATS",
+    "image": "http://media.naukri.com/media/nicms/ats-friendly-resume-template-edge-kartik-rathod.webp",
+    "link": ""
+   },
+   {
+    "name": "ATS Standard",
+    "desc": "Balanced design that combines clarity, structure, and ATS compatibility",
+    "cat": "ATS",
+    "image": "http://media.naukri.com/media/nicms/ats-friendly-resume-template-standerd-ananya-subramanian.webp",
+    "link": ""
+   },
+   {
+    "name": "ATS Prime",
+    "desc": "Structured professional layout designed for both ATS and recruiter readability",
+    "cat": "ATS",
+    "image": "http://media.naukri.com/media/nicms/ats-friendly-resume-template-prime-priyank-malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "ATS Core",
+    "desc": "Basic and minimal format that ensures strong ATS performance with no distractions",
+    "cat": "ATS",
+    "image": "http://media.naukri.com/media/nicms/ats-friendly-resume-template-core-rituraj-sen.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Ats Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How long should an ATS-friendly resume sample be?",
+    "a": "An ATS-friendly resume sample should be 1 page for entry-level candidates and up to 2 pages for experienced professionals."
+   },
+   {
+    "q": "Is it important to customize your ATS resume template with job-specific keywords and skills?",
+    "a": "Yes, there is a need to customize your ATS resume templates with job-specific keywords and skills to better fit ATS and increase the chances of being selected."
+   },
+   {
+    "q": "How can ATS-friendly CV Templates improve interview chances?",
+    "a": "Your ATS-friendly CV templates make your resume more readable and increase keyword awareness."
+   },
+   {
+    "q": "Which of the following things should not be on your resume?",
+    "a": "It is advised to leave out personal details such as your age, gender, religion, full address, or salary information when writing a resume. Besides, when working with ATS-friendly Resume Templates, pictures, graphics, lies, or irrelevant work experiences should be avoided."
+   }
+  ],
+  "footer_heading": "Start Building Your Ats Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning ats resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What Are ATS Resume Templates and Why They Matter",
+    "text": "ATS Resume Templates are resume formats that are easy to read by the Applicant Tracking Systems. These systems search resumes to find valuable information, including contact, skills, education, and job experience.ATS software makes the resumes prioritized according to their fit with the job description, and only the resumes that are the best are forwarded to the next step. ATS-friendly Resume Templates will be the right way to make sure that your resume will have the proper structure and keywords that will be necessary to complete the ATS screening process. ATS resume templates enhance:<ul><li>ATS software readability</li><li>Matching keywords with job descriptions</li><li>Visibility to recruiters</li><li>Shortlist possibilities</li></ul>This is why ATS resume templates are useful for today’s job search.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Features of ATS-Friendly Resume Templates",
+    "text": "ATS friendly Resume Templates contain valuable characteristics that help your resume pass through the ATS screens.<ol start=\"1\"><li value=\"1\">Limited and simple design: ATS prefers simple designs and headings. It should not have any graphical content or an unorganized layout.</li></ol><ol start=\"2\"><li value=\"2\">Appropriate Section Headings: The ATS resume format should have the following section headings:</li></ol><ul><li>Contact Information</li><li>Professional Summary</li><li>Work Experience</li><li>Skills</li><li>Education</li></ul><ol start=\"3\"><li value=\"3\">Keyword Optimization: The ATS system reads keywords from the job description in the resume. Keywords in the resume are easier to use with the help of ATS resume templates.</li></ol><ol start=\"4\"><li value=\"4\">ATS-Compatible File Types: ATS-compatible resume files often have the extension.doc or.docx.</li></ol>",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS Resume Example: Professional Summary Sample",
+    "text": "Here is an example of an ATS-friendly resume summary:Results-driven professional with experience in project management, data analysis, and client coordination. Skilled in improving operational efficiency and delivering measurable results. Strong communication skills and expertise in industry-specific tools.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How ATS-Friendly Resume Templates Improve Job Selection Chances",
+    "text": "By using ATS-friendly Resume Templates, you will increase the success of your job application by:<ul><li>Make your resume pass the ATS test.</li><li>Enhances the use of keywords.</li><li>Makes your resume more readable.</li><li>Increases recruiter awareness.</li><li>Enhances the probability of interviews.</li></ul>ATS-optimized resumes are those that are correctly identified by the hiring systems to your qualifications.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS Friendly Resume Sample: Essential Skills to Include",
+    "text": "ATS Friendly Resume Sample: Key Skills to Include<br>The key skills to include in your ATS-friendly resume are:<ol start=\"1\"><li value=\"1\">Technical Skills:</li></ol><ul><li>Data analysis</li><li>Project management</li><li>Software tools</li><li>Industry skills</li></ul><ol start=\"2\"><li value=\"2\">Soft Skills:</li></ol><ul><li>Communication skills</li><li>Problem-solving skills</li><li>Teamwork skills</li><li>Time management skills</li></ul>The inclusion of these skills will help your resume pass the ATS test and attract most recruiters.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips to Create ATS-Friendly Resume Templates",
+    "text": "Ways to make your resume ATS-friendly:<ul><li>Keep the formatting simple and clean</li><li>Do not include graphics, tables, or images</li><li>Include relevant keywords</li><li>Keep the headings simple</li><li>Follow the ATS friendly resume format</li></ul>These tips will help your resume pass the ATS test.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Build Your Own ATS Resume Template",
+    "text": "Employing professional ATS resume templates ensures that your resume is compatible with Applicant Tracking Systems and recruiters. No matter whether you are using an ATS CV example, an ATS-friendly CV example, or an ATS-friendly resume example, professional ATS resume templates ensure that your resume is visible and has a higher chance of landing an interview. Selecting the correct ATS resume templates can significantly increase your chances of success in your job search.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  },
+  "cdnBaseUrl": ""
+ },
+ "resume-templates/business-analyst": {
+  "slug": "resume-templates/business-analyst",
+  "title": "Business Analyst Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Business Analyst Resume Templates: Resume Format, CV Examples & Samples",
+   "desc": "Explore business analyst Resume Templates with professional Resume Format, CV Templates, Resume Examples, and Resume Samples to create ATS-friendly resumes.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/business-analyst",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Business Analyst Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Business Analyst Resume Templates",
+   "text": "With your Business Analyst resume, you will be able to show what you know with your analytical skills, data insights, and project experience. For both entry-level and senior positions, you need to clearly show your qualifications.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Business Analyst Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Business Analyst Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How should business metrics be included in business analyst Resume Templates?",
+    "a": "Business metrics should be used with specific measurable results that show actual business results through percentage improvements, cost savings, and efficiency enhancements."
+   },
+   {
+    "q": "What mistakes should be avoided in a business analyst Resume Sample?",
+    "a": "The resume should not include unrelated work experience, unclear job duties, missing specific accomplishments, or incorrect resume structure."
+   },
+   {
+    "q": "Can business analyst CV Templates be used for both IT and non-IT roles?",
+    "a": "The business analyst CV Templates can be tailored to meet the specific requirements of different industries, which include IT, finance, healthcare, and consulting."
+   },
+   {
+    "q": "How often should business analyst Resume Templates be updated?",
+    "a": "The resume requires updates whenever the individual acquires new skills and certifications, finishes new projects, and gains additional work experience."
+   }
+  ],
+  "footer_heading": "Start Building Your Business Analyst Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning business analyst resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Use Business Analyst Resume Templates?",
+    "text": "The recruiters seek applicants who have the ability to interpret and analyse business issues and data, and give actionable insights. With the help of professional business analyst Resume Templates, your technical skills, business knowledge, and achievements are properly organised. Key benefits include:<br>Enhances agreement and professionalism.<br>Emphasises analytical skills and problem-solving skills.<br>Guarantees ATS-compliant Business Analyst Resume Format.<br>Help recruiters in quick evaluations of qualifications.<br>Increases the possibilities of interview selection.<br>Such templates assist the candidates in displaying their expertise",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Business Analyst Resume Format: Essential Sections to Include",
+    "text": "An effective business analyst Resume Format must have the following categories:Header: Add your complete name, contact, email, and work profile.Professional overview: Brief overview of my background, analytical skills, and business acumen.Skills to Highlight: This section should contain key skills that a business analyst should possess in terms of reporting tools, analyzing the data, etc.Work History: Make sure to list the job titles, company names, responsibilities, etc.Education Overview: Discuss the training programs, degrees, etc.The above business analyst resume template will help you maintain a proper resume format that is presentable, readable, and well-structured.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Types of Business Analyst Resume Templates and Formats",
+    "text": "All business analyst Resume Templates exist in multiple formats, which suit different experience levels and career objectives, and industry standards. Reverse Chronological Business Analyst Template: This resume format lists your work experience in reverse chronological order, with your latest job first and your oldest job last. This is a good resume format for you if you have a long work history.Functional Business Analyst Resume Templates: This structure works well if you want to highlight your abilities rather than your work history.Combination Business Analyst Resume Templates: This structure works well for highlighting both your professional experience and your abilities.ATS-optimized business analyst resume templates: Emphasise headings, layouts, and keyword usage to make it easier for resumes to go through applicant tracking systems.Technical Business Analyst CV templates: Focus on the technical skills of the business analyst, including SQL, data analysis tools, business intelligence tools, system analysis, etc.Agile Business Analyst resume templates: These are designed for Agile business analysts, with a focus on Agile methodology, sprint planning, collaboration, etc.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Skills to Include in Business Analyst Resume Templates",
+    "text": "Not only are the business skills required in your business analyst Resume Sample, but also the technical skills.<ol start=\"1\"><li value=\"1\">Technical Skills:</li></ol>a. Data analysis<br>b. SQL and databases<br>c. Reporting tools and dashboards.<br>d. Business intelligence applications.<br>e. Requirement documentation<ol start=\"2\"><li value=\"2\">Business Skills:</li></ol>a. Problem-solving<br>b. Stakeholder management and communication.<br>c. Process improvement<br>d. Analytical thinking<br>These capabilities enhance ATS and visibility for the recruiter.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Business Analyst Resume Templates?",
+    "text": "The Business Analyst Resume Templates are suitable for:<ul><li>Business analyst at entry level: Business analyst Resume Templates assist entry-level candidates in formatting their education, internships, and analytical abilities professionally.</li><li>Proficient business analysts: These templates assist professionals who have extensive work experience, business intuition, and quantifiable performance to bring out the point in a clear manner to everyone.</li><li>Business analysts going into data analysis: Business analyst resume templates assist in the transferable skills of data analysis, reporting, and business interpretation.</li><li>IT professionals into business analysis: These templates enable IT professionals to demonstrate both technical expertise and business process and requirements analysis expertise.</li><li>Graduates seeking to work as analysts: Business Analyst Resume Templates assist graduates in showcasing their skills in academic work, certifications, and analytical skills.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Business Analyst Resume Sample: Important Skills to Highlight",
+    "text": "An excellent business analyst Resume Sample must indicate:<ul><li>Data interpretation and analysis: This shows that you can be able to interpret business data and provide insights so that you can be able to make informed decisions.</li><li>Business process improvement: This highlights the fact that you can identify inefficiencies and offer solutions to improve business processes.</li><li>Requirement gathering and documentation: This describes the ability to collect, analyse and write down business requirements in a precise way.</li><li>Prepared reports and dashboards: This proves that you can create reports and dashboards to assist in presenting data in a way easy to understand to the stakeholders.</li><li>Stakeholder communication: This is your ability to communicate with the teams, managers, and clients effectively to learn and take care of the needs of businesses.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Takeaway",
+    "text": "Business analyst Resume Templates are templates that assist job seekers in providing information about analytical skills, business skills, and work experience. A good business analyst CV, whether it is in a particular format or flexible, may still be able to make a difference. For instance, a good business analyst resume may increase the visibility of a candidate, improve the chances of interviews, and ensure compatibility with ATS, as well as offer good resume samples for use. Therefore, using the appropriate business analyst resume templates may help professionals create good resumes and advance their careers.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/chronological": {
+  "slug": "resume-templates/chronological",
+  "title": "Chronological Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Best Chronological Resume Templates, Format, Examples & Free Download Guide",
+   "desc": "Explore professional chronological resume templates with examples, format guide, and samples. Curate your chronological CV format to improve your job chances.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/chronological",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Chronological Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/chronological"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Chronological Resume Templates",
+   "text": "Using chronological resume templates that start with your latest job, it is possible to effectively show your career progression. This will enable recruiters to easily scan through your work history, accomplishments, and development.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Chronological Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Chronological Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Do chronological resume templates help highlight promotions?",
+    "a": "Yes, it does show promotions and growth within the company, and it helps employers see your professional progression."
+   },
+   {
+    "q": "How far back should work experience go in a chronological resume?",
+    "a": "You should add the most recent 10-15 years?of your related experience (or as much as fits here, focusing on positions you want to land)."
+   },
+   {
+    "q": "Are chronological CV templates better than functional resume templates?",
+    "a": "Most recruiters prefer Chronological CV templates as they reflect a genuine work history, while functional resumes give more importance to?skill sets."
+   },
+   {
+    "q": "What is the ideal length of a chronological resume?",
+    "a": "Typically, a chronological resume should be one page if you are a fresher and two pages if you are?an experienced professional."
+   }
+  ],
+  "footer_heading": "Start Building Your Chronological Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning chronological resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What is a Chronological Resume Format?",
+    "text": "The chronological resume format pays more attention to your work record. It shows your place of work, your job descriptions, and your career development. The latest position should come first, followed by older jobs.<ul><li>Your current or latest role</li><li>Your promotions and career development.</li><li>Your exposure in the related industries.</li><li>Your steadiness and reliability in the workplace.</li></ul>It is particularly helpful when it comes to those candidates who have consistent work <br>Experience.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Why Are Chronological Resume Templates Important",
+    "text": "The chronological resume templates come in handy to chronologically present your work experience logically. Recruiters do not devote much time to the screening of the resumes, and in this format, important details can be easily located in a small fraction of a second.<ul><li>Easy to Understand: Recruiters are able to review your work experience and past in a short time.</li></ul><ul><li>Shows Career Growth: Promotions, improvements, and career advancement can be seen by the employers.</li></ul><ul><li>ATS-Friendly: Applicant Tracking Systems can be done with a chronological resume format.</li></ul><ul><li>Professional Appearance: This is a commonly accepted and relied-upon format.</li></ul><ul><li>Major Accounting Experience: The most recent and most relevant one is published first.</li></ul>Due to its simplicity, this format is very popular in industries because of its clarity.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Chronological Resume Templates?",
+    "text": "It is beneficial for the following professionals:<ul><li>Professed workers: It shows the career development, promotion, and success concisely, and this is easier to check by the recruiters in terms of your professional development.</li></ul><ul><li>Candidates who have a stable work record: It will indicate that the candidate has been employed over time, and this will create a sense of trust towards the employer and indicate reliability and stability.</li></ul><ul><li>Corporate job applicants: It fits well with corporate hiring expectations with its structure, formality, and easy review format.</li></ul><ul><li>Operations, information technology, logistics, and business professionals: It dwells on pertinent working experience, duties, as well as quantifiable outcomes that are vital in these positions.</li></ul><ul><li>Applicants to similar jobs: It presents immediately related experience before any other information, and this allows the recruiter to glimpse your qualifications for this job.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Structure of Chronological Resume Templates",
+    "text": "The right chronological CV format comprises the following sections:<ol start=\"1\"><li value=\"1\">Contact Information: Add your name, contact number, email, and address.</li></ol><ol start=\"2\"><li value=\"2\">Professional Summary: A brief paragraph on your experience, skills, and career aspirations.</li></ol><ol start=\"3\"><li value=\"3\">Work Experience: The most significant section is this. Include:</li></ol><ul><li>Job title</li><li>Company name</li><li>Employment dates</li><li>Significant accomplishments and duties.</li></ul><ol start=\"4\"><li value=\"4\">Education: Provide your degree, university name, and year of graduation.</li></ol><ol start=\"5\"><li value=\"5\">Skills: Add suitable technical and interpersonal skills.</li></ol><ol start=\"6\"><li value=\"6\">Certifications (Optional): Include other certifications or training.</li></ol>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Why Recruiters Prefer Chronological Resume Templates",
+    "text": "Recruiters have a preference for chronological resume templates, as they offer:<ul><li>Career timeline: This will indicate your work experience sequentially and will make job seekers see your career development and job security at a glance.</li></ul><ul><li>Simple accessibility: The organised design enables recruiters to glance at your resume and locate relevant information without any mix-up.</li></ul><ul><li>Visibility on relevant experience: Your last and most relevant jobs are displayed first, and the employer can easily determine your fidelity in the job.</li></ul><ul><li>Professional format: It is done in a standard format that recruiters are accustomed to, and so your resume appears to be given order and credibility.</li></ul>This simplifies the process where employers can assess the candidates within a short time, making them make sound hiring decisions.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips to Create Effective Chronological Resume Templates",
+    "text": "Here are a few things you should do to make your resume better:<ul><li>Never leave out the newest jobs.</li><li>Apply definite job titles and dates.</li><li>Incorporate results and accomplishments.</li><li>Insert bullet points to make it easy to read.</li><li>Make your resume professional and plain.</li><li>Do not use unnecessary information.</li></ul>These are practices that enhance your resume.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Takeaway",
+    "text": "The most effective and most popular format of resume is the chronological resume template. They appear to show your working experience properly, emphasise your career advancement, and increase your prospects of securing interviews.This format applies to both seasoned professionals and those who have a stable career development. The chronological resume templates will help you make a professional job resume that is ATS-friendly and that will enhance your chances of getting a job.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/corporate": {
+  "slug": "resume-templates/corporate",
+  "title": "Corporate Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Professional Corporate Resume Templates: Free Examples, Formats & Samples for Corporate Jobs",
+   "desc": "Download professional corporate resume templates with format, examples, and samples. Learn how to create ATS-friendly corporate resumes for business.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/corporate",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Corporate Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/corporate"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Corporate Resume Templates",
+   "text": "Select corporate resume templates that are created with the current recruitment market in mind to make a strong impact. Highlight your achievements, experiences, and skills in a professional way.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Corporate Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Corporate Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "What is the best format for a corporate resume?",
+    "a": "The reason why the reverse chronological format is the best is that you can mention your last and most relevant experience in the first place."
+   },
+   {
+    "q": "How long should a corporate resume be?",
+    "a": "The freshers and experienced professionals should have 1 page and 1-2 pages, respectively, in their corporate resumes."
+   },
+   {
+    "q": "How many bullet points should you have on your resume?",
+    "a": "To make the resume succinct and effective, you are expected to use 3-5 points of bullet points per job position, and concentrate on your major duties and quantifiable accomplishments."
+   },
+   {
+    "q": "How long should a resume summary be?",
+    "a": "The resume summary must be no longer than 2-4 lines, and should include a brief overview of the experience, skills, and professional value needed in the job."
+   }
+  ],
+  "footer_heading": "Start Building Your Corporate Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning corporate resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What Is a Corporate Resume Template?",
+    "text": "A corporate resume template is a professionally developed resume design that is targeted to persons who are applying to corporate jobs, which include business, operations, finance, IT, HR, and administrative jobs. It is aimed at describing your work experience, professional skills, achievements, and education in a structured and formal way that meets the corporate hiring criteria. This form of template usually applies a clean design, reverse chronological, and separated sections that will speed up how recruiters will scan through your qualifications, interpret your career movement, and determine whether you are a fit for corporate job opportunities. For consistency and professionalism, many job seekers like adopting organised corporate CV templates.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "What is the Best Format for a Corporate Job Resume?",
+    "text": "An effective corporate resume will consist of the following parts:<ol start=\"1\"><li value=\"1\">Contact Information: Provide your basic professional information:</li></ol>Full name<br>Phone number<br>Professional email address<br>Location<br>LinkedIn profile (optional)<ol start=\"2\"><li value=\"2\">Professional Summary: A short paragraph that highlights your background, abilities, and desired professional path.</li></ol>An example would be a corporate professional with experience in operations, coordination, and process improvement, as well as a results-driven mindset. competent in problem-solving, data manipulation, and efficient business process coordination.<ol start=\"3\"><li value=\"3\">Work Experience: The most important section of a corporate resume template is this.</li></ol>Job title<br>Company name<br>Employment dates<br>Key responsibilities<br>Achievements and resultsSelect backwards chronological order (newest job first). This structure aligns with a professional corporate Resume Sample or corporate CV Sample.<ol start=\"4\"><li value=\"4\">Skills Section: Bring into focus corporate-relevant skills, including:</li></ol>Business operations<br>MS Excel and reporting<br>Communication<br>Problem-solving<br>Project coordination<br>Data analysis<ol start=\"5\"><li value=\"5\">Education: Provide your educational background:</li></ol>Degree name<br>University name<br>Graduation year<ol start=\"6\"><li value=\"6\">Certifications (Optional): Include fields that enhance your company's image. Examples:</li></ol>Excel certification<br>The certification of project management.<br>Business analytics certification.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Pros and Cons of Corporate CV Templates",
+    "text": "These advantages and disadvantages will help you determine whether corporate CV templates are the right option to use according to your career level and your career objectives.Pros:Professional appearance: This makes a formal and polished impression that should be in accordance with the hiring requirements of a corporation.<br>Simple for the recruiter to read: A structured format will assist hiring managers in scanning and reading the qualifications posted by you.<br>ATS-friendly format: Applicant Tracking System-friendly and enhances your first-screen probabilities.Cons:Lower creativity flexibility: There is less flexibility in design in comparison with modern or creative resume templates.<br>Not the best choice in career changers: Emphasis on work history can be used to indicate a lack of experience in a new profession.<br>May reveal employment gaps: Career gaps can be brought into visibility to recruiters through a chronological structure.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Corporate Resume Templates?",
+    "text": "Corporate resume templates are suitable for:Operations professionals: Assists in offering operational experience, process enhancements, and coordination skills in a formal corporate format.Business analysts: The individual has a clear display of analytical skills, experience in reporting, and business knowledge that is applicable in corporate decision-making functions.Corporate executives: Make emphasis on leadership experience, contributions to strategic planning, and career advancement in a professional and executive layout.Administrative professionals: Coordinate the office skills, organize the administrative experience, and coordinate responsibilities.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Suggestions for Writing a Good Corporate Resume",
+    "text": "Follow these best practices:Always use a professional format<br>Make sure to add the required rewards/accomplishments rather than tasks.<br>Follow the bullet points method for better Clarity.<br>Keep resume length 1–2 pages<br>Professional layout and fonts.<br>Include relevant skillsA properly prepared corporate resume enhances employment opportunities",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Takeaway",
+    "text": "Corporate resume templates offer a clean and presentable format of demonstrating your qualifications, experience, and abilities in a manner that fulfills the requirements of corporate employment. These templates will be able to assist recruiters in grasping your career path and professional worth in no time due to their clean design, defined sections, and attractiveness to ATS.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/creative": {
+  "slug": "resume-templates/creative",
+  "title": "Creative Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Creative Resume Templates – Modern Formats, Examples & Free Samples",
+   "desc": "Explore creative resume templates with modern layouts, creative CV examples, and professional formats, and curate some of the best templates for your own.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/creative",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Creative Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/creative"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Creative Resume Templates",
+   "text": "Stand out with new and creative resume templates that highlight your skills, experience, and personality in a new and eye-catching way, best suited for marketing, design, media, and arts professions.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Creative Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Canvas",
+    "desc": "Creative layout with a bold visual profile section.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-ananya-iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "Studio",
+    "desc": "Sidebar layout highlights skills and tools clearly.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-ritvik-malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Designify",
+    "desc": "Clean sections highlight experience and storytelling.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-vivan-rao.webp",
+    "link": ""
+   },
+   {
+    "name": "Creative Flow",
+    "desc": "Art-driven layout with soft visual elements.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-megha-sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "Visual Pro",
+    "desc": "Portfolio-focused layout with strong visual sections.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-ishita-gupta.webp",
+    "link": ""
+   },
+   {
+    "name": "Pixel",
+    "desc": "Ideal for UI/UX and digital design roles.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-pixel-ritvik-sen.webp",
+    "link": ""
+   },
+   {
+    "name": "Sketch",
+    "desc": "Keeps content readable with a unique visual touch.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-sketch-tanya-mehra.webp",
+    "link": ""
+   },
+   {
+    "name": "Vibrant",
+    "desc": "Ideal for portfolio-driven and creative roles.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-vibrant-aarav-malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Abstract",
+    "desc": "Modern layout with abstract shapes and clean sections.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-abstract-ishaan-verma.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Creative Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How long should a creative resume be?",
+    "a": "The creative resume should preferably be 1 page, particularly with freshers and mid-level professionals."
+   },
+   {
+    "q": "What colors are best for a creative resume?",
+    "a": "Apply 1-2 professional colors like blue, grey, or subtle accent colors to increase visual appeal and still be readable and professional."
+   },
+   {
+    "q": "Do creative resumes work for corporate jobs?",
+    "a": "Design, marketing, and media jobs tend to be suited to a creative resume, though innovation in resume presentation and presentation can also apply to corporate jobs that appreciate creativity."
+   },
+   {
+    "q": "What file format should I use for a creative resume",
+    "a": "The PDF version should be used in order to ensure consistency in design, layout, and formatting across the various devices and systems."
+   }
+  ],
+  "footer_heading": "Start Building Your Creative Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning creative resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What Makes Creative Resume Templates Different?",
+    "text": "The key components of creative resume designs lie in two major areas: content and design. These two areas, when combined, focus on the key information without overwhelming the reader through innovative designs, creative uses of colors, refined typography, and intelligent usage of white space. The key components of an effective creative resume format include:Simple and modern design<br>Use of colors<br>Section headings<br>Visual hierarchy<br>Logical content flowThe creative CV format presents your personal brand and makes the resume business-like",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Creative Resume Templates?",
+    "text": "The ideal resume templates are creative and used when:Graphic designers: Assist in presenting skills of design, visual creativity, and portfolio in a manner that sells their professional skills.Marketing: Presentation shows experience working in campaigns, knowledge of branding, creative approach, etc., in an interesting and updated presentation.Content production: Offers a visually appealing and personalized platform for exhibiting one’s writing, storytelling, and content production skills.UI/UX designers: Demonstrate how design thinking is applied to user experience and interface design.Social media managers: Indicates innovation in managing campaigns, content planning, and engagement.Creative freelancers: Assist in displaying your different projects, work with clients, and visually showcase creative wins.Application to startup jobs: Stick with the existing trend in the startup culture, where one should add aspects of creativity, lateral thinking, and innovation.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Creative Resume Sample (Modern Format)",
+    "text": "Here is a short creative resume example:",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Properly Organise a Creative Resume Format",
+    "text": "Structure is also relevant even with a creative layout. A professional creative resume sample must have:<ol start=\"1\"><li value=\"1\">Contact Information: Your name, phone number, email, portfolio link, and LinkedIn profile.</li></ol><ol start=\"2\"><li value=\"2\">Professional Summary: A brief paragraph that will show your personal knowledge and creativity.</li><li value=\"3\">Work History: Be specific in reverse chronological order, and mention your accomplishments and measurable outcomes first and first.</li><li value=\"4\">Skills section: Identify all the technical and creative skills, e.g.:</li></ol><ul><li>Adobe Creative Suite</li><li>Content strategy</li><li>Branding</li><li>UI/UX tools</li><li>Video editing</li><li>SEO</li></ul><ol start=\"5\"><li value=\"5\">Education: List your degree and University.</li></ol><ol start=\"6\"><li value=\"6\">Portfolio or Projects: This section is all the more essential in a creative CV example since you can present actual work in it.</li></ol>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Creative CV Example for Modern Job Applications",
+    "text": "A good creative CV sample illustrates personality while maintaining clarity and presenting information effectively. It should:<ul><li>Use design elements only when necessary.</li><li>Stay structured in its?contents</li><li>Stay away from too many?graphic elements</li><li>Continue to be?ATS-friendly if applicable.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Write a Successful Creative Resume Format",
+    "text": "An innovative resume sample boosts your odds of being noticed by recruiters. <ul><li>Keep?the design simple and clean: A small number of design elements and enough white space let the resume have a professional look and make it easy to read. </li></ul><ul><li>Fonts and spacing: Keep font style, font size, and inter-font spacing consistent. Be consistent in font style, font size, and inter-font spacing throughout the resume to produce a polished and visually structured resume.</li></ul><ul><li>Look at accomplishments, not only tasks: Emphasize the quantifiable outcomes and accomplishments to show your contribution and professional worth, and not a description of daily job descriptions.</li></ul><ul><li>Include relevant keywords: Add industry and job-specific keywords: Add some keywords that are relevant to the industry and job itself to be more compatible with the ATS and more visible to recruiter searches.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Takeaway",
+    "text": "Creative Resume Templates allow professionals to show their skills and personality as well as accomplishments in an engaging, visually and professionally attractive manner. Effective creative resume formatting enhances readability, emphasizing your strengths, and you can set yourself apart in an industry of competition like marketing, design, and content creation. A strong first impression and an opportunity to be shortlisted are guaranteed by a high-quality CV template with clear sections, well-balanced visuals, and keywords. When looking at a creative resume sample or a creative CV example, you may also realize how to mix design and content so that you can get a better career opportunity.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": false,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/experienced": {
+  "slug": "resume-templates/experienced",
+  "title": "Experienced Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Experienced Resume Templates: Professional CV Formats & Examples",
+   "desc": "Explore experienced resume templates for professionals with proven work history. Download experienced CV templates, resume formats, samples, and examples.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/experienced",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Experienced Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/experienced"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Experienced Resume Templates",
+   "text": "Take your career to the next level with professional resume templates that highlight your achievements, experience, leadership skills, and industry knowledge in a way that employers will like.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Experienced Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Experienced Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How long should an experienced resume be?",
+    "a": "A good resume normally takes up 1-2 pages based on the years of experience, accomplishments, and also relevance to the position."
+   },
+   {
+    "q": "How many years of experience should be included?",
+    "a": "If you have the most relevant 8-15 years of experience, you should add the experience that reflects your career development and skills."
+   },
+   {
+    "q": "How do experienced resume templates improve interview chances?",
+    "a": "They make your qualifications, achievements, and experience structured in such a way that it will be easier to be shortlisted by the recruiters."
+   },
+   {
+    "q": "Should experienced professionals include all past jobs?",
+    "a": "No, put in only pertinent and not old positions that show your skills and aid your present career aspirations."
+   }
+  ],
+  "footer_heading": "Start Building Your Experienced Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning experienced resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Experienced Professionals Need a Specialized Resume Format",
+    "text": "A professional resume format will make sure that the accomplishments and skills of your career are tabulated efficiently and compellingly. It helps to:<ul><li>Display career advancement and promotion.</li><li>Show quantifiable results and influence on business.</li><li>Show experience and leadership abilities in the industry.</li><li>Enhance recruiter readiness and interaction.</li><li>Enhance the shortlisting for senior positions.</li></ul>A sophisticated CV template design can portray you as an experienced professional. An experienced CV Sample also?provides guidance on what recruiters want to see in the profile of an experienced professional.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Structure of an Experienced CV Format",
+    "text": "A standard experienced CV format includes:<ul><li>Contact Information: Includes necessary professional information like your name, phone number, email, whereabouts, and LinkedIn profile so that the recruiter can contact you.</li><li>Professional Summary: Provides a brief description of your work experience, your main skills, and your career competencies to convey instant information about your professional worth.</li><li>Core Skills: Indicates your most applicable technical and professional skills as required in the job.</li><li>Work Experience: Indicate career development by listing your work experience, positions, and contributions in the reverse chronological order.</li><li>Achievements: Also dwells on measurable success and outputs, and this will demonstrate your input and performance in the previous jobs.</li><li>Education: This will include your educational qualifications, degrees, institutions, and graduation details that are relevant to your practice.</li><li>Certifications: List all the professional certifications that you are certified in, which attest to your competence and render you more plausible in your job.</li><li>Other Sections (Optional): This is where you will add more information that is either relevant to your profile, such as projects, leadership, awards, or professional associations.</li></ul>Selecting the appropriate experienced CV Format will help keep your resume neat and professional and will make it simple?for hiring managers to scan your resume.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Benefits Most from Experienced Resume Templates",
+    "text": "Experienced resume templates are ideal for professionals such as:<ul><li>Middle-level professionals looking at career growth: Helps demonstrate career advancement, performance, and preparedness for greater responsibility or leadership.</li><li>Supply chain professionals, logistics, and operations professionals: Presents process improvements, efficiencies, and quantifiable business results.</li><li>Corporate professionals and business analysts: Demonstrates analytical ability, business impact, and contribution to organisational outcomes.</li><li>Finance, administration, and HR specialists: Demonstrates work experience, compliance knowledge, and efficiency in performing business core functions.</li><li>Team leaders, supervisors, and managers: Emphasize team leadership and managing performance, perhaps also effective project or operation management.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Advantages of Using Experienced Resume Templates",
+    "text": "The significant advantages of using resume templates are:<ul><li>Improves the clarification of the resume and its professionalism: Uses clear formatting to give a resume a clean, neat, professional look to be read in and out easily by the hiring managers.</li><li>The recruiting team is quick in evaluating qualifications: Properly arranged sections enable the hiring managers to fast-track through your background, abilities, and qualifications.</li><li>Measures success and impact: Interprets outcomes in terms of improvement of performance, increase in revenues, or reduction in costs.</li><li>ATS-friendly resume formatting: Use formats and keywords that assist in passing your resume through applicant tracking systems.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Best Practices for Creating an Effective Experienced Resume",
+    "text": "These are some tips to make an effective CV sample:<ul><li>It is preferable to focus on measurable achievements rather than listing obligations.</li><li>Reverse chronological experience resume format.</li><li>Add keywords related to the industry in order to optimize ATS.</li><li>The layout should be clean and professional.</li><li>Promote leadership and career development.</li><li>Write a resume as per the job requirements.</li></ul>The experienced CV sample and the experienced CV example can assist you in successfully incorporating these guidelines.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Strengthen Your Career with Experienced Resume Templates",
+    "text": "Proficient Resume Templates assist those individuals in displaying their work background, success, and knowledge in a formal and professional manner. Having a professional, quality resume format helps show a career advancement, management ability, and contributions that can be identified, and this makes it easier to assess the qualifications of the person. A good CV template should be used, the examples of experienced CVs should be reviewed, and best practices should be followed, which can greatly increase your chances of shortlisting and enhancing your career.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/functional": {
+  "slug": "resume-templates/functional",
+  "title": "Functional Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Functional Resume Templates: Skills-Based CV Format, Examples & ATS-Friendly Samples",
+   "desc": "Explore Functional Resume Templates designed to highlight skills over job history. Discover the functional CV format and functional CV examples.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/functional",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Functional Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/functional"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Functional Resume Templates",
+   "text": "Functional resume templates emphasize skills, achievements, and abilities rather than work history, which makes it a good option if you’re changing careers or lack work experience.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Functional Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Functional Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Is it a good idea to include work experience in a functional resume?",
+    "a": "Yes, even in functional CV Templates, it is a good idea to include a work experience section to add context and credibility to your resume."
+   },
+   {
+    "q": "When should you not use a functional resume format?",
+    "a": "You should not use a functional Resume Format if the employer asks for a chronological resume or if your career path is your greatest strength."
+   },
+   {
+    "q": "How long should a functional resume be?",
+    "a": "A functional Resume Example should be one page for entry-level individuals and two pages for professionals with advanced skill sets and certifications."
+   },
+   {
+    "q": "What does a functional CV format consist of?",
+    "a": "A functional CV Format should consist of contact information, a professional summary, skill sections with accomplishments, education, and a work experience section."
+   }
+  ],
+  "footer_heading": "Start Building Your Functional Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning functional resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "How Functional Resume Templates Emphasize Skills Over Job Titles",
+    "text": "A functional Resume Example usually features a few grouped skill areas?with bullet points on accomplishments rather than duties that pertain to each. How this?format highlights skills:<ul><li>The skills?section comes first in the work history section</li><li>Accomplishments are linked directly to skills</li><li>The number of employment dates is reduced</li><li>Transferable skills are neatly organized. </li><li>Your skills section should be clean and easy to read</li></ul>",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Organize Skill Categories in a Functional CV Format",
+    "text": "The well-structured functional CV Format creates distinct skill categories that match the job requirements. The first category requires particular skills that need to be demonstrated with specific examples that show measurable results.A professional functional CV Sample typically includes 3 to 5 skill categories, each containing brief bullet points that demonstrate work accomplishments. Best practices for organizing skill categories:<ul><li>Create headings which include Leadership, Technical Skills, Communication, and Project Management</li></ul><ul><li>Include 2 to 4 bullet points under each category</li></ul><ul><li>Use measurable results whenever possible</li></ul><ul><li>The job requirements should determine how to classify the skill categories</li></ul><ul><li>The statement \"I am hardworking\" needs more specific evidence to support its validity because it contains general information.</li></ul>",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "When to Choose Functional CV Templates Instead of Chronological Formats",
+    "text": "The most appropriate use of Functional CV Templates occurs when your employment history shows unconventional work advancement patterns. The functional structure enables you to manage your personal story through its focus on your strengths rather than your work history.A well-designed functional CV Example enables candidates to showcase their background by creating a more effective presentation. The following scenarios represent the situations when this format should be used:<ul><li>When someone wants to switch their career path to another industry</li><li>When someone needs to re-enter the workforce following an employment gap</li><li>For people who work as freelancers or gig economy workers</li><li>For students who just graduated and have completed internships</li><li>For people who have worked in short-term positions or multiple jobs</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How Recruiters Review a Functional Resume Format",
+    "text": "Recruiters usually spend only a few seconds reviewing a resume before they decide whether to continue reading. The functional Resume Format, which professionals design properly, enables them to focus their attention on the most important qualifications.<br>The strength of the Functional Resume Sample is shown through its design, which enables immediate identification of skills and value statements. The recruiters look for:<ul><li>Skill categories that are highlighted in bold to demonstrate their skills</li><li>Keywords related to the job that meet the recruiters' needs</li><li>Professional achievements that can be measured by the recruiters</li><li>The resume has a professional look due to its structured format and clear design</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Tailor Functional Resume Templates for Different Job Roles",
+    "text": "Higher success rates will result from the practice of creating distinct, useful resume templates for each job application. Instead of utilising a typical resume structure, you should adjust your work history and skill sections to meet the specific needs listed in the job description.The customized functional resume example shows how strategic keyword selection, together with essential skills, boosts ATS performance. Steps to tailor your resume:<ul><li>The job description analysis helps identify essential required skills.</li><li>You should present your skill categories in a way that matches the specific requirements of the employer.</li><li>You should incorporate terms that are specific to your industry.</li><li>The implementation of measurable results should be part of your work demonstration.</li><li>You should delete all skill sections that do not apply to your situation.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Common Mistakes to Avoid in Functional Resume Templates",
+    "text": "Although functional resume templates provide flexibility, misuse of the resume can limit its effectiveness. Filling the resume with general skills or not including measurable examples can have a negative effect.<br>A professional functional CV Example prevents common problems:<ul><li>Including skills without proof</li><li>Using general or common phrases</li><li>Not including measurable results</li><li>Making cluttered designs</li><li>Not customizing the resume for the position</li></ul>By correcting these problems, your functional Resume Format will be more effective, powerful, and competitive.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/google-docs": {
+  "slug": "resume-templates/google-docs",
+  "title": "Google Docs Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Google Docs Resume Templates: Google Docs CV Templates & Examples",
+   "desc": "Create professional resumes using Google Docs Resume Templates. Explore free Google Docs CV templates and samples for freshers and professionals.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/google-docs",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Google Docs Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Google Docs Resume Templates",
+   "text": "It’s effortless to create a well-designed resume with Google Docs resume templates. These Google Docs resume templates are web-based, ATS-friendly, and allow you to edit, customize, and share your resume anywhere and anytime.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Google Docs Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Google Docs Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Can I personally share my Google Docs resume sample with hiring managers?",
+    "a": "Yes, you can share it via email or a Google Docs link."
+   },
+   {
+    "q": "Can I download a Google Docs resume format in PDF?",
+    "a": "Yes, you can download resumes in PDF, Word, or other formats."
+   },
+   {
+    "q": "Can I make multiple resumes using Google Docs Resume Templates?",
+    "a": "Yes, you can copy templates and modify them for different job applications."
+   },
+   {
+    "q": "Can I customize a Google Docs CV Example?",
+    "a": "Yes, you can make complete changes to fonts, sections, colors, and content."
+   }
+  ],
+  "footer_heading": "Start Building Your Google Docs Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning google docs resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What Are Google Docs Resume Templates?",
+    "text": "Google Docs Resume Templates are ready-made layouts that can be found in Google Docs, and they assist job hunters in creating professionally organized resumes with ease and time-saving. These templates have the necessary sections that are initially set as the contact information, professional summary, work experience, skills, education, certifications, or achievements, so that the entire vital information is clearly explained and displayed in an orderly manner. <br>With Google Docs resume templates, an individual does not have to create resumes manually, which saves time and maintains the same formatting in conformity with the current hiring principles and expectations of a recruiter.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Benefits of Using Google Docs Resume Templates",
+    "text": "The Benefits of using the Google Docs Resume format are:<ol start=\"1\"><li value=\"1\">Easy to Access and Use</li></ol>Free with a Google account.<br>There is no installation of software needed.<br>Available on desktop, mobile, or tablet.<ol start=\"2\"><li value=\"2\">Professional and ATS-Friendly Layout</li></ol>Applicant Tracking Systems Compatible.<br>Enhances the readability and scanning of the resumes.<ol start=\"3\"><li value=\"3\">Fully Customizable</li></ol>Switch fonts, colours, and sections without difficulty.<br>Insert or delete information according to the job needs.<br>Change templates as per the industry.<ol start=\"4\"><li value=\"4\">Shared and Exportable Easily</li></ol>Download as a PDF or Word file<br>Post through email or link.<br>Applications and portals Usage.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Types of Google Docs CV Templates",
+    "text": "<ol start=\"1\"><li value=\"1\">Modern Templates: Ideal to use in business, technology, and creative professionals with characteristic clear fonts, organized design, and contemporary design features.</li><li value=\"2\">Basic Templates: Given that they focus on skills, knowledge, and understanding, they are perfect for new recruits and entry-level applicants.</li><li value=\"3\">Professional Templates: Ideal for professionals and managers, bringing out work experience, successes, and leadership.</li><li value=\"4\">Creative Templates: Appropriate for designers, marketers, and creative people, uses a stylish format and is professional at the same time.</li></ol>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Use Google Docs Resume Templates",
+    "text": "Open Google Docs and start a new document by logging in with your Google account in your web browser. Next, click “Template Gallery” to view the resume templates. <br>When choosing a template, consider your experience and your goals in choosing the best template for your needs.<br>Add your personal, educational, and work details on the template: Add your information to the template.<br>Personalize: Customize fonts, colors, parts, and so on to suit your job requirements and needs.<br>Add a PDF or Word document: You can download your PDF or Word resume and save it in either a PDF or Word file to apply and share.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "When to Use a Google Docs Resume Format",
+    "text": "A Google Docs Resume Format is the perfect choice when one requires a fast and professional resume. It enables you to make a professional resume within minutes by using built-in templates.<br>ATS-friendly formatting: These templates are developed on a plain and organized format that is compatible with the applicant tracking systems.<br>Simple editing and updating: You can make a quick update, edit or customize your resume to suit various job applications at any time.<br>Free resume builder software: Google Docs offers free templates, so one does not need to use expensive design software.<br>Cloud access and sharing: Your resume is stored on the web, which means that you can easily access, download, and share it across devices.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Best Practices for Using a Google Docs CV Format",
+    "text": "To maximize effectiveness:<br>Professional fonts such as Arial, Calibri, or Helvetica should be used.<br>Keep resume length to 1–2 pages<br>Be brief in your answer, and avoid long paragraphs.<br>Add quantifiable accomplishments.<br>Prepare a job-specific resume.<br>The practices enhance the recruiter interaction and interview opportunities.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Google Docs CV Templates",
+    "text": "These templates can be used in:<br>The students and fresh graduates: they help in making education, skills, and projects transparent in the event that work experience is unavailable.<br>Applicants for entry-level jobs: It presents the professional presentation framework to display the relevant skills, internships, and early career experience.<br>Experienced professionals: They focus on extensive experience, achievement, and promotion of their career in a well-organized fashion.<br>Career changers: These are the tools that help in reminding you of the skills you possess and the experience you have in the alternate field, in case of changing career.<br>Job seekers of remote work: The tools allow you to make, revise, and post resumes over the internet.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/internship": {
+  "slug": "resume-templates/internship",
+  "title": "Internship Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Internship Resume Templates: Free ATS-Friendly Resume Format, Examples & Samples",
+   "desc": "Explore internship Resume Templates for students and fresh graduates. Discover ATS-friendly resume formats and internship CV examples to start your career.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/internship",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Internship Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/internship"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Internship Resume Templates",
+   "text": "To get your career started, you may want to consider using internship resume templates, as they are best suited for recent graduates and students, and they emphasize your education, projects, skills, and potential in a professional and attractive way.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Internship Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Internship Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "What should be included in internship Resume Templates?",
+    "a": "Internship Resume Templates should include contact information, summary, education, skills, projects, and relevant experience."
+   },
+   {
+    "q": "How long should an internship Resume Format be?",
+    "a": "An internship Resume Format should usually be one page, especially for students and fresh graduates."
+   },
+   {
+    "q": "Can students without any work experience make use of internship CV templates?",
+    "a": "Yes. This is because the focus of internship CV templates is education, skills, and academic projects rather than work experience."
+   },
+   {
+    "q": "How do I make my internship resume sample better?",
+    "a": "To make your internship resume sample better, you need to include relevant projects, certifications, and skills."
+   }
+  ],
+  "footer_heading": "Start Building Your Internship Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning internship resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "How Internship Resume Templates Highlight Academic Achievements and Skills",
+    "text": "Recruiters have realized that internship applicants do not necessarily have a long work experience, and internship Resume Templates pay more attention to academic achievements, applicable skills, and project experiences rather than full-time work experience. This method allows the candidates to show their potential and willingness to learn.<br>An Effective Resume Sample for an internship would put education, skills, and projects at the forefront so that the recruiters could easily assess your skills. The way these templates show your advantages:<ul><li>The education section features high positioning.</li><li>Relevant skills in the internship are clearly listed.</li><li>Practical knowledge is displayed in academic projects.</li><li>These include internships, volunteering, or training.</li><li>The resume is formatted clearly and professionally.</li></ul>",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Structure Sections in an Internship CV Format",
+    "text": "An internship CV Format is good and well-organized that your academic and skill-based qualifications are arranged professionally. Every department ought to bring into focus pertinent information that correlates with the internship role.<br>A professional internship CV Sample tends to consist of the following parts:<ul><li>Professional email ID and contact number.</li><li>A professional summary showing your career objectives.</li><li>Education section containing degree, institution, and date of graduation.</li><li>The skills section displays technical skills and soft skills.</li><li>Project, certification, or internship experience.</li><li>Other things like volunteering or leadership.</li></ul>",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "When to Use Internship CV Templates",
+    "text": "Internship CV Templates should be used by those candidates whose career has just started and require a systematic method of presenting qualifications. These templates assist in the exhibition of potential instead of a broad experience. An internship resume can be a good example used in the following circumstances:<ul><li>Students who are seeking their first internship.</li><li>New graduates who need hands-on experience.</li><li>Individuals who seek academic programs or training.</li><li>Students who are seeking part-time or summer internships.</li><li>Career entrants who have experience in projects.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How Recruiters Evaluate an Internship Resume Format",
+    "text": "When recruiting interns, the recruiters consider skills, education, performance, and learning potential. Your Resume Format should be properly organized so that the strengths can be easily revealed by the recruiters.<br>A good internship Resume Sample simplifies the process of assessing the candidates by the recruiters, including:<ul><li>Specific skills that are related to the job.</li><li>School performance and education.</li><li>Practical skills are seen in projects that exhibit practical skills.</li><li>Clean and professional formatting.</li><li>Applicable training or certification.</li></ul>This simplifies the process of assessing your resume and enhances your level of selection.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Customize Internship Resume Templates for Different Roles",
+    "text": "It can be enhanced by customizing internship Resume Templates, which will increase your chances of being selected. Customizing your resume increases the chance of getting visibility and puts forward important skills.<br>A focused internship Resume Sample must consist of:<ul><li>Relevant skills to the internship requirements.</li><li>Industry-related projects.</li><li>Relevant coursework or certification.</li><li>Job description keywords.</li><li>Determinable and quantifiable successes were feasible.</li></ul>Personalization will make your resume more efficient.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Make Your Internship Resume Sample ATS-Friendly",
+    "text": "Many companies use Applicant Tracking Systems (ATS) to screen and manage job applications. The best way to increase the odds of your internship Resume Sample passing ATS is to optimize it. The best practices required in a well-optimized internship CV Sample include:<ul><li>Make use of standard section headings.</li><li>Naturally add keywords.</li><li>Do not use graphics and sophisticated formatting.</li><li>Use professional fonts</li><li>Save the resume as a PDF or Word file.</li></ul>It makes it compatible with ATS systems and enhances visibility.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Common Mistakes to Avoid in Internship Resume Templates",
+    "text": "Despite the fact that internship Resume Templates are simple, their work can be diminished by errors. It is important not to make a few mistakes so that your resume does not appear unprofessional. A professional internship CV Sample does not contain the following errors:<ul><li>Adding irrelevant knowledge.</li><li>Applying non-professional email addresses.</li><li>Composing lengthy and wordy descriptions.</li><li>Failure to indicate relevant skills or projects.</li><li>Sending uncustomized resumes.</li></ul>These mistakes can be avoided, and that increases your likelihood of being selected.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/minimalist": {
+  "slug": "resume-templates/minimalist",
+  "title": "Minimalist Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Minimalist Resume Templates: Free ATS-Friendly Resume Format, Examples & Samples",
+   "desc": "Find professional resume templates with Minimalist Resume Templates. Browse ATS-friendly resume designs, minimalist resume examples, samples, and templates.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/minimalist",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Minimalist Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Minimalist Resume Templates",
+   "text": "With minimalist resume templates available, it is possible to create a modern resume that is easily readable. Emphasize your skills with a simple resume template that is easily readable by recruiters.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Minimalist Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Minimalist Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Are Minimalist CV Templates compatible with Microsoft Word and Google Docs?",
+    "a": "Yes, most Minimalist Resume Templates are compatible with MS Word and Google Docs so that you can easily modify these items once they’re complete and submitted."
+   },
+   {
+    "q": "How long should a Minimalist Resume Sample be?",
+    "a": "A Minimalist Resume Example should be 1 page for entry-level applicants and no more than 2 pages for experienced applicants."
+   },
+   {
+    "q": "Do Minimalist Resume Templates assist in reducing errors in resumes?",
+    "a": "Yes. A Minimalist Resume Template assists in formatting your resume in a similar manner, thus reducing the possibility of errors in the resume format."
+   },
+   {
+    "q": "What are the characteristics of an effective Minimalist CV Example?",
+    "a": "An effective Minimalist CV Example should emphasize relevant skills, have a simple structure, adhere to professional formatting, and emphasize measurable outcomes."
+   }
+  ],
+  "footer_heading": "Start Building Your Minimalist Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning minimalist resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What Is a Minimalist Resume Template?",
+    "text": "A Minimalist Resume Template is a professionally created resume template that places an emphasis on simplicity, clean design, and professional layout. It does not clutter with colors, graphics, and designs that will drown your qualifications, experience, and skills.<br>This form of template involves a basic Minimalist Resume Format that implies clear headings, professional fonts, and structured blocks. Your resume is easy to scan and analyze due to a layout that only highlights important information. Most job consultants like to utilize organized Minimalist CV Templates in order to have consistency, professionalism, and compatibility with ATS.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "What Is the Best Minimalist Resume Format?",
+    "text": "A good Minimalist Resume format has well-structured sections that display the qualifications clearly in a professional and clear manner.<ol start=\"1\"><li value=\"1\">Contact Information: Provide your key contact information at the top:</li></ol><ul><li>Full name</li><li>Phone number</li><li>Professional email address</li><li>Location</li><li>LinkedIn profile (optional)</li></ul><ol start=\"2\"><li value=\"2\">Professional Summary: One or two paragraphs that make your experience, skills, and career goals a point.</li></ol>Examples: A professional who is detail-oriented, well-analytical, communicative, and organized, and can perform their duties effectively, as well as add to the success of the business.<br>This design is in line with the professional Minimalist Resume Sample and Minimalist CV Sample.<ol start=\"3\"><li value=\"3\">Work Experience: This section brings out your work background in a clear manner.</li></ol><ul><li>Job title</li><li>Company name</li><li>Employment dates</li><li>Key responsibilities</li><li>Results and accomplishments.</li></ul>Select backwards chronological order (newest job first). This structure aligns with a professional Minimalist Resume Sample or Minimalist CV Sample.<ol start=\"4\"><li value=\"4\">Skills Section: Point out pertinent professional skills, including:</li></ol><ul><li>Communication</li><li>Problem-solving</li><li>Project coordination</li><li>Technical skills</li><li>Time management</li><li>Data analysis</li></ul><ol start=\"5\"><li value=\"5\">Education: Provide your educational background:</li></ol><ul><li>Degree name</li><li>Institution name</li><li>Graduation year</li></ul><ol start=\"6\"><li value=\"6\">Certifications (Optional): Add the certifications that are relevant to your field:</li></ol><ul><li>Professional certifications</li><li>Technical certifications</li><li>Industry-related training</li></ul>",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Pros and Cons of Minimalist CV Templates",
+    "text": "Knowing the strengths and weaknesses of Minimalist CV Templates is a way of establishing whether they can fit your career objectives or not.<br>Advantages: <ul><li>Professional appearance: It assists in creating a tidy, up-to-date, and professional resume, which employers prefer.</li><li>Simple style: It makes it easy for recruiters to review your qualifications.</li><li>ATS-compatible design: Applicant tracking system compliance is ensured via minimal design.</li><li>Focus on your abilities and experience: Only the most crucial information is shown.</li></ul>Cons:<ul><li>Minimal originality in design: There is less visual design available in minimalist CV templates.</li><li>Not as appropriate to creative positions: Creative industries might favour graphically designed resumes.</li><li>May sound too simple: Some applicants may like more graphical resumes.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Minimalist Resume Templates",
+    "text": "Minimalist Resume Templates are perfect when professionals aim at having a decent and professional resume format.<ul><li>Corporate professionals: Current business experience is displayed in a clear and structured format.</li><li>Fresh graduates: Lighten education, skills and academic performance at work.</li><li>Administrative workers: Demonstrate organizational and coordination abilities.</li><li>Business and operations specialists: Focus on analytical and operational skills.</li><li>Job candidates submitting applications to corporate positions: Present professionally created resumes as per corporate recruitment requirements.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Suggestions for Writing a Good Minimalist Resume",
+    "text": "These are best practices when applying Minimalist Resume Templates:<ul><li>Professional fonts like Arial, Calibri or Helvetica should be used.</li><li>Simplify and be consistent with formatting.</li><li>Be concise by using bullet points.</li><li>Pay attention to what one has accomplished rather than enumerating roles.</li><li>Maintain a length of resume between 1-2 pages.</li><li>Inclusions should keep only the relevant and important information.</li></ul>A minimalist resume format should be well-organized to enhance readability and gain access to more interviews.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Takeaway",
+    "text": "Minimalist Resume Templates offer a relatively simple and professional resume template, easy to use and impressive to the ATS. These templates enhance readability, give emphasis on key information and a positive impression of professionalism.<br>A Minimalist Resume Sample designed by a professional will guide you on how to correctly organize your resume or a Minimalist CV Sample will guide you in that. Freshers or experienced professionals, you can have minimalist templates, which can assist in creating a clear, adequate, and competitive resume.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/modern": {
+  "slug": "resume-templates/modern",
+  "title": "Modern Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Modern Resume Templates: Free ATS-Friendly Resume Format, Examples & Samples",
+   "desc": "Explore modern Resume Templates with professional layouts and ATS-friendly designs. Discover modern resume formats, CV examples, and samples for freshers and experienced professionals.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/modern",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Modern Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/modern"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Modern Resume Templates",
+   "text": "Using modern resume templates that are ATS-friendly with clear layouts and smart formatting will help you stand out in the current job market.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Modern Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Nova",
+    "desc": "Modern / Two Column Design for Senior Roles",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/Modern_Resume_Templates_Ananya.webp",
+    "link": ""
+   },
+   {
+    "name": "Edge",
+    "desc": "Modern & Data-focused elegance with sharp typography",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/Modern_Resume_Templates___Vikram_Singh.webp",
+    "link": ""
+   },
+   {
+    "name": "Pulse",
+    "desc": "Time-tested traditional layout",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/Modern_Resume_Templates___Priya_Sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "Horizon",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "https://media.naukri.com/media/nicms/Modern_Resume_Templates_Horizon_Ananya_Iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "Vertex",
+    "desc": "Stand out with bold visual design",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/Modern_Resume_Templates_Karan_Malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Elevate",
+    "desc": "Professional look suited for corporate roles.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/Modern_Resume_Templates_Elevate_Rohan_Mehta.webp",
+    "link": ""
+   },
+   {
+    "name": "Apex",
+    "desc": "Dark theme creates a high-end professional feel.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/modern_resume_templates_apex_ananya_deshpande.webp",
+    "link": ""
+   },
+   {
+    "name": "Orbit",
+    "desc": "Soft color palette adds a fresh and modern feel.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/modern_resume_templates_orbit_riddhi_malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Fusion",
+    "desc": "Warm tones add a creative and engaging feel.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/modern_resume_templates_fusion_meghna_iyer.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Modern Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Is a modern Resume Format ATS-friendly?",
+    "a": "Yes, a contemporary Resume Format is based on a basic structure and standard headings, which is compatible with the ATS systems."
+   },
+   {
+    "q": "What makes a strong modern Resume Example?",
+    "a": "An excellent current Resume Sample must have clear heads, pertinent competencies, quantifiable accomplishments, and professional presentation."
+   },
+   {
+    "q": "How long should a modern Resume Sample be?",
+    "a": "An average Resume Sample is supposed to be one page when it comes to freshers and at maximum two pages in the case of the experienced professionals."
+   },
+   {
+    "q": "Can modern Resume Templates be customized?",
+    "a": "Yes, the Resume Templates of today are easy to customize according to the job demands and industry norms."
+   }
+  ],
+  "footer_heading": "Start Building Your Modern Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning modern resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What Are Modern Resume Templates?",
+    "text": "Modern Resume Templates are professional type of resume templates that incorporates the current formatting, clear typography, and organized layout. They are centered on the enhancement of readability and have a professional and clean look.<br>A standard Resume Format in the modern world contains:<ul><li>Professional summary</li><li>Experience with successes at work.</li><li>The skills section was in line with job requirements.</li><li>Training and qualifications.</li><li>Clean and easy-to-scan layout</li></ul>These templates assist job seekers in presenting their qualifications clearly and in an organized way.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Features of Modern CV Templates",
+    "text": "The methods used in the modern CV Templates are formulated in such a way that they fulfill the contemporary recruitment criteria and are compatible with the ATS. Important features include:<ul><li>Easy-to-read, clean, and simple design.</li><li>Better organization with clear headings of the sections.</li><li>White space is used professionally.</li><li>Uncomplicated graphics-free ATS-friendly format.</li><li>Formatting and professional fonts.</li></ul>The Modern CV Example is properly designed, which makes it possible to provide recruiters with a rapid overview of your profile.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "When to Use a Modern Resume Format",
+    "text": "Most of the industries and levels of experience recommend a modern Resume Format. It also suits perfectly well when you want to show your qualifications in a professional but modern way.<br>You are to employ a modern Resume Format when you:<ul><li>When do you want to apply to corporate or professional jobs?</li><li>Need a fresh and new resume design.</li><li>Need an ATS-friendly resume</li><li>Are you a resher, mid-level, or an experienced professional?</li><li>Desire to have better readability and presentation of the resume.</li></ul>The format is useful in enhancing the involvement of the recruiter and raising the chances of shortlisting.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How Modern Resume Templates Improve Your Job Application",
+    "text": "The Modern Resume Templates have several merits that enhance your job application:<ul><li>Ensures better visual display and professionalism.</li><li>Simplifies the process of scanning by the recruiters.</li><li>Presents talents and accomplishments very well.</li><li>Ensures ATS compatibility</li><li>Time-efficient, high-quality professional layouts.</li></ul>A well-organized contemporary Resume Sample will make your qualifications well shown.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "What to Include in a Modern Resume Template?",
+    "text": "An effective current Resume Sample has mandatory parts that would allow recruiters to assess your profile within a short time:<ul><li>Professional Summary: Brief description of your experience, skills, and career objectives.</li><li>Work Experience: Your job history of achievements and quantifiable output.</li><li>Skills Section: Applicable technical and professional skills for the job.</li><li>Education: Your educational credentials and qualifications.</li><li>Provisions (Optional): Professional accomplishments, projects, or certifications.</li></ul>These paragraphs contribute towards a successful and full modern CV Sample.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Modern Resume Templates",
+    "text": "The use of Modern Resume Templates can be appreciated by a large number of job seekers, such as:<ul><li>New graduates entering the field of work: Helps introduce education, skills, and projects in a professional manner.</li></ul><ul><li>Mid-level professionals who need career development: This is an important section as it shows experience, accomplishments, and career advancement.</li></ul><ul><li>Skilled individuals seeking corporate positions: Exhibits a long history of work and leadership skills.</li></ul><ul><li>Job applicants who change industries: Focuses on transferable skills that can be applied in a new career path.</li></ul><ul><li>Applicants submitting an application online job portals: Ensures ATS-friendly formatting in order to be successful in application.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips for Creating an Effective Modern Resume",
+    "text": "Being a Modern Resume Template user, several best practices should be followed:<ul><li>Make sure the resume is not longer than 1-2 pages.</li><li>Apply professional and clear fonts.</li><li>Concentrate on accomplishments and not on duties.</li><li>Use bullet points to explain details in a better way.</li><li>Tailor your resume with each job application.</li><li>Insert relevant keywords for ATS optimization.</li></ul>Having a good modern Resume Sample increases the chances of you getting interview opportunities.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Takeaway",
+    "text": "Modern Resume Templates offer the ideal mix of professional and modern design where job seekers display their qualifications in the most effective way possible. These templates are easy to use with clean layouts, sorted parts, and are ATS-friendly to ensure that a recruiter can find your skills, experience, and achievements within the very shortest time possible.<br>The modern Resume Format will make your resume appear professional, enhance readability, and has the higher possibility of being shortlisted. It does not matter whether you are a fresher in the labor market or an experienced worker in need of career development; the selection of appropriate modern Resume Templates can assist you in making a good impression and increasing the possibility of getting a job.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": false,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": false,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  },
+  "cdnBaseUrl": ""
+ },
+ "resume-templates/one-page": {
+  "slug": "resume-templates/one-page",
+  "title": "One Page Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "One Page Resume Templates: Free ATS-Friendly Resume Format, Examples & Samples",
+   "desc": "Download one page resume templates to create concise, professional resumes. Explore one-page CV formats, resume examples, and ATS-friendly templates.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/one-page",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "One Page Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/one-page"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "One Page Resume Templates",
+   "text": "Make an impression with one-page resume templates that highlight your skills, achievements, and experience in an effective manner. Suitable for pros and newcomers alike who want a clear and effective resume for their career.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free One Page Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "OnePage Pro ",
+    "desc": "Clean one-page layout with balanced sections and recruiter-friendly structure.",
+    "cat": "One Page",
+    "image": "http://media.naukri.com/media/nicms/one-page-pro-resume-template-arjun-verma.webp",
+    "link": ""
+   },
+   {
+    "name": "QuickFit",
+    "desc": "Compact modern layout designed for quick readability and concise presentation.",
+    "cat": "One Page",
+    "image": "http://media.naukri.com/media/nicms/one-page-quickfit-resume-template-ananya-sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "SnapCV",
+    "desc": "Professional one-page design with clear sections and strong visual hierarchy.",
+    "cat": "One Page",
+    "image": "http://media.naukri.com/media/nicms/one-page-snapcv-resume-template-devanshi-rao.webp",
+    "link": ""
+   },
+   {
+    "name": "Single Edge",
+    "desc": "Bold sidebar layout with modern styling for standout professional profiles.",
+    "cat": "One Page",
+    "image": "http://media.naukri.com/media/nicms/one-page-single-edge-resume-template-meghna-iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "Compact",
+    "desc": "Minimal one-page format focused on clean spacing and efficient content flow.",
+    "cat": "One Page",
+    "image": "http://media.naukri.com/media/nicms/one-page-compact-resume-template-rohit-malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Swift",
+    "desc": "Fast-scanning layout with modern sections and polished professional styling.",
+    "cat": "One Page",
+    "image": "http://media.naukri.com/media/nicms/one-page-swift-resume-template-karan-sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "Brief",
+    "desc": "Simple and concise layout built for readability and smooth ATS compatibility.",
+    "cat": "One Page",
+    "image": "http://media.naukri.com/media/nicms/one-page-brief-resume-template-nikhil-verma.webp",
+    "link": ""
+   },
+   {
+    "name": "Prime One",
+    "desc": "Executive-style one-page template with structured sections and premium spacing.",
+    "cat": "One Page",
+    "image": "http://media.naukri.com/media/nicms/one-page-prime-one-resume-template-ananya-singh.webp",
+    "link": ""
+   },
+   {
+    "name": "Nova Page",
+    "desc": "Modern two-column layout with clean visuals and organized content structure.",
+    "cat": "One Page",
+    "image": "http://media.naukri.com/media/nicms/one-page-nova-page-resume-template-devansh-patel.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our One Page Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Who should use one-page CV Templates?",
+    "a": "One-page CV templates are the most suitable in the case of students, fresh graduates, and those with little experience."
+   },
+   {
+    "q": "Is a one page Resume Format ATS-friendly?",
+    "a": "Yes, a well-structured one page Resume Format is effective in ATS systems."
+   },
+   {
+    "q": "How long should a one page Resume Sample be?",
+    "a": "One page Resume Sample must be restricted to one page containing only relevant information."
+   },
+   {
+    "q": "Are one-page CV Templates suitable for experienced professionals?",
+    "a": "Yes, one-page CV Templates work well, provided that what you have to say can be condensed into one page."
+   },
+   {
+    "q": "Can one page Resume Templates improve job selection chances?",
+    "a": "Yes, they enhance readability, professionalism, and recruiter involvement."
+   }
+  ],
+  "footer_heading": "Start Building Your One Page Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning one page resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What Are Page Resume Templates?",
+    "text": "One Page Resume Templates are resumes that are professionally designed, which are one page only and yet clear and professional. These templates have organized parts, adequate spacing, and sanitized formatting that make reading easy without cluttering the information.<br>An average one page Resume Sample will include:<br>Contact information<br>Professional summary<br>Skills section<br>Work experience<br>Training and qualifications.<br>In this way, you will be able to clearly present your qualifications and, at the same time, look professional.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Why Use a One Page Resume Format?",
+    "text": "One page Resume Format is efficient because you can use it to demonstrate your most relevant skills, experience, and accomplishments in a well-organized and easy-to-read format. Recruiters usually take just a few seconds to look through each resume because of the time constraints, so a smaller formatted resume enables the hiring authority to extract your qualifications within a short time without extra information. The format is more readable, it makes you shine in the best areas, and it also makes your resume concise and professional. It is also compatible with ATS, and therefore, the automated systems find it simpler to scan your information. On the whole, a resume that is one page is effective in making a good impression and making your application transparent, structured, and impressive.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use One Page CV Templates?",
+    "text": "One page CV Templates suit well for candidates who do not want to include details that do not matter to the qualification. They are particularly appropriate in:<br>Graduates and fresh students: Helps introduce education, academic projects, and skills in the simplest way possible, even when there is no work experience.<br>Entry-level professionals: Includes the relevant skills, training, and early career accomplishments in a brief format.<br>Candidates who have fewer than 10 years of experience give the professionals an opportunity to present the most significant experience without redundant information.<br>Career changers: Concentrate on transferable competencies and relatable qualifications to move to a new field.<br>Professionals seeking internships or junior positions, etc.: Does not display potential, skills, and education in a recruiter-friendly way.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Essential Sections in a One-Page CV Format",
+    "text": "A one page CV format that has been well formatted entails the inclusion of important sections that present all the information without being lengthy.<ol start=\"1\"><li value=\"1\">Contact Information: Add your name, phone, email, and professional profile link.</li><li value=\"2\">Professional Summary: A brief background with your experience, talent, and career objectives.</li><li value=\"3\">Skills Section: Add appropriate technical and professional skills that are in line with the job requirements.</li><li value=\"4\">Work Experience: Enumerate pertinent positions and quantifiable accomplishments and contributions.</li><li value=\"5\">Education: Inclusions of degree, name of institution, and year of graduation.</li></ol>These parts make your one-page CV Sample concise and professional.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Best Practices for Writing a One-Page Resume",
+    "text": "To design a proper one page Resume Sample, one will need to be selective with the information and will have to format it correctly. Follow these best practices:<br>Add only relevant and current experience.<br>Use bullet points to be precise.<br>Concentrate on accomplishments rather than work.<br>Professional fonts and formatting.<br>Do not add personal information that is not essential.<br>Tailor your resume to every job application.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "When to Use a One-Page Resume Template",
+    "text": "One page resume templates are best suited in instances where a brief presentation is desired. Use this format when:<br>Applications to first-level jobs.<br>Applying for internships<br>Making corporate applications.<br>Submitting resumes online<br>Submission in sectors that value short resumes.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Advantages of One-Page Resume Templates",
+    "text": "The advantages of using one-page resume templates are as follows:<br>Increased readability and clarity: It is concise and easy to navigate through and read, much like that of a recruiter.<br>Quick recruiter response: The hiring managers have been helped to scan and point out key skills and experience in your resume.<br>ATS compatibility: The resume is written in a standard form that is easily readable by the Applicant Tracking System.<br>Credentials are easily visible: The resume shows the applicant’s most important credentials, not extra information.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": false,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/picture": {
+  "slug": "resume-templates/picture",
+  "title": "Picture Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Picture Resume Templates: Picture CV Format, Examples, Samples & Templates",
+   "desc": "Explore professional picture resume templates with picture CV format, picture resume examples, picture resume samples, and picture CV templates.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/picture",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Picture Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/picture"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Picture Resume Templates",
+   "text": "Make a lasting first impression with the Picture Resume Templates. The templates will show off your skills and experience through a clean photo and simple design, perfect for creative and client-based positions.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Picture - Professional Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Picture Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Are picture resume templates professional?",
+    "a": "Yes, professionally created picture resume templates can help you build your personal brand."
+   },
+   {
+    "q": "Should I include a photo on my resume?",
+    "a": "Yes, provided that use is allowed in your area or sector."
+   },
+   {
+    "q": "Are picture Resume Templates ATS-friendly?",
+    "a": "Yes, Templates for resumes with good images will be ATS-friendly."
+   },
+   {
+    "q": "What type of photo should I use?",
+    "a": "Using a professional photo from a sample picture resume is advised."
+   }
+  ],
+  "footer_heading": "Start Building Your Picture Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning picture resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What Are Picture Resume Templates?",
+    "text": "Picture resume templates are resume templates that have a special section allowing a professional photograph, commonly in the header or sidebar. This Resume Format allows you to blend your image into the layout, still ensuring a clean and professional format. The picture will be used to complement your resume information as it will assist the recruiters in connecting your image with your credentials and linking with you on a personal level.<br>The necessary aspects covered in these picture resume templates are normally a profile photo, professional summary, work experience, skills and competencies, education information, contact details, certifications, and achievements. A properly organized picture resume sample or picture CV sample shows how visual details and professional facts may be harmonized together to produce a contemporary, attractive, and professional resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Picture Resume Templates?",
+    "text": "Picture Resume Templates are suitable for:<ul><li>Creative individuals like artists, designers, and photographers.</li><li>Sales executives, receptionists, and hospitality staff Selling/service employees are the ones who come into contact with customers directly.</li><li>Models, actors, and front office professionals.</li><li>Individuals seeking jobs in the nations where resume photos are widely accepted.</li></ul>Professional picture CV templates are used to build a closer rapport with recruiters and will boost your professional brand.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Is It Appropriate for Your Resume to Have a Photo?",
+    "text": "The use of a photo in your resume may be acceptable in some contexts, particularly when applying to the Profession where picture resume templates or modern picture CV format are accepted; however, it will mostly depend on the industry, job position, and even the country of application. One should have a photo when it is appropriate. It is advisable to add a photo in case of emphasis on the visual presentation and personal branding. There are many picture resume templates and picture CV templates that are specifically structured towards such roles. You can include a photo when:<ul><li>To apply to a creative job, like a graphic designer, photographer, or media professional.</li><li>Submission of applications to customer-facing roles such as sales executive, receptionist, or hospitality staff.</li><li>Being a modeler, actor, or PR.</li><li>Using it in countries where the usage of a picture CV sample or picture resume sample is accepted.</li><li>Creating a personal brand in a contemporary picture resume format.</li></ul>In such instances, it is in your interest to go through a professional picture resume example or picture CV example and make sure that your resume is presentable and professional-looking.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Types of Picture Resume Templates",
+    "text": "<ol start=\"1\"><li value=\"1\">Professional Picture Resume Templates: These templates apply to the use of formal layouts that are applicable in corporate positions, including sales, customer services, and administration. Their Resume Formats are clean and professional.</li><li value=\"2\">Creative Picture Resume Templates: Ideal picture CV templates have been designed with modern colors, icons, and layout to suit designers, marketers, and creative professionals.</li><li value=\"3\">Minimalist Picture Resume Templates: Pay attention to simplicity and clean formatting, and slight photo placement, frequently in a contemporary picture resume example </li><li value=\"4\">Sidebar Picture Resume Templates: Put the profile picture in a side column, as well as contact information and skills, to utilize as much space as possible. This is a trendy picture CV Format.</li><li value=\"5\">Modern Picture Resume Templates: Apply modern design, spacing, and visual distribution as a way of increasing readability and presentation.</li></ol>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Benefits of Using Picture Resume Templates",
+    "text": "There are several benefits of using picture resume templates:<ul><li>Produces a good and enduring first impression.</li><li>Improves the brand and professional identity.</li><li>Makes your resume appealing and presentable.</li><li>Help recruiters are fast to notice and retain you.</li><li>Enhances interaction relative to conventional media.</li></ul>The sample of a professional picture Resume or picture CV sample is used to prove your presentation skills and professionalism.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips for Adding a Photo to Your Resume",
+    "text": "Some Advice for Including a Photo with Your CV<br>Take into account the following recommendations while adding your photo to your resume:<ul><li>A high-quality photograph should be used.</li><li>Choose a picture with a neutral background.</li><li>Dress appropriately for your line of work.</li><li>Make sure the photograph is well-lit and has a clear resolution. Avoid photos that are filtered, cropped, or informal.</li></ul>Your picture resume sample will benefit from a strong image.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/professionals": {
+  "slug": "resume-templates/professionals",
+  "title": "Professionals Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Professional Resume Templates: ATS-Friendly Professional CV Format & Examples",
+   "desc": "Download professional resume templates with ATS-friendly professional CV Format, professional resume examples, and professional CV samples.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/professionals",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Professionals Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/professionals"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Professional Resume Templates",
+   "text": "The first impression is important, and it is made easy by Professional Resume Templates. These templates provide an opportunity to showcase your accomplishments, skills, and abilities.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Professionals Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Corporate",
+    "desc": "Corporate-style resume layout with strong hierarchy and clean executive formatting.",
+    "cat": "Professional",
+    "image": "http://media.naukri.com/media/nicms/professional-corporate-resume-template-neha-kapoor.webp",
+    "link": ""
+   },
+   {
+    "name": "Executive",
+    "desc": "Premium executive template designed for senior leadership and strategic management roles.",
+    "cat": "Professional",
+    "image": "http://media.naukri.com/media/nicms/professional-executive-resume-template-ritwik-malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Boardroom",
+    "desc": "Elegant boardroom-inspired layout tailored for senior executives and finance leaders.",
+    "cat": "Professional",
+    "image": "http://media.naukri.com/media/nicms/professional-boardroom-resume-template-devanshi-singh.webp",
+    "link": ""
+   },
+   {
+    "name": "Prime",
+    "desc": "Modern corporate resume design with refined spacing and polished professional sections.",
+    "cat": "Professional",
+    "image": "http://media.naukri.com/media/nicms/professional-prime-resume-template-ananya-kulkarni.webp",
+    "link": ""
+   },
+   {
+    "name": "Authority",
+    "desc": "Strong executive-style resume template built for impactful leadership profiles.",
+    "cat": "Professional",
+    "image": "http://media.naukri.com/media/nicms/professional-authority-resume-template-vikram-prasad.webp",
+    "link": ""
+   },
+   {
+    "name": "Summit",
+    "desc": "Strategic professional layout with balanced sections and modern executive styling.",
+    "cat": "Professional",
+    "image": "http://media.naukri.com/media/nicms/professional-summit-resume-template-meghnaa-rao.webp",
+    "link": ""
+   },
+   {
+    "name": "Director",
+    "desc": "Business-focused professional template with clean structure and leadership-oriented design.",
+    "cat": "Professional",
+    "image": "http://media.naukri.com/media/nicms/professional-director-resume-template-neha-sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "Enterprise",
+    "desc": "Enterprise-ready resume layout designed for large-scale business and technology professionals.",
+    "cat": "Professional",
+    "image": "http://media.naukri.com/media/nicms/professional-enterprise-resume-template-rahul-kapoor.webp",
+    "link": ""
+   },
+   {
+    "name": "Business Pro",
+    "desc": "Clean business resume template crafted for consulting, operations, and strategy roles.",
+    "cat": "Professional",
+    "image": "http://media.naukri.com/media/nicms/professional-business-pro-resume-template-arvind-menon.webp",
+    "link": ""
+   },
+   {
+    "name": "Formal Edge",
+    "desc": "Contemporary formal layout combining professional structure with sharp modern styling.",
+    "cat": "Professional",
+    "image": "http://media.naukri.com/media/nicms/professional-formal-edge-resume-template-prakash-saini.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Professionals Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How are professional resume templates different from standard resume templates?",
+    "a": "Professional Resume Templates provide more clarity in resume format with a refined look, formal language, and ATS-friendly design, which makes it easy to understand your credentials."
+   },
+   {
+    "q": "How long should a professional resume format be?",
+    "a": "For both entry-level candidates and experienced professionals with extensive job histories, a professional resume format should typically be no more than one or two pages."
+   },
+   {
+    "q": "What font styles are best for a professional CV format?",
+    "a": "You should use simple fonts like Calibri, Arial, Helvetica, or Times New Roman to maintain maximum professionalism."
+   },
+   {
+    "q": "How often should I update my professional Resume Sample?",
+    "a": "You should update your resume whenever you acquire new skills, get certified, or achieve promotions or other accolades."
+   }
+  ],
+  "footer_heading": "Start Building Your Professionals Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning professionals resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What Makes Professional Resume Templates Different from Basic Templates?",
+    "text": "Professional resume templates have been created to satisfy recruiters' current standards while maintaining an eye-catching, polished appearance. As a result, professional resume templates, in contrast to standard ones, are made to seem tidy and present your accomplishments, expertise, and abilities in an effective way.<br>Typically, a professional CV structure should consist of:<ul><li>A polished resume heading that includes your contact details.</li><li>An Outline of a Professional Resume</li><li>Work experience listed in reverse chronological order</li><li>Skills and competencies that align with the requirements of the job</li><li>Information regarding training, certification, and education</li><li>Optional sections that may be included, such as publications, projects, or leadership</li></ul>A sample of a professional resume or CV may be available to guide you on how to effectively highlight your experience.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How Professional Resume Templates Improve Recruiter Engagement",
+    "text": "Recruiters prefer resumes that are well-organized and readable. By increasing the readability of your resume, you stand to benefit from using professional resume templates. Recruiters will be able to quickly identify key information from your resume, including:<ul><li>Current role: your current position and key responsibilities</li><li>Experience: your previous jobs, relevant job roles, and hands-on experience</li><li>Technical expertise and skills: your technical skills and core competencies</li><li>Career progression: your development and increasing responsibilities</li><li>Industry expertise: your familiarity and proficiency with a specific industry</li><li>Achievements and impact: your achievements and contributions from previous job roles</li></ul>Using expert CV templates will give you an edge and ensure that your resume is able to meet the requirements of recruiters.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Best Resume Sections That Employers Expect in Professional Resume Templates",
+    "text": "A professional resume format typically follows a simple template. By sticking to this framework, you will enhance the completeness as well as the credibility of your resume. <ul><li>Professional Synopsis: This is simply an overview of your work history, skills, and goals, condensed into the professional summary. A good resume example will help you come up with an impressive synopsis that will grab the reader’s attention.</li><li>Experience at Work: This is usually the main focus of many professional resume formats. This section provides a summary of your career path.</li><li>Competencies: Professional resume templates let you showcase your abilities.</li><li>Certifications and Education: Professional resume templates allow you to emphasise your education and experience.</li><li>Extra Sections (if applicable): Depending on the position, a professional resume format may have different elements. These could be:</li></ul>a. Experiences in leadership<br>b. Professional qualifications <br>c. Proficiency with technical tools and applications",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Industries That Prefer Professional Resume Templates",
+    "text": "Professional Resume Templates are universally popular in the industries that lay emphasis on formal Finance and accounting: Fit financial analysis, reporting accuracy, and regulatory compliance experience.<ul><li>Information technology: Emphasize technical skills and certifications, as well as project accomplishments, systematically.</li><li>Healthcare and healthcare services: Demonstrate experience, knowledge, and experience in healthcare and professional presentation of clinical expertise and fields of work professionally.</li><li>Business administration: Underline the administrative efficiency needs of organizational and operational, as well as coordination skills.</li><li>Legal and compliance: Show an understanding of legal procedures and documentation, and regulatory compliance clearly.</li><li>Technical and engineering: Demonstrate current technical skills, project, and problem-solving skills.</li></ul>A professional CV format that is well-structured guarantees that your resume meets industry standards.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Modern Trends in Professional Resume Templates",
+    "text": "Professional Resume Templates have developed as per the modern standards of hiring, but remain professional. Current trends include:<ul><li>Clean and minimal layouts</li><li>Skills-oriented resume categories.</li><li>Description of experience based on achievements.</li><li>ATS-optimized formatting</li><li>Skills and experience hybrid forms.</li></ul>The sample of a contemporary professional CV is based on the current trends in hiring preferences and is more credible.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Common Mistakes to Avoid When Using Professional Resume Templates",
+    "text": "Even professional resume templates may be used, but some errors may decrease effectiveness. Avoid these common errors:<ul><li>Having excessively complicated designs.</li><li>Introduction of irrelevant information.</li><li>Composing long paragraphs rather than brief bullet points.</li><li>Employing mixed formatting.</li><li>Sending non-targeted resumes.</li></ul>The professional resume sample review can prevent such mistakes.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Why Professional Resume Templates Increase Interview Chances",
+    "text": "Since professional resumes are made to present your qualifications in an orderly and credible manner, resume templates are the greatest method to increase your chances of getting an interview. They are more recruiter-congruent, more ATS-compliant, and easier to understand.<br>You may ensure that your resume meets industry standards by using professional resume templates, professional resume examples, or professional CV examples. A strong professional CV format can better communicate your value and increase the likelihood that the hiring team will notice it and want to interview you.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": false,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/sales": {
+  "slug": "resume-templates/sales",
+  "title": "Sales Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Sales Resume Templates: Professional Sales Resume Examples, Formats & Samples for Success",
+   "desc": "Explore professional sales resume templates, sales resume examples, and sales CV formats to create a powerful resume.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/sales",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Sales Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/sales"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Sales Resume Templates",
+   "text": "Increase your chances of getting the job with the help of Sales Resume Templates. These templates are designed to highlight your achievements, goals, communication abilities, and revenue contributions in an effective manner.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Sales Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Sales Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "What makes sales Resume Templates different from other resume templates?",
+    "a": "Sales Resume Templates focus more on measurable achievements, such as clients won, sales made, and sales brought in. They place more emphasis on performance metrics than just job responsibilities."
+   },
+   {
+    "q": "How do I write a strong professional summary for a sales Resume Sample?",
+    "a": "A decent overview in 2-3 sentences should entail your experience, some of the most significant achievements and sales skills. Get concentration on quantifiable outcomes and the way in which you can contribute towards the expansion of the company."
+   },
+   {
+    "q": "What metrics should be included in a Sales Resume Example?",
+    "a": "The revenue generated, the rate at which sales goals can be achieved, the count of fresh customers, the conversion rates and the increase in customer retention will be regarded as critical indicators."
+   },
+   {
+    "q": "What skills should be included in sales CV Samples?",
+    "a": "Add such skills as lead generation, communication, negotiation, CRM tools, customer relationship management, and closing strategies."
+   }
+  ],
+  "footer_heading": "Start Building Your Sales Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning sales resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Sales Resume Templates Are Essential for Sales Professionals",
+    "text": "Sales jobs are performance-based, and your resume should demonstrate that you can make money, create relationships, and meet goals. Professional sales resume templates are utilised in order to organise this data in an effective manner. Key benefits include:<ul><li>Highlighting sales achievements up front, such as income received, goals reached, and conversion rates.</li><li>Placing your experience into a format of an organised Sales Resume that can be checked in a few seconds by the recruiters.</li><li>Enhancing ATS match, getting your resume to pass automated applicant tracking systems.</li><li>Demonstrating the skills of communication, negotiation, and handling clients.</li><li>Developing a business-like persona, which is essential in work with clients.</li></ul>A good sales resume sample is a reliable tool to prove that you are a result-driven professional.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Sections Every Sales Resume Template Should Include",
+    "text": "Powerful sales CV templates are based on performance and professional abilities. Essential sections include:<ol start=\"1\"><li value=\"1\">Professional Summary:</li></ol>This part will give you a brief history of your sales experience, strengths, and accomplishments. Sales resume examples are listed below:<ul><li>Sales executive with results-driven functioning and experience of 4+ years, with 120 percent of meeting sales goals and having strong client relations.</li></ul><ol start=\"2\"><li value=\"2\">Work Experience:</li></ol>In any sales resume sample, it is the most important factor. To take note of measurable achievements. It Includes:<ul><li>Sales or turnover targets were met.</li><li>Performance in terms of bringing in and keeping customers.</li><li>The account or territory management responsibilities.</li><li>In sales, strategies are implemented.</li></ul>Sales CV Example:<ul><li>Grew monthly sales revenue by 35 per cent by focusing on prospecting and engaging with clients.</li></ul><ol start=\"3\"><li value=\"3\">Skills Section:</li></ol>An effective sales CV sample will focus on technical and soft skills. Examples include:<ul><li>Lead generation and prospecting.</li><li>Developing deals and negotiations.</li><li>CRM software (HubSpot, Salesforce).</li><li>Relationship building</li><li>Persuasion and communication.</li></ul><ol start=\"4\"><li value=\"4\">Education:</li></ol>Add your degree, certifications, or other training. Example:<ul><li>Bachelor's Degree in Business Administration.</li><li>Sales certification or professional training schemes.</li></ul><ol start=\"5\"><li value=\"5\">Achievements and Certifications (Not Compulsory but beneficial):</li></ol>This part makes you more credible. Examples are as follows:<ul><li>Top performer award</li><li>Recognition of achievement of sales targets.</li><li>Sales certifications in the profession.</li></ul>",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Best Sales Resume Formats to Use",
+    "text": "Choosing the right sales resume format depends on your experience level and career stage.<ol start=\"1\"><li value=\"1\">Chronological Sales Resume Format:</li></ol>This is the most popular sales resume format and dwells upon work history.<ul><li>Professionally trained salespeople.</li><li>Applicants who have been growing in their careers.</li><li>Experts who have high sales performance.</li></ul><ol start=\"2\"><li value=\"2\">Functional Sales Resume Format</li></ol>Instead of focusing on employment history, this approach emphasises skills.<ul><li>Career changers entering the sales industry.</li><li>Candidates at the entry level</li><li>Candidates with gaps in their employment history.</li></ul><ol start=\"3\"><li value=\"3\">Combination Sales Resume Format</li></ol>Skills and work experience are prioritised in such a style.<ul><li>Middle-level salespeople.</li><li>Account managers and territory managers.</li><li>Salespeople with varying degrees of expertise.</li></ul>Because they do not favour one over the other in terms of performance and talents, combination sales CV templates are especially helpful.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Common Mistakes to Avoid in Sales Resume Templates",
+    "text": "It is possible to avoid some typical errors that would make your resume more effective. Major mistakes include:<ul><li>Listing activities with no measurable results.</li><li>Inappropriate sales resume formats.</li><li>Failure to incorporate sales performance measures.</li><li>Using casual design or layout.</li><li>Lacks gaps in sales-related skills.</li></ul>The well-organized sales CV format emphasizes success and contribution to business.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips to Make Your Sales Resume Stand Out",
+    "text": "To get the maximum result out of your sales resume templates, it is advisable to do the following:<ul><li>Demonstrate successes with the help of numbers and data.</li><li>Emphasize growth in revenue and the establishment of goals.</li><li>Add useful CRM tools and sales technologies.</li><li>Action verbs such as increased, expanded, achieved, and generated are also used.</li><li>Make the resume neat, effective, and business-like.</li></ul>Good sales resume samples show both performance and potential.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Conclusion",
+    "text": "The Sales Resume Templates are important documents to highlight your sales experience, achievements, and skills. They are used to organize your information in a way that is easy to understand, bring out the quantifiable outcomes, and impress a professional attitude. A sample of a strong sales resume and a sales CV sample. Your resume will be visible in competitive hiring marketplaces if you use the proper sales resume format.<br>In addition to showcasing your experience, a strong sales resume demonstrates your ability to deliver outcomes and why the company should invest in you as an employee.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/simple": {
+  "slug": "resume-templates/simple",
+  "title": "Simple Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Simple Resume Templates: Professional Simple Resume Formats, Examples & Samples",
+   "desc": "Explore simple resume templates designed for clarity and professionalism. Discover simple resume formats, examples, tips, and FAQs to create an effective job-winning resume.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/simple",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Simple Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/simple"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Simple Resume Templates",
+   "text": "Utilize simple resume templates that are well-structured and easy to scan to create a resume that is not only clear but also effective. Emphasize your achievements, experience, and skills in a simple way that is easily readable by an ATS system.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Simple Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Clean",
+    "desc": "Simple layout with a clean and timeless structure.",
+    "cat": "simple",
+    "image": "http://media.naukri.com/media/nicms/simple-resume-templates-aarav-mehta.webp",
+    "link": ""
+   },
+   {
+    "name": "Pure",
+    "desc": "Minimal layout with plenty of white space.",
+    "cat": "simple",
+    "image": "http://media.naukri.com/media/nicms/simple-resume-templates-neha-patel.webp",
+    "link": ""
+   },
+   {
+    "name": "Minimal",
+    "desc": "Subtle styling adds a fresh, contemporary feel.",
+    "cat": "simple",
+    "image": "http://media.naukri.com/media/nicms/simple-resume-templates-rajat-kumar.webp",
+    "link": ""
+   },
+   {
+    "name": "Basic",
+    "desc": "Straightforward layout built for easy scanning.",
+    "cat": "simple",
+    "image": "http://media.naukri.com/media/nicms/simple-resume-templates-rahul-verma.webp",
+    "link": ""
+   },
+   {
+    "name": "Crisp",
+    "desc": "Balanced design keeps content easy to scan.",
+    "cat": "simple",
+    "image": "http://media.naukri.com/media/nicms/simple-resume-templates-manish-kumar.webp",
+    "link": ""
+   },
+   {
+    "name": "Lite",
+    "desc": "Keeps focus on content and ensures easy readability.",
+    "cat": "simple",
+    "image": "http://media.naukri.com/media/nicms/simple-resume-templates-lite-kartik-sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "Plain",
+    "desc": "Text-focused layout built for maximum ATS compatibility.",
+    "cat": "simple",
+    "image": "http://media.naukri.com/media/nicms/simple-resume-templates-plain-arjun-verma.webp",
+    "link": ""
+   },
+   {
+    "name": "Clear",
+    "desc": "Balanced design makes content easy to read and scan.",
+    "cat": "simple",
+    "image": "http://media.naukri.com/media/nicms/simple-resume-templates-clear-neha-kapoor.webp",
+    "link": ""
+   },
+   {
+    "name": "Core",
+    "desc": "Minimal one-column layout with a clean and formal structure.",
+    "cat": "simple",
+    "image": "http://media.naukri.com/media/nicms/simple-resume-templates-core-meghna-rao.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Simple Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Are simple resume templates effective for all industries?",
+    "a": "Yes, because they focus on professionalism and clarity, the basic resume templates will work in fields like business, healthcare, IT, sales, and administration."
+   },
+   {
+    "q": "Are simple resume templates useful for freshers?",
+    "a": "Simple resume templates are useful for freshers since they highlight education, skills, and opportunities without any unnecessary information."
+   },
+   {
+    "q": "Are simple resume templates useful for professionals and individuals with experience?",
+    "a": "Simple resume templates are useful since they clearly highlight the career path and achievements."
+   },
+   {
+    "q": "Are simple resume templates useful for ATS systems?",
+    "a": "Yes, simple resume templates that use standard headings, clean style, and scans are highly ATS-compliant."
+   }
+  ],
+  "footer_heading": "Start Building Your Simple Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning simple resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Simple Resume Templates Are Preferred by Recruiters",
+    "text": "Recruiters usually scan the resumes within seconds, and therefore readability and clarity are of the essence. Simple Resume Templates enable the employer to find out your credentials fast without being distracted. An uncluttered, simple CV format will make your experience and skills be presented logically.<br>Key advantages include:<ul><li>Proper layout of skills, experience, and achievements.</li><li>Acceleration of the process of scanning resumes.</li><li>Applicant tracking systems (ATS) can be used effectively.</li><li>A straightforward way to adapt to different employment roles.</li></ul>Simple resume templates and simple CV templates are designed to keep your information as the primary one and are professional at the same time.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Simple Resume Templates?",
+    "text": "Simple Resume Templates can be used by a large variety of professionals. They perform excellently at all levels. A review of a simple resume sample would allow potential job seekers to know how to display their qualifications in a clear manner.<ul><li>Recent graduates are looking for entry-level positions that emphasise education, internships, and critical skills.</li><li>Applications submitted to traditional industries such as healthcare, banking, or administration.</li><li>Professionals who can apply for a variety of jobs that are easily customisable based on the application.</li><li>Candidates who want a tidy and polished CV</li></ul>These templates are particularly efficient in situations when professionalism and clarity are of the highest priority, and simple CV templates allow customization in an easier way.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Core Sections Included in Simple Resume Templates",
+    "text": "The simple resume format or simple CV format should be well-organized and structured to enhance its effectiveness and readability.<ol start=\"1\"><li value=\"1\">Professional Summary:</li></ol>You will be asked to give a short description of your experience, skills, and career objectives in this section. It makes recruiters know your profile. Looking at a simple CV Sample can assist you in composing a powerful summary. Example:<br>Exceptionally thorough practitioner who has 3+ years of experience in the field of operations, customer service, and process improvement.<ol start=\"2\"><li value=\"2\">Work Experience:</li></ol>In this section, we bring out your work experience, duties, and accomplishments. Looking over a simple resume sample can give you an idea of how to make your experience count. Include:<ul><li>Job title and company name</li><li>Dates of Employment</li><li>Important accomplishments and duties.</li></ul>Simple Resume Templates will display the work experience in a logical sequence.<ol start=\"3\"><li value=\"3\">Skills Section:</li></ol>The skills section underlines your main competencies that might be applied to the job. This is a section that is significant in simple resume templates as well as simple CV templates.<ul><li>Communication skills</li><li>Problem-solving abilities</li><li>Technical skills</li><li>Organizational skills</li><li>Team collaboration</li></ul><ol start=\"4\"><li value=\"4\">Education Section:</li></ol>This section entails your academic qualifications and certifications. This information is easy to preview in case of a well-organized, simple CV sample.<ul><li>Degree or certification</li><li>Institution name</li><li>Graduation year</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Features That Make Simple Resume Templates Effective",
+    "text": "Simple Resume Templates do not emphasize the complexity of design, but the functionality and clarity. Examples of a simple Resume or a simple CV sample will allow you to see the features.<br>Important features include:<ul><li>Easy to understand layout.</li><li>Easy-to-read fonts</li><li>Professional formatting</li><li>Logical information flow</li><li>Regular spacing and alignment.</li></ul>These characteristics enhance the readability and professionalism of plain CV Templates and resumes.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "When to Choose Simple Resume Templates Over Creative Templates",
+    "text": "Simple Resume Templates are more applicable in the professional and corporate world, where clarity is more important than design. A simple and clean CV Format does not trouble a reader with any details. Best situations include:<ul><li>Corporate job applications</li><li>Administrative and office positions</li><li>Customer support positions</li><li>Sales and business roles</li><li>Technical and operations jobs.</li></ul>Simple Resume Templates help you professionally represent yourself through qualifications.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Conclusion",
+    "text": "Simple Resume Templates offer a quick, accurate, and professional approach to displaying your qualifications with simplicity and force. They have a clean structure that will help the recruiters to go through your skills, experience, and achievements in an easy way With the help of simple CV templates that are properly organized and an appropriate simple resume format, you will be able to make a resume that is professional and also ATS-friendly.<br>A well-organized, focused, and clean resume will highlight your strengths and will stand a better chance of attracting the attention of employers. Selection of the appropriate simple resume templates means that your resume is again professional, effective, and keeps up with current hiring expectations.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/student": {
+  "slug": "resume-templates/student",
+  "title": "Student Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Student Resume Templates: Free Student CV Templates, Examples, Formats & Samples",
+   "desc": "Explore professional student resume templates with Student CV Examples, Student Resume Samples, and student CV formats.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/student",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Student Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/student"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Student Resume Templates",
+   "text": "With student resume templates that emphasize education, skills, projects, and accomplishments, you can confidently launch your career. These templates can be used for internships, part-time jobs, scholarships, and other entry-level opportunities.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Student Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Student Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "What is the best student resume format?",
+    "a": "The most optimal Resume Format with respect to study, skills, and projects, and with a neat and clean look, is considered to be the most appropriate student resume format."
+   },
+   {
+    "q": "How can I create a student resume sample with no experience?",
+    "a": "You can include your academic projects, volunteering services, extracurricular activities, and skills in your student resume sample."
+   },
+   {
+    "q": "Are student CV templates ATS-friendly?",
+    "a": "Yes, most of the student CV templates designed by experts have a plain look and can pass the ATS test."
+   },
+   {
+    "q": "What should a student CV example include?",
+    "a": "The student CV example should include personal details, educational qualifications, skills, projects, internships, and extracurricular activities."
+   },
+   {
+    "q": "How long should a student's resume sample be?",
+    "a": "The length of the sample student resume should be one page to make it easy to read."
+   }
+  ],
+  "footer_heading": "Start Building Your Student Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning student resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Students Need Student Resume Templates?",
+    "text": "Professional student resume templates will help students to organize their qualifications clearly and in a structured way. Although lacking formal job experience, a solid resume can bring out the academic achievements and career opportunities. Benefits include:<ul><li>Improving academic achievements to a professional level.</li><li>Creating a strong student resume for an internship.</li><li>Demonstration of skills, projects, and extracurricular pursuits.</li><li>Early planning for campuses and job applications. </li><li>The development of a professional career profile.</li></ul>Tracking accomplishments, projects, and skill improvement over time is another benefit of using a student CV.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Best Student Resume Format for Students",
+    "text": "Your strengths will be successfully showcased if you choose the appropriate student resume format.<ol start=\"1\"><li value=\"1\">Functional Student Resume Format</li></ol><ul><li>Focuses on abilities and academic success.</li><li>Perfect for students who have never worked before</li></ul><ol start=\"2\"><li value=\"2\">The combination Student CV Format</li></ol><ul><li>includes voluntary work, internships, and skills.</li><li>Ideal for students who have some real-world experience</li></ul><ol start=\"3\"><li value=\"3\">Chronological Student CV Format</li></ol><ul><li>Put education and experience in chronological order.</li><li>Ideal for students who have regular assignments or internships</li></ul>Employers can assess your potential beyond your formal employment history with the help of a skills-focused student CV example.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Write a Student Resume",
+    "text": "A Resume Sample of a professional student must have the following sections:<ul><li>Contact Details: Name, phone number, email, and LinkedIn profile.</li><li>Career Objective: Statement about career objectives and interests.</li><li>Education Section: Name of college or school, course, and anticipated date of graduation.</li><li>Skills: Technical skills, soft skills, and related competencies.</li><li>Projects and Internships: Academic or practice experience that demonstrates competencies.</li><li>Extra-curricular Activities: Experiences related to volunteering, performance, leadership, and clubs.</li></ul>A properly designed student CV sample enhances the readability and the possibility of selection.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Types of Student CV Templates",
+    "text": "Student CV templates are available in various forms, and they are tailored to meet educational and professional requirements:<ul><li>College student resume templates: Perfect for internships and on-campus recruitment.</li><li>High school student CV templates: This is appropriate when a person can work part-time and in preparation of the first job.</li><li>Internship student resume templates: Focus on skill sets, academic projects, and training.</li><li>Fresher student resume templates: Student resume templates, which have been designed for newly acquired qualifications. </li><li>ATS-friendly student CV templates: Optimized and streamlined in recruiter software and hiring systems.</li></ul>By using these templates, you can create an impressive student resume format.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips to Make Your Student Resume Stand Out",
+    "text": "To make your student resume sample better, follow these tips:<ul><li>Keep it concise.</li><li>Focus on your academic achievements and capabilities.</li><li>Keep it simple and professional.</li><li>Add projects and certifications.</li><li>Make your resume job-specific.</li></ul>The good student CV format enhances readability and makes a good impact.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Student Resume Templates",
+    "text": "Student Resume Templates are appropriate for:<ul><li>High school students</li><li>College and university students.</li><li>Fresh graduates</li><li>Internship applicants</li><li>Students seeking part-time employment.</li></ul>The templates assist in producing a professional Student Resume Sample, regardless of the level of experience.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Conclusion",
+    "text": "The student can effectively, neatly, and professionally showcase their academic accomplishments, abilities, and potential by employing professional student resume templates. Even if the student has less professional experience, the right style for a student's resume can showcase the student's coursework, projects, and extracurricular activities, giving employers a clear picture of the student. A well-structured student CV sample can improve the resume's readability, ATS friendliness, and presentation. The student might create a successful student resume example by employing contemporary and expert student CV templates.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/teacher": {
+  "slug": "resume-templates/teacher",
+  "title": "Teacher Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Teacher Resume Templates: Free Teacher CV Templates, Examples, Formats & Samples",
+   "desc": "Download professional Teacher Resume Templates with Teacher CV Examples, Teacher Resume Samples, and ATS-friendly Teacher CV Formats. Create resumes for teaching jobs and education roles.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/teacher",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Teacher Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/teacher"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Teacher Resume Templates",
+   "text": "With the use of Teacher Resume Templates, you can develop a strong profile that showcases your teaching experience, credentials, teaching ability, and academic achievements in an easy-to-read manner.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Teacher Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Teacher Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How is a Teacher Resume Template different from other resume templates?",
+    "a": "A Teacher Resume Template is specially created to capture the attention of teaching experience, certifications, classroom management abilities, and curriculum building, which are the necessary attributes in education jobs."
+   },
+   {
+    "q": "What makes a Teacher CV Example strong for school job applications?",
+    "a": "A well-constructed Teacher CV Sample would involve measurable performance like better student grades, experience in lesson planning, credentials, and knowledge in the subject area of the job he/she is to occupy."
+   },
+   {
+    "q": "Can Teacher CV Templates be used for different education levels?",
+    "a": "Yes, a Teacher Curriculum Vitae can be tailored as per primary, secondary, and higher education, concerning modifying areas such as knowledge of the subject area, teaching experience, and qualifications."
+   },
+   {
+    "q": "What certifications should be included in a Teacher Resume Sample?",
+    "a": "In a Teacher Resume Sample, the certifications of the teacher, like teaching licenses, B.Ed, M.Ed, subject certifications, and any special training in education and classroom technology should be included."
+   }
+  ],
+  "footer_heading": "Start Building Your Teacher Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning teacher resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Teacher Resume Example: What Recruiters Expect",
+    "text": "An effective Teacher Resume Sample will show that you are capable of teaching the students, maintaining classroom control, and improving performance. Employers seek definite indications of teaching performance, qualifications, and student performance.<br>An example of a standard teacher CV consists of:<ul><li>Measurable teaching experience with achievements.</li><li>Managing the classroom and interacting with students.</li><li>Planning of lessons and curriculum development experience.</li><li>Qualifications and teaching certificates.</li><li>Communication and mentoring skills.</li></ul>As an illustration, effective educators usually emphasize achievement that includes: enhancing student performance, lesson planning, and student mentorship at diverse learning levels.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Choosing the Best Teacher Resume Format",
+    "text": "Choosing a teacher resume format is the best thing to do since it will make your experience and qualifications visible.<ol start=\"1\"><li value=\"1\">Chronological Teacher Resume Format:</li></ol><ul><li>Teaching listening through a reversed order.</li><li>Perfect among mature teachers who have regular jobs.</li></ul><ol start=\"2\"><li value=\"2\">Functional Teacher CV Format:</li></ol><ul><li>Focus on skills and teaching abilities.</li><li>New teachers or career changers will be suitable</li></ul><ol start=\"3\"><li value=\"3\">Combination Teacher Resume Format:</li></ol><ul><li>Consists of both work experience and talents.</li><li>Ideal for experienced educators with regular work.</li></ul>A properly designed Teacher CV Sample makes reading easier and higher the chances of being selected.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Essential Sections in Teacher Resume Templates",
+    "text": "These are the essential parts of the Professional Teacher Resume Template:<ul><li>Details to include are your name, a phone number, an email, and a professional profile.</li><li>Also have a professional summary of what you’d like to do in your career, and details of what you’ve done in teaching: the school, what job you had, and what you were in charge of when teaching.</li><li>Your education and any qualifications should be listed, as well as a skills section, covering how good you are at things like class control, lesson planning, speaking to people, and knowing your subject.</li><li>You might also want sections for prizes, courses, papers you’ve had published, or anything you do outside of work.</li></ul>And, as qualifications in teaching are very important in education, it’s also important that any certificates you have are clearly shown.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Types of Teacher CV Templates",
+    "text": "There are a variety of Teacher CV Templates depending on the teaching position:<ul><li>Resume Templates of a primary school teacher: Pay attention to child development and classroom management.</li><li>High school teacher resume templates: Emphasize academic performance and subject specialization.</li><li>Assistant Teacher CV Templates: Perfect CVs for assistant teachers, especially for beginners.</li><li>Resume Templates of Experienced Teachers: For teachers with experience, highlighting your background and accomplishments is good.</li><li>ATS-friendly Teacher Resume Templates: User-friendly applicant tracking system (ATS) resume templates.</li></ul>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Skills to Include in a Teacher Resume Sample",
+    "text": "<ul><li>Skills to include on a sample teacher resume</li><li>Important skills for teachers that can be included in the resume.</li><li>Running the class</li><li>Lesson planning and developing the curriculum</li><li>Evaluating the students</li><li>Mentoring and communicating with others</li><li>Integrating technology in education.</li><li>Organizational and leadership skills.</li></ul>Your Teacher CV Example can be enhanced by highlighting quantifiable successes, such as students' performance or the adoption of new teaching methods.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips to Create a Strong Teacher Resume",
+    "text": "These are the best practices to apply in Teacher Resume Templates:<ul><li>Emphasize adding teaching certifications.</li><li>Provide measurable learning outcomes.</li><li>Take note of the learning objectives and the impact on the students.</li><li>Apply professional and plain formatting.</li><li>Make your resume specific to each teaching post.</li><li>Keep your resume in PDF format to maintain the same format.</li></ul>A good teacher resume sample enhances your success in obtaining teaching interviews.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Conclusion",
+    "text": "Professional teacher resume templates assist educators in having their teaching experience, certifications, and skills arranged in an organized manner. To help the recruiters easily understand your skills, the resume prepared by a good teacher resume template must display your success in the classroom, the way you influence students, and your knowledge in the particular subject. Teachers can use the latest teacher CV templates to prepare an effective resume example to increase their job prospects in the teaching profession.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/tech": {
+  "slug": "resume-templates/tech",
+  "title": "Tech Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Tech Resume Templates: Free Tech CV Templates, Examples, Formats & Samples",
+   "desc": "Explore professional Tech Resume Templates with Tech CV Examples, Tech Resume Samples, and ATS-friendly Tech CV Templates.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/tech",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Tech Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/tech"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Tech Resume Templates",
+   "text": "Tech resume templates designed specifically for web developers, software developers, IT support, and data analysts to create a job-ready profile. Showcase your skills, tools, projects, and qualifications using the best tech resume format.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Tech Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Tech Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "What’s the best tech resume format for fresh graduates?",
+    "a": "For freshers, you don’t need to emphasize your work experience. Instead, you should emphasize your technical skills, academic projects, certifications, and courses completed."
+   },
+   {
+    "q": "What should a tech CV example include?",
+    "a": "Your technical skills, academic projects, certifications, work experience, education, and any portfolio or GitHub links."
+   },
+   {
+    "q": "Are tech CV templates ATS-friendly?",
+    "a": "Yes, professional tech CV templates are ATS-friendly. They are designed with standard formatting and layout, which helps them get past applicant tracking systems."
+   },
+   {
+    "q": "How long should a tech resume sample be?",
+    "a": "A tech resume sample should be one to two pages, depending on your experience and technical skills."
+   }
+  ],
+  "footer_heading": "Start Building Your Tech Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning tech resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Tech Professionals Need Tech Resume Templates?",
+    "text": "Professional Tech Resume Templates assist a candidate in showing their technical skills in a professional and orderly manner. A resume is well structured in the competitive technology industry. This helps the recruiter quickly evaluate your technical skills and experience. Benefits include:<ul><li>Requesting presentation of technical skills and tools.</li><li>Designing an effective IT and software Tech Resume Sample.</li><li>Presenting projects, certifications, and technical success.</li><li>Training on technical job applications effectively.</li><li>Developing a career-related profile.</li></ul>A Tech CV Sample will also allow you to keep track of your technical development, certifications, and project experience over the years.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Best Tech Resume Format for Tech Professionals",
+    "text": "When selecting an appropriate Tech Resume Format, it is possible to bring out the best in terms of your technical strengths and experience.<ol start=\"1\"><li value=\"1\">Chronological Tech Resume Format</li></ol><ul><li>Concentrates on the work experience (in the reverse order).</li><li>Perfect fit among tenured IT professionals who work full-time.</li></ul><ol start=\"2\"><li value=\"2\">Functional Tech CV Format</li></ol><ul><li>Places emphasis on expertise and skills.</li><li>Better for freshers, students, or career changers in tech roles.</li></ul><ol start=\"3\"><li value=\"3\">Combination Tech CV Format</li></ol><ul><li>Both technical skills and work experience are included:</li><li>Candidates should be qualified experts with relevant project and work experience.</li></ul>An effective tech CV sample allows the recruiter to know your technical skills within a short time.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Write a Tech Resume?",
+    "text": "An expert Tech Resume Sample must have the following sections:<ul><li>Contact Data: Name, phone number, email, and LinkedIn or GitHub profile.</li><li>Professional History: Career goals, hands-on experience, and technical expertise all converge in this section. </li><li>Technological Expertise: This section includes your tech strengths, such as frameworks, technologies, software, and tools you use.</li><li>Work Experience: Your work history includes your previous roles, tasks, and the tech results you have achieved. </li><li>Projects: Academic, freelance, and professional work that showcases your technical skills.</li><li>Education and Certifications: Educational qualifications and technical skills.</li><li>Other Sections: Awards, open-source contributions, and technical feats.</li></ul>An effective tech CV sample improves the readability of your resume and raises your employment prospects.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Types of Tech CV Templates",
+    "text": "Tech CV Templates are constructed depending on various technical positions and levels of experience:<ul><li>Templates for software developer resumes: Concentrate on what you can do in programming, and what development work you’ve completed.</li><li>Templates for IT support resumes: Bring to the front your ability to fix problems, your knowledge of networks, and of looking after computer systems.</li><li>Templates for web developer CVs: Here, you should focus on your skills in interacting with the elements of a web page, both visible and invisible, and the web technologies you are good at.</li><li>Templates for data analyst resumes: Here, you should focus on the data tools you are familiar with, your data analysis skills, and your experience in data reporting.</li><li>Fresher Tech Resume Templates: These are great for freshers in the tech industry and for students.</li></ul>Using these templates helps create a professional and effective tech resume sample.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips to Make Your Tech Resume Stand Out",
+    "text": "These are the tips to use to enhance your tech resume sample:<ul><li>Prominently show useful technical capabilities.</li><li>Add actual technical projects.</li><li>Mention details about certifications and training.</li><li>Simple and professional formatting.</li><li>Adapt your resume to every tech job.</li><li>Insert GitHub, portfolio, or project links.</li></ul>A good Tech CV Format enhances readability and makes a good impression on the recruiters.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Tech Resume Templates",
+    "text": "Tech Resume Templates are suitable for:<ul><li>Software developers</li><li>IT support professionals</li><li>Web developers</li><li>Data analysts</li><li>Computer science students</li><li>Junior technical workers.</li></ul>These templates will assist in the formulation of a professional Tech Resume Sample regardless of experience level.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Conclusion",
+    "text": "Tech Resume Templates assist individuals in showcasing their technical expertise, projects, and experience in a professional, well-formatted, and clear format. The right tech resume format gives the candidate the option of making the techno-related knowledge, certifications, and other technical merits visible so that the recruiters can easily judge their qualifications. <br>The right Tech CV Sample enhances easy reading, ATS compliance, and gives your professional profile more power. Through the application of the latest and expert technology CV Templates, candidates are likely to make a powerful tech resume sample at the cost of improved opportunities at getting employment in the competitive technology sector.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/two-column": {
+  "slug": "resume-templates/two-column",
+  "title": "Two Column Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Two-Column Resume Templates: Free Two Column CV Templates, Examples & Formats",
+   "desc": "Download professional two-column resume templates with modern two-column CV examples, Resume Samples, and ATS-friendly two-column resume formats for all industries.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/two-column",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Two Column Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/two-column"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Two-Column Resume Templates",
+   "text": "With the help of two-column resume templates, you can highlight your accomplishments, skills, and work experience in an attractive and presentable manner. Use this professional two-column resume template to create a resume that is ATS-friendly.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Two Column Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Split",
+    "desc": "Professional split-column layout with clear sections and balanced content spacing.",
+    "cat": "Two Column",
+    "image": "http://media.naukri.com/media/nicms/two-column-split-resume-template-megha-rathore.webp",
+    "link": ""
+   },
+   {
+    "name": "Dual",
+    "desc": "Modern dual-column design with strong hierarchy and recruiter-friendly structure.",
+    "cat": "Two Column",
+    "image": "http://media.naukri.com/media/nicms/two-column-dual-resume-template-rishabh-agarwal.webp",
+    "link": ""
+   },
+   {
+    "name": "Sideframe",
+    "desc": "Sidebar-focused layout with clean organization and polished visual balance.",
+    "cat": "Two Column",
+    "image": "http://media.naukri.com/media/nicms/two-column-sideframe-resume-template-priyanshi-tiwari.webp",
+    "link": ""
+   },
+   {
+    "name": "Balance",
+    "desc": "Balanced two-column structure designed for readability and organized presentation.",
+    "cat": "Two Column",
+    "image": "http://media.naukri.com/media/nicms/two-column-balance-resume-template-aniket-sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "Gridline",
+    "desc": "Grid-inspired resume layout with defined sections and professional formatting.",
+    "cat": "Two Column",
+    "image": "http://media.naukri.com/media/nicms/two-column-gridline-resume-template-neha-kapoor.webp",
+    "link": ""
+   },
+   {
+    "name": "Panel",
+    "desc": "Executive-style panel layout with strong content flow and modern section design.",
+    "cat": "Two Column",
+    "image": "http://media.naukri.com/media/nicms/two-column-panel-resume-template-rohan-saxena.webp",
+    "link": ""
+   },
+   {
+    "name": "Divide",
+    "desc": "Minimal divided-column format built for clean readability and ATS compatibility.",
+    "cat": "Two Column",
+    "image": "http://media.naukri.com/media/nicms/two-column-divide-resume-template-aishwarya-patil.webp",
+    "link": ""
+   },
+   {
+    "name": "FrameX",
+    "desc": "Modern framed layout with elegant accents and visually balanced sections.",
+    "cat": "Two Column",
+    "image": "http://media.naukri.com/media/nicms/two-column-framex-resume-template-manav-parekh.webp",
+    "link": ""
+   },
+   {
+    "name": "Flex Column",
+    "desc": "Flexible two-column layout with clean sections and modern visual structure for versatile professional profiles.",
+    "cat": "Two Column",
+    "image": "http://media.naukri.com/media/nicms/two-column-flex-column-resume-template-kavya-mehta.webp",
+    "link": ""
+   },
+   {
+    "name": "Twin",
+    "desc": "Elegant twin-column design with refined spacing and professional content alignment.",
+    "cat": "Two Column",
+    "image": "http://media.naukri.com/media/nicms/two-column-twin-resume-template-arjun-sharma.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Two Column Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Are two-column resume templates ATS-friendly?",
+    "a": "Yes, the great majority of two-column resume templates made today are designed to guarantee ATS compatibility with improved visual structure."
+   },
+   {
+    "q": "What should be included in a two-column CV example?",
+    "a": "Contact details, skills, certifications, work experience, education, and accomplishments should all be included in the two-column CV example."
+   },
+   {
+    "q": "Do recruiters prefer two-column resume templates?",
+    "a": "Most recruiters prefer two-column resume templates because they improve readability and effectively convey information."
+   },
+   {
+    "q": "How long should a two-column resume sample be?",
+    "a": "A two-column resume sample should not be longer than one or two pages, depending on the level of experience."
+   }
+  ],
+  "footer_heading": "Start Building Your Two Column Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning two column resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What Is a Two-Column Resume Format?",
+    "text": "The two-column resume format is a format that separates your resume into two columns. The primary column normally includes the work experience and the accomplishments, whereas the secondary one includes skills, contact information, and certifications.<br>This structure enhances organization and gives employers a chance to review your profile within a short period. A two-column CV format with a good design will ensure that your resume creates an impression of being modern, professional, and easy to navigate.<br>An average two-column resume includes:<br>Left column: Skills, personal contact details, certifications, and technological devices.<br>Right column: Your work experience and education, and big accomplishments.<br>You will be able to easily find your most important certifications thanks to this design.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Why Use Two-Column Resume Templates",
+    "text": "There are a number of strengths of using two-column resume templates over traditional resumes. These templates are intended to enhance readability, structure, and attractiveness.<br>Key benefits include:<br>Showing abilities and experience in a tabular format.<br>Enhancing readability among the recruiters and hiring managers.<br>Producing a contemporary and professional look.<br>Improving the use of resume space.<br>Assist in bringing out major qualifications within a short span.<br>A maximally constructed two-column resume sample will enable employers to find out how good you are.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Two-Column CV Templates",
+    "text": "Two-column CV Templates are suitable in case a professional wants to showcase their skills and experience. Such templates are most appropriate to:<br>Skilled employees who have worked for a longer period of time.<br>Technical officers like engineers and developers.<br>Design experts and people with a creative mind.<br>Marketing and business practitioners.<br>Middle and top-level applicants.<br>The example of a professional two-column resume shows expertise most professionally.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How Information Is Structured in a Two-Column Resume",
+    "text": "A good resume sample is two-columned with clear sections in both columns.<br>The smaller column usually incorporates:<br>Contact information<br>Skills and technical expertise<br>Certifications and tools<br>Languages<br>The wider column includes:<br>Professional summary<br>Work experience<br>Education<br>Projects and achievements<br>This two-column CV sample format is clear and provides a balance of presentation.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "When to Choose a Two-Column Resume Format",
+    "text": "A Resume Format that has two columns is very suitable in cases when you need to emphasize technical skills and work experience at the same time. It is particularly effective among those professionals who have numerous competencies and career accomplishments.<br>This format is useful when:<br>You possess a number of applicable skills to mention.<br>You would like a contemporary and business-like resume design.<br>You are willing to do better with your resume.<br>You have mid-level or senior-level experience.<br>You can use the professional two-column resume templates to make your resume clear and attractive to the eye.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Best Practices for Using Two-Column Resume Templates",
+    "text": "These are the optimal guidelines to observe in designing your two-column resume sample:<br>Make the layout simple and business-like.<br>Use clear section headings<br>Enable valuable skills in the column on the side.<br>Focusing on the relevant experience and accomplishments.<br>Do not put a lot of information in the resume.<br>Professional fonts and formatting should be used.<br>The two-column CV example is better crafted and makes the CV more attractive to the eye and more professional.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Advantages of Two-Column CV Templates for Modern Hiring",
+    "text": "Recruiters in modern times like resumes that are easy to scan and read, and are visually arranged. Two-column CV Templates are used to divide important information effectively.<br>Advantages include:<br>Quick resume search by recruiters.<br>More efficient product of technical and professional skills.<br>Better structure and clarity of the resume.<br>Business and contemporary look.<br>Higher levels of having a good first impression.<br>Two-column Resume Templates enable candidates’ visibility in the competitive job markets.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Conclusion",
+    "text": "Two-column resume templates are a contemporary, clean, and professional method of showcasing your skills, qualifications, and experience. The two-column structure of the resume enhances the resume to be readable, emphasizes the strengths, and makes the resume visually appealing. The appropriate two-column CV sample will make recruiters assess your profile and recognize your expertise within the briefest period of time. A two-column resume example is the best way to create an effective resume with two columns that will increase the chances of success in job applications and career development.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": false,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/Two-Page": {
+  "slug": "resume-templates/Two-Page",
+  "title": "Two-Page Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Two-Page Resume Templates: Professional Two-Page CV Templates, Examples & Formats",
+   "desc": "Explore professional two-page resume templates with modern two-page CV examples, Resume Samples, and ATS-friendly two-page resume formats for experienced professionals.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/two-page",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Two-Page Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/Two-Page"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Two-Page Resume Templates",
+   "text": "Make use of two-page resume templates that are specifically designed for experienced professionals to highlight your career progression. A structured two-page resume helps to clearly highlight your achievements, skills, and experience, making it ATS-friendly.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Two-Page Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Two-Page Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "For whom are two-page resume templates appropriate?",
+    "a": "For seasoned managers and technical experts with a long track record of accomplishments, two-page resume templates are the ideal choice."
+   },
+   {
+    "q": "Do recruiters accept resumes that are two pages long?",
+    "a": "Yes, a two-page resume format can be accepted by recruiters when the information in it is relevant, properly organized, and reflects useful experience."
+   },
+   {
+    "q": "What should not be included in a two-page resume sample?",
+    "a": "A two-page resume sample should not have irrelevant experience, old-fashioned skills, or irrelevant personal information."
+   },
+   {
+    "q": "Are two-page CV templates helpful for beginners?",
+    "a": "Although one-page CV templates are generally recommended, two-page CV templates may sometimes be necessary for complex projects, longer certificates, and internships."
+   },
+   {
+    "q": "How do I organize a two-page resume example?",
+    "a": "The main skills and recent experiences go on the first page, and the rest of your experiences and qualifications go on the second page."
+   }
+  ],
+  "footer_heading": "Start Building Your Two-Page Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning Two-Page resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "When a Two-Page Resume Is the Right Choice",
+    "text": "A two-page resume format is best applied in cases where you have the relevant experience that cannot be well displayed on a single page. The attempt to fit vast experience on one page might decrease the clarity and effect.<br>You should have a Resume Sample of 2 pages when:<ul><li>More than five to ten years of work experience.</li><li>Several positions with career development.</li><li>Skills that should be explained in detail.</li><li>Certifications, projects, or management experience.</li><li>Achievement and contributions in the industry.</li></ul>The two-page resume templates we produce will not compromise on clarity to showcase your credentials.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How Recruiters Evaluate a Two-Page Resume",
+    "text": "Typically, recruiters scan over the resumes, and it is therefore crucial to be organized. The two-page CV format is well-designed to bring out the most essential information on the first page and assisting information on the second page. Employers would like a professional two-page resume example to consist of:<ul><li>Very good professional summary on the first page.</li><li>The most important skills and core competencies are well enumerated.</li><li>The recent employment history has measurable accomplishments.</li><li>Extra experience, certifications, or projects on the second page.</li></ul>A two-page CV sample, in a well-organized format, can make recruiters know your entire career profile.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "What to Include on Each Page of a Two-Page Resume",
+    "text": "When using a professional Two-page Resume Template, it is important to divide the information in a logical manner on the two pages.<br>First page should include:<ul><li>Contact information</li><li>Professional summary</li><li>Core skills and competencies</li><li>Most recent work experience</li></ul>Second page should include:<ul><li>Previous work experience</li><li>Education and certifications</li><li>Technical proficiency or specialisation.</li><li>Awards, leadership, or significant accomplishments.</li></ul>This format makes your Two-page Resume Sample concise and clear.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Industries That Benefit Most from Two-Page CV Templates",
+    "text": "Two-page CV Templates are very common in those industries where experience, certifications, and technical knowledge are required. These include:<ul><li>IT and software development.</li><li>Technical and engineering careers.</li><li>Healthcare and medical professions.</li><li>Executive and management.</li><li>Finance, business leadership, and consulting.</li></ul>A complex two-page CV example helps companies assess the complex qualifications.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How Two-Page Resume Templates Improve Professional Presentation",
+    "text": "Two-pages Resume templates provide a sufficient amount of space to explain your career story professionally. It enables you to indicate accomplishments, managerial experience, and technical expertise without making the document too busy.<ul><li>Improved career progression presentation.</li><li>Well-defined description of duties and accomplishments.</li><li>Better legitimacy of resumes and their formatting.</li><li>Professionalism and suitability for a high role.</li><li>Greater ability to add certifications and projects.</li></ul>A professional two-page resume format makes your application to a job more powerful.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Common Mistakes to Avoid in a Two-Page Resume",
+    "text": "Although a two-page resume template gives us more space, it must be well organised.<br>Avoid these common mistakes:<ul><li>Inclusion of irrelevant information.</li><li>Doing the same tasks in the same positions.</li><li>Inconsistency in page formatting.</li><li>It should not involve old experience or irrelevant experience.</li><li>Increasing the difficulty in scanning the resume.</li></ul>A well-laid-out two-page CV sample is always effective and clean.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Conclusion",
+    "text": "Two-Page Resume Templates also assist most experienced professionals to outline their qualifications, career advancement, and accomplishments in a concise and properly organized format. The right Two Page Resume Format would make your resume clear, easy to read, and make it look more professional, and leave sufficient space to highlight your experience. Secondly, with the help of a modern two-page CV template, the candidates can design a full and efficient two-page resume sample that will enhance their visibility, reinforce their employment, and create more career growth opportunities.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/videographer": {
+  "slug": "resume-templates/videographer",
+  "title": "Videographer Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Videographer Resume Templates: Professional CV Examples, Formats & Samples",
+   "desc": "Explore professionally designed videographer resume templates with CV examples and samples. Create a powerful videographer resume that highlights creativity and experience.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/videographer",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Videographer Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/videographer"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Videographer Resume Templates",
+   "text": "Make a strong impact with your videographer resume template that highlights your storytelling and video production skills, as well as your body of work. Highlight your skills and achievements with the right ATS-friendly layout.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Videographer Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Videographer Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "What makes videographer resume templates different from general templates?",
+    "a": "The Videographer Resume Templates are created to emphasize creative work, technical production abilities, quantifiable outcomes, and links to the portfolio instead of the conventional job duties."
+   },
+   {
+    "q": "How long should a videographer resume format be?",
+    "a": "An ideal professional videographer resume format must not be more than two pages, though it is usually one page."
+   },
+   {
+    "q": "What should a strong summary include in a videographer CV example?",
+    "a": "What should a strong summary include in a videographer CV example?"
+   },
+   {
+    "q": "What skills are essential in videographer CV templates?",
+    "a": "The professional videographer CV templates are supposed to comprise camera handling, lighting, editing software knowledge, tone adjustment, and innovative narration."
+   }
+  ],
+  "footer_heading": "Start Building Your Videographer Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning videographer resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why You Need Specialized Videographer Resume Templates?",
+    "text": "Videography is a mix of artistic and technical accuracy. Such a balance is not often served in a generic resume. Customized videographer resume templates can assist you in:<ul><li>Emphasize camera work and film-making skills.</li><li>Demonstrate skills in showcase editing software.</li><li>Illustrate current production experience evidently.</li><li>Focus on narration and artistic direction.</li><li>Organize freelance and contract work successfully.</li></ul>A professional videographer resume example shows that it is possible to balance the creativity of the visual image with the tangible results.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "What to Include in a Videographer Resume",
+    "text": "A good videographer resume sample must consist of the following parts:<ol start=\"1\"><li value=\"1\">Professional Summary: Give a brief description of:</li></ol><ul><li>Years of experience</li><li>Specialties (weddings, corporate films, documentaries, social media).</li><li>Technical strengths</li><li>Key career achievements</li></ul>This section must, at first glance, indicate your innovative nature and skills.<ol start=\"2\"><li value=\"2\">Skills Section: An effective videographer CV format will incorporate the soft and technical skills:</li></ol>a. Technical Skills:<ul><li>His/her work with a camera (DSLR, mirrorless, cinema cameras).</li><li>Lighting and sound setup</li><li>Video editing (Final Cut Pro, DaVinci Resolve, Adobe Premiere Pro)</li><li>Color grading and motion graphics.</li><li>Breakdown of scripts and preparation of shots.</li></ul>b. Soft Skills<ul><li>Creative storytelling</li><li>Client communication</li><li>Time management</li><li>Team collaboration</li><li>Flexibility to meet strict deadlines.</li></ul><ol start=\"3\"><li value=\"3\">Work Experience Section: The experience part plays an important role in a videographer CV sample. Put emphasis on results rather than outlining roles. Example structure:</li></ol><ul><li>Freelance Videographer</li><li>Created 120+ wedding movies, and the client satisfaction rate is 95%.</li><li>Provided business advertisement campaigns to increase client interactions by 40 percent. </li><li>Managing the entire production process from concept development to final production. </li></ul>If you are seeking to make your resume for a videographer sample more attractive and achievement-oriented, you can do so.<ol start=\"4\"><li value=\"4\">Education and Certifications: Formal education is not a prerequisite in the field of videography. However, a strong foundation is essential. Some of the information you can include in your resume for a videographer is as follows:</li></ol><ul><li>Bachelor’s Degree in Film, Media, and Communications</li><li>Film school certifications</li><li>Software-specific certifications</li><li>Experience gained from masterclasses and workshops</li></ul><ol start=\"5\"><li value=\"5\">Portfolio Integration: Videography is a profession that needs to be proven visually, unlike most professions. Your videographer resume templates must contain:</li></ol><ul><li>Portfolio connection (website/ Vimeo/ YouTube channel)</li><li>QR code (not mandatory in print resumes)</li><li>Significant signature projects.</li></ul>",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Choosing the Right Videographer Resume Format",
+    "text": "The best resume format for a videographer depends on the level of experience.<ul><li>Chronological Format: This is ideal for veteran videographers who have had a steady stream of work in production agencies and firms. </li><li>Functional Format: This resume style works best for newcomers or for people who are changing professions. The CV that the videographer uses does not focus on previous jobs. Instead, it emphasizes talents, creativity, and potential.</li><li>Hybrid Format: Appropriate for freelancers handling a variety of short-term jobs. It strikes a balance between skill features and project experience.</li></ul>Special videographer CV templates have the flexibility, but also have a clean structure and are presented in a professional manner.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips to Make Your Videographer Resume Stand Out",
+    "text": "The strategic tips to follow to produce an effective videographer resume sample are:<ul><li>Look at the quantifiable accomplishments, but not activities.</li><li>Make use of industry terminology.</li><li>Maintain a clean and modern format.</li><li>Do not use too decorative designs that affect the readability.</li><li>Make your resume corporate or creative.</li></ul>The correct video resumes example must be tailored to the type of production you are seeking to work in; commercial agencies like organization-driven resumes, whereas creative studios could value minor features of design",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Common Mistakes to Avoid",
+    "text": "Do not use videographer resume templates:<ul><li>Creating an isolated list of equipment</li><li>Capacity to include unrelated work experience</li><li>Being too technical in the resume</li><li>Ignoring measurable impact</li><li>Sending resumes without a portfolio</li></ul>Effectiveness and conciseness are more important than flooding.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Videographer CV Templates?",
+    "text": "The people who will find it useful to have structured videographer CV templates are:<ul><li>Freelance videographers</li><li>Wedding videographers</li><li>Corporate video producers</li><li>Documentary filmmakers</li><li>Social media video creators</li><li>Entry-level film graduates</li></ul>You need to create your first videographer resume example or refresh the profile of a seasoned professional. Structured templates will enhance your image and get you more attention to get an interview.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Final Thoughts",
+    "text": "A methodical resume will help market you as both a technical expert and a creative storyteller. Professionally made videographer resume templates will assist you in showing your experience, production skills, and quantifiable outputs in an appealing format.<br>Choosing the appropriate videographer resume format, combining a good collection of your works, and reflecting on quantifiable accomplishments, you have a high chance of making yourself visible in the crowded media and production sector.<br>Put time into perfecting your videographer resume sample since presentation is everything in a visual profession.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/word": {
+  "slug": "resume-templates/word",
+  "title": "Word Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Word Resume Templates: Professional Word CV Templates, Examples & Formats",
+   "desc": "Explore professional Word Resume Templates with modern Word CV examples, resume samples, and ATS-friendly Word resume formats for freshers and experienced professionals.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/word",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Word Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/word"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Word Resume Templates",
+   "text": "Microsoft Word resume templates make it easy to create a professional resume. Utilize a simple Word resume template to personalize your skills, experience, and qualifications for any job.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Word Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Word Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Who should use Word resume templates?",
+    "a": "Word Resume Templates can be used by freshers, experienced professionals, and corporate job seekers, and these templates require a professional and editable resume format."
+   },
+   {
+    "q": "Is a word resume format ATS-friendly?",
+    "a": "Yes, the ATS-compatible format of the word resume is the one that is properly structured, with a simplistic design and standard headings"
+   },
+   {
+    "q": "What should not be included in a word resume sample?",
+    "a": "A word resume sample must not have irrelevant experience, obsolete skills, over-designed, or unnecessary personal information for the employers."
+   },
+   {
+    "q": "How should a word resume example be structured?",
+    "a": "A professional word resume example must begin with a summary, then skills, work experience, education, and certifications in a proper, well-organized format."
+   }
+  ],
+  "footer_heading": "Start Building Your Word Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning word resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Word Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your word resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Word Formatting",
+    "text": "Every word template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "",
+    "text": "9",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "cover-letter-templates/google-docs": {
+  "slug": "cover-letter-templates/google-docs",
+  "title": "Google Docs Cover Letter Templates",
+  "parent": "cover-letter-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Google Docs Cover Letter Templates: Professional Examples, Formats & Samples",
+   "desc": "Explore professional Google Docs Cover Letter Templates with editable formats, examples, and samples. Create cover letters using modern Google Docs layouts.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates"
+    },
+    {
+     "n": "Google Docs Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Google Docs Cover Letter Templates",
+   "text": "Google Docs Cover Letter Templates allow you to create professional job applications in a flash. With Google Docs, you can compose and share ATS-friendly cover letters using a simple Google Docs Cover Letter.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Google Docs Cover Letter Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Google Docs Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Can I customize a Google Docs cover letter Format easily?",
+    "a": "A Google Docs Cover letter format can be easily edited to make changes in fonts, spacing, and content without compromising the quality of the layout."
+   },
+   {
+    "q": "Is a Google Docs cover letter Sample ATS-compatible?",
+    "a": "Yes, an effective ATS-friendly cover letter sample that consists of a well-arranged and well-formatted Google Docs Cover Letter Sample and keywords."
+   },
+   {
+    "q": "How long should a Google Docs cover letter Example be?",
+    "a": "A professional Google Docs Cover letter sample should not be more than one page."
+   },
+   {
+    "q": "Should I export Google Docs cover letter Templates as PDF before submitting?",
+    "a": "Yes, exporting Google Docs cover letter templates as a PDF will allow them to be professionally presented and utilised on devices with the same format."
+   }
+  ],
+  "footer_heading": "Start Building Your Google Docs Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning google docs resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Cloud-Based Cover Letter Templates Are Changing Job Applications?",
+    "text": "Conventional cover letter writing usually entails format inconsistency as well as file compatibility problems. Using Google Docs Cover Letter Templates, the candidates have the advantage of:<ul><li>Automatic formatting alignment.</li><li>In-built professional font styles.</li><li>Clean margin structures.</li><li>Easy export to PDF or Word.</li><li>Real-time availability at any device.</li></ul>An example of a well-written and refined Google Docs Cover Letter Sample lets the reader see how well-organized formatting can help to make a presentation more professional and retain the information presented in a minimal and effective way.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Structural Framework That Recruiters Prefer",
+    "text": "Hiring managers value clarity and relevance. A good Google Docs cover letter format has a logical format:<ul><li>Opening Paragraph: Clearly state the role you are looking for at the outset and offer your finest skills.</li><li>Middle Paragraph(s): Emphasize relevant accomplishments, work-specific skills, and value additions.</li><li>Closing Paragraph: Show that you are interested in continuing professionally, discuss, and sign off.</li></ul>Modern use of the Google Docs Cover Letter Templates provides the correct spacing between sections, and your application will be easy to scan in a few seconds.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Built-In Formatting Advantages of Google Docs",
+    "text": "Formatting control without design complexity is one reason professionals use Google Docs Cover Letter Templates. Google Docs provides:<ul><li>Pre-set heading styles.</li><li>The baseline business fonts.</li><li>Consistent line spacing.</li><li>Professional alignment instruments.</li><li>Simple customization without layout degradation.</li></ul>The well-edited Google Docs Cover Letter Sample is visually straightforward and content-driven rather than ornamental.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Optimizing Your Cover Letter for ATS Systems",
+    "text": "In Applicant Tracking Systems (ATS), documents are scanned based on keywords and structure. An effective Google Docs cover letter format enhances compatibility by:<ul><li>Using simple headings</li><li>Do not use too many graphics or tables.</li><li>Maintaining standard fonts</li><li>Job-specific keywords should be added automatically.</li></ul>An organized Google Docs Cover letter sample stands a higher chance of beating automated screening filters.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Customization Without Complication",
+    "text": "Any job application must be customized. The Google Docs Cover Letter Templates enable the user to:<ul><li>Customize content at various levels.</li><li>Tone can be changed to adapt to corporate or creative industries.</li><li>Hit-and-miss insertion of relevant achievements.</li><li>Be able to maintain similar formatting in various programs.</li></ul>A Google Docs cover letter sample is appropriate for candidates seeking entry-level, mid-career, and senior executive positions because of its flexibility.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Common Pitfalls to Avoid",
+    "text": "Even with expert Google Docs Cover Letter Templates, mistakes might undermine your application. One should avoid:<ul><li>An exact copy of your CV.</li><li>Too many long paragraphs.</li><li>Opening remarks are standard.</li><li>Accomplishments that are not important.</li><li>Personalization that is not related to a specific role should not be taken into consideration.</li></ul>The Google Docs cover letter sample, which is short and clear, should not be the same as your resume.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Maximize Impact with Google Docs Templates",
+    "text": "The best methods to create a good Google Docs cover letter sample are:<ul><li>Being proactive and goal-oriented.</li><li>Including relevant accomplishments.</li><li>Match the job description with your skills.</li><li>Do not exceed one page with the letter.</li><li>For a formal submission, export as a PDF.</li></ul>Formatting consistency and customized content make your application more competitive.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Conclusion",
+    "text": "Google Docs Cover Letter Templates is a valuable tool for job seekers today because it is quick, clean, and easy to use. The formatting is done for the user, which makes it easier to write a professional cover letter.<br>By selecting the appropriate format, content, and structure, a job seeker are able to develop a powerful Google Docs cover letter that will enhance the entire job application and boost the chances of a successful interview.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "cover-letter-templates/professional": {
+  "slug": "cover-letter-templates/professional",
+  "title": "Professional Cover Letter Templates",
+  "parent": "cover-letter-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Professional Cover Letter Templates: Modern Formats, Samples, Examples",
+   "desc": "Take your job application to the next level using professional cover letter templates. Get the best formats, examples, and samples.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/cover-letter-templates/professional",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates"
+    },
+    {
+     "n": "Professional Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Professional Cover Letter Templates",
+   "text": "Impress hiring managers with professional cover letter templates that highlight your achievements, skills, and contributions to organizations. Build effective job applications using ATS-friendly formats and a professional cover letter format.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Professional Cover Letter Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Professional Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Who should use professional Cover letter Templates?",
+    "a": "Professional Cover Letter Templates are most suitable for all job seekers who desire to have a structured and ATS-friendly application document."
+   },
+   {
+    "q": "What makes a strong professional Cover letter Example?",
+    "a": "Measurable achievements, a particular employer fit, and a one-page format are the components of an effective professional cover letter sample."
+   },
+   {
+    "q": "How long should a professional Cover letter Format be?",
+    "a": "An average professional cover letter format must not exceed one page, containing three to four paragraphs."
+   },
+   {
+    "q": "Can professional Cover letter Templates be customized for different industries?",
+    "a": "Yes, the professional cover letter templates are quite customizable as per corporate, technical, healthcare, and government professions."
+   },
+   {
+    "q": "What should not be included in a professional Cover letter Sample?",
+    "a": "A professional cover letter sample should not contain general expressions, irrelevant experience, too many details, or informal language."
+   }
+  ],
+  "footer_heading": "Start Building Your Professional Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning professional resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Strategic Layout That Reflects Professionalism",
+    "text": "A good cover letter is not merely a matter of writing, but it is a matter of presentation. The Templates of the professional Cover letter are of a high quality, which is composed around:<ul><li>Clear section hierarchy</li><li>Proper paragraph spacing</li><li>Standard business fonts</li><li>Balanced margins</li><li>Consistent alignment</li></ul>A professional cover letter sample is structured to demonstrate how layout helps to increase credibility, yet be simple and professional.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Persuasion Structure: How Recruiters React To",
+    "text": "A convincing format can be found in the most effective professional cover letter format:<ol start=\"1\"><li value=\"1\">Impactful Introduction: Clearly describe your perspective and highlight your most noteworthy achievement.</li></ol><ol start=\"2\"><li value=\"2\">Value Proposition Section: Provide relevant achievements and skills according to the job description.</li></ol><ol start=\"3\"><li value=\"3\">Paragraph Employer Alignment: Demonstrate how your experience can address certain business issues.</li></ol><ol start=\"4\"><li value=\"4\">Bold Conclusion Statement: Be enthusiastic and ask more professionally.</li></ol>This is a control flow to ensure that an overly detailed professional cover letter sample does not work against you.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Optimized Writing Structure",
+    "text": "An Applicant Tracking System (ATS) is used by many employers to filter applications. Professional Cover Letter Formats are well-written and enhance compatibility through:<ul><li>Using standard headings</li><li>Not using graphics and complicated formatting.</li><li>Adding keywords that are related to the job specifically.</li><li>Keeping the paragraphs simple.</li></ul>The example of a clean professional Cover letter will enhance chances of passing the automated systems prior to being sent to a hiring manager.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Customization for Different Career Levels",
+    "text": "Suitable Professional Cover Letter Templates change according to the levels of experience:<ul><li>Entry-Level Candidates: Emphasise transferable skills, internships, and academic accomplishments.</li><li>Mid-Level Professionals: Recognize leadership efforts, performance indicators, and project outcomes.</li></ul><ul><li>Senior Executives: Focus on strategic influence, revenue increase, and company change.</li></ul>The professional Cover letter format has a flexible design that enables specifics to be tailored to each job.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Performance-Driven Content Guidelines",
+    "text": "To create the most impact with the help of professional cover letter templates, these details should be kept in mind:<ul><li>Measurable achievements</li><li>Action-oriented language</li><li>Short paragraphs</li><li>Employer-focused communication</li><li>Excellent fit for the work.</li></ul>An engaging professional cover letter sample emphasises outcomes rather than restating the resume's content.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Mistakes That Reduce Professional Impact",
+    "text": "Even good templates have a chance to fail if used improperly. Avoid:<ul><li>Generic opening statements</li><li>Repetition of bullet points</li><li>Compose extremely long paragraphs.</li><li>Using informal language</li><li>Leaving out the personalization of the name of the employer.</li></ul>An elegant professional cover letter format will make the document concise, related, and convincing.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Why Professional Cover Letter Templates Improve Selection Chances",
+    "text": "An application with Structured Professional Cover Letter Templates will improve your application because:<ul><li>Improving readability</li><li>Showing attention to detail.</li><li>Strengthening the professional branding.</li><li>Providing support for ATS compatibility.</li><li>Displaying accomplishment in an uncomplicated manner.</li></ul>A well-created professional cover letter sample gives you more chances at the interview and helps your candidacy when well executed.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Conclusion",
+    "text": "In contemporary recruitment, clarity and structure are determinants of first impressions. If you're looking for a reliable guide to confidently and strategically present your qualifications, then use Professional Cover Letter Templates. Through the appropriate selection of professional cover letter format, concentration on quantifiable influence, and tailoring of the contents to individual applications, job seekers can make a very strong professional cover letter example that will be visible amidst the competitive job markets.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "cover-letter-templates/simple": {
+  "slug": "cover-letter-templates/simple",
+  "title": "Simple Cover Letter Templates",
+  "parent": "cover-letter-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Simple Cover Letter Templates – Free Simple Cover Letter Format & Examples",
+   "desc": "Download simple cover letter templates to create a professional job application quickly. Explore simple cover letter format, examples, samples, and tips to write an effective cover letter.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/cover-letter-templates/simple",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates"
+    },
+    {
+     "n": "Simple Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Simple Cover Letter Templates",
+   "text": "Simple cover letter templates can be used to develop short and effective cover letters that emphasize qualifications, introduction, and area of interest.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Simple Cover Letter Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Simple Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How long should a simple cover letter be?",
+    "a": "A typical cover letter is between 250 and 400 words and is based on the emphasis of core competencies, work experience, and interest in the post."
+   },
+   {
+    "q": "Why should I use a simple cover letter sample?",
+    "a": "By having a simple sample of a cover letter, you can know how to structure, tone, and format your cover letter correctly and within a short time."
+   },
+   {
+    "q": "Can I edit simple Cover letter Templates for different jobs?",
+    "a": "Yes, simple cover letter templates can be customized easily. The template allows you to change the content, skills, and attainment to suit any job description, a professional simple cover letter format."
+   },
+   {
+    "q": "Are simple Cover letter Templates suitable for all industries?",
+    "a": "Yes, simple cover letter templates are effective in the majority of industries as they are oriented on clarity and professionalism. They are particularly efficient in business, administration, technology, marketing, and customer service."
+   }
+  ],
+  "footer_heading": "Start Building Your Simple Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning simple resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Use Simple Cover Letter Templates?",
+    "text": "Application with the help of simple cover letter templates is easier and more systematic. These templates are created to emphasise qualification and keep a professional format.<br>Key advantages include:<ul><li>Clear structure, which can be scanned by the recruiters.</li><li>Professional design that fits in the majority of industries.</li><li>Easy customization of various job positions.</li><li>Applicant tracking systems (ATS) compatibility.</li><li>Pay attention to the competencies, accomplishments, and experience.</li></ul>A Simple cover letter format is clean and will not distract hiring authorities with unnecessary flashy design.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "What Should a Simple Cover Letter Include?",
+    "text": "A properly formatted simple cover letter format is one with a handful of important sections, which can make your qualifications clear to the recruiting personnel. Typical sections include:<ul><li>Header: Your name, contacts, and the information of the employer.</li><li>Introduction: A short introduction on why you are applying to this job and why you are interested.</li><li>Body Paragraph: Emphasize experience, skills, and other relevant achievements in this position.</li><li>Concluding paragraph: Show interest in the job and request the recruiter to get in touch with you.</li></ul>Providing a simple sample of a cover letter will ensure that every section of the letter makes a logical flow and is in a professional tone.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Simple Cover Letter Templates?",
+    "text": "Simple Cover Letter Templates suit most of the job seekers due to their flexibility and simplicity. They are effective especially with:<ul><li>Students and fresh graduates.</li><li>Entry-level professionals</li><li>Job applicants for various jobs.</li><li>Candidates who are planning to switch careers.</li><li>People who want a simple format and clean design</li></ul>An example of a simple Cover letter is well written, and the candidates emphasized their strengths, and the document should be easy to read",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips to Write an Effective Simple Cover Letter",
+    "text": "The content should be good and relevant, even when simple cover letter templates are used. Consider these tips:<ul><li>Keep it concise: An average cover letter must consist of 3 or 4 brief paragraphs.</li><li>Customize for each job: Adjust your simple cover letter format according to the job description and what the employer wants.</li><li>Highlight achievements: Rather than describing tasks, explain achievements and quantifiable outcomes.</li><li>Use professional language: Keep a firm and direct tone in the document.</li><li>End with a strong closing: Ask the employer to review your resume and contact you for further discussions.</li></ul>You may demonstrate your professionalism and increase the impact of your job application by using a polished and simple cover letter sample.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Conclusion",
+    "text": "The process of writing an effective job application using only a simple cover letter template is a way of producing a professional and structured job application, without wasting a lot of time on formatting. The format of the simple cover letter is clear and organized, ensuring that the recruiter can read and know your qualifications, skills, and interest in the job within a short duration.<br>Rereading a simple cover letter example or a simple cover letter sample, a job seeker can study how to provide evidence of their experience briefly and effectively. These templates offer a working base with the possibility of customizing the content in various roles and industries.<br>The correct selection of simple cover letter templates can guarantee that your application will be clean, easy to read, and centered on what is most important: your strengths and professionalism. A good cover letter with an effective resume can go a long way in assisting you to be picked by recruitment managers.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "cover-letter-templates/word": {
+  "slug": "cover-letter-templates/word",
+  "title": "Word Cover Letter Templates",
+  "parent": "cover-letter-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Word Cover Letter Templates – Free Word Cover Letter Format, Examples & Samples",
+   "desc": "Download professional Word Cover Letter Templates to create job applications quickly. Explore samples and tips to write an effective cover letter.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/cover-letter-templates/word",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates"
+    },
+    {
+     "n": "Word Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Word Cover Letter Templates",
+   "text": "Use Word cover letter templates to develop job applications that are prepared to be viewed by employers. Demonstrate your qualifications, experience, and interest in the position in a format that is compatible with ATS systems.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Word Cover Letter Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Word Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Is it recommended that my resume and Word cover letter should be the same?",
+    "a": "You are advised to ensure that your resume and Word cover letter format are similar in style and font used to give a consistent and business-like job application"
+   },
+   {
+    "q": "Are Word Cover Letter Templates ATS-friendly?",
+    "a": "Generally, most Word cover letter templates are friendly to the ATS because they are simple and do not contain complex designs that may confuse the software."
+   },
+   {
+    "q": "Can I customize Word Cover Letter Templates?",
+    "a": "Yes, Word Cover Letter Templates can be edited completely. You are free to edit the contents, formatting, and sections to suit your job application needs."
+   },
+   {
+    "q": "How long should a Word cover letter be?",
+    "a": "Usually, a cover letter created using Word Cover Letter Templates ranges between 250 and 400 words and highlights the experience, interest, and skills of the candidate."
+   }
+  ],
+  "footer_heading": "Start Building Your Word Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning word resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Use Word Cover Letter Templates?",
+    "text": "Word Cover Letter Templates: Microsoft Word is an easy-to-use application. These templates can be adapted in a short period and in a professional manner simultaneously. Benefits include:<br>Easy editing and formatting in Microsoft Word.<br>The majority of employers welcome the utilization of the professional structure.<br>Individualized designation of various posts.<br>Periodic design that can improve readability.<br>Connection with most applicant tracking systems.<br>With a nice Word Cover Letter Format, your cover letter will be fine, short, and business-like as well.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Key Elements of a Word Cover Letter Format",
+    "text": "A powerful Word Cover Letter Format has a definite format that brings out the qualifications and interest for the position. Typical sections include:<br>Header Section: Name, contact information, date, and employer information<br>Opening Paragraph: Take a moment to introduce yourself and speak a little bit about the position you're applying for. And explain your excitement about the opportunity.<br>Main Body: List your achievements, experience, and skills, which are relevant to the job description.<br>Conclusion: In closing, express gratitude by thanking the company for allowing you to discuss the position in a little more depth.<br>Looking at an example will help you understand how to fill each section of the Word cover letter template.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Customize Word Cover Letter Templates",
+    "text": "By looking at an example, you can learn how to fill each section of the Word cover letter template. Here’s how to do it:<br>Modify your title and contact information.<br>Modify the introduction to match the job description.<br>Emphasize your achievements rather than your responsibilities.<br>Keep your paragraphs concise and clear.<br>Keep professional language in the letter.<br>A Word cover letter sample may be used to assist you in making your final cover letter look professional.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Word Cover Letter Templates?",
+    "text": "Word Cover Letter Templates can be applicable to numerous categories of job seekers as they are flexible and very easy to use. They prove particularly helpful in:<br>Learners and new graduates.<br>Entry-level professionals<br>Applicants for several jobs.<br>Professionals who want to update their job applications.<br>Candidates who prefer their documents in an editable format.<br>A simple Word cover letter example can give directions to people on how to write a cover letter that best communicates their experience and qualifications.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips for Writing a Strong Word Cover Letter",
+    "text": "When using Word cover letter templates, it is important to make sure that the cover letter is tailored to the job you are applying for. Important tips include:<br>Make the cover letter focused and related to the job.<br>Do not use long blocks of text; instead, use clear paragraphs.<br>You should always highlight your successes.<br>Keep the closing statement professional.<br>Re-read to ensure that there are no grammatical or formatting mistakes.<br>A good Word Cover Letter Sample is written professionally, and it also helps in forming a good first impression.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Conclusion",
+    "text": "Word Cover Letter Templates enable job seekers to draft their professional cover letters within a short duration. Although the cover letter is simple and well-organized, the templates can make the writing process easier and make your application appear clean and easy to read.<br>Using a Word cover letter format makes it easier to efficiently and properly arrange your accomplishments, abilities, and expertise. Examining an example of a Word cover letter can also help you understand how to communicate successfully, and a well-written sample will undoubtedly help you create a strong first impression on prospective employers.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "ats-resume-checker": {
+  "slug": "ats-resume-checker",
+  "title": "Ats Resume Checker",
+  "parent": "",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/ats-resume-checker",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Ats Resume Checker",
+     "u": "https://www.naukri.com/naukri360/ats-resume-checker"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Ats Resume Checker - Professional Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Ats Resume Checker Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Ats Resume Checker Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning ats resume checker resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Ats Resume Checker Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your ats resume checker resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Ats Resume Checker Formatting",
+    "text": "Every ats resume checker template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "cover-letter-generator": {
+  "slug": "cover-letter-generator",
+  "title": "Cover Letter Generator",
+  "parent": "",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/cover-letter-generator",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Cover Letter Generator",
+     "u": "https://www.naukri.com/naukri360/cover-letter-generator"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Cover Letter Generator - Professional Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Cover Letter Generator Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Cover Letter Generator Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning cover letter generator resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Cover Letter Generator Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your cover letter generator resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Cover Letter Generator Formatting",
+    "text": "Every cover letter generator template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "cover-letter-templates/creative": {
+  "slug": "cover-letter-templates/creative",
+  "title": "Creative Cover Letter Templates",
+  "parent": "cover-letter-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/cover-letter-templates/creative",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates"
+    },
+    {
+     "n": "Creative Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Creative Cover Letter Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Canvas",
+    "desc": "Creative layout with a bold visual profile section.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/Creative_Resume_Template___Ananya_Iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "Studio",
+    "desc": "Sidebar layout highlights skills and tools clearly.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/Creative_Resume_Template___Ritvik_Malhotra.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Creative Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Creative Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning creative resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Creative Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your creative resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Creative Formatting",
+    "text": "Every creative template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "cover-letter-templates/modern": {
+  "slug": "cover-letter-templates/modern",
+  "title": "Modern Cover Letter Templates",
+  "parent": "cover-letter-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/cover-letter-templates/modern",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates"
+    },
+    {
+     "n": "Modern Cover Letter Templates",
+     "u": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Modern Cover Letter Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Modern Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Modern Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning modern resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Modern Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your modern resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Modern Formatting",
+    "text": "Every modern template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "",
+    "text": "3",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "2",
+    "text": "5",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/college": {
+  "slug": "resume-templates/college",
+  "title": "College Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/college",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "College Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/college"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free College Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our College Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your College Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning college resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered College Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your college resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly College Formatting",
+    "text": "Every college template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "",
+    "text": "1",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/high-school": {
+  "slug": "resume-templates/high-school",
+  "title": "High School Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/high-school",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "High School Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/high-school"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free High School College Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our High School Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your High School Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning high school resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered High School Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your high school resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly High School Formatting",
+    "text": "Every high school template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "",
+    "text": "9",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/combination": {
+  "slug": "resume-templates/combination",
+  "title": "Combination Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/combination",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Combination Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/combination"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Combination Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Combination Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Combination Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning combination resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Combination Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your combination resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Combination Formatting",
+    "text": "Every combination template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "",
+    "text": "6",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/traditional": {
+  "slug": "resume-templates/traditional",
+  "title": "Traditional Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Traditional Resume Templates: Free Downloads & Customization Guide (2026)",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/traditional",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Traditional Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/traditional"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Traditional Resume Templates",
+   "text": "Traditional resume templates are pre-built, single-column, reverse-chronological layouts that 80%+ of Indian recruiters and ATS systems prefer. They include six fixed sections - header, summary, work experience, education, skills, and certifications - and consistently outperform creative designs in shortlist rates. According to Naukri data from 70M+ profiles, candidates using traditional templates receive 2.3x more interview calls than those using designer layouts.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Traditional Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Heritage",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "Traditional",
+    "image": "http://media.naukri.com/media/nicms/Traditional_Resume_Template_Arjun_Mehra.webp",
+    "link": ""
+   },
+   {
+    "name": "Legacy",
+    "desc": "Clean layout with balanced spacing and clear sections.",
+    "cat": "Traditional",
+    "image": "http://media.naukri.com/media/nicms/Traditional_Resume_Template_Priya_Sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "Regal",
+    "desc": "Strong structure with bold section headings.",
+    "cat": "Traditional",
+    "image": "http://media.naukri.com/media/nicms/Traditional_Resume_Template_Karan_Malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Imperial",
+    "desc": "Clear hierarchy highlights leadership experience.",
+    "cat": "Traditional",
+    "image": "http://media.naukri.com/media/nicms/Traditional_Resume_Template_Rahul_Verma.webp",
+    "link": ""
+   },
+   {
+    "name": "Prestige",
+    "desc": "Professional look without heavy design elements.",
+    "cat": "Traditional",
+    "image": "http://media.naukri.com/media/nicms/Traditional_Resume_Template_Ananya_Iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "Noble",
+    "desc": "No visual distractions, full focus on content.",
+    "cat": "Traditional",
+    "image": "http://media.naukri.com/media/nicms/Traditional_Resume_Template_Vivek_Rathore.webp",
+    "link": ""
+   },
+   {
+    "name": "Crown",
+    "desc": "Structured two-column layout with clear section headings.",
+    "cat": "Traditional",
+    "image": "http://media.naukri.com/media/nicms/traditional_resume_template_crown_meera_kapoor.webp",
+    "link": ""
+   },
+   {
+    "name": "Elite",
+    "desc": "Ideal for mid to senior-level and management roles.",
+    "cat": "Traditional",
+    "image": "http://media.naukri.com/media/nicms/traditional_resume_template_elite_priya_sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "Monarch",
+    "desc": "Formal single-column layout with a clean, text-first structure.",
+    "cat": "Traditional",
+    "image": "http://media.naukri.com/media/nicms/traditional_resume_template_aarav_mehta.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Word Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "What is a traditional resume template?",
+    "a": "A traditional resume template is a pre-built, reverse-chronological layout with six fixed sections: header, summary, work experience (newest first), education, skills, and certifications. It uses plain fonts and black-on-white text with zero graphics - making it ATS-friendly and recruiter-scannable in under 10 seconds."
+   },
+   {
+    "q": "Are traditional resume templates ATS-friendly?",
+    "a": "Yes. Traditional templates are the most ATS-friendly option available, with a 95%+ parse success rate across major systems like Workday, Taleo, iCIMS, and Naukri RMS. They use single-column layouts, standard fonts (Calibri, Arial, Times New Roman), and avoid tables, text boxes, and graphics that confuse parsing software."
+   },
+   {
+    "q": "How long should a traditional resume template be for freshers?",
+    "a": "Freshers should use a one-page traditional template. With limited work history, you don't need more space. Focus on education, internships, projects, certifications, and skills. Mid-level professionals (5+ years) can extend to two pages. Resumes longer than two pages get ignored by busy Indian recruiters."
+   },
+   {
+    "q": "What's the difference between traditional and modern resume templates?",
+    "a": "Traditional templates use a single column, plain text, and chronological order with no colours or icons. Modern templates add sidebars, colour accents, and infographics. Traditional wins for ATS parsing and conservative industries like banking, government, and consulting. Modern suits creative roles in design or marketing."
+   },
+   {
+    "q": "Where can I download free traditional resume templates in India?",
+    "a": "You can download free, ATS-tested traditional resume templates on the Naukri Resume Maker. It offers 20+ designs trusted by 70M+ users - pick a template, fill in your details, and export in under 10 minutes. No design skills required."
+   },
+   {
+    "q": "Should I use a traditional resume template for IT jobs?",
+    "a": "Yes. Traditional templates work best for IT jobs at TCS, Infosys, Wipro, Cognizant, and Accenture. These companies rely on ATS systems that parse simple layouts cleanly. Choose a template with a dedicated 'Technical Skills' section and place certifications (AWS, Azure, PMP) near the top for recruiter visibility."
+   },
+   {
+    "q": "Can I use a traditional resume template for senior leadership roles?",
+    "a": "Yes, but use the executive variation. Senior leaders with 10+ years should pick a two-page traditional template that opens with an Executive Summary and Key Achievements section before the work history. This format keeps leadership impact visible while preserving the chronological structure recruiters expect."
+   },
+   {
+    "q": "How often should I update my traditional resume template?",
+    "a": "Update your resume every 6 months or whenever you:Change roles or get promoted<br>Complete a new certification<br>Take on a high-impact project<br>Plan to apply for new jobsEven if you're not job-hunting, an updated resume saves time when an unexpected opportunity arrives."
+   }
+  ],
+  "footer_heading": "Start Building Your Traditional Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning traditional resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "Why Traditional Resume Templates Still Win in 2026",
+    "text": "Recruiters at TCS, Infosys, Wipro, HDFC, and Accenture screen 200+ resumes daily. They scan each one in 6 to 8 seconds. Traditional templates win that scan because the recruiter's eye lands exactly where it expects to - name, last role, education, skills.<br>Three reasons traditional templates outperform modern designs:ATS-friendly by default. Single-column layouts with plain text parse cleanly across every major Applicant Tracking System used in India.<br>Predictable structure. Recruiters don't hunt for information. Your latest job sits at the top, where it belongs.<br>Universally accepted. Banks, IT services, PSUs, manufacturing, and consulting firms all expect this format.Expert insight: \"At my last role hiring for BFSI operations, 9 out of 10 shortlisted resumes followed a clean traditional template. The flashy ones got skipped - not because they were bad, but because we couldn't find the data fast enough.\" - Rajesh Iyer, Senior HR Practitioner.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use a Traditional Resume Template?",
+    "text": "Use a traditional template if you fit any of these profiles:Freshers applying through campus placements at IITs, NITs, or any Tier-1/Tier-2 college<br>Mid-career professionals with 1 to 10 years of steady experience in the same domain<br>Government &amp; PSU aspirants where format conventions are non-negotiable<br>Candidates in BFSI, IT services, audit, or consulting where conservative formatting is the norm<br>Anyone applying through job portals like Naukri where ATS parsing is the first filter",
+    "image": "img/cv-thumb2.png",
+    "h3": "When to Skip Traditional Templates",
+    "h3_text": "Avoid them only if:You're a designer, animator, or creative professional (portfolio matters more)<br>You have a non-linear career with 3+ pivots - try a combination resume template instead<br>You're targeting C-suite roles needing an executive CV format<br>A startup explicitly asks for a one-pager with personalityFor everyone else, traditional resume templates remain the safest, highest-converting option in the Indian market.",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Best Traditional Resume Templates by Experience Level",
+    "text": "Different career stages need different templates. Pick the one that fits where you are today.<ol start=\"1\"><li value=\"1\">Fresher Template (1 page)</li></ol>Best for: Campus placements, internships, first jobs<br>Section order: Header ? Career Objective ? Education ? Projects ? Internships ? Skills ? Certifications<br>Why it works: Education sits above experience since work history is limited. Projects get equal weight.<ol start=\"2\"><li value=\"2\">Reverse-Chronological Professional Template (1-2 pages)</li></ol>Best for: 2-10 years of experience in IT, BFSI, operations, sales<br>Section order: Header ? Summary ? Work Experience ? Education ? Skills ? Certifications ? Achievements<br>Why it works: Latest role appears first, so recruiters see your current value in under 7 seconds.<ol start=\"3\"><li value=\"3\">Executive Traditional Template (2 pages)</li></ol>Best for: 10+ years of experience, senior leadership<br>Section order: Header ? Executive Summary ? Key Achievements ? Work Experience ? Leadership ? Education ? Certifications<br>Why it works: Leadership impact stays upfront while preserving the chronological backbone.<ol start=\"4\"><li value=\"4\">Government &amp; PSU Template (1-2 pages)</li></ol>Best for: Bank exams, PSU jobs, government roles<br>Section order: Header ? Objective ? Education ? Experience ? Skills ? Languages ? Declaration ? Date &amp; Place<br>Why it works: Includes the formal declaration block PSU recruiters require.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Traditional vs Modern vs Hybrid Templates: At a Glance",
+    "text": "Not all resume templates work the same way. Here's how the three main types stack up across the factors that actually decide your shortlist.Traditional Resume Templates<br>Traditional templates are the gold standard for ATS compatibility, with a 95%+ pass rate across major parsing systems. They follow a single-column layout in standard fonts like Calibri, Arial, and Times New Roman. Recruiters scan them in 6-8 seconds flat. Best suited for freshers, IT professionals, BFSI candidates, and PSU aspirants, traditional templates run 1-2 pages and deliver the highest shortlist rate - 2.3x the baseline per Naukri data.Modern Resume Templates<br>Modern templates focus on visual appeal with two-column layouts, colour blocks, and custom display fonts. The trade-off? Their ATS pass rate drops to 60-70%, and recruiters often skip them in just 4-5 seconds when the design doesn't help them find key info. They suit designers, marketing professionals, and startup applicants where aesthetics matter. Length stays at 1-2 pages, but shortlist rate falls to 0.8x baseline - meaning fewer interview calls than even an average traditional resume.Hybrid Resume Templates<br>Hybrid templates blend both worlds - placing skills upfront, followed by chronological work history. They use standard sans-serif fonts and run 2 pages on average. ATS compatibility sits in the middle at 75-85%, and recruiters spend 8-10 seconds scanning them (longer than traditional, but more thorough). They work best for career switchers with 7+ years of experience who need to highlight transferable skills before their job timeline. Shortlist rate lands at 1.4x baseline - better than modern, but still trails traditional templates.The Verdict<br>For 80%+ of Indian job seekers in 2026, traditional resume templates remain the clear winner. They parse cleanly, scan fast, and deliver the highest shortlist rates across IT services, banking, manufacturing, and government roles. Modern templates fit creative fields, hybrid templates suit experienced career-switchers - but if your goal is maximum interview calls, traditional wins every time.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "How to Customize a Traditional Resume Template (Step-by-Step)",
+    "text": "Downloading is the easy part. Filling it well is where most candidates lose the interview call. Here's the exact 4-step process.<br>Step 1: Build a Clean Header<br>Your header sits at the very top. Include:Full name (14pt, bold)<br>City (no full address)<br>Phone number with country code<br>Professional email (avoid nicknames)<br>LinkedIn URL (only if profile is updated)Example (fresher):Priya Sharma | Bengaluru | +91 98XXX XXX12 | priya.sharma.work@gmail.com | linkedin.com/in/priyasharmaSkip: photo, date of birth, marital status, full address. These belong on government forms - not a recruiter resume.<br>Step 2: Write a 3-4 Line Summary<br>Replace the template's placeholder with a sharp pitch. Lead with role, years, and one standout result.<br>Fresher resume summary:B.Com graduate from Delhi University with internship experience in GST filing and Tally ERP. Trained on TDS compliance and bank reconciliation. Looking for an accounts assistant role at a mid-sized firm.Experienced summary:Project Manager with 7 years in IT services across TCS and Infosys. Led 12-member teams on banking software rollouts worth Rs. 8 crore. PMP-certified. Expert in Agile and waterfall delivery.A weak summary kills the rest of the page. Rewrite yours three times before locking it in.<br>Step 3: Fill Work Experience in Reverse Order<br>For each role, include:Company name + designation + dates + city (one line)<br>3-5 bullets below, each with a strong verb and a numberWeak bullet: Worked on improving sales numbers for the team.<br>Strong bullet: Grew B2B revenue by 34% in FY 2025-26 by closing 18 enterprise deals worth Rs. 2.4 crore.<br>For more role-specific examples, see the resume writing tips guide.<br>Step 4: Add Education, Skills &amp; CertificationsEducation: Degree, institute, year, CGPA/% (for freshers and recent grads).<br>Skills: Use the right skills for your resume - tailored to the job description.<br>Certifications: AWS, PMP, Six Sigma, Tally, CFA - place high-relevance ones near the top.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "10 Common Mistakes That Ruin a Traditional Resume",
+    "text": "Even the cleanest template fails if filled poorly. Avoid these:Tables and text boxes - Most ATS bots can't parse them.<br>Photos on the resume - Skip for IT, BFSI, consulting unless asked.<br>More than 2 pages - Freshers: 1 page. Experienced: 2 max.<br>Mixed fonts - Pick one. Calibri 11pt is safest.<br>Generic objectives - Replace \"seeking a challenging role\" with a sharp summary.<br>Duties over results - Quantify everything.<br>Buzzword overload - \"Synergistic team player\" is filler.<br>Spelling errors - Run a checker. Read aloud.<br>CTC on resume - Save salary for the HR call.<br>Wrong file format - Save as PDF unless the ad asks for .docx.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Length & Formatting Rules for Traditional Templates",
+    "text": "Resume length should match your career stage - not your ambition. Here's the ideal length breakdown by experience level.<br>Freshers (0-1 years): Stick to a single page, with content between 350-500 words. You don't have years of work history to fill more space - focus on education, internships, projects, certifications, and skills. A tight one-pager always beats a padded two-pager.<br>Mid-level professionals (2-8 years): Use 1-2 pages, with content between 500-800 words. Highlight your last two roles in detail, then summarize earlier positions briefly. Skip outdated college achievements unless directly relevant.<br>Senior professionals (10+ years): Extend to 2 pages, and rarely 3 for leadership roles. Word count sits at 800-1200 words. Lead with an executive summary and key achievements, then move into detailed work history. Drop internships and entry-level roles entirely.Universal rules:Margins: 0.7 to 1 inch on all sides<br>Line spacing: 1.15<br>Body font: 11pt | Name: 14pt | Section headings: 12pt<br>Colour: Black on white only (no exceptions for traditional templates)White space matters as much as content. A cramped page screams panic. Trim adjectives, drop old internships, and merge similar roles to stay within limits.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/entry-level": {
+  "slug": "resume-templates/entry-level",
+  "title": "Entry Level Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/entry-level",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Entry Level Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Entry Level Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Entry Level Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Entry Level Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning entry level resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Entry Level Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your entry level resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Entry Level Formatting",
+    "text": "Every entry level template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/hybrid": {
+  "slug": "resume-templates/hybrid",
+  "title": "Hybrid Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/hybrid",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Hybrid Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Hybrid Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Hybrid Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Hybrid Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning hybrid resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Hybrid Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your hybrid resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Hybrid Formatting",
+    "text": "Every hybrid template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/music": {
+  "slug": "resume-templates/music",
+  "title": "Music Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/music",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Music Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/music"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Music Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Music Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Music Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning music resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Music Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your music resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Music Formatting",
+    "text": "Every music template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/ai-powered": {
+  "slug": "resume-templates/ai-powered",
+  "title": "Ai Powered Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/ai-powered",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Ai Powered Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Ai Powered Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Ai Powered Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Ai Powered Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning ai powered resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Ai Powered Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your ai powered resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Ai Powered Formatting",
+    "text": "Every ai powered template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/graphic-design": {
+  "slug": "resume-templates/graphic-design",
+  "title": "Graphic Design Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/graphic-design",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Graphic Design Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Graphic Design Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Graphic Design Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Graphic Design Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning graphic design resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Graphic Design Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your graphic design resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Graphic Design Formatting",
+    "text": "Every graphic design template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/acting": {
+  "slug": "resume-templates/acting",
+  "title": "Acting Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/acting",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Acting Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/acting"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Acting Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Acting Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Acting Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning acting resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Acting Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your acting resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Acting Formatting",
+    "text": "Every acting template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/model": {
+  "slug": "resume-templates/model",
+  "title": "Model Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/model",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Model Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/model"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Model Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Model Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Model Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning model resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Model Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your model resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Model Formatting",
+    "text": "Every model template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/colorful": {
+  "slug": "resume-templates/colorful",
+  "title": "Colorful Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/colorful",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Colorful Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/colorful"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Colorful Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Colorful Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Colorful Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning colorful resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Colorful Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your colorful resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Colorful Formatting",
+    "text": "Every colorful template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/freelance": {
+  "slug": "resume-templates/freelance",
+  "title": "Freelance Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/freelance",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Freelance Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/freelance"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Freelance Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Freelance Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Freelance Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning freelance resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Freelance Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your freelance resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Freelance Formatting",
+    "text": "Every freelance template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/writer": {
+  "slug": "resume-templates/writer",
+  "title": "Writer Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/writer",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Writer Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/writer"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Writer Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Writer Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Writer Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning writer resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Writer Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your writer resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Writer Formatting",
+    "text": "Every writer template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/infographic": {
+  "slug": "resume-templates/infographic",
+  "title": "Infographic",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/infographic",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Infographic",
+     "u": "https://www.naukri.com/naukri360/resume-templates/infographic"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Infographic - Professional Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Infographic Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Infographic Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning infographic resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Infographic Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your infographic resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Infographic Formatting",
+    "text": "Every infographic template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/scholarship": {
+  "slug": "resume-templates/scholarship",
+  "title": "Scholarship",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/scholarship",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Scholarship",
+     "u": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Scholarship - Professional Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Scholarship Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Scholarship Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning scholarship resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Scholarship Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your scholarship resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Scholarship Formatting",
+    "text": "Every scholarship template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/seek": {
+  "slug": "resume-templates/seek",
+  "title": "Seek",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Free Resume Templates Modern & ATS-Friendly Designs",
+   "desc": "Create a remarkable resume with free and customizable resume templates. Select ATS-optimized resume templates to secure more interviews faster.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/seek",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Seek",
+     "u": "https://www.naukri.com/naukri360/resume-templates/seek"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Resume Templates",
+   "text": "Select resume templates that are in line with today’s hiring trends and create a resume that will surely help you get your dream job with our resume samples, CV templates, and resume formats.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Seek - Professional Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Executive Pro",
+    "desc": "Clean corporate design for senior roles",
+    "cat": "ats",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "desc": "Simple elegance with sharp typography",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "desc": "Time-tested traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "desc": "Stand out with bold visual design",
+    "cat": "creative",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "desc": "Professional two-column format",
+    "cat": "twocolumn",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "desc": "Perfect for recent graduates",
+    "cat": "simple",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "desc": "High-contrast modern design",
+    "cat": "modern",
+    "image": "",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "desc": "Warm inviting traditional layout",
+    "cat": "traditional",
+    "image": "",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Seek Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "How many pages should a resume be?",
+    "a": "The resume must usually be one page in the case of freshers and entry-level applicants, and one to two pages in the case of experienced people. The number of length must be pegged on applicable skills and experience, but not redundant information."
+   },
+   {
+    "q": "Do recruiters prefer shorter resumes?",
+    "a": "Yes, it is common knowledge that recruiters like to look at short resumes as they are going through a huge amount of resumes. An efficient resume that is well-organized and focused will enable recruiters to determine the essential qualifications."
+   },
+   {
+    "q": "What is the difference between creative and professional resume templates?",
+    "a": "The resume templates that exhibit creativity through the application of creative designs and visual representations include creative resume templates, whereas professional resume templates include formal layouts and a structured format that is appropriate in corporate and traditional industries."
+   },
+   {
+    "q": "Are modern resume templates suitable for all jobs?",
+    "a": "The contemporary templates of the resume can be applied to most work areas, particularly technology, marketing, and business jobs. Nonetheless, the conservative sectors like finance or the government might use professional or plain resume templates."
+   }
+  ],
+  "footer_heading": "Start Building Your Seek Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning seek resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "AI-Powered Seek Content Suggestions",
+    "text": "Our AI analyzes job descriptions to suggest the most impactful bullet points, skills, and keywords for your seek resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "ATS-Friendly Seek Formatting",
+    "text": "Every seek template is built to pass Applicant Tracking Systems with flying colors.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
+  }
+ },
+ "resume-templates/Photo": {
+  "slug": "resume-templates/Photo",
+  "title": "Photo Resume Templates",
+  "parent": "resume-templates",
+  "published": true,
+  "created": "2026-03-16",
+  "seo": {
+   "title": "Photo Resume Templates: Photo CV Format, Examples, Samples & Templates",
+   "desc": "Explore professional Photo resume templates with Photo CV format, Photo resume examples, Photo resume samples, and Photo CV templates.",
+   "keywords": "resume templates resume template, resume templates CV, free resume templates resume, ATS resume templates resume",
+   "canonical": "https://www.naukri.com/naukri360/resume-templates/Photo",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates"
+    },
+    {
+     "n": "Photo Resume Templates",
+     "u": "https://www.naukri.com/naukri360/resume-templates/Photo"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Photo Resume Templates",
+   "text": "Make a lasting first impression with the Photo Resume Templates. The templates will show off your skills and experience through a clean photo and simple design, perfect for creative and client-based positions.",
+   "cta1": "Try Our Resume Maker",
+   "cta2": "Buy Naukri360 Pro",
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF"
+  },
+  "templates_heading": "Explore Our Free Photo Resume Templates",
+  "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "templates": [
+   {
+    "name": "Pulse",
+    "desc": "Time-tested traditional layout",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/Modern_Resume_Templates___Priya_Sharma.webp",
+    "link": ""
+   },
+   {
+    "name": "Horizon",
+    "desc": "Built for developers and engineers",
+    "cat": "modern",
+    "image": "https://media.naukri.com/media/nicms/Modern_Resume_Templates_Horizon_Ananya_Iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "Vertex",
+    "desc": "Stand out with bold visual design",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/Modern_Resume_Templates_Karan_Malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Elevate",
+    "desc": "Professional look suited for corporate roles.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/Modern_Resume_Templates_Elevate_Rohan_Mehta.webp",
+    "link": ""
+   },
+   {
+    "name": "Apex",
+    "desc": "Dark theme creates a high-end professional feel.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/modern_resume_templates_apex_ananya_deshpande.webp",
+    "link": ""
+   },
+   {
+    "name": "Orbit",
+    "desc": "Soft color palette adds a fresh and modern feel.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/modern_resume_templates_orbit_riddhi_malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Fusion",
+    "desc": "Warm tones add a creative and engaging feel.",
+    "cat": "modern",
+    "image": "http://media.naukri.com/media/nicms/modern_resume_templates_fusion_meghna_iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "Canvas",
+    "desc": "Creative layout with a bold visual profile section.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-ananya-iyer.webp",
+    "link": ""
+   },
+   {
+    "name": "Studio",
+    "desc": "Sidebar layout highlights skills and tools clearly.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-ritvik-malhotra.webp",
+    "link": ""
+   },
+   {
+    "name": "Designify",
+    "desc": "Clean sections highlight experience and storytelling.",
+    "cat": "creative",
+    "image": "http://media.naukri.com/media/nicms/creative-resume-template-vivan-rao.webp",
+    "link": ""
+   }
+  ],
+  "testimonials_heading": "What Users Say About Our Photo Templates",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Are Photo resume templates professional?",
+    "a": "Yes, professionally created Photo resume templates can help you build your personal brand."
+   },
+   {
+    "q": "Should I include a photo on my resume?",
+    "a": "Yes, provided that use is allowed in your area or sector."
+   },
+   {
+    "q": "Are Photo Resume Templates ATS-friendly?",
+    "a": "Yes, Templates for resumes with good images will be ATS-friendly."
+   },
+   {
+    "q": "What type of photo should I use?",
+    "a": "Using a professional photo from a sample Photo resume is advised."
+   }
+  ],
+  "footer_heading": "Start Building Your Photo Resume Now",
+  "footer_text": "Join 4 million+ professionals who built their winning Photo resume with Naukri360",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "type": "text",
+    "h2": "What Are Photo Resume Templates?",
+    "text": "Photo resume templates are resume templates that have a special section allowing a professional photograph, commonly in the header or sidebar. This Resume Format allows you to blend your image into the layout, still ensuring a clean and professional format. The Photo will be used to complement your resume information as it will assist the recruiters in connecting your image with your credentials and linking with you on a personal level.<br>The necessary aspects covered in these Photo resume templates are normally a profile photo, professional summary, work experience, skills and competencies, education information, contact details, certifications, and achievements. A properly organized Photo resume sample or Photo CV sample shows how visual details and professional facts may be harmonized together to produce a contemporary, attractive, and professional resume.",
+    "image": "img/cv-thumb1.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Who Should Use Photo Resume Templates?",
+    "text": "Photo Resume Templates are suitable for:<ul><li>Creative individuals like artists, designers, and photographers.</li><li>Sales executives, receptionists, and hospitality staff Selling/service employees are the ones who come into contact with customers directly.</li><li>Models, actors, and front office professionals.</li><li>Individuals seeking jobs in the nations where resume photos are widely accepted.</li></ul>Professional Photo CV templates are used to build a closer rapport with recruiters and will boost your professional brand.",
+    "image": "img/cv-thumb2.png",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Is It Appropriate for Your Resume to Have a Photo?",
+    "text": "The use of a photo in your resume may be acceptable in some contexts, particularly when applying to the Profession where Photo resume templates or modern Photo CV format are accepted; however, it will mostly depend on the industry, job position, and even the country of application. One should have a photo when it is appropriate. It is advisable to add a photo in case of emphasis on the visual presentation and personal branding. There are many Photo resume templates and Photo CV templates that are specifically structured towards such roles. You can include a photo when:<ul><li>To apply to a creative job, like a graphic designer, photographer, or media professional.</li><li>Submission of applications to customer-facing roles such as sales executive, receptionist, or hospitality staff.</li><li>Being a modeler, actor, or PR.</li><li>Using it in countries where the usage of a Photo CV sample or Photo resume sample is accepted.</li><li>Creating a personal brand in a contemporary Photo resume format.</li></ul>In such instances, it is in your interest to go through a professional Photo resume example or Photo CV example and make sure that your resume is presentable and professional-looking.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Types of Photo Resume Templates",
+    "text": "<ol start=\"1\"><li value=\"1\">Professional Photo Resume Templates: These templates apply to the use of formal layouts that are applicable in corporate positions, including sales, customer services, and administration. Their Resume Formats are clean and professional.</li><li value=\"2\">Creative Photo Resume Templates: Ideal Photo CV templates have been designed with modern colors, icons, and layout to suit designers, marketers, and creative professionals.</li><li value=\"3\">Minimalist Photo Resume Templates: Pay attention to simplicity and clean formatting, and slight photo placement, frequently in a contemporary Photo resume example </li><li value=\"4\">Sidebar Photo Resume Templates: Put the profile Photo in a side column, as well as contact information and skills, to utilize as much space as possible. This is a trendy Photo CV Format.</li><li value=\"5\">Modern Photo Resume Templates: Apply modern design, spacing, and visual distribution as a way of increasing readability and presentation.</li></ol>",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Benefits of Using Photo Resume Templates",
+    "text": "There are several benefits of using Photo resume templates:<ul><li>Produces a good and enduring first impression.</li><li>Improves the brand and professional identity.</li><li>Makes your resume appealing and presentable.</li><li>Help recruiters are fast to notice and retain you.</li><li>Enhances interaction relative to conventional media.</li></ul>The sample of a professional Photo Resume or Photo CV sample is used to prove your presentation skills and professionalism.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "type": "text",
+    "h2": "Tips for Adding a Photo to Your Resume",
+    "text": "Some Advice for Including a Photo with Your CV<br>Take into account the following recommendations while adding your photo to your resume:<ul><li>A high-quality photograph should be used.</li><li>Choose a Photo with a neutral background.</li><li>Dress appropriately for your line of work.</li><li>Make sure the photograph is well-lit and has a clear resolution. Avoid photos that are filtered, cropped, or informal.</li></ul>Your Photo resume sample will benefit from a strong image.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Try Our Resume Maker",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Buy Naukri360 Pro"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want an expert to help with your resume? Explore",
+   "linkText": "resume writing service",
+   "linkUrl": "https://www.naukri.com/resume-writing-service?utmSource=PostPages&utmTerm=SEO360_RWS&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": false,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "Create your resume in 3 easy steps",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Add the missing details in your profile",
+    "Choose a template for your resume",
+    "Improve the content with AI"
+   ],
+   "ctaText": "Upgrade to Pro",
+   "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
   }
  },
  "cover-letter-templates/software-engineer": {
@@ -1070,15 +20588,63 @@ var CMS_PAGES = {
 };
 var PAGE_TREE = {
  "resume-templates": [
-  "resume-templates/basic"
+  "resume-templates/basic",
+  "resume-templates/academic",
+  "resume-templates/accounting",
+  "resume-templates/ats",
+  "resume-templates/business-analyst",
+  "resume-templates/chronological",
+  "resume-templates/corporate",
+  "resume-templates/creative",
+  "resume-templates/experienced",
+  "resume-templates/functional",
+  "resume-templates/google-docs",
+  "resume-templates/internship",
+  "resume-templates/minimalist",
+  "resume-templates/modern",
+  "resume-templates/one-page",
+  "resume-templates/picture",
+  "resume-templates/professionals",
+  "resume-templates/sales",
+  "resume-templates/simple",
+  "resume-templates/student",
+  "resume-templates/teacher",
+  "resume-templates/tech",
+  "resume-templates/two-column",
+  "resume-templates/Two-Page",
+  "resume-templates/videographer",
+  "resume-templates/word",
+  "resume-templates/college",
+  "resume-templates/high-school",
+  "resume-templates/combination",
+  "resume-templates/traditional",
+  "resume-templates/entry-level",
+  "resume-templates/hybrid",
+  "resume-templates/music",
+  "resume-templates/ai-powered",
+  "resume-templates/graphic-design",
+  "resume-templates/acting",
+  "resume-templates/model",
+  "resume-templates/colorful",
+  "resume-templates/freelance",
+  "resume-templates/writer",
+  "resume-templates/infographic",
+  "resume-templates/scholarship",
+  "resume-templates/seek",
+  "resume-templates/Photo"
  ],
  "cover-letter-templates": [
+  "cover-letter-templates/google-docs",
+  "cover-letter-templates/professional",
+  "cover-letter-templates/simple",
+  "cover-letter-templates/word",
+  "cover-letter-templates/creative",
+  "cover-letter-templates/modern",
   "cover-letter-templates/software-engineer"
  ]
 };
 var CMS_DEFAULT = "resume-templates";
 function buildBreadcrumbs(slug, title, pages) {
-  // Standard prefix: Home (naukri.com root) → Naukri360 (campaign root) → page chain.
   var root = "https://www.naukri.com";
   var base = root + "/naukri360";
   var crumbs = [

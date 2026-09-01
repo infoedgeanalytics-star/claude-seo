@@ -571,20 +571,11 @@ function render(){
 // ═══════════════════════════════════════
 function pPages(){
   var slugs=Object.keys(allPages);
-  // Count how many pages share the same SEO title, so duplicates (the
-  // exact "fell back to hub defaults" bug) are visible right in this list.
-  var titleCounts={};
-  slugs.forEach(function(s){
-    var t=(allPages[s].seo&&allPages[s].seo.title)||'';
-    if(t) titleCounts[t]=(titleCounts[t]||0)+1;
-  });
   var h='<div class="card"><div class="ct">All Pages ('+slugs.length+')</div>';
-  h+='<div class="card-info">Select a page to edit. Clone to create new ones. <strong>Bold</strong> is this page\'s short name in the CMS; the line below it is the live SEO title tag (<code>&lt;title&gt;</code>).</div>';
+  h+='<div class="card-info">Select a page to edit. Clone to create new ones.</div>';
   slugs.forEach(function(s){
     var p=allPages[s],cur=s===curSlug;
-    var seoTitle=(p.seo&&p.seo.title)||'';
-    var isDup=seoTitle&&titleCounts[seoTitle]>1;
-    h+='<div class="pg-item'+(cur?' pg-active':'')+'"><div class="pg-info"><strong>'+esc(p.title)+'</strong> <span class="pg-slug">/'+s+'</span>'+(cur?' <span class="badge-b">editing</span>':'')+(isDup?' <span class="badge-warn">⚠ duplicate SEO title — shared with '+(titleCounts[seoTitle]-1)+' other page(s)</span>':'')+'<div class="pg-title-sub">SEO title: '+esc(seoTitle||'(none set)')+'</div></div><div class="pg-btns">';
+    h+='<div class="pg-item'+(cur?' pg-active':'')+'"><div class="pg-info"><strong>'+esc(p.title)+'</strong> <span class="pg-slug">/'+s+'</span>'+(cur?' <span class="badge-b">editing</span>':'')+'</div><div class="pg-btns">';
     if(!cur)h+='<button class="tb-btn sm" onclick="switchPage(\''+s+'\')">Edit</button>';
     h+='<button class="tb-btn sm outline" onclick="openClone(\''+s+'\')">Clone</button>';
     h+='<button class="tb-btn sm" onclick="window.open(\'index.html?page='+s+'\',\'_blank\')">Preview</button>';

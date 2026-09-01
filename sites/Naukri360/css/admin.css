@@ -63,9 +63,7 @@ a{text-decoration:none;color:inherit}
 .pg-active{border-color:var(--b);background:var(--bl)}
 .pg-info{font-size:14px}.pg-info strong{color:var(--dk)}
 .pg-slug{color:var(--g5);font-size:12px;margin-left:6px}
-.pg-title-sub{color:var(--g5);font-size:11px;margin-top:3px}
 .badge-b{font-size:9px;font-weight:700;padding:2px 7px;border-radius:4px;background:var(--bl);color:var(--b);text-transform:uppercase;margin-left:6px}
-.badge-warn{font-size:11px;font-weight:600;padding:2px 8px;border-radius:4px;background:#FEE2E2;color:#991B1B;margin-left:6px;white-space:nowrap}
 .pg-btns{display:flex;gap:4px;flex-shrink:0}
 .pg-add{display:flex;gap:8px;margin-top:14px}
 
