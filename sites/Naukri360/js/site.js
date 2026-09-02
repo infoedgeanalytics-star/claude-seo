@@ -695,6 +695,18 @@
     ul.innerHTML=html;
   })();
 
+  // On the resume-templates hub page only, move "Explore More Resume
+  // Templates" up to right after the template gallery (before "What Makes
+  // the Best Resume Template?") instead of its default spot near the
+  // bottom. Every other page keeps the section where the static HTML
+  // already has it. Runs after renderInterlinks() so the section's content
+  // is already populated before it's relocated.
+  if(slug==='resume-templates'){
+    var ilSection=document.getElementById('interlinks-section');
+    var gallerySection=document.getElementById('templates');
+    if(ilSection && gallerySection) gallerySection.insertAdjacentElement('afterend', ilSection);
+  }
+
   // Helpers
   function fill(id, val) {
     var els = document.querySelectorAll('[data-cms="'+id+'"]');
