@@ -2185,6 +2185,34 @@ function buildPageHtml(slug){
   });
   h+='<\/div>\n<\/div>\n<\/div>\n<\/section>\n<div class="clear"><\/div>\n';
 
+  // INTERLINKING — chip-style related-page links (replaces old sec-cv).
+  // Built here (before CONTENT SECTIONS) so the "resume-templates" hub page
+  // can place it right after the template gallery instead of its usual spot
+  // near the bottom; every other page still gets it in the default position
+  // further down, right after FAQ.
+  var ilUseGlobal = p.useGlobalInterlinks !== false;
+  var ilRaw = ilUseGlobal
+    ? (Array.isArray(p.globalInterlinks) ? p.globalInterlinks : [])
+    : (Array.isArray(p.interlinks) ? p.interlinks : []);
+  var ilSelf = (p.seo&&p.seo.canonical) || ('https://www.naukri.com/naukri360/'+slug);
+  var ilList = pruneInterlinks(ilRaw.filter(function(x){ return x && x.url && x.url !== ilSelf; }));
+  var ilHtml = '';
+  if(ilList.length>0){
+    ilHtml += '<section class="sec-interlinks" aria-labelledby="interlinks-h2">\n<div class="container">\n';
+    ilHtml += '<h2 id="interlinks-h2">'+esc(p.interlinks_heading||'Explore More Resume Templates')+'<\/h2>\n';
+    if(p.interlinks_sub) ilHtml += '<p>'+esc(p.interlinks_sub)+'<\/p>\n';
+    ilHtml += '<ul class="filter-buttons interlink-list" role="list" aria-label="Related links">\n';
+    ilList.forEach(function(l){
+      if(!l||!l.label) return;
+      var url=l.url||'#';
+      var ext=/^https?:\/\//i.test(url);
+      ilHtml += '<li><a href="'+esc(url)+'" class="filter-btn"'+(ext?' target="_blank" rel="noopener noreferrer"':'')+'><span>'+esc(l.label)+'<\/span><\/a><\/li>\n';
+    });
+    ilHtml += '<\/ul>\n<\/div>\n<\/section>\n';
+  }
+  // Hub page: right after the gallery, before "What Makes the Best Resume Template?".
+  if(slug==='resume-templates') h+=ilHtml;
+
   // CONTENT SECTIONS
   var sections=p.sections||[];
   if(sections.length>0){
@@ -2266,26 +2294,9 @@ function buildPageHtml(slug){
   });
   h+='<\/div>\n<\/div>\n<\/section>\n<div class="clear"><\/div>\n';
 
-  // INTERLINKING — chip-style related-page links (replaces old sec-cv)
-  var ilUseGlobal = p.useGlobalInterlinks !== false;
-  var ilRaw = ilUseGlobal
-    ? (Array.isArray(p.globalInterlinks) ? p.globalInterlinks : [])
-    : (Array.isArray(p.interlinks) ? p.interlinks : []);
-  var ilSelf = (p.seo&&p.seo.canonical) || ('https://www.naukri.com/naukri360/'+slug);
-  var ilList = pruneInterlinks(ilRaw.filter(function(x){ return x && x.url && x.url !== ilSelf; }));
-  if(ilList.length>0){
-    h+='<section class="sec-interlinks" aria-labelledby="interlinks-h2">\n<div class="container">\n';
-    h+='<h2 id="interlinks-h2">'+esc(p.interlinks_heading||'Explore More Resume Templates')+'<\/h2>\n';
-    if(p.interlinks_sub) h+='<p>'+esc(p.interlinks_sub)+'<\/p>\n';
-    h+='<ul class="filter-buttons interlink-list" role="list" aria-label="Related links">\n';
-    ilList.forEach(function(l){
-      if(!l||!l.label) return;
-      var url=l.url||'#';
-      var ext=/^https?:\/\//i.test(url);
-      h+='<li><a href="'+esc(url)+'" class="filter-btn"'+(ext?' target="_blank" rel="noopener noreferrer"':'')+'><span>'+esc(l.label)+'<\/span><\/a><\/li>\n';
-    });
-    h+='<\/ul>\n<\/div>\n<\/section>\n';
-  }
+  // INTERLINKING — built earlier (right after the gallery); everywhere except
+  // the resume-templates hub page, it belongs here in its default position.
+  if(slug!=='resume-templates') h+=ilHtml;
 
   // FOOTER CTA
   h+='<section class="sec4" aria-labelledby="cta-h2">\n<div class="container"><div class="bx">\n';
