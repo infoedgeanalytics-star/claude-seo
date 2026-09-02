@@ -41,6 +41,8 @@ var CMS_PAGES = {
   },
   "templates_heading": "Explore Our Resume Templates",
   "templates_sub": "Win over recruiters with our professionally designed resume templates templates",
+  "interlinks_heading": "Looking for a Specific Resume Template?",
+  "interlinks_sub": "Browse our complete library of professional resume templates",
   "templates": [
    {
     "name": "Pulse",

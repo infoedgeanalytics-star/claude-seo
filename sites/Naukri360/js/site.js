@@ -666,6 +666,18 @@
   (function renderInterlinks(){
     var sec=document.getElementById('interlinks-section');
     if(!sec) return;
+    // Heading/sub-text: apply a page-specific override independently of the
+    // link list below, so a page with custom text but no CMS link data
+    // (falling back to the static baked-in list) still gets its own heading.
+    // Pages without an override keep the static placeholder text untouched.
+    if(typeof D.interlinks_heading==='string' && D.interlinks_heading){
+      var hd=document.getElementById('interlinks-h2');
+      if(hd) hd.textContent = D.interlinks_heading;
+    }
+    if(typeof D.interlinks_sub==='string' && D.interlinks_sub){
+      var sb=document.getElementById('interlinks-sub');
+      if(sb) sb.textContent = D.interlinks_sub;
+    }
     var useGlobal = D.useGlobalInterlinks !== false;
     var rawList = useGlobal
       ? (Array.isArray(D.globalInterlinks)?D.globalInterlinks:[])
@@ -673,14 +685,10 @@
     // Drop a chip that points at the current page (self-link is noise).
     var here = (D.seo && D.seo.canonical) || ('https://www.naukri.com/naukri360/'+slug);
     var list = rawList.filter(function(x){ return x && x.url && x.url !== here; });
-    // If CMS has no data, leave whatever static markup was baked into the HTML
-    // intact (so crawlers and no-JS users still see the SEO link list).
+    // If CMS has no link data, leave whatever static markup was baked into
+    // the HTML intact (so crawlers and no-JS users still see the SEO link list).
     if(!list.length) return;
     sec.style.display='';
-    var hd=document.getElementById('interlinks-h2');
-    if(hd) hd.textContent = D.interlinks_heading || 'Explore More Resume Templates';
-    var sb=document.getElementById('interlinks-sub');
-    if(sb) sb.textContent = D.interlinks_sub || '';
     var ul=document.getElementById('interlinks-list');
     if(!ul) return;
     var html='';
