@@ -362,7 +362,235 @@ var CMS_PAGES = {
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
   },
-  "cdnBaseUrl": ""
+  "cdnBaseUrl": "",
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ]
  },
  "resume-templates/basic": {
   "slug": "resume-templates/basic",
@@ -757,7 +985,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "cover-letter-templates": {
   "slug": "cover-letter-templates",
@@ -1130,7 +1588,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/academic": {
   "slug": "resume-templates/academic",
@@ -1515,7 +2203,237 @@ var CMS_PAGES = {
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
   },
-  "cdnBaseUrl": ""
+  "cdnBaseUrl": "",
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/accounting": {
   "slug": "resume-templates/accounting",
@@ -1917,7 +2835,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/ats": {
   "slug": "resume-templates/ats",
@@ -2313,7 +3461,237 @@ var CMS_PAGES = {
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
   },
-  "cdnBaseUrl": ""
+  "cdnBaseUrl": "",
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/business-analyst": {
   "slug": "resume-templates/business-analyst",
@@ -2708,7 +4086,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/chronological": {
   "slug": "resume-templates/chronological",
@@ -3103,7 +4711,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/corporate": {
   "slug": "resume-templates/corporate",
@@ -3489,7 +5327,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/creative": {
   "slug": "resume-templates/creative",
@@ -3884,7 +5952,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/experienced": {
   "slug": "resume-templates/experienced",
@@ -4270,7 +6568,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/functional": {
   "slug": "resume-templates/functional",
@@ -4656,7 +7184,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/google-docs": {
   "slug": "resume-templates/google-docs",
@@ -5051,7 +7809,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/internship": {
   "slug": "resume-templates/internship",
@@ -5446,7 +8434,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/minimalist": {
   "slug": "resume-templates/minimalist",
@@ -5832,7 +9050,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/modern": {
   "slug": "resume-templates/modern",
@@ -6237,7 +9685,237 @@ var CMS_PAGES = {
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
   },
-  "cdnBaseUrl": ""
+  "cdnBaseUrl": "",
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/one-page": {
   "slug": "resume-templates/one-page",
@@ -6636,7 +10314,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/picture": {
   "slug": "resume-templates/picture",
@@ -7022,7 +10930,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/professionals": {
   "slug": "resume-templates/professionals",
@@ -7424,7 +11562,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/sales": {
   "slug": "resume-templates/sales",
@@ -7810,7 +12178,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/simple": {
   "slug": "resume-templates/simple",
@@ -8196,7 +12794,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/student": {
   "slug": "resume-templates/student",
@@ -8595,7 +13423,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/teacher": {
   "slug": "resume-templates/teacher",
@@ -8990,7 +14048,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/tech": {
   "slug": "resume-templates/tech",
@@ -9385,7 +14673,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/two-column": {
   "slug": "resume-templates/two-column",
@@ -9796,7 +15314,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/Two-Page": {
   "slug": "resume-templates/Two-Page",
@@ -10195,7 +15943,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/videographer": {
   "slug": "resume-templates/videographer",
@@ -10590,7 +16568,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/word": {
   "slug": "resume-templates/word",
@@ -10949,7 +17157,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "cover-letter-templates/google-docs": {
   "slug": "cover-letter-templates/google-docs",
@@ -11353,7 +17791,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "cover-letter-templates/professional": {
   "slug": "cover-letter-templates/professional",
@@ -11761,7 +18429,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "cover-letter-templates/simple": {
   "slug": "cover-letter-templates/simple",
@@ -12138,7 +19036,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "cover-letter-templates/word": {
   "slug": "cover-letter-templates/word",
@@ -12524,7 +19652,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "ats-resume-checker": {
   "slug": "ats-resume-checker",
@@ -12870,7 +20228,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "cover-letter-generator": {
   "slug": "cover-letter-generator",
@@ -13216,7 +20804,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "cover-letter-templates/creative": {
   "slug": "cover-letter-templates/creative",
@@ -13517,7 +21335,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "cover-letter-templates/modern": {
   "slug": "cover-letter-templates/modern",
@@ -13885,7 +21933,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/college": {
   "slug": "resume-templates/college",
@@ -14244,7 +22522,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/high-school": {
   "slug": "resume-templates/high-school",
@@ -14603,7 +23111,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/combination": {
   "slug": "resume-templates/combination",
@@ -14962,7 +23700,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/traditional": {
   "slug": "resume-templates/traditional",
@@ -15373,7 +24341,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/entry-level": {
   "slug": "resume-templates/entry-level",
@@ -15723,7 +24921,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/hybrid": {
   "slug": "resume-templates/hybrid",
@@ -16073,7 +25501,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/music": {
   "slug": "resume-templates/music",
@@ -16423,7 +26081,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/ai-powered": {
   "slug": "resume-templates/ai-powered",
@@ -16773,7 +26661,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/graphic-design": {
   "slug": "resume-templates/graphic-design",
@@ -17123,7 +27241,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/acting": {
   "slug": "resume-templates/acting",
@@ -17473,7 +27821,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/model": {
   "slug": "resume-templates/model",
@@ -17823,7 +28401,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/colorful": {
   "slug": "resume-templates/colorful",
@@ -18173,7 +28981,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/freelance": {
   "slug": "resume-templates/freelance",
@@ -18523,7 +29561,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/writer": {
   "slug": "resume-templates/writer",
@@ -18873,7 +30141,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/infographic": {
   "slug": "resume-templates/infographic",
@@ -19223,7 +30721,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/scholarship": {
   "slug": "resume-templates/scholarship",
@@ -19573,7 +31301,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/seek": {
   "slug": "resume-templates/seek",
@@ -19923,7 +31881,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "resume-templates/Photo": {
   "slug": "resume-templates/Photo",
@@ -20316,7 +32504,237 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "https://www.naukri.com/payment?utmSource=PostPages&utmTerm=SEO360Payment&utmContent=RELandingV1FF"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
  },
  "cover-letter-templates/software-engineer": {
   "slug": "cover-letter-templates/software-engineer",
@@ -20552,27 +32970,99 @@ var CMS_PAGES = {
   "globalTemplateButtonText": "Try this free template",
   "useGlobalTemplateLinks": true,
   "globalTemplates": [
-   {"name":"Executive Pro","cat":"ats","link":""},
-   {"name":"Minimal Edge","cat":"simple","link":""},
-   {"name":"Classic Plus","cat":"traditional","link":""},
-   {"name":"Tech Stack","cat":"modern","link":""},
-   {"name":"Creative Spark","cat":"creative","link":""},
-   {"name":"Corporate Slate","cat":"twocolumn","link":""},
-   {"name":"Fresh Start","cat":"simple","link":""},
-   {"name":"Bold Impact","cat":"modern","link":""},
-   {"name":"Amber Classic","cat":"traditional","link":""}
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   }
   ],
   "useGlobalFilterChips": true,
   "globalFilterChips": [
-   {"label":"All templates","cat":"all","url":"#templates/all"},
-   {"label":"Modern","cat":"modern","url":"#templates/modern"},
-   {"label":"Traditional","cat":"traditional","url":"#templates/traditional"},
-   {"label":"Simple","cat":"simple","url":"#templates/simple"},
-   {"label":"Creative","cat":"creative","url":"#templates/creative"},
-   {"label":"ATS","cat":"ats","url":"#templates/ats"},
-   {"label":"One page","cat":"onepage","url":"#templates/onepage"},
-   {"label":"Two column","cat":"twocolumn","url":"#templates/twocolumn"},
-   {"label":"Photo","cat":"photo","url":"#templates/photo"}
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "#templates/all"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "#templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "#templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "#templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "#templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "#templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "#templates/onepage"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "#templates/twocolumn"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "#templates/photo"
+   }
   ],
   "filterChips": [],
   "sidebar": {
@@ -20585,7 +33075,769 @@ var CMS_PAGES = {
    ],
    "ctaText": "Upgrade to Pro",
    "ctaUrl": "#"
-  }
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates"
+ },
+ "neo-ai-job-agent": {
+  "slug": "neo-ai-job-agent",
+  "title": "Naukri Neo",
+  "parent": "",
+  "published": true,
+  "created": "2026-09-03",
+  "seo": {
+   "title": "Naukri Neo — Free AI Job Agent That Applies for You | Naukri360",
+   "desc": "Naukri Neo is Naukri360's free AI job agent — it matches you to live roles, tailors your resume for each one, and applies for you. See how Neo works.",
+   "keywords": "AI job agent India, auto apply jobs, job application automation, AI job search assistant, early applicant advantage, customised resume per job",
+   "canonical": "https://www.naukri.com/naukri360/neo-ai-job-agent",
+   "ogImage": "img/banner-right.png"
+  },
+  "schema": {
+   "breadcrumbs": [
+    {
+     "n": "Home",
+     "u": "https://www.naukri.com"
+    },
+    {
+     "n": "Naukri360",
+     "u": "https://www.naukri.com/naukri360"
+    },
+    {
+     "n": "Naukri Neo",
+     "u": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+    }
+   ],
+   "ratingValue": "4.8",
+   "ratingCount": "12847",
+   "reviewCount": "8934"
+  },
+  "hero": {
+   "h1": "Naukri Neo: The AI Job Agent That Applies For You",
+   "text": "Naukri Neo is Naukri360's free AI job agent. It matches you to roles you're genuinely fit for, builds a tailored resume for each one, and applies on your behalf, so you're an early applicant, not a late one, without the manual form-filling.",
+   "cta1": "Try Naukri Neo Free",
+   "cta1_url": "https://www.naukri.com/neo?utmSource=PostPages&utmTerm=SEO360_Neo&utmContent=RELandingV1FF",
+   "cta2": "Explore Naukri360 Tools",
+   "cta2_url": "https://www.naukri.com/naukri360"
+  },
+  "templates_heading": "",
+  "templates_sub": "",
+  "templates": [],
+  "testimonials_heading": "What Job Seekers Say About Naukri Neo",
+  "testimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The resume templates templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 resume templates tools saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "The resume templates quality is outstanding. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Used resume templates to highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "faq": [
+   {
+    "q": "Is Naukri Neo free to use?",
+    "a": "Yes. Naukri Neo is completely free as part of Naukri360, along with the rest of the readiness toolkit."
+   },
+   {
+    "q": "Does Naukri Neo guarantee me a job?",
+    "a": "No. Naukri Neo improves your odds by getting a tailored application in front of recruiters early. The interview and the offer are still down to you."
+   },
+   {
+    "q": "How is Naukri Neo different from other auto-apply tools?",
+    "a": "Most auto-apply tools send one generic resume to every job. Naukri Neo builds a fresh, tailored resume for each role it applies to, based on live hiring data from Naukri."
+   },
+   {
+    "q": "Do I need to keep the app open for Naukri Neo to work?",
+    "a": "No. Naukri Neo runs continuously in the background, matching and applying to relevant roles even when you're not active."
+   }
+  ],
+  "footer_heading": "Ready to Let Naukri Neo Apply For You?",
+  "footer_text": "Join the job seekers already using Naukri360's free AI job agent to apply smarter, not just harder.",
+  "breadcrumb_text": "Home > Resume Templates",
+  "content_blocks": [],
+  "sections": [
+   {
+    "h2": "What Is Naukri Neo?",
+    "text": "Naukri Neo is a free AI job agent built into Naukri360, designed to solve one problem: getting your application seen early. Instead of handing you a list of postings to work through by hand, Neo reads your profile, skills, and experience, then matches you against live openings on Naukri to find the roles where you are a genuinely strong fit. For each match, it builds a resume tailored to that specific job, adjusting emphasis, keyword weighting, and the order of your experience, and submits the application for you. It keeps working in the background, so you can be an early applicant even on days you never open the app. Neo works across every white-collar function, from finance and marketing to operations and sales, not just technology roles.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "h2": "Why Being an Early Applicant Matters",
+    "text": "Recruiters rarely wait for a posting to close before they start reading. Shortlists often begin forming within the first day or two, while later applications are still arriving. A strong application submitted in hour one can beat an equally strong one submitted on day five, not because it is better, but because it reached the recruiter while the shortlist was still open. Naukri Neo is built around this timing problem. It watches live postings continuously, so your application goes in early, when recruiters are still actively reading rather than working through a backlog.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "h2": "How Naukri Neo Is Different From a Generic AI Chatbot",
+    "text": "A general-purpose AI writing tool can help you draft a resume if you paste in a job description, but it has no visibility into live job postings, no way to know when a role went up, and no way to submit an application for you. Naukri Neo is agentic rather than purely generative: it takes continuous action on live hiring data from inside the platform where the applications actually land. It also builds a fresh, tailored resume for every application, instead of sending one generic version to every job, which is the pattern most recruiters have already learned to filter out.",
+    "image": "",
+    "h3": "",
+    "h3_text": "",
+    "points": []
+   },
+   {
+    "h2": "What You Get With Naukri Neo",
+    "text": "Using Naukri Neo means:",
+    "image": "",
+    "h3": "",
+    "h3_text": "Naukri Neo does not promise you a job; no honest tool can. What it gives you is a stronger, earlier, better-targeted application every time you're a genuine match, so the preparation you've already put in has the best possible chance of being seen.",
+    "points": [
+     "More relevant applications submitted, with far less manual effort on your part",
+     "A resume tailored to each specific role, not one generic version sent everywhere",
+     "Applications that land early, while shortlists are still forming",
+     "All of this at no cost, Naukri Neo is completely free inside Naukri360"
+    ]
+   }
+  ],
+  "templateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FFCareerAdvice&utmContent=RELandingV1FF",
+  "templateButtonText": "Try this free template",
+  "globalHeroLinks": {
+   "cta1_url": "https://www.naukri.com/resume-maker?utmSource=PostPages&utmTerm=SEO360resume_maker&utmContent=RELandingV1FF",
+   "cta1_text": "Get Started Free",
+   "cta2_url": "https://www.naukri.com/naukri360-pro?utmSource=PostPages&utmTerm=SEO360PRO&utmContent=RELandingV1FF",
+   "cta2_text": "Browse Templates"
+  },
+  "stickyBar": {
+   "enabled": true,
+   "text": "Want your applications submitted automatically?",
+   "linkText": "Try Naukri Neo free",
+   "linkUrl": "https://www.naukri.com/neo?utmSource=PostPages&utmTerm=SEO360_Neo&utmContent=RELandingV1FF",
+   "bgColor": "#fec924",
+   "textColor": "#000000"
+  },
+  "globalTestimonials": [
+   {
+    "heading": "Landed my dream job!",
+    "text": "The templates were amazing. Got 3 interviews in my first week.",
+    "author": "Priya Sharma",
+    "role": "Software Engineer"
+   },
+   {
+    "heading": "So easy to use",
+    "text": "Naukri360 saved me hours. Done in 15 minutes.",
+    "author": "Arjun Mehta",
+    "role": "Marketing Manager"
+   },
+   {
+    "heading": "Worth every penny",
+    "text": "Outstanding quality. Got a call that doubled my salary.",
+    "author": "Sarah Chen",
+    "role": "Product Manager"
+   },
+   {
+    "heading": "Perfect for my career",
+    "text": "Helped me highlight transferable skills. Hired in 2 weeks!",
+    "author": "Rahul Verma",
+    "role": "UX Designer"
+   }
+  ],
+  "useGlobalTestimonials": true,
+  "useGlobalTemplateButton": true,
+  "globalTemplateButtonUrl": "https://www.naukri.com/resume-editor?utmSource=PostPages&utmTerm=ResumePro_FF360templates&utmContent=RELandingV1FF",
+  "globalTemplateButtonText": "Try this free template",
+  "useGlobalTemplateLinks": true,
+  "globalTemplates": [
+   {
+    "name": "Executive Pro",
+    "cat": "ats",
+    "link": ""
+   },
+   {
+    "name": "Minimal Edge",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Classic Plus",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "Tech Stack",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Creative Spark",
+    "cat": "creative",
+    "link": ""
+   },
+   {
+    "name": "Corporate Slate",
+    "cat": "twocolumn",
+    "link": ""
+   },
+   {
+    "name": "Fresh Start",
+    "cat": "simple",
+    "link": ""
+   },
+   {
+    "name": "Bold Impact",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "Amber Classic",
+    "cat": "traditional",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   },
+   {
+    "name": "New",
+    "cat": "modern",
+    "link": ""
+   }
+  ],
+  "useGlobalFilterChips": true,
+  "globalFilterChips": [
+   {
+    "label": "All templates",
+    "cat": "all",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Modern",
+    "cat": "modern",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "Traditional",
+    "cat": "traditional",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Simple",
+    "cat": "simple",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Creative",
+    "cat": "creative",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "ATS",
+    "cat": "ats",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "One page",
+    "cat": "onepage",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Two column",
+    "cat": "twocolumn",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Photo",
+    "cat": "photo",
+    "url": "https://www.naukri.com/naukri360/resume-templates/photo"
+   }
+  ],
+  "filterChips": [],
+  "sidebar": {
+   "heading": "How Naukri Neo works",
+   "image": "img/easy-step.png",
+   "steps": [
+    "Neo reads your profile, skills, and experience",
+    "It matches you to live job openings on Naukri",
+    "It builds a tailored resume and applies for you"
+   ],
+   "ctaText": "Try Naukri Neo Free",
+   "ctaUrl": "https://www.naukri.com/neo?utmSource=PostPages&utmTerm=SEO360_Neo&utmContent=RELandingV1FF"
+  },
+  "useGlobalInterlinks": true,
+  "interlinks": [],
+  "globalInterlinks": [
+   {
+    "label": "Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates"
+   },
+   {
+    "label": "Basic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/basic"
+   },
+   {
+    "label": "Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates"
+   },
+   {
+    "label": "Academic Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/academic"
+   },
+   {
+    "label": "Accounting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/accounting"
+   },
+   {
+    "label": "Ats Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ats"
+   },
+   {
+    "label": "Business Analyst Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/business-analyst"
+   },
+   {
+    "label": "Chronological Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/chronological"
+   },
+   {
+    "label": "Corporate Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/corporate"
+   },
+   {
+    "label": "Creative Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/creative"
+   },
+   {
+    "label": "Experienced Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/experienced"
+   },
+   {
+    "label": "Functional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/functional"
+   },
+   {
+    "label": "Google Docs Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/google-docs"
+   },
+   {
+    "label": "Internship Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/internship"
+   },
+   {
+    "label": "Minimalist Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/minimalist"
+   },
+   {
+    "label": "Modern Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/modern"
+   },
+   {
+    "label": "One Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/one-page"
+   },
+   {
+    "label": "Picture Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/picture"
+   },
+   {
+    "label": "Professionals Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/professionals"
+   },
+   {
+    "label": "Sales Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/sales"
+   },
+   {
+    "label": "Simple Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/simple"
+   },
+   {
+    "label": "Student Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/student"
+   },
+   {
+    "label": "Teacher Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/teacher"
+   },
+   {
+    "label": "Tech Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/tech"
+   },
+   {
+    "label": "Two Column Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-column"
+   },
+   {
+    "label": "Two-Page Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/two-page"
+   },
+   {
+    "label": "Videographer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/videographer"
+   },
+   {
+    "label": "Word Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/word"
+   },
+   {
+    "label": "Google Docs Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/google-docs"
+   },
+   {
+    "label": "Professional Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/professional"
+   },
+   {
+    "label": "Simple Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/simple"
+   },
+   {
+    "label": "Word Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/word"
+   },
+   {
+    "label": "Ats Resume Checker",
+    "url": "https://www.naukri.com/naukri360/ats-resume-checker"
+   },
+   {
+    "label": "Cover Letter Generator",
+    "url": "https://www.naukri.com/naukri360/cover-letter-generator"
+   },
+   {
+    "label": "Creative Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/creative"
+   },
+   {
+    "label": "Modern Cover Letter Templates",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/modern"
+   },
+   {
+    "label": "College Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/college"
+   },
+   {
+    "label": "High School Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/high-school"
+   },
+   {
+    "label": "Combination Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/combination"
+   },
+   {
+    "label": "Traditional Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/traditional"
+   },
+   {
+    "label": "Entry Level Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/entry-level"
+   },
+   {
+    "label": "Hybrid Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/hybrid"
+   },
+   {
+    "label": "Music Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/music"
+   },
+   {
+    "label": "Ai Powered Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/ai-powered"
+   },
+   {
+    "label": "Graphic Design Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/graphic-design"
+   },
+   {
+    "label": "Acting Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/acting"
+   },
+   {
+    "label": "Model Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/model"
+   },
+   {
+    "label": "Colorful Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/colorful"
+   },
+   {
+    "label": "Freelance Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/freelance"
+   },
+   {
+    "label": "Writer Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/writer"
+   },
+   {
+    "label": "Infographic",
+    "url": "https://www.naukri.com/naukri360/resume-templates/infographic"
+   },
+   {
+    "label": "Scholarship",
+    "url": "https://www.naukri.com/naukri360/resume-templates/scholarship"
+   },
+   {
+    "label": "Seek",
+    "url": "https://www.naukri.com/naukri360/resume-templates/seek"
+   },
+   {
+    "label": "Photo Resume Templates",
+    "url": "https://www.naukri.com/naukri360/resume-templates/Photo"
+   },
+   {
+    "label": "Software Engineer Cover Letter",
+    "url": "https://www.naukri.com/naukri360/cover-letter-templates/software-engineer"
+   },
+   {
+    "label": "Naukri Neo",
+    "url": "https://www.naukri.com/naukri360/neo-ai-job-agent"
+   }
+  ],
+  "interlinks_heading": "Explore More Resume Templates",
+  "interlinks_sub": "Browse our complete library of professional templates",
+  "hideTemplatesSection": true
  }
 };
 var PAGE_TREE = {

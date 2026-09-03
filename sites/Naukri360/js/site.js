@@ -330,6 +330,17 @@
     stepsUl.innerHTML=stepsHtml;
   }
 
+  // Pages that aren't about resume templates at all (e.g. a feature landing
+  // page like Naukri Neo) hide the whole gallery section instead of showing
+  // it empty. Skips the heading/chip-rebuild work below entirely.
+  if(D.hideTemplatesSection){
+    var tplSection = document.getElementById('templates');
+    if (tplSection) tplSection.style.display = 'none';
+    // "Resumes created today" is resume-template-specific messaging — hide
+    // it too on pages that have no templates section at all.
+    var heroSub = document.getElementById('hero-subheading');
+    if (heroSub) heroSub.style.display = 'none';
+  } else {
   fill('tpl_heading', D.templates_heading);
   fill('tpl_sub', D.templates_sub);
 
@@ -360,6 +371,7 @@
       ulChips.insertAdjacentHTML('beforebegin', inputsHtml);
       ulChips.innerHTML = liHtml;
     }
+  }
   }
   // Rescue content that already has bullets mangled to "?" (or similar
   // substitutions) because the CSV was saved in legacy ANSI. We scan each
@@ -467,6 +479,7 @@
   // fewer templates would otherwise show stale defaults in the extras, and
   // pages with more would silently drop overflow templates.
   (function syncGallery(){
+    if(D.hideTemplatesSection) return;
     var gallery=document.getElementById('gallery');
     if(!gallery) return;
     var cards=gallery.querySelectorAll('.image-card');

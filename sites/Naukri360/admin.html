@@ -691,6 +691,11 @@ function pTemplates(){
   syncGlobalTemplates();
 
   var h='';
+  // Per-page: skip the templates gallery section entirely on pages that
+  // aren't about resume templates (feature landing pages, etc).
+  h+='<div class="card"><div class="ct">This page\'s templates gallery</div>';
+  h+='<div class="fm"><label style="display:flex;gap:8px;align-items:center;text-transform:none;font-size:14px"><input type="checkbox" '+(D.hideTemplatesSection?'checked':'')+' onchange="D.hideTemplatesSection=this.checked;render()"> Hide the templates gallery section on this page</label>';
+  h+='<small>'+(D.hideTemplatesSection?'This page has no templates section at all — the gallery heading, filter chips, and template grid are all omitted. Use this for feature landing pages that aren\'t about resume templates.':'This page shows the templates gallery below (heading, filter chips, and template grid).')+'</small></div></div>';
   // 🌐 Truly-global card — applies to every page that has "Use global" enabled
   h+='<div class="card"><div class="ct">🌐 Global Template Button</div>';
   h+='<div class="card-info">Edit once — applies to every page where the toggle below is on. Per-template <code>link</code> overrides still win at render time.</div>';
@@ -2130,10 +2135,17 @@ function buildPageHtml(slug){
   h+='<h1 id="hero-h1">'+p.hero.h1+'<\/h1>\n<p>'+p.hero.text+'<\/p>\n';
   h+='<a href="'+esc(cta1Url)+'" class="get-started"'+(cta1Url.indexOf('http')===0?' target="_blank" rel="noopener noreferrer"':'')+'>'+esc(cta1Text)+'<\/a>\n';
   h+='<a href="'+esc(cta2Url)+'" class="become-pro"'+(cta2Url.indexOf('http')===0?' target="_blank" rel="noopener noreferrer"':'')+'>'+esc(cta2Text)+'<\/a>\n';
+  // "Resumes created today" is resume-template-specific messaging — skip it
+  // on pages that don't have a templates section at all.
+  if(!p.hideTemplatesSection){
   h+='<div class="subheading"><img src="'+ap('img/graph.png')+'" width="24" height="14" alt="" aria-hidden="true"> <span>48,549<\/span> resumes created today<\/div>\n';
+  }
   h+='<\/div>\n<div class="banner-right"><img src="'+ap('img/banner-right.png')+'" width="415" height="265" alt="'+esc(p.title)+'" loading="eager" fetchpriority="high"><\/div>\n<\/div>\n<\/section>\n';
 
-  // TEMPLATE GALLERY — chips come from page data (per-page override or global)
+  // TEMPLATE GALLERY — chips come from page data (per-page override or global).
+  // Skippable per-page via hideTemplatesSection, for pages that aren't about
+  // resume templates at all (e.g. a feature landing page like Naukri Neo).
+  if(!p.hideTemplatesSection){
   var pageChips = (p.useGlobalFilterChips===false && p.filterChips && p.filterChips.length)
     ? p.filterChips
     : (p.globalFilterChips && p.globalFilterChips.length ? p.globalFilterChips : [
@@ -2184,6 +2196,7 @@ function buildPageHtml(slug){
     h+='<div class="caption" itemprop="description">'+esc(t.desc)+'<\/div><\/a><\/article>\n';
   });
   h+='<\/div>\n<\/div>\n<\/div>\n<\/section>\n<div class="clear"><\/div>\n';
+  }
 
   // INTERLINKING — chip-style related-page links (replaces old sec-cv).
   // Built here (before CONTENT SECTIONS) so the "resume-templates" hub page
