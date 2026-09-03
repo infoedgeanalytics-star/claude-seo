@@ -1498,51 +1498,6 @@ h3 span {
 .sec2-right img {
 }
 
-/* Optional template cards inside a content section (Content Sections panel
-   in the CMS) — a smaller, responsive grid sized for the .sec2Inner column,
-   distinct from the full-width .gallery-grid at the top of the page. */
-.sec-tpl-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
-  gap: 16px;
-  margin-top: 20px;
-}
-.sec-tpl-card {
-  display: block;
-  border: 1px solid #e8e8e8;
-  border-radius: 14px;
-  overflow: hidden;
-  text-decoration: none;
-  background: #fff;
-  transition: box-shadow .15s ease, border-color .15s ease;
-}
-.sec-tpl-card:hover {
-  border-color: #4A3AFF;
-  box-shadow: 0 4px 14px rgba(74, 58, 255, .12);
-}
-.sec-tpl-card img {
-  width: 100%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
-  display: block;
-  margin-bottom: 0 !important;
-}
-.sec-tpl-name {
-  font-size: 14px;
-  font-weight: 700;
-  color: #121224;
-  padding: 10px 12px 0 12px;
-}
-.sec-tpl-desc {
-  font-size: 12px;
-  line-height: 1.5;
-  color: #6B7394;
-  padding: 4px 12px 12px 12px;
-}
-@media (max-width: 767px) {
-  .sec-tpl-grid { grid-template-columns: repeat(auto-fill, minmax(120px, 1fr)); gap: 12px; }
-}
-
 a.btn360,
 .strip a {
   margin: 20px auto auto auto;
