@@ -923,7 +923,28 @@ function pContent(){
     h+=R('H3 Content',sec.h3_text||'','D.sections['+i+'].h3_text',{large:true,maxWords:5000});
     var pts=sec.points||[];
     pts.forEach(function(p,j){h+='<div class="fm" style="display:flex;gap:6px"><input type="text" value="'+esc(p)+'" data-bind="D.sections['+i+'].points['+j+']" style="flex:1"><button class="tb-btn sm danger" onclick="D.sections['+i+'].points.splice('+j+',1);render()">&times;</button></div>'});
-    h+='<button class="tb-btn sm outline" onclick="if(!D.sections['+i+'].points)D.sections['+i+'].points=[];D.sections['+i+'].points.push(\'New\');render()">+ Point</button></div>';
+    h+='<button class="tb-btn sm outline" onclick="if(!D.sections['+i+'].points)D.sections['+i+'].points=[];D.sections['+i+'].points.push(\'New\');render()">+ Point</button>';
+    // Optional template cards inside this section — same idea as the main
+    // Templates panel (name/desc/image/link), but only rendered where a
+    // section actually has some, and laid out to fit this section's own
+    // (narrower) column instead of the full-width gallery grid.
+    var secTpls=sec.templates||[];
+    h+='<div class="fm" style="margin-top:10px;padding-top:10px;border-top:1px dashed '+'var(--g2)">'+
+       '<label style="font-weight:600">Templates in this section ('+secTpls.length+') — optional</label>'+
+       '<small style="display:block;margin-bottom:6px">Adds a small responsive template grid inside this content block. Leave empty for a normal text section.</small></div>';
+    secTpls.forEach(function(t,j){
+      h+='<div class="rep"><div class="rep-h"><strong>Template #'+(j+1)+' '+esc(t.name||'')+'</strong><div>';
+      if(j>0)h+='<button class="tb-btn sm" onclick="var x=D.sections['+i+'].templates.splice('+j+',1)[0];D.sections['+i+'].templates.splice('+(j-1)+',0,x);render()">&uarr;</button>';
+      if(j<secTpls.length-1)h+='<button class="tb-btn sm" onclick="var x=D.sections['+i+'].templates.splice('+j+',1)[0];D.sections['+i+'].templates.splice('+(j+1)+',0,x);render()">&darr;</button>';
+      h+='<button class="tb-btn sm danger" onclick="D.sections['+i+'].templates.splice('+j+',1);render()">Del</button></div></div>';
+      h+=F('Name',t.name||'','D.sections['+i+'].templates['+j+'].name');
+      h+=F('Description',t.desc||'','D.sections['+i+'].templates['+j+'].desc');
+      h+=F('Link URL',t.link||'','D.sections['+i+'].templates['+j+'].link');
+      h+=F('Image Path',t.image||'','D.sections['+i+'].templates['+j+'].image','e.g. img/cv3.png');
+      h+='</div>';
+    });
+    h+='<button class="tb-btn sm outline" onclick="if(!D.sections['+i+'].templates)D.sections['+i+'].templates=[];D.sections['+i+'].templates.push({name:\'New Template\',desc:\'\',image:\'\',link:\'\'});render()">+ Template</button>';
+    h+='</div>';
   });
   h+='<div class="pg-add"><button class="tb-btn primary" onclick="D.sections.push({h2:\'New Section\',text:\'\',image:\'\',h3:\'\',h3_text:\'\',points:[]});render()">+ Add Section</button>';
   h+='<button class="tb-btn outline" onclick="D.sections.push({h2:\'Section with Points\',text:\'\',image:\'\',h3:\'Sub-heading\',h3_text:\'\',points:[\'Point 1\',\'Point 2\']});render()">+ With Points</button></div></div>';
@@ -2228,6 +2249,23 @@ function buildPageHtml(slug){
         h+='<div class="clear"><\/div><ul class="ulLast">\n';
         sec.points.forEach(function(pt){h+='<li>'+esc(pt)+'<\/li>\n';});
         h+='<\/ul>\n';
+      }
+      // Optional template cards inside this content section — a smaller,
+      // responsive grid sized for the section's own column width, distinct
+      // from the full-width gallery grid at the top of the page.
+      if(sec.templates&&sec.templates.length>0){
+        h+='<div class="clear"><\/div><div class="sec-tpl-grid">\n';
+        sec.templates.forEach(function(t){
+          var tLink=t.link||'#';
+          var tExt=(tLink.indexOf('http')===0);
+          var tTgt=tExt?' target="_blank" rel="noopener noreferrer"':'';
+          h+='<a class="sec-tpl-card" href="'+esc(tLink)+'"'+tTgt+'>';
+          h+='<img src="'+ap(t.image||'img/cv3.png')+'" alt="'+esc(t.name||'')+' resume template" loading="lazy">';
+          if(t.name) h+='<div class="sec-tpl-name">'+esc(t.name)+'<\/div>';
+          if(t.desc) h+='<div class="sec-tpl-desc">'+esc(t.desc)+'<\/div>';
+          h+='<\/a>\n';
+        });
+        h+='<\/div>\n';
       }
       h+='<\/div>\n';
     });

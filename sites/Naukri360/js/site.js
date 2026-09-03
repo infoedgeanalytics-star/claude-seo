@@ -442,6 +442,25 @@
         sec.points.forEach(function(p){ secHtml += '<li>'+p+'</li>'; });
         secHtml += '</ul>';
       }
+      // Optional template cards inside this content section — same data
+      // shape as the main template gallery, laid out in a smaller
+      // responsive grid sized for this section's own column.
+      if(sec.templates && sec.templates.length > 0) {
+        secHtml += '<div class="clear"></div><div class="sec-tpl-grid">';
+        sec.templates.forEach(function(t){
+          var tLink = t.link || '#';
+          var tExt = tLink.indexOf('http') === 0;
+          var tTgt = tExt ? ' target="_blank" rel="noopener noreferrer"' : '';
+          var tName = t.name || '';
+          var safeName = tName.replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+          secHtml += '<a class="sec-tpl-card" href="'+tLink+'"'+tTgt+'>';
+          secHtml += '<img src="'+(t.image||'img/cv3.png')+'" alt="'+safeName+' resume template" loading="lazy">';
+          if(t.name) secHtml += '<div class="sec-tpl-name">'+safeName+'</div>';
+          if(t.desc) secHtml += '<div class="sec-tpl-desc">'+String(t.desc).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;')+'</div>';
+          secHtml += '</a>';
+        });
+        secHtml += '</div>';
+      }
       secHtml += '</div>';
     });
     secContainer.innerHTML = secHtml;
