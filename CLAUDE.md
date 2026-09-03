@@ -2,6 +2,18 @@
 
 SEO agent project. This repo holds site exports we audit/work on plus notes from those audits.
 
+## Content strategy
+
+`docs/naukri360-master-content-document.md` — the Naukri 360 team's master SEO/content brief
+(provided 2026-09-03, converted from .docx). Covers the "Find vs. Win" positioning (Naukri finds
+jobs; Naukri 360 — free — gets you ready to win them; never compete for "job search" keywords),
+all 7 Naukri 360 features in depth (Neo AI job agent, AI Resume Maker, AI Mock Interview, Coding
+Practice, Salary Insights, Company Reviews, Naukri Minis) each with suggested article angles and
+keyword directions, career-stage segmentation, and hard brand guardrails (always say "free"; never
+claim to find jobs or promise outcomes; never shame the user; no Pro upsell in 360 content; Indian
+context only). Read this before writing or reviewing any Naukri 360 content/copy — the resume
+builder in `sites/Naukri360/` is the "AI Resume Maker" pillar of this broader product suite.
+
 ## Sites
 
 ### `sites/Naukri360/`
